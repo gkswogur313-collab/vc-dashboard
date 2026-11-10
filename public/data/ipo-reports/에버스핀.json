@@ -1,0 +1,123 @@
+{
+ "회사명": "에버스핀",
+ "시장": "KQ",
+ "file": "에버스핀",
+ "단계": {
+  "청구": {
+   "기준일": "2026-10-23",
+   "generated_at": "2026-11-03T16:22:35+09:00",
+   "기사": [
+    {
+     "제목": "[AI 막는 AI] 에버스핀, 웹 보안구조 수시로 바꿔 AI 공격 차단",
+     "매체": "전자신문",
+     "날짜": "2026-10-27",
+     "링크": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFA3cmNvajFseGtwbm1QZ3dYenFQSWJuczdvUVhmTXNzN0VEZUsxMEpVakpZcV9zOEVHM3h6Qld5aTJ2M0ptMlBMTFFHWVN4Zw?oc=5"
+    },
+    {
+     "제목": "에버스핀, 日 사업 성장 앞세워 IPO 재도전…수익 지속성 관건[IPO 엑스레이]",
+     "매체": "이투데이",
+     "날짜": "2026-10-27",
+     "링크": "https://news.google.com/rss/articles/CBMickFVX3lxTE8xUFNSR09IU2VTRktZemVibDVJSWRnQzNQNklxSS1yY2dWdXVvWEtDbk9zZ3NqeHo4OTNuMExyXzhFV3JYUkN1V0hLZVpHU3Y3dlRfN0VWT29nWTZtbDdTSWxHU1VrNTVNNEgxb3MxOExXdw?oc=5"
+    },
+    {
+     "제목": "에버스핀·티카로스 등 2개사, 코스닥 상장예심 신청",
+     "매체": "연합뉴스",
+     "날짜": "2026-10-26",
+     "링크": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1yTEVmQUJkaFZvbEtwS0Q5LXlKRjJxaTFIVmkyNzY4SlY5dVZsOFk1VTQ5MF9QQVBBbU1hdVllSVdLdkNnNWwzTHplUFdfOHF1RXZCUDJqaXdUaVHSAWBBVV95cUxQc2Y4MzM4SzVMME9neDhjY25faEVIN2JHcWF5dW93Szd1czBva0NBWUhkWDdQY0J1ek1KaWkzUUVQQ29UdHBIOGVHRjM2ZGNmSjNpMWJBUkhvSWx2TFN0bDI?oc=5"
+    },
+    {
+     "제목": "에버스핀, PHP 치명적 취약점 공격 차단 규칙 적용…“공식 패치 전 대응”",
+     "매체": "헬로티",
+     "날짜": "2026-10-23",
+     "링크": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE82QUVxSmVnWWJPN3B5dUJLWXR3ZzdWSHR0YzNEUVdNUnl1Z1BhNTh5eWJFazVWVW41LVBtbmR5cWdKMnptWGJ2TDdsRktZejlMWmRweW53eU95bkJNZ2FV?oc=5"
+    },
+    {
+     "제목": "에버스핀, 고객사에 PHP 해킹 공격 막는 규칙 적용",
+     "매체": "서울경제",
+     "날짜": "2026-10-22",
+     "링크": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBQbGFrOUFaT1dGX3AxUmt6MGNJdlNXU2J4T1VCUm9oTUR0c0xsbDhicVIyQmcwc0lPZUNSb2MwNjdrbUJyZlFCLWRRaVdhaFdhQXfSAVNBVV95cUxNN3BqTVBnUjhvTFJicGpxbjNaRUIyRXRhankzV1NTMVFzZktWWUpIdFVjSjlDV1pxUlM5LUYxc1BHMHQtT0puTEtjYkgzOXVBRjEtWQ?oc=5"
+    },
+    {
+     "제목": "에버스핀, ‘PHP2셸’ 원격코드실행 취약점 사전 차단... “공식 패치 전 방어망 구축”",
+     "매체": "보안뉴스",
+     "날짜": "2026-10-22",
+     "링크": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5PWlpKVXEyOHhFbEZIbHpOdEo0WU5mU1ZoMzBjN3NpOGowOHNud0dVWnhyeDd0eVBhU3FLYXVZRUhpY3pQWVpwNmc4Y2hOb2RiZFNfc2EwNV82NFAxYUhGYldnVTlub05TR0FJ?oc=5"
+    },
+    {
+     "제목": "에버스핀, 'PHP 치명적 취약점' 패치 전부터 차단",
+     "매체": "연합뉴스",
+     "날짜": "2026-10-22",
+     "링크": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBBQ3hOdG9SMGkwRW1kZThEaVNrMVBFVFBZNV9FQnN5aTQ1WlVHVnJ1a3JiNjlCV2pQd2ZURDkxMTUxdUh5eUxUQW9MQmd1YUJSLUNDa1gyQVZ4SUE?oc=5"
+    },
+    {
+     "제목": "에버스핀, 금융·공공·민간 등 AI 해킹 위협 IP 21만개 탐지",
+     "매체": "국토일보",
+     "날짜": "2026-10-22",
+     "링크": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBISlluR2tHa1FaRlprOU1ybTFKOWZqTWdYWkZFSmJXZXZoa09SVFJoUUhQbThsNmUwNmFrdEVRUnhCVlEzNjZXV1ZxT2VrR19hb2VuOHEzRTVMc1lvNjJKNmplbzQ?oc=5"
+    }
+   ],
+   "요약필요": false,
+   "요약": {
+    "한줄": "해킹·피싱 방지 솔루션을 금융권에 구독형으로 공급하는 AI 기반 사이버보안 기업이다 [1][2]",
+    "영위사업": [
+     "AI 기반 사이버보안 기업, 해킹방지·피싱방지 솔루션이 주력 제품 [1]",
+     "이동표적방어(MTD) 기반 해킹 방지, 화이트리스트 기반 피싱 방지 기술 [2]",
+     "매출 대부분이 연간 반복 매출(ARR) 구조의 구독형 라이선스에서 발생 [2]",
+     "국내 금융권 디지털 채널 보안을 기반으로 일본·동남아 금융기관으로 확장 [2]",
+     "2025년 별도 매출 132억원(+54%), 영업이익 49억원(+841%) [2]"
+    ],
+    "포인트": [
+     "일본 합작법인(지분 30%)은 2025년 매출 166억원, 영업이익 105억원을 냈고 지분법이익 20억원이 반영됐다 [2]",
+     "2026년 10월 코스닥 상장예비심사를 신청했으며 상장 주선인은 KB증권이다 [1]"
+    ],
+    "refs": [
+     {
+      "n": 1,
+      "제목": "에버스핀·티카로스, 코스닥 상장예심 신청",
+      "매체": "SBS Biz",
+      "날짜": "2026-10-26",
+      "링크": "https://biz.sbs.co.kr/amp/article/20000342193"
+     },
+     {
+      "n": 2,
+      "제목": "에버스핀, 작년 매출 132억원…영업이익 841% 증가",
+      "매체": "바이라인네트워크",
+      "날짜": "2026-03-16",
+      "링크": "https://byline.network/2026/03/16-624/"
+     }
+    ],
+    "작성": "2026-11-03"
+   },
+   "메모": []
+  }
+ },
+ "회사정보": {
+  "정식명칭": "주식회사 에버스핀",
+  "영문명": "everspin",
+  "대표자": "하영빈",
+  "설립일": "2014-02-28",
+  "업종코드": "58221",
+  "결산월": "12월",
+  "주소": "서울특별시 동작구 노량진로 188 10~12층(노량진동, 에버스핀빌딩)",
+  "홈페이지": "",
+  "전화": "02-2135-6239"
+ },
+ "공모": {
+  "청구일": "2026-10-23",
+  "승인일": "2021-12-02",
+  "심사상태": "청구서 접수",
+  "신고서제출일": "",
+  "수요예측시작": "",
+  "수요예측종료": "",
+  "청약시작": "",
+  "청약종료": "",
+  "납입일": "",
+  "상장예정일": "",
+  "상장일": "",
+  "확정공모가": "",
+  "공모금액": "",
+  "주관사": "KB증권(주)"
+ },
+ "현재단계": "청구",
+ "updated_at": "2026-11-03T16:22:35+09:00"
+}

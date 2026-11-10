@@ -1,0 +1,128 @@
+{
+ "회사명": "아테코",
+ "시장": "KQ",
+ "file": "아테코",
+ "단계": {
+  "청구": {
+   "기준일": "2026-10-28",
+   "generated_at": "2026-11-03T15:53:45+09:00",
+   "기사": [
+    {
+     "제목": "‘크리오스·아테코·이티에스·오렌지스퀘어·비엔케이제4호스팩·슈퍼브에이아이’ 코스닥 상장",
+     "매체": "뉴스웰",
+     "날짜": "2026-11-03",
+     "링크": "https://news.google.com/rss/articles/CBMibEFVX3lxTE91ZnFBdURSenc2NFhJdEdvbFBRYjkyVUo2Ni1zZTBUSWlobF91QU5xY2VUeng4YXJyZmx5c0lJaTEyQlFUVEs1TDc0d3pGWmRQbkNMODVHc3dhWG1RaEFLekRwT3F3ZTVLcmhHbQ?oc=5"
+    },
+    {
+     "제목": "아테코 , 차세대 장비 공급 성과…실적 반등 관건[IPO 엑스레이]",
+     "매체": "이투데이",
+     "날짜": "2026-11-02",
+     "링크": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9UNlYyRTMtQ0lBTmZ4SVI0aGcxVFYtb2VUbnlvZVlwZy14UGo0RFVremFUdW1POEt1TFVNb2FfTWV6OWZ3dGlVR1MxRHdvUWo2elI4eg?oc=5"
+    },
+    {
+     "제목": "'메모리 후공정 장비사' 아테코, 코스닥 기술상장 도전",
+     "매체": "디일렉",
+     "날짜": "2026-10-29",
+     "링크": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5PQ19aanVHVTVaMnVzSUxOOC0yMnFRLVVxaWN4OEszTWNDTXRnb1ppWHl0V2xqOXdseGFIeEJCNHpFbVNlQnBTRmZHMUk0RVJDTy1VRGROUUtXWlIxMnlvbGdWSk9Odw?oc=5"
+    },
+    {
+     "제목": "아테코, 상장예비심사 신청",
+     "매체": "뉴스핌",
+     "날짜": "2026-10-29",
+     "링크": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBVYzdZNF9LU2RnbklqUDduYUtsNGxEZVRpbzBwWDF6b2FTdVhZd3laYl9YU25uUjRpeUFSaThYRGxueUZfd0hieHdJcHVjYTRPMjNidHVKd1pkejFf?oc=5"
+    },
+    {
+     "제목": "아테코, 코스닥 상장예비심사 신청…주관사 미래에셋·IBK By EBN",
+     "매체": "Investing.com 한국어",
+     "날짜": "2026-10-29",
+     "링크": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5mY1FMNnVhdnhucVltSDdpbTdYdUt3S1NyRnh5Z0N4ellCc0RqVnF0MEFBV3F4ZzFpNVc3Um1NVFduWFJ1WmlHS09XSk5paGRHVkdEaUtXOXZ4MDVmVjhwRTFYaV8weDAzNl9qN2ZJVzc?oc=5"
+    },
+    {
+     "제목": "[장외시황] 아테코, 상장예비심사 청",
+     "매체": "이투데이",
+     "날짜": "2026-10-29",
+     "링크": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE8xYVFRY2RvdmxPZGlvLWlCVndJNml6SmtkeGVWaEJxVU1vSVJqYVdCWEQ5UzVMZTVfM0xWQVpYaTVJZ0pYUHRnZGdsREhRU19wczFLVTBDSlBjbnJMOG5LQ3pGZ2hoTEdp?oc=5"
+    }
+   ],
+   "요약필요": false,
+   "요약": {
+    "한줄": "HBM·LPCAMM·SOCAMM2 등 메모리 반도체 후공정용 테스트 핸들러를 만들어 글로벌 메모리 제조사에 공급한다 [1][2]",
+    "영위사업": [
+     "2012년 설립, 메모리 반도체 후공정 테스트 핸들러(자동 검사 장비) 제조 [1]",
+     "고정밀 압력 제어·하이브리드 냉각 기반 AI 반도체용 통합 테스트 핸들러 [1]",
+     "HBM·LPCAMM·SOCAMM2용 핸들러 공급, SLT 핸들러는 개발 완료 단계 [1][4]",
+     "주요 고객: 삼성전자·마이크론 등 글로벌 IDM 상위 4개사 [1][2]",
+     "2025년 매출 약 120억원(전년 약 180억원), 영업손실 약 109억원 [2]"
+    ],
+    "포인트": [
+     "2026년 상반기부터 엔비디아 '베라 루빈'용 SOCAMM2 테스트 핸들러 양산 장비를 공급하고 있다 [2][4]",
+     "최대 고객(A사) 매출 비중이 2024년 92.7%, 2025년 78.8%로 고객 집중도가 높다 [3]",
+     "2025년 말 부채 약 431억원, 자본총계 -156억원으로 자본잠식 상태다 [2]",
+     "10월 28일 코스닥 기술특례상장 예비심사를 신청했다. 주관사는 미래에셋증권·IBK투자증권, 공모 118만주(상장예정 657만9950주)다 [2][3]",
+     "상장 후 기술 고도화, 생산 역량 확대, 제품 포트폴리오 다각화에 투자할 계획이다 [1]"
+    ],
+    "refs": [
+     {
+      "n": 1,
+      "제목": "아테코, 상장예비심사 신청",
+      "매체": "뉴스핌",
+      "날짜": "2026-10-29",
+      "링크": "https://www.newspim.com/news/view/20261029001066"
+     },
+     {
+      "n": 2,
+      "제목": "'메모리 후공정 장비사' 아테코, 코스닥 기술상장 도전",
+      "매체": "디일렉",
+      "날짜": "2026-10-29",
+      "링크": "https://www.thelec.kr/news/articleView.html?idxno=64543"
+     },
+     {
+      "n": 3,
+      "제목": "아테코 , 차세대 장비 공급 성과…실적 반등 관건[IPO 엑스레이]",
+      "매체": "이투데이",
+      "날짜": "2026-11-02",
+      "링크": "https://www.etoday.co.kr/news/view/2642407"
+     },
+     {
+      "n": 4,
+      "제목": "아테코, 엔비디아 '베라루빈' SOCAMM2 핸들러 양산 장비 납품",
+      "매체": "뉴스핌",
+      "날짜": "2026-04-08",
+      "링크": "https://www.newspim.com/news/view/20260408001291"
+     }
+    ],
+    "작성": "2026-11-03"
+   },
+   "메모": []
+  }
+ },
+ "회사정보": {
+  "정식명칭": "주식회사 아테코",
+  "영문명": "Ateco Inc.",
+  "대표자": "이택선",
+  "설립일": "2012-09-11",
+  "업종코드": "29271",
+  "결산월": "12월",
+  "주소": "경기도 군포시 군포첨단산업2로 81 (부곡동, (주)씨엠에스군포공장 2,3층)",
+  "홈페이지": "www.ateco.co.kr",
+  "전화": "031-548-1507"
+ },
+ "공모": {
+  "청구일": "2026-10-28",
+  "승인일": "",
+  "심사상태": "청구서 접수",
+  "신고서제출일": "",
+  "수요예측시작": "",
+  "수요예측종료": "",
+  "청약시작": "",
+  "청약종료": "",
+  "납입일": "",
+  "상장예정일": "",
+  "상장일": "",
+  "확정공모가": "",
+  "공모금액": "",
+  "주관사": "미래에셋증권 주식회사,IBK투자증권(주)"
+ },
+ "현재단계": "청구",
+ "updated_at": "2026-11-03T15:53:45+09:00"
+}

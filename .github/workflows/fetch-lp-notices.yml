@@ -1,0 +1,41 @@
+name: fetch-lp-notices
+
+on:
+  schedule:
+    - cron: "30 20 * * *"    # 매일 05:30 KST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-lp-notices
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: 출자사업(KVIC/KVCA) 공고 수집
+        run: node scripts/fetch-lp-notices.mjs
+
+      - name: public/data/lp-notices.json 커밋
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/lp-notices.json
+          if git diff --cached --quiet; then
+            echo "변경 없음 — 커밋 생략"
+          else
+            KVIC=$(node -e "process.stdout.write(String(require('./public/data/lp-notices.json').kvic.count))")
+            KVCA=$(node -e "process.stdout.write(String(require('./public/data/lp-notices.json').kvca.count))")
+            git commit -m "chore(출자사업): 공고 갱신 (KVIC/KVCA ${KVIC}/${KVCA})"
+            git pull --rebase
+            git push
+          fi

@@ -1,0 +1,97 @@
+{
+ "회사명": "범한메카텍",
+ "시장": "KQ",
+ "file": "범한메카텍",
+ "단계": {
+  "청구": {
+   "기준일": "2026-07-31",
+   "generated_at": "2026-11-03T16:22:59+09:00",
+   "기사": [
+    {
+     "제목": "연구실 밖 1047시간…범한메카텍 CO₂ 포집 90% 입증",
+     "매체": "서울경제",
+     "날짜": "2026-10-28",
+     "링크": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4xMi05Y3pVMkxEalduTHdGZWVNQmdJZEJ6RjY1SW1YcXNzcFhpRTI2TGdwSGJmYy1HWEk3NkloNmJSWjRRTlFrN0pLeWpqR2JkekHSAVNBVV95cUxQVm5RSHFhRmhzNVR2dFhNcVA5LUZxUmhQZ2JmanVVRV8xMUdmZFdGODJ2NWxacmlLYWtndlFKVzhzVFBGblZ0QVAyeW0xcll5Z19IMA?oc=5"
+    },
+    {
+     "제목": "블루텍·범한메카텍·신성사, 경남적십자사 ESG확인패 받아",
+     "매체": "매일신문",
+     "날짜": "2026-10-12",
+     "링크": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1pNWlCMW5PNHNPWXdKZU9jd3g1QTdyWUFld20zYTFnZ2lKQjhfbUVFSEVHTkkyZDVRYUVFSThVeVh1M0tTSmVIT2laMTBqN1JJUko2V0JQMDd4ckUtUjh4ekVn?oc=5"
+    }
+   ],
+   "요약필요": false,
+   "요약": {
+    "한줄": "에너지 플랜트·발전설비용 대형 기자재를 설계·제작해 공급하는 플랜트 설비 기업이다 [1][2]",
+    "영위사업": [
+     "에너지 플랜트·발전설비용 대형 기자재 설계·제작·공급 [2]",
+     "복합화력발전, 원자력·SMR, 친환경 에너지로 사업 확장 중 [2]",
+     "베트남 자회사 BVHI를 통해 배열회수보일러(HRSG) 사업 확대 [1]",
+     "한국에너지기술연구원에서 습식 흡수제 CO2 포집 기술 이전 [3]",
+     "매출 2022년 2761억원에서 2024년 5502억원으로 증가 [1]"
+    ],
+    "포인트": [
+     "2022년 두산그룹에서 범한그룹으로 편입됐다 [1]",
+     "GE와 HRSG 장기 공급 계약을 맺었다 [1]",
+     "2026년 5월 총 1600억원 규모의 프리IPO 지분투자를 마쳤다 [1]",
+     "2026년 1분기 매출 1200억원, EBITDA 200억원 이상을 기록했다 [1]",
+     "NH투자·유진투자증권 공동 주관으로 코스닥 상장예비심사를 청구했다 [2]"
+    ],
+    "refs": [
+     {
+      "n": 1,
+      "제목": "Beomhan Mecatec Completes 160 Billion Won Pre-IPO, Embarks on Full-Fledged IPO Journey",
+      "매체": "아시아경제(영문)",
+      "날짜": "2026-06-08",
+      "링크": "https://view.asiae.co.kr/en/article/2026060808473852284"
+     },
+     {
+      "n": 2,
+      "제목": "범한메카텍, 코스닥 상장예비심사청구서 제출",
+      "매체": "이데일리(StockHub 게재)",
+      "날짜": "2026-08-03",
+      "링크": "https://stockhub.kr/news/news_db6dc545fe65"
+     },
+     {
+      "n": 3,
+      "제목": "범한메카텍, 한국에너지기술연구원과 CO2 포집기술 협약",
+      "매체": "서울경제",
+      "날짜": "2024-10-22",
+      "링크": "https://www.sedaily.com/article/13967597"
+     }
+    ],
+    "작성": "2026-11-03"
+   },
+   "메모": []
+  }
+ },
+ "회사정보": {
+  "정식명칭": "범한메카텍 주식회사",
+  "영문명": "BUMHAN MECATEC CO., LTD.",
+  "대표자": "김성수",
+  "설립일": "2016-06-02",
+  "업종코드": "2512",
+  "결산월": "12월",
+  "주소": "경상남도 창원시 성산구 적현로 259 (신촌동, 범한메카텍(주))",
+  "홈페이지": "www.bumhanmecatec.com/",
+  "전화": "02-2030-0531"
+ },
+ "공모": {
+  "청구일": "2026-07-31",
+  "승인일": "",
+  "심사상태": "청구서 접수",
+  "신고서제출일": "",
+  "수요예측시작": "",
+  "수요예측종료": "",
+  "청약시작": "",
+  "청약종료": "",
+  "납입일": "",
+  "상장예정일": "",
+  "상장일": "",
+  "확정공모가": "",
+  "공모금액": "",
+  "주관사": "유진투자증권(주),엔에이치투자증권(주)"
+ },
+ "현재단계": "청구",
+ "updated_at": "2026-11-03T16:22:59+09:00"
+}

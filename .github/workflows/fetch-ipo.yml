@@ -1,0 +1,60 @@
+name: fetch-ipo
+
+on:
+  schedule:
+    - cron: "0 22 * * *"    # 매일 07:00 KST
+  workflow_dispatch:
+    inputs:
+      backfill:
+        description: "진행 중인 IPO 종목 전체에 현재 단계 보고서 만들기"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-ipo
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: IPO(KIND) 수집
+        run: node scripts/fetch-ipo.mjs
+
+      - name: 상장 7일 이내 종목 보고서 자료 수집(DART·기사)
+        run: python3 scripts/fetch-ipo-reports.py
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+          BACKFILL: ${{ inputs.backfill && '1' || '' }}
+        continue-on-error: true
+
+      - name: 보고서 워드 생성
+        run: |
+          npm ci --silent
+          [ -f public/data/ipo-reports/index.json ] && node scripts/ipo-report-docx.mjs || echo "보고서 없음"
+        continue-on-error: true
+
+      - name: public/data/ipo.json 커밋
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/ipo.json
+          git add -A public/data/ipo-reports 2>/dev/null || true
+          git add -A public/briefs/ipo 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "변경 없음 — 커밋 생략"
+          else
+            CNT=$(node -e "process.stdout.write(String(require('./public/data/ipo.json').count))")
+            git commit -m "chore(ipo): IPO 파이프라인 갱신 (${CNT}종목)"
+            git pull --rebase
+            git push
+          fi

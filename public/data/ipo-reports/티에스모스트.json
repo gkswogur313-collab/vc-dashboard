@@ -1,0 +1,88 @@
+{
+ "회사명": "티에스모스트",
+ "시장": "KQ",
+ "file": "티에스모스트",
+ "단계": {
+  "청구": {
+   "기준일": "2026-09-30",
+   "generated_at": "2026-11-03T16:22:42+09:00",
+   "기사": [
+    {
+     "제목": "고객 편중 티에스모스트…IPO서 매출처 다변화 시험대 [IPO 엑스레이]",
+     "매체": "이투데이",
+     "날짜": "2026-10-08",
+     "링크": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE42czY0MXRISktyQ19fZEIyN2ZfV1RVdXhJZUJ5OC1FUlpIbnlrOEg5S1k1N0NzY3k3ZDZQYTJDa2dKUW15RU1kVWgycTZscnJISTZ3bw?oc=5"
+    },
+    {
+     "제목": "‘티에스모스트·키노톤·뱅크샐러드’ 코스닥 상장",
+     "매체": "뉴스웰",
+     "날짜": "2026-10-07",
+     "링크": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5DeDBvbnpOdWVyYTU5cVplTW1OUDFBY3JUOUo5cWl0QU93WGRQMDVKRkgxVzl2dmtHb1pPZG1Xa0hTYnBoZUduT3dIR3ltY0Y5MUIyLV8tWEt1aDNCUjBMYWJZTkdUM1lEaUNpag?oc=5"
+    },
+    {
+     "제목": "티에스모스트 등 3개사, 코스닥 상장예비심사 신청",
+     "매체": "연합뉴스",
+     "날짜": "2026-10-06",
+     "링크": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB3eWpqdFI1TThVRDhUS01Wb3BzVXhKYWc2clpMd0x5Z2xwbUh0bGhlR3RGNS1pZFJoY2U4MW04bkJad1c1akhWUWNXenFhTUhIU3p6U25NQ1hZeknSAWBBVV95cUxOaWdCTFI2LWhWbVp4UXh0NTYxeVdoVWprZ2lLZHVFUTZkVWRNUlcyNmo1bUJoYmU5SVQwZUE0aHpQSy1CanRWVjJuemJRSGd3Yi1JQlVCdGNHZGh6dXVCNUk?oc=5"
+    }
+   ],
+   "요약필요": false,
+   "요약": {
+    "한줄": "버스바 등 배터리 연결부품과 고전압 부품·액추에이터·정밀센서를 만드는 전기차·배터리 부품 기업이다 [1]",
+    "영위사업": [
+     "버스바 등 배터리 연결부품이 주력, 2025년 매출 1007억원(비중 64.5%) [1]",
+     "전기차용 고전압 연결부품과 액추에이터·정밀센서 등 전장 부품 제조 [1]",
+     "매출 10% 이상 고객 4곳이 전체의 75.4%, 최대 고객 비중 37.6% [1]",
+     "국내 매출 비중 99.7%, 경신 등 특수관계자 매출 214억원(13.7%) [1]",
+     "2025년 매출 1562억원, 영업이익 71억원, 연구개발비 39억원 전액 비용 처리 [1]"
+    ],
+    "포인트": [
+     "8월 중국 빅토리일렉트릭과 MOU를 맺는 등 ESS 부품으로 사업을 넓히고 있다 [1]",
+     "김성준 씨가 보통주 47.94%, 특수관계사 티에스커머스가 24.05%를 보유한다 [1]",
+     "올해 프리IPO에서 SM컬처파트너스가 약 130억원을 투자한 것으로 알려졌다 [1]",
+     "10월 6일 신한투자증권 주관으로 코스닥 상장예비심사를 청구했다 [1]"
+    ],
+    "refs": [
+     {
+      "n": 1,
+      "제목": "고객 편중 티에스모스트…IPO서 매출처 다변화 시험대 [IPO 엑스레이]",
+      "매체": "이투데이",
+      "날짜": "2026-10-08",
+      "링크": "https://www.etoday.co.kr/news/view/2633408"
+     }
+    ],
+    "작성": "2026-11-03"
+   },
+   "메모": []
+  }
+ },
+ "회사정보": {
+  "정식명칭": "티에스모스트 주식회사",
+  "영문명": "TSMOST CO.,Ltd.",
+  "대표자": "김성준, 조성진",
+  "설립일": "2014-09-23",
+  "업종코드": "25913",
+  "결산월": "12월",
+  "주소": "충청남도 천안시 서북구 성거읍 오송1길 110 티에스모스트(주)",
+  "홈페이지": "www.tsmost.co.kr",
+  "전화": "041-560-0822"
+ },
+ "공모": {
+  "청구일": "2026-09-30",
+  "승인일": "",
+  "심사상태": "청구서 접수",
+  "신고서제출일": "",
+  "수요예측시작": "",
+  "수요예측종료": "",
+  "청약시작": "",
+  "청약종료": "",
+  "납입일": "",
+  "상장예정일": "",
+  "상장일": "",
+  "확정공모가": "",
+  "공모금액": "",
+  "주관사": "신한투자증권 주식회사"
+ },
+ "현재단계": "청구",
+ "updated_at": "2026-11-03T16:22:42+09:00"
+}

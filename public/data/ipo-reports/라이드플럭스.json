@@ -1,0 +1,135 @@
+{
+ "회사명": "라이드플럭스",
+ "시장": "KQ",
+ "file": "라이드플럭스",
+ "단계": {
+  "청구": {
+   "기준일": "2026-08-14",
+   "generated_at": "2026-11-03T16:22:58+09:00",
+   "기사": [
+    {
+     "제목": "현대차·라이드플럭스·마스오토 한자리에⋯자율주행 트럭 상용화 논의",
+     "매체": "엠투데이",
+     "날짜": "2026-10-21",
+     "링크": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9XaV9CZERPUjBRZndoczdDY1F1ajhzaGJ6ZmhEVW9vVjE5M2ZSSVhtSEdvdWptbWRFR19CdEJtczgtS2M2LUJVdkxDV0hJUUthWDdiRHU4dmVnYzBHRFlUUHVXTDJVamZNT0sxLXA2Zw?oc=5"
+    },
+    {
+     "제목": "현대차ㆍ기아, 라이드플럭스ㆍ마스오토와 자율주행 트럭 실증",
+     "매체": "대한경제",
+     "날짜": "2026-10-20",
+     "링크": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1GQVA1Z1dHdnRudzRhQ1FaNVg2VC1LMW8yV0pUek1FU0hwQ3haR2xLc3dzclhFNk9BVTA1WHRUVEtNVEFPcWdjVG1EdnREYTFNUlExMHU4ZTFKdDVlMEdUMHQ3RjRnX1NoazF2Mlh0SUFacEk?oc=5"
+    },
+    {
+     "제목": "내달 상암서 서울 첫 레벨4 자율주행 택시…라이드플럭스가 맡는다",
+     "매체": "전자신문",
+     "날짜": "2026-10-19",
+     "링크": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9tay11WjdfRV9jU0lpUXJTRjVJMTlZdTdQRndjNTZ6Q0NuSnotb2tZRlp0WkdpMWJLYU5EOXE1YmJTQnpRNmc2MGx6SmFPQQ?oc=5"
+    },
+    {
+     "제목": "운전석 비운 라이드플럭스, 무인화물·로보택시 '부르릉~'",
+     "매체": "비즈워치",
+     "날짜": "2026-10-19",
+     "링크": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9rcUFCZlhSMW1pRC13TTlKalFUb2k4ek9BRkRYNXVJc0VUYVd0ZjVvNkFydVB6MXZvSHk0d2VQZ0xZZnhubnIwRXN6ckpHZmFieW9xQWN5dS1iVXVFNkpaaVlZbGM4X0NvV0E?oc=5"
+    },
+    {
+     "제목": "[10월 16일 고용24 채용정보] 지엔디비즈·한주세라믹스·퓨리오젠·큐빅웨어·라이드플럭스",
+     "매체": "뉴스투데이",
+     "날짜": "2026-10-16",
+     "링크": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5nelQtRUZ0N1EzMzJfMHo4UG1abmF1ekpDSEhlZ0RVelRyTnBzX1FvTVhiQTdiN0Vob08zX3NVQjluUDltb2pPVDhkTTRSX3A3bXc4cVliZnBUQXJfcWc?oc=5"
+    },
+    {
+     "제목": "\"로보버스·트럭 이미 달린다\"…라이드플럭스, 자율주행 상용화 성과 공개",
+     "매체": "지디넷코리아",
+     "날짜": "2026-10-06",
+     "링크": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1OQ2hzaDcxV3ZWUGg2U0tfSnZWQVgwUHpnTi1qUUJaOWhQNzhHSVlRSi1HOGxVbjRiU0xFcEYwOWUxQ3RGYjZLR2JfY3U0WWk1VGJPMDJR?oc=5"
+    },
+    {
+     "제목": "[IPO 현미경] ② GM도 14조 쓰고 접었다…189명 라이드플럭스의 '비공개 상장 도전'",
+     "매체": "수원일보",
+     "날짜": "2026-10-05",
+     "링크": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBDYXF5V2ZMUk5xNWFlQjgwT1ExM0JqQXA2WkJEczRnb09ocldOb01Sdkk3ZmtWX2ZWODNGU3lGd0U4YW4xbHNuUUc5UG1pVmU0V2Vya0doTWIyOTRmaWYwV1YzLU1mZw?oc=5"
+    }
+   ],
+   "요약필요": false,
+   "요약": {
+    "한줄": "레벨4 자율주행 소프트웨어를 풀스택으로 개발해 로보택시·로보트럭·자율주행 버스에 적용하는 기업이다 [1][2]",
+    "영위사업": [
+     "인지·측위·판단·제어·정밀지도·원격운영 등 레벨4 자율주행 SW 자체 개발 [1]",
+     "단일 아키텍처 '라이드플럭스 드라이버'로 승용차·버스·대형트럭에 적용 [2]",
+     "국내 유일 무인 자율주행 임시운행 허가, 서울 상암 3300시간 이상 실증 [2]",
+     "한진과 군산~전주~대전 116km 구간 25톤 자율주행트럭 정기 유상운행 [2]",
+     "KGM·현대모비스와 양산 승용차용 자율주행 솔루션 탑재 협력 MOU [4]",
+     "2025년 매출 40억원, 영업손실 119억원, 누적 투자유치 882억원 [1]"
+    ],
+    "포인트": [
+     "누적 투자유치액은 882억원이다 [1]",
+     "2024년 시리즈B 260억원은 에이티넘인베스트먼트가 주도하고 유안타인베스트먼트·한국투자파트너스 등이 참여했다 [3]",
+     "2026년 5월 기술성평가에서 전문평가기관 두 곳 모두 A등급을 받았다 [1]",
+     "8월 14일 코스닥 예심을 청구했고 주관사는 한국투자증권·우리투자증권이다 [1][2]",
+     "연내 상암 무인 로보택시 공개 서비스와 강릉·충북·제주 화물 노선 확대를 계획한다 [2]"
+    ],
+    "refs": [
+     {
+      "n": 1,
+      "제목": "3,300시간 무인 주행, 거래소 심사대로…라이드플럭스 코스닥 예심 청구",
+      "매체": "벤처스퀘어",
+      "날짜": "2026-08-18",
+      "링크": "https://www.venturesquare.net/1106563/"
+     },
+     {
+      "n": 2,
+      "제목": "라이드플럭스, 코스닥 상장 예비심사청구서 제출…국내 1호 레벨4 상장 도전",
+      "매체": "헬로티",
+      "날짜": "2026-08-18",
+      "링크": "https://www.hellot.net/mobile/article.html?no=114432"
+     },
+     {
+      "n": 3,
+      "제목": "자율주행 스타트업 라이드플럭스, 260억원 투자 유치",
+      "매체": "바이라인네트워크",
+      "날짜": "2024-11-01",
+      "링크": "https://byline.network/2024/11/01-98/"
+     },
+     {
+      "n": 4,
+      "제목": "라이드플럭스, 양산차에 자율주행 심는다…KGM·현대모비스 맞손",
+      "매체": "머니투데이",
+      "날짜": "2026-09-30",
+      "링크": "https://www.mt.co.kr/future/2026/09/30/2026093010415838505"
+     }
+    ],
+    "작성": "2026-11-03"
+   },
+   "메모": []
+  }
+ },
+ "회사정보": {
+  "정식명칭": "주식회사 라이드플럭스",
+  "영문명": "RideFlux Inc.",
+  "대표자": "박중희",
+  "설립일": "2018-05-02",
+  "업종코드": "58221",
+  "결산월": "12월",
+  "주소": "제주특별자치도 제주시 노형11길 25 4층 (노형동)",
+  "홈페이지": "",
+  "전화": "064-749-8039"
+ },
+ "공모": {
+  "청구일": "2026-08-14",
+  "승인일": "",
+  "심사상태": "청구서 접수",
+  "신고서제출일": "",
+  "수요예측시작": "",
+  "수요예측종료": "",
+  "청약시작": "",
+  "청약종료": "",
+  "납입일": "",
+  "상장예정일": "",
+  "상장일": "",
+  "확정공모가": "",
+  "공모금액": "",
+  "주관사": "주식회사 우리투자증권,한국투자증권(주)"
+ },
+ "현재단계": "청구",
+ "updated_at": "2026-11-03T16:22:58+09:00"
+}

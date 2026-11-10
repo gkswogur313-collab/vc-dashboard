@@ -1,0 +1,57 @@
+name: fetch-diva
+
+on:
+  schedule:
+    - cron: "30 21 * * *"    # 매일 06:30 KST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-diva
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # 정상본 복구용 전체 기록
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      # 이전 실행에서 DIVA 접속 실패로 0건 파일이 커밋된 경우, git 기록에서 마지막 정상본을 되살린다.
+      - name: 비어 있으면 마지막 정상본 복구
+        run: |
+          COUNT='const d=require(process.argv[1]);process.exit(d.invst.count+d.fs.count+d.asso.count>0?0:1)'
+          if node -e "$COUNT" ./public/data/diva.json; then echo "현재 데이터 정상 — 복구 불필요"; exit 0; fi
+          for c in $(git log --format=%H -- public/data/diva.json); do
+            git show "$c:public/data/diva.json" > /tmp/diva.json 2>/dev/null || continue
+            if node -e "$COUNT" /tmp/diva.json; then
+              cp /tmp/diva.json public/data/diva.json
+              echo "마지막 정상본 복구: $c"
+              break
+            fi
+          done
+
+      - name: DIVA 공시 수집
+        run: node scripts/fetch-diva.mjs
+
+      - name: public/data/diva.json 커밋
+        if: ${{ !cancelled() }}   # 수집이 실패해도 복구본은 커밋
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/diva.json
+          if git diff --cached --quiet; then
+            echo "변경 없음 — 커밋 생략"
+          else
+            KV=$(node -e "const d=require('./public/data/diva.json');process.stdout.write(d.invst.count+'/'+d.fs.count+'/'+d.asso.count)")
+            git commit -m "chore(diva): GP 공시 갱신 (투자실적/재무제표/조합 ${KV})"
+            git pull --rebase
+            git push
+          fi

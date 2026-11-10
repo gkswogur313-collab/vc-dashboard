@@ -1,0 +1,155 @@
+{
+ "회사명": "슈퍼브에이아이",
+ "시장": "KQ",
+ "file": "슈퍼브에이아이",
+ "단계": {
+  "청구": {
+   "기준일": "2026-10-30",
+   "generated_at": "2026-11-03T15:53:42+09:00",
+   "기사": [
+    {
+     "제목": "슈퍼브에이아이, LH에 VLM 기반 하자 자동분류 시스템 공급",
+     "매체": "FA저널",
+     "날짜": "2026-11-03",
+     "링크": "https://news.google.com/rss/articles/CBMia0FVX3lxTE12czlLcXNIOVBlOGV2ZUhFTXdEYm40UWRSVHhSOGpFb2xJWWVKOEZPVkNZMEY3dUIxdkVsTHNBYUg0TEthYkwtSzlMOVNFZUlZRVo1YWZKdjBqVmxmdUVkbV9jbm9pVUVhVnVr?oc=5"
+    },
+    {
+     "제목": "슈퍼브에이아이, 한국토지주택공사의 VLM 기반 하자 자동 분류 시스템 구축 1차 사업 완료",
+     "매체": "디지털경제뉴스",
+     "날짜": "2026-11-03",
+     "링크": "https://news.google.com/rss/articles/CBMiakFVX3lxTE44eHhpdF9tVXdmM09zV0xESjVRRjg5bVhudXFXQWJvMmcyVUphbzQ4UHo3X2w0WV9sZ0k1WWxBVFpyMjBpaVYtbWM4WldrcUpId0Y1Z0VUYk12TUV5T3RhaEUwRHl5ZW9NWEE?oc=5"
+    },
+    {
+     "제목": "‘크리오스·아테코·이티에스·오렌지스퀘어·비엔케이제4호스팩·슈퍼브에이아이’ 코스닥 상장",
+     "매체": "뉴스웰",
+     "날짜": "2026-11-03",
+     "링크": "https://news.google.com/rss/articles/CBMibEFVX3lxTE91ZnFBdURSenc2NFhJdEdvbFBRYjkyVUo2Ni1zZTBUSWlobF91QU5xY2VUeng4YXJyZmx5c0lJaTEyQlFUVEs1TDc0d3pGWmRQbkNMODVHc3dhWG1RaEFLekRwT3F3ZTVLcmhHbQ?oc=5"
+    },
+    {
+     "제목": "\"아파트 하자, 사진 한 장으로 분류\"…슈퍼브에이아이, LH에 AI 공급 - 머니투데이",
+     "매체": "머니투데이",
+     "날짜": "2026-11-02",
+     "링크": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9ZdndCLXNtMkhQN2V2YnZKMkZpQUpLdUg5MHlNNGVlMTY3Sml3cDRrWDhSRUZYZGs3VGwtV3dTTTZTZXVvOGxmSWRNSDd3VG1YcHBRTG1RdzN1WjJIY3d5S0t6UVJUTm9wSVHSAW9BVV95cUxQVmViWldFQXE2MHNPSVBOOUwwVUhYSDdzZXNMTy1sNVJrRTFiYUxYY21KNDBiSzFrYjBWc051dmxkWVBqc1FxdVZ2QWF5SkYzWjZxWVNQUWVYNFlYdHFjRXR2UzBjcmxZckJ0OGNHa28?oc=5"
+    },
+    {
+     "제목": "슈퍼브에이아이, LH 하자 민원 AI로 분류...연 400만 장 처리 체계 구축",
+     "매체": "더에이아이",
+     "날짜": "2026-11-02",
+     "링크": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBVX2xXYmVwSjRNMkdDVDJETjkxMThXN1Z4cmFwOFA4UnFTSG9uRlo1dWVVTmJUUjI0c3hDeVFUUTdBcnFnekd3aU9qVFJOT0tmU0FOQ1hyY21MYUxfdlF6bG1vQzlaU21md0xR?oc=5"
+    },
+    {
+     "제목": "슈퍼브에이아이, LH에 분류 시스템 공급",
+     "매체": "한스경제",
+     "날짜": "2026-11-02",
+     "링크": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5kdFN3eGRmdVN6Tm9GNnF5akVsd2xBSEY0UHJ2c3hCaXJVcWE1Z0IzdWpmVUlIQXp2Umx2N01MdzNQRGZfc2FEVzVIbmNDWFVyaVJlMFJTQ2xjY0VKSzA1c1pYLTkycFNKM2k4?oc=5"
+    },
+    {
+     "제목": "슈퍼브에이아이, LH에 VLM 기반 하자 분류 시스템 구축",
+     "매체": "전자신문",
+     "날짜": "2026-11-02",
+     "링크": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFAxLU9kQnFudC13NHQyUWlNdzdoZ0E3akFsaC1ETW9odjlRNXlNdGFmNmtwTkNXbUhUWDhDWmgyU2hPb3NLMUlRNm5XNFVlZw?oc=5"
+    },
+    {
+     "제목": "슈퍼브에이아이, 사진 한 장으로 아파트 하자 1.8만 유형 분류한다",
+     "매체": "지디넷코리아",
+     "날짜": "2026-11-02",
+     "링크": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5iUk1YU0VneUVKQ2FZaHJJSUhValgxU0ZSSDBETTBaNkt0UmphdWFPcUZZNlNGWGdFQUJUMmxKbXV1TVVBcmFPLXN6NXJ2SGdJX2NlZEV3?oc=5"
+    }
+   ],
+   "요약필요": false,
+   "요약": {
+    "한줄": "이미지·영상·3D 라이다 데이터를 판독하는 산업용 비전 AI 플랫폼·솔루션을 제조·물류·공공 고객에 공급한다 [2]",
+    "영위사업": [
+     "AI 개발 올인원 SaaS '슈퍼브 플랫폼'(데이터 구축~모델 학습·배포) [1][3]",
+     "자체 산업용 비전 파운데이션 모델 '제로(ZERO)', 추가 학습 없이 적용 [1]",
+     "제조·물류·모빌리티 특화 비전 AI 솔루션, 피지컬 AI로 사업 확장 [2]",
+     "LH에 VLM 기반 하자 사진 자동분류 시스템 구축(1만8000여 유형) [4]",
+     "주요 고객: 삼성·현대차·KT·우아한형제들·토요타·닛폰스틸 등 100여 곳 [3]",
+     "2025년 연결 매출 59.6억원, 영업손실 84.8억원, 순손실 199억원 [5]"
+    ],
+    "포인트": [
+     "과기정통부 독자 AI 파운데이션 모델 사업에서 LG AI연구원 컨소시엄에 비LG 계열로 유일하게 참여한다 [1]",
+     "방산 분야에서 3년간 57억원 규모 피지컬 AI 프로젝트를 수주했고, 기존 고객 순매출유지율(NRR)은 약 125%다 [2]",
+     "시리즈C(2024년)까지 490억원을 유치했고 2025년 말 프리IPO 약 140억원을 더해 누적 약 630억원이다. 한화·두산·YC·IBK-KT 조합 등이 주주다 [2][5]",
+     "2025년 순손실 199억원(전환우선주부채 평가손실 104.7억원 포함)으로 자본총계 -581억원의 완전자본잠식 상태다 [5]",
+     "2026년 7월 기술성 평가를 통과해 10월 30일 코스닥 기술특례상장 예비심사를 청구했다. 주관사는 미래에셋증권, 공모 예정 163만9000주다 [3][5][6]"
+    ],
+    "refs": [
+     {
+      "n": 1,
+      "제목": "[슈퍼브AI IPO] 독파모 올라온 슈퍼브AI…미래에셋과 상장 추진",
+      "매체": "딜사이트",
+      "날짜": "2026-06-05",
+      "링크": "https://dealsite.co.kr/articles/163012"
+     },
+     {
+      "n": 2,
+      "제목": "[만나봤더니] 슈퍼브에이아이 \"데이터·모델·고객 선순환 구조 만들 것\"…산업 AI 기업 도약",
+      "매체": "딜사이트",
+      "날짜": "2026-08-07",
+      "링크": "https://dealsite.co.kr/articles/166665"
+     },
+     {
+      "n": 3,
+      "제목": "AI 자동화 기술력 인정받았다…슈퍼브에이아이, 코스닥 기술성 평가 통과",
+      "매체": "벤처스퀘어",
+      "날짜": "2026-07-28",
+      "링크": "https://www.venturesquare.net/1101823/"
+     },
+     {
+      "n": 4,
+      "제목": "슈퍼브에이아이, LH 하자 분류 월 30만 장 처리 시스템 구축",
+      "매체": "디지털데일리",
+      "날짜": "2026-11-02",
+      "링크": "https://www.ddaily.co.kr/page/view/2026110210045526567"
+     },
+     {
+      "n": 5,
+      "제목": "슈퍼브AI, 코스닥 시장 상장예비심사 신청",
+      "매체": "중기이코노미",
+      "날짜": "2026-11-02",
+      "링크": "https://www.junggi.co.kr/news/articleView.html?idxno=38323"
+     },
+     {
+      "n": 6,
+      "제목": "[장외시황] 오렌지스퀘어ㆍ슈퍼브에이아이, 상장예비심사 청구",
+      "매체": "이투데이",
+      "날짜": "2026-11-02",
+      "링크": "https://www.etoday.co.kr/news/view/2643151"
+     }
+    ],
+    "작성": "2026-11-03"
+   },
+   "메모": []
+  }
+ },
+ "회사정보": {
+  "정식명칭": "(주)슈퍼브에이아이",
+  "영문명": "Superb AI Co., Ltd.",
+  "대표자": "김현수",
+  "설립일": "2018-04-16",
+  "업종코드": "58222",
+  "결산월": "12월",
+  "주소": "서울특별시 강남구 테헤란로 427 18층 101호 (삼성동, 위워크타워)",
+  "홈페이지": "www.superb-ai.com/ko",
+  "전화": "02-6956-0423"
+ },
+ "공모": {
+  "청구일": "2026-10-30",
+  "승인일": "",
+  "심사상태": "청구서 접수",
+  "신고서제출일": "",
+  "수요예측시작": "",
+  "수요예측종료": "",
+  "청약시작": "",
+  "청약종료": "",
+  "납입일": "",
+  "상장예정일": "",
+  "상장일": "",
+  "확정공모가": "",
+  "공모금액": "",
+  "주관사": "미래에셋증권 주식회사"
+ },
+ "현재단계": "청구",
+ "updated_at": "2026-11-03T15:53:42+09:00"
+}

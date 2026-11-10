@@ -1,0 +1,22 @@
+name: fetch-post-ipo
+on:
+  schedule:
+    - cron: '30 22 * * *'   # 매일 07:30 KST (fetch-ipo 22:00 UTC 갱신 후에 실행)
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - name: Crawl Post-IPO (KIND + Yahoo)
+        run: node scripts/fetch-post-ipo.mjs
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data/post-ipo.json
+          git diff --staged --quiet || git commit -m "chore(post-ipo): 데이터 갱신"
+          git pull --rebase
+          git push

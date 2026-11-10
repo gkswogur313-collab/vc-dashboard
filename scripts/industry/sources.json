@@ -1,0 +1,260 @@
+[
+ {
+  "테마": "반도체",
+  "기관": "한국산업기술기획평가원(KEIT)",
+  "url": "https://techfocus.kr/vol36/",
+  "id": 0
+ },
+ {
+  "테마": "반도체",
+  "기관": "한국산업기술기획평가원(KEIT)",
+  "url": "https://srome.keit.re.kr/srome/biz/info/keitPub/retrieveKeitIssuListView.do?prgmId=XPG404010000",
+  "id": 1
+ },
+ {
+  "테마": "반도체",
+  "기관": "SK하이닉스",
+  "url": "https://news.skhynix.co.kr/category/tech-and-ai/",
+  "id": 2
+ },
+ {
+  "테마": "반도체",
+  "기관": "삼성전자",
+  "url": "https://news.samsungsemiconductor.com/kr/category/%ea%b8%b0%ec%88%a0/",
+  "id": 3
+ },
+ {
+  "테마": "통신·ICT 일반",
+  "기관": "정보통신기획평가원(IITP)",
+  "url": "https://iitp.kr/web/lay1/program/S1T62C65/itfind/list.do?cpage=1&rows=10&searchTarget=all",
+  "id": 11
+ },
+ {
+  "테마": "통신·ICT 일반",
+  "기관": "정보통신기획평가원(IITP)",
+  "url": "https://iitp.kr/web/lay1/program/S1T62C66/itfind/list.do?cpage=1&rows=10&searchTarget=all",
+  "id": 12
+ },
+ {
+  "테마": "통신·ICT 일반",
+  "기관": "정보통신기획평가원(IITP)",
+  "url": "https://iitp.kr/web/lay1/program/S1T62C67/itfind/list.do?cpage=1&rows=10&searchTarget=all",
+  "id": 13
+ },
+ {
+  "테마": "통신·ICT 일반",
+  "기관": "정보통신기획평가원(IITP)",
+  "url": "https://iitp.kr/web/lay1/program/S1T62C68/itfind/list.do?cpage=1&rows=10&searchTarget=all",
+  "id": 14
+ },
+ {
+  "테마": "통신·ICT 일반",
+  "기관": "정보통신기획평가원(IITP)",
+  "url": "https://iitp.kr/web/lay1/program/S1T62C69/itfind/list.do?cpage=1&rows=10&searchTarget=all",
+  "id": 15
+ },
+ {
+  "테마": "통신·ICT 일반",
+  "기관": "정보통신기획평가원(IITP)",
+  "url": "https://iitp.kr/web/lay1/bbs/S1T62C70/A/21/list.do?cpage=1&sort=latest&rows=10",
+  "id": 16
+ },
+ {
+  "테마": "통신·ICT 일반",
+  "기관": "과학기술정보통신부",
+  "url": "https://www.itstat.go.kr/itstat/kor/board/BoardList.html?board_class=BOARD05",
+  "id": 17
+ },
+ {
+  "테마": "통신·ICT 일반",
+  "기관": "정보통신정책연구원(KISDI)",
+  "url": "https://www.kisdi.re.kr/report/list.do?key=m2101113024153&arrMasterId=3934560",
+  "id": 18
+ },
+ {
+  "테마": "통신·ICT 일반",
+  "기관": "정보통신정책연구원(KISDI)",
+  "url": "https://www.kisdi.re.kr/report/list.do?key=m2101113025536&arrMasterId=3934550",
+  "id": 19
+ },
+ {
+  "테마": "통신·ICT 일반",
+  "기관": "한국전자통신연구원(ETRI)",
+  "url": "https://www.etri.re.kr/korcon/sub3/sub3_0401.etri",
+  "id": 20
+ },
+ {
+  "테마": "통신·ICT 일반",
+  "기관": "한국전자통신연구원(ETRI)",
+  "url": "https://www.etri.re.kr/korcon/sub3/sub3_0405.etri",
+  "id": 21
+ },
+ {
+  "테마": "AI·소프트웨어·데이터",
+  "기관": "한국지능정보사회진흥원(NIA)",
+  "url": "https://www.nia.or.kr/site/nia_kor/ex/bbs/List.do?cbIdx=25932",
+  "id": 22
+ },
+ {
+  "테마": "AI·소프트웨어·데이터",
+  "기관": "소프트웨어정책연구소(SPRi)",
+  "url": "https://spri.kr/posts?code=data_all&flg=1",
+  "id": 23
+ },
+ {
+  "테마": "AI·소프트웨어·데이터",
+  "기관": "삼성SDS",
+  "url": "https://www.samsungsds.com/kr/insights/index.html",
+  "id": 24
+ },
+ {
+  "테마": "AI·소프트웨어·데이터",
+  "기관": "LG경영연구원",
+  "url": "https://www.lgbr.co.kr/business/list.do?rankOptions=TITLE/50,CONTENTS_PDF/30,KEYWORD/100,KEYWORD_TOP/100",
+  "id": 25
+ },
+ {
+  "테마": "과학기술·첨단산업 전반",
+  "기관": "한국과학기술기획평가원(KISTEP)",
+  "url": "https://www.kistep.re.kr/reportList.es?mid=a10305020000&rpt_tp=831-006",
+  "id": 26
+ },
+ {
+  "테마": "과학기술·첨단산업 전반",
+  "기관": "한국과학기술기획평가원(KISTEP)",
+  "url": "https://www.kistep.re.kr/board.es?mid=a10306020000&bid=0031&cg_code=C01",
+  "id": 27
+ },
+ {
+  "테마": "과학기술·첨단산업 전반",
+  "기관": "한국과학기술기획평가원(KISTEP)",
+  "url": "https://www.kistep.re.kr/board.es?mid=a10306040000&bid=0031&cg_code=C03",
+  "id": 28
+ },
+ {
+  "테마": "과학기술·첨단산업 전반",
+  "기관": "한국과학기술기획평가원(KISTEP)",
+  "url": "https://www.kistep.re.kr/board.es?mid=a10306090000&bid=0031&cg_code=C07",
+  "id": 29
+ },
+ {
+  "테마": "과학기술·첨단산업 전반",
+  "기관": "한국특허전략개발원(KISTA)",
+  "url": "https://www.kista.re.kr/user/board.do?bbsId=BBSMSTR_000000000567",
+  "id": 30
+ },
+ {
+  "테마": "과학기술·첨단산업 전반",
+  "기관": "과학기술정책연구원(STEPI)",
+  "url": "https://www.stepi.re.kr/site/stepiko/report/List.do?cateCont=A0501",
+  "id": 31
+ },
+ {
+  "테마": "과학기술·첨단산업 전반",
+  "기관": "과학기술정책연구원(STEPI)",
+  "url": "https://www.stepi.re.kr/site/stepiko/report/List.do?cateCont=A0513",
+  "id": 32
+ },
+ {
+  "테마": "과학기술·첨단산업 전반",
+  "기관": "과학기술정책연구원(STEPI)",
+  "url": "https://www.stepi.re.kr/site/stepiko/PeriodicReportList.do?cateCont=A0505",
+  "id": 33
+ },
+ {
+  "테마": "과학기술·첨단산업 전반",
+  "기관": "과학기술정책연구원(STEPI)",
+  "url": "https://www.stepi.re.kr/site/stepiko/report/List.do?cateCont=A0512",
+  "id": 34
+ },
+ {
+  "테마": "과학기술·첨단산업 전반",
+  "기관": "한국산업기술진흥협회(KOITA)",
+  "url": "https://www.koita.or.kr/board/commBoardPublct003List.do",
+  "id": 35
+ },
+ {
+  "테마": "바이오·헬스케어",
+  "기관": "한국바이오협회",
+  "url": "https://www.koreabio.org/board/board.php?bo_table=brief",
+  "id": 36
+ },
+ {
+  "테마": "바이오·헬스케어",
+  "기관": "국가생명공학정책연구센터(BioIN)",
+  "url": "https://www.bioin.or.kr/board.do?bid=tech",
+  "id": 37
+ },
+ {
+  "테마": "바이오·헬스케어",
+  "기관": "국가생명공학정책연구센터(BioIN)",
+  "url": "https://www.bioin.or.kr/board.do?bid=industry",
+  "id": 38
+ },
+ {
+  "테마": "바이오·헬스케어",
+  "기관": "국가생명공학정책연구센터(BioIN)",
+  "url": "https://www.bioin.or.kr/board.do?bid=tot_know",
+  "id": 39
+ },
+ {
+  "테마": "바이오·헬스케어",
+  "기관": "한국보건산업진흥원(KHIDI)",
+  "url": "https://www.khidi.or.kr/board?menuId=MENU01783",
+  "id": 40
+ },
+ {
+  "테마": "에너지·배터리·모빌리티",
+  "기관": "에너지경제연구원(KEEI)",
+  "url": "https://www.keei.re.kr/board.es?mid=a10102010000&bid=0002",
+  "id": 41
+ },
+ {
+  "테마": "에너지·배터리·모빌리티",
+  "기관": "에너지경제연구원(KEEI)",
+  "url": "https://www.keei.re.kr/board.es?mid=a10101010000&bid=0001",
+  "id": 42
+ },
+ {
+  "테마": "에너지·배터리·모빌리티",
+  "기관": "한국원자력산업협회(KAIF)",
+  "url": "https://www.kaif.or.kr/ko/?c=195",
+  "id": 43
+ },
+ {
+  "테마": "소재·부품·디스플레이·로봇·제조",
+  "기관": "한국세라믹기술원(KICET)",
+  "url": "https://www.kicet.re.kr/00020/00118/00126.web",
+  "id": 44
+ },
+ {
+  "테마": "소재·부품·디스플레이·로봇·제조",
+  "기관": "한국로봇산업진흥원",
+  "url": "https://www.kiria.org/portal/reference/portalRefTrendList.do",
+  "id": 45
+ },
+ {
+  "테마": "소재·부품·디스플레이·로봇·제조",
+  "기관": "한국산업기술진흥원(KIAT)",
+  "url": "https://www.kiat.or.kr/front/board/boardContentsListPage.do?board_id=71&MenuId=878cb9b6d5ec41bf914ad5c0f590ed14",
+  "id": 46
+ },
+ {
+  "테마": "우주·항공·국방·양자",
+  "기관": "한국방위산업진흥회",
+  "url": "https://www.kdia.or.kr/kdia/defReport/infomation_defReport_list.do",
+  "id": 47
+ },
+ {
+  "테마": "기업·금융권 연구소",
+  "기관": "산업연구원(KIET)",
+  "url": "https://www.kiet.re.kr/research/issueList",
+  "id": 48
+ },
+ {
+  "테마": "기업·금융권 연구소",
+  "기관": "산업연구원(KIET)",
+  "url": "https://www.kiet.re.kr/trends/ecolookList",
+  "id": 49
+ }
+]
