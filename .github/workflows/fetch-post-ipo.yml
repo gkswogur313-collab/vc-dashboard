@@ -3,6 +3,9 @@ on:
   schedule:
     - cron: '30 22 * * *'   # 매일 07:30 KST (fetch-ipo 22:00 UTC 갱신 후에 실행)
   workflow_dispatch:
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest

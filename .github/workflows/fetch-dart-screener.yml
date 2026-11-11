@@ -15,6 +15,9 @@ on:
 concurrency:
   group: dart-screener
   cancel-in-progress: false
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
