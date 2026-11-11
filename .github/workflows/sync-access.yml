@@ -1,0 +1,39 @@
+name: sync-access
+
+# 대시보드 접속 허용 목록 — 구글 시트 → Cloudflare Access 정책(dashboard-allowlist)
+# 필요한 Secrets: CF_API_TOKEN, ALLOWLIST_SHEET_ID, OWNER_EMAIL
+on:
+  schedule:
+    - cron: "17 * * * *" # 매시간 17분
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "바꿀 내용만 확인하고 적용하지 않기"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sync-access
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: 허용 목록 반영
+        run: node scripts/sync-access.mjs
+        env:
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          ALLOWLIST_SHEET_ID: ${{ secrets.ALLOWLIST_SHEET_ID }}
+          OWNER_EMAIL: ${{ secrets.OWNER_EMAIL }}
+          CF_ACCOUNT_ID: fabc6440ac109ab742bd618abcd04cbc
+          CF_POLICY_ID: 6c553aac-fd61-460f-86c6-88a52fcf2ff3
+          DRY_RUN: ${{ inputs.dry_run && '1' || '' }}
