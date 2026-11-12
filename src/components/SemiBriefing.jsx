@@ -40,7 +40,9 @@ export function T({ text, refs, prefix }) {
 }
 
 export default function SemiBriefing() {
+  const { data: tb, error: tbErr } = useData('semi/textbook.json')
   const [openCh, setOpenCh] = useState(null) // 교과서 열람 중인 장 id (null이면 닫힘)
+  const chTitles = useMemo(() => Object.fromEntries((tb?.장 || []).map((c) => [c.id, `${c.번호}장 ${c.제목}`])), [tb])
   const bookRef = useRef(null)
   const openChapter = (id) => {
     setOpenCh(id)
@@ -48,16 +50,15 @@ export default function SemiBriefing() {
   }
   return (
     <div className="wb sb">
-      <div ref={bookRef}><Textbook openCh={openCh} setOpenCh={setOpenCh} /></div>
+      <div ref={bookRef}><Textbook tb={tb} error={tbErr} openCh={openCh} setOpenCh={setOpenCh} /></div>
       <h3 className="wb-sec">🗓️ 반도체 주간 브리핑 <span className="muted" style={{ fontSize: 12, fontWeight: 500 }}>소재·부품·장비부터 칩·정책까지 · 매주 월요일 발행</span></h3>
-      <SemiWeekly onOpenChapter={openChapter} />
+      <SemiWeekly onOpenChapter={openChapter} chTitles={chTitles} />
     </div>
   )
 }
 
 // ───────────────────────── 교과서 ─────────────────────────
-function Textbook({ openCh, setOpenCh }) {
-  const { data: tb, error } = useData('semi/textbook.json')
+function Textbook({ tb, error, openCh, setOpenCh }) {
   const refs = useMemo(() => new Map((tb?.refs || []).map((r) => [r.n, r])), [tb])
   const chapters = tb?.장 || []
   const idx = chapters.findIndex((c) => c.id === openCh)
@@ -102,7 +103,8 @@ function Textbook({ openCh, setOpenCh }) {
           <div className="sb-toc-part">
             <div className="sb-toc-pname">부록</div>
             <button className="sb-toc-item" onClick={() => setOpenCh('appendix')}><span className="sb-toc-no">A</span>꾸준히 볼 자료처</button>
-            <button className="sb-toc-item" onClick={() => setOpenCh('history')}><span className="sb-toc-no">B</span>개정 이력</button>
+            <button className="sb-toc-item" onClick={() => setOpenCh('glossary')}><span className="sb-toc-no">B</span>용어 색인</button>
+            <button className="sb-toc-item" onClick={() => setOpenCh('history')}><span className="sb-toc-no">C</span>개정 이력</button>
           </div>
         </div>
       )}
@@ -113,6 +115,7 @@ function Textbook({ openCh, setOpenCh }) {
             <select className="sb-side-sel" value={openCh} onChange={(e) => setOpenCh(e.target.value)} aria-label="장 선택">
               {chapters.map((c) => <option key={c.id} value={c.id}>{c.번호}장. {c.제목}</option>)}
               <option value="appendix">부록. 꾸준히 볼 자료처</option>
+              <option value="glossary">부록. 용어 색인</option>
               <option value="history">개정 이력</option>
             </select>
             <div className="sb-side-list">
@@ -124,11 +127,12 @@ function Textbook({ openCh, setOpenCh }) {
               ))}
               <div className="sb-side-part">부록</div>
               <button className={'sb-side-item' + (openCh === 'appendix' ? ' active' : '')} onClick={() => setOpenCh('appendix')}>꾸준히 볼 자료처</button>
+              <button className={'sb-side-item' + (openCh === 'glossary' ? ' active' : '')} onClick={() => setOpenCh('glossary')}>용어 색인</button>
               <button className={'sb-side-item' + (openCh === 'history' ? ' active' : '')} onClick={() => setOpenCh('history')}>개정 이력</button>
             </div>
           </nav>
           <article className="sb-article">
-            {openCh === 'appendix' ? <Appendix ap={tb.부록} /> : openCh === 'history' ? <History tb={tb} /> : idx >= 0 ? <Chapter ch={chapters[idx]} refs={refs} updated={tb.updated_at} /> : null}
+            {openCh === 'appendix' ? <Appendix ap={tb.부록} /> : openCh === 'glossary' ? <Glossary tb={tb} onOpen={setOpenCh} /> : openCh === 'history' ? <History tb={tb} /> : idx >= 0 ? <Chapter ch={chapters[idx]} refs={refs} updated={tb.updated_at} /> : null}
             <div className="sb-pager">
               <button className="btn-ghost" disabled={idx <= 0} onClick={() => setOpenCh(chapters[idx - 1].id)}>‹ 이전 장</button>
               <button className="btn-ghost" disabled={idx < 0 || idx >= chapters.length - 1} onClick={() => setOpenCh(chapters[idx + 1].id)}>다음 장 ›</button>
@@ -154,6 +158,7 @@ function Chapter({ ch, refs, updated }) {
         <section key={i} className="sb-sec">
           <h3>{s.제목}</h3>
           {s.본문.map((p, j) => <p key={j}><T text={p} refs={refs} /></p>)}
+          {s.도식 && <Diagram d={s.도식} />}
           {s.표 && (
             <div className="sb-tbl-wrap">
               <table className="tbl sb-tbl">
@@ -180,6 +185,62 @@ function Chapter({ ch, refs, updated }) {
           <ol className="wb-refs">{used.map((n) => { const r = refs.get(n); return r ? <li key={n} value={n}><a className="lp-link" href={r.링크} target="_blank" rel="noreferrer">{r.제목}</a><span className="muted"> · {r.매체} {r.날짜}</span></li> : null })}</ol>
         </div>
       )}
+    </>
+  )
+}
+
+const LAYER_COLORS = {
+  metal: ['#E7D7A6', '#7A5C00'], oxide: ['#D6E9F8', '#1F4E79'], si: ['#D9DCE1', '#344054'], n: ['#C9DAF8', '#1D3F8F'],
+  p: ['#F6D3DC', '#8A1C3B'], poly: ['#F8DDC2', '#8A4B0F'], pkg: ['#CFE8D8', '#1E5B3A'], pr: ['#E4D7F5', '#4B2A7B'],
+}
+// 도식 — 흐름(순서도) / 층(단면 적층도). 워드용 그림은 scripts/semi/diagram.mjs 가 같은 데이터로 그린다.
+function Diagram({ d }) {
+  return (
+    <figure className="sb-fig">
+      {d.종류 === '흐름' ? (
+        <ol className="sb-flow">
+          {(d.단계 || []).map((x, i) => (
+            <li key={i} className="sb-flow-step">
+              <span className="sb-flow-no">{i + 1}</span>
+              <b>{x.이름}</b>
+              {x.설명 && <span>{x.설명}</span>}
+            </li>
+          ))}
+        </ol>
+      ) : (
+        <div className="sb-stack">
+          {(d.층 || []).map((x, i) => {
+            const [bg, ink] = LAYER_COLORS[x.색] || LAYER_COLORS.si
+            return <div key={i} className="sb-layer" style={{ background: bg, color: ink }}><b>{x.이름}</b><span>{x.설명}</span></div>
+          })}
+          <div className="sb-stack-note">▲ 위 · 아래 ▼ (개념도, 실제 비율 아님)</div>
+        </div>
+      )}
+      {d.제목 && <figcaption>그림 · {d.제목}</figcaption>}
+    </figure>
+  )
+}
+
+function Glossary({ tb, onOpen }) {
+  const [q, setQ] = useState('')
+  const all = useMemo(() => {
+    const out = []
+    for (const ch of tb.장) for (const u of ch.용어 || []) out.push({ ...u, ch })
+    return out.sort((a, b) => a.용어.localeCompare(b.용어, 'ko'))
+  }, [tb])
+  const qq = q.trim().toLowerCase()
+  const view = qq ? all.filter((u) => `${u.용어} ${u.뜻}`.toLowerCase().includes(qq)) : all
+  return (
+    <>
+      <h2 className="sb-ch-title">용어 색인</h2>
+      <p className="sb-lead">이 책에 나온 용어 {all.length}개를 가나다순으로 모았습니다. 장 번호를 누르면 그 장으로 갑니다.</p>
+      <input className="pl-search sb-gl-search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="🔎 용어·뜻 검색 (예: EUV, 수율, HBM)" />
+      <div className="sb-terms">
+        <dl>{view.map((u, i) => (
+          <div key={i}><dt>{u.용어} <button className="sb-gl-ch" onClick={() => onOpen(u.ch.id)}>{u.ch.번호}장</button></dt><dd>{u.뜻}</dd></div>
+        ))}</dl>
+        {view.length === 0 && <p className="muted">일치하는 용어가 없습니다.</p>}
+      </div>
     </>
   )
 }
@@ -216,7 +277,7 @@ function History({ tb }) {
 }
 
 // ───────────────────────── 주간 브리핑 ─────────────────────────
-function SemiWeekly({ onOpenChapter }) {
+function SemiWeekly({ onOpenChapter, chTitles }) {
   const { data: index, error } = useData('semi/index.json')
   const weeks = index?.weeks || []
   const [sel, setSel] = useState('')
@@ -253,15 +314,14 @@ function SemiWeekly({ onOpenChapter }) {
       </div>
       {err && <div className="card"><div className="list-empty">{err}</div></div>}
       {!w && !err && <div className="card"><div className="list-empty">불러오는 중…</div></div>}
-      {w && <SemiWeeklyBody w={w} onOpenChapter={onOpenChapter} />}
+      {w && <SemiWeeklyBody w={w} onOpenChapter={onOpenChapter} chTitles={chTitles} />}
     </>
   )
 }
 
-const CH_NAME = { ch01: '1장', ch02: '2장', ch03: '3장', ch04: '4장', ch05: '5장', ch06: '6장', ch07: '7장', ch08: '8장', ch09: '9장', ch10: '10장', ch11: '11장', ch12: '12장', ch13: '13장', ch14: '14장', ch15: '15장' }
 
 // 주간 브리핑 본문 — 반도체 브리핑 탭과 JH Weekly Report ③에서 같이 쓴다 (prefix: 출처 번호 앞 글자, JH Weekly 안에서는 'S')
-export function SemiWeeklyBody({ w, onOpenChapter, prefix = '' }) {
+export function SemiWeeklyBody({ w, onOpenChapter, chTitles = {}, prefix = '' }) {
   const refs = useMemo(() => new Map((w?.refs || []).map((r) => [r.n, r])), [w])
   const maxKw = Math.max(1, ...(w?.키워드 || []).map((k) => Math.max(k.count, k.prev)))
   const P = (t) => <T text={t} refs={refs} prefix={prefix} />
@@ -323,8 +383,8 @@ export function SemiWeeklyBody({ w, onOpenChapter, prefix = '' }) {
             <h2>{s.주제}</h2>
             <p>{P(s.설명)}</p>
             {s.교과서 && (onOpenChapter
-              ? <button className="linklike" onClick={() => onOpenChapter(s.교과서)}>📘 교과서 {CH_NAME[s.교과서] || s.교과서}에서 더 보기 →</button>
-              : <a className="linklike" href="#/industry">📘 교과서 {CH_NAME[s.교과서] || s.교과서}에서 더 보기 →</a>)}
+              ? <button className="linklike" onClick={() => onOpenChapter(s.교과서)}>📘 교과서 {chTitles[s.교과서] || ''}에서 더 보기 →</button>
+              : <a className="linklike" href="#/industry">📘 반도체 교과서에서 더 보기 →</a>)}
           </div>
         ))}
       </div>

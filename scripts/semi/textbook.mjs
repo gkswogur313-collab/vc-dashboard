@@ -7,8 +7,9 @@ import { readFile, writeFile, mkdir } from 'node:fs/promises'
 import {
   Document, Packer, Paragraph, TextRun, HeadingLevel, ExternalHyperlink, AlignmentType, PageBreak,
   Table, TableRow, TableCell, WidthType, BorderStyle, ShadingType, LevelFormat, TableOfContents,
-  Footer, PageNumber,
+  Footer, PageNumber, ImageRun,
 } from 'docx'
+import { diagramPng } from './diagram.mjs'
 
 const FILE = 'public/data/semi/textbook.json'
 const OUT = 'public/briefs/semi/textbook.docx'
@@ -29,6 +30,7 @@ for (const c of tb.장 || []) {
   for (const s of c.절 || []) {
     need(s.제목 && Array.isArray(s.본문) && s.본문.length > 0, `${c.id}: 절 제목·본문 필요`)
     if (s.표) need(Array.isArray(s.표.머리) && s.표.행?.every((r) => r.length === s.표.머리.length), `${c.id} '${s.제목}': 표 열 수 불일치`)
+    if (s.도식) need((s.도식.종류 === '흐름' && s.도식.단계?.length >= 2) || (s.도식.종류 === '층' && s.도식.층?.length >= 2), `${c.id} '${s.제목}': 도식은 종류 '흐름'(단계 2개 이상) 또는 '층'(층 2개 이상)`)
   }
 }
 const refs = new Map((tb.refs || []).map((r) => [r.n, r]))
@@ -109,6 +111,10 @@ for (const ch of tb.장) {
   for (const s of ch.절) {
     c.push(H(HeadingLevel.HEADING_2, s.제목))
     for (const x of s.본문) c.push(P(x))
+    if (s.도식) {
+      const im = await diagramPng(s.도식)
+      if (im) { c.push(new Paragraph({ alignment: AlignmentType.CENTER, keepLines: true, spacing: { before: 80, after: 40 }, children: [new ImageRun({ type: 'png', data: im.png, transformation: { width: 600, height: Math.round(600 * im.height / im.width) } })] })); c.push(new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 140 }, children: [t(`그림 · ${s.도식.제목 || s.제목}`, { size: 16, color: DIM })] })) }
+    }
     if (s.표) { c.push(table(s.표.머리, s.표.행)); if (s.표.주) c.push(new Paragraph({ children: runs(s.표.주, { size: 16, color: DIM }), spacing: { before: 40, after: 120 } })); else c.push(new Paragraph({ children: [] })) }
     if (s.관전포인트?.length) { c.push(label('관전 포인트')); for (const x of s.관전포인트) c.push(B(x)) }
   }
@@ -127,6 +133,15 @@ if (tb.부록) {
   }
 }
 
+c.push(new Paragraph({ children: [new PageBreak()] }))
+c.push(H(HeadingLevel.HEADING_1, '용어 색인'))
+{
+  const all = []
+  for (const ch of tb.장) for (const u of ch.용어 || []) all.push([u.용어, u.뜻, `${ch.번호}장`])
+  all.sort((a, b) => a[0].localeCompare(b[0], 'ko'))
+  c.push(P(`이 책에 나온 용어 ${all.length}개를 가나다순으로 모았다. 오른쪽 숫자는 처음 설명한 장이다.`))
+  c.push(table(['용어', '뜻', '장'], all, [2300, 6200, 800]))
+}
 c.push(new Paragraph({ children: [new PageBreak()] }))
 c.push(H(HeadingLevel.HEADING_1, '개정 이력'))
 c.push(table(['날짜', '버전', '내용'], tb.개정이력.map((x) => [x.날짜, x.버전 || '', x.내용]), [1500, 900, 6900]))

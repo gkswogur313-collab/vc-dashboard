@@ -10,7 +10,9 @@ import {
 import { keywordChartPng } from '../lib/keyword-chart.mjs'
 
 const FONT = '맑은 고딕'; const ACCENT = '1F3864'; const DIM = '667085'
-const TB = { ch01: '1장 반도체란 무엇인가', ch02: '2장 트랜지스터와 미세화', ch03: '3장 반도체 제품의 종류', ch04: '4장 웨이퍼와 8대 공정', ch05: '5장 포토 공정과 노광 기술', ch06: '6장 식각·증착·세정·CMP·계측', ch07: '7장 패키징과 테스트', ch08: '8장 산업 구조와 비즈니스 모델', ch09: '9장 소재', ch10: '10장 장비', ch11: '11장 부품', ch12: '12장 국가별 지형과 한국의 위치', ch13: '13장 업황을 읽는 지표', ch14: '14장 AI가 바꾼 반도체 수요', ch15: '15장 최신 기술동향' }
+// 교과서 장 제목은 textbook.json에서 읽는다(장 번호가 바뀌어도 링크가 맞도록)
+let TB = {}
+try { TB = Object.fromEntries(JSON.parse(await readFile('public/data/semi/textbook.json', 'utf-8')).장.map((c) => [c.id, `${c.번호}장 ${c.제목}`])) } catch { /* 없음 */ }
 
 // opt.prefix: 출처 번호 앞에 붙일 문자(JH Weekly 안에서는 'S' → [S1]) · opt.h1/h2: 제목 단락 생성 함수 · opt.top: 맨 위 제목을 넣을지
 export async function renderSemiWeekly(b, opt = {}) {
