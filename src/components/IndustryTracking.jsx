@@ -35,7 +35,7 @@ const daysAgo = (n) => {
 }
 
 const TAB_KEY = 'industry-tab'
-const readTab = () => { try { return localStorage.getItem(TAB_KEY) || 'brief' } catch { return 'list' } }
+const readTab = () => { try { return localStorage.getItem(TAB_KEY) || 'brief' } catch { return 'brief' } }
 
 // 상단 탭: 주간 브리핑 / 반도체 브리핑 / 리포트 목록 (마지막으로 본 탭 기억)
 export default function IndustryTracking() {
