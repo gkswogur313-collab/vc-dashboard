@@ -1,0 +1,18 @@
+[
+  { "id": "thelec-kr", "매체": "디일렉", "분류": "전문지", "url": "https://www.thelec.kr/rss/allArticle.xml", "filter": true },
+  { "id": "thelec-en", "매체": "THE ELEC (영문)", "분류": "전문지", "url": "https://cdn.thelec.net/rss/gn_rss_allArticle.xml", "filter": true },
+  { "id": "semieng", "매체": "Semiconductor Engineering", "분류": "전문지", "url": "https://semiengineering.com/feed/" },
+  { "id": "eetimes", "매체": "EE Times", "분류": "전문지", "url": "https://www.eetimes.com/feed/", "filter": true },
+  { "id": "semianalysis", "매체": "SemiAnalysis", "분류": "뉴스레터", "url": "https://newsletter.semianalysis.com/feed" },
+  { "id": "fabknow", "매체": "Fabricated Knowledge", "분류": "뉴스레터", "url": "https://www.fabricatedknowledge.com/feed" },
+  { "id": "chipletter", "매체": "The Chip Letter", "분류": "뉴스레터", "url": "https://thechipletter.substack.com/feed" },
+  { "id": "asianometry", "매체": "Asianometry", "분류": "뉴스레터", "url": "https://www.asianometry.com/feed" },
+  { "id": "gn-semi", "매체": "SEMI (구글 뉴스 경유)", "분류": "협회·통계", "url": "https://news.google.com/rss/search?q=site:semi.org+when:14d&hl=en-US&gl=US&ceid=US:en", "google": true },
+  { "id": "gn-semi-kr", "매체": "SEMI 보도 (국내 기사)", "분류": "협회·통계", "url": "https://news.google.com/rss/search?q=SEMI+%EB%B0%98%EB%8F%84%EC%B2%B4+%EB%B3%B4%EA%B3%A0%EC%84%9C+when:14d&hl=ko&gl=KR&ceid=KR:ko", "google": true },
+  { "id": "gn-ksia", "매체": "한국반도체산업협회 (기사)", "분류": "협회·통계", "url": "https://news.google.com/rss/search?q=%ED%95%9C%EA%B5%AD%EB%B0%98%EB%8F%84%EC%B2%B4%EC%82%B0%EC%97%85%ED%98%91%ED%9A%8C+when:14d&hl=ko&gl=KR&ceid=KR:ko", "google": true },
+  { "id": "gn-sobujang", "매체": "소부장 (국내 기사)", "분류": "뉴스", "url": "https://news.google.com/rss/search?q=%EB%B0%98%EB%8F%84%EC%B2%B4+(%EC%86%8C%EB%B6%80%EC%9E%A5+OR+%EC%9E%A5%EB%B9%84+OR+%EC%86%8C%EC%9E%AC+OR+%EB%B6%80%ED%92%88)+%EC%88%98%EC%A3%BC+when:14d&hl=ko&gl=KR&ceid=KR:ko", "google": true },
+  { "id": "gn-research-kr", "매체": "국내 연구기관 (기사)", "분류": "연구기관", "url": "https://news.google.com/rss/search?q=%EB%B0%98%EB%8F%84%EC%B2%B4+(%EC%82%B0%EC%97%85%EC%97%B0%EA%B5%AC%EC%9B%90+OR+%ED%95%B4%EC%99%B8%EA%B2%BD%EC%A0%9C%EC%97%B0%EA%B5%AC%EC%86%8C+OR+KDB%EB%AF%B8%EB%9E%98%EC%A0%84%EB%9E%B5%EC%97%B0%EA%B5%AC%EC%86%8C+OR+%EB%AC%B4%EC%97%AD%ED%98%91%ED%9A%8C+OR+KEIT)+%EB%B3%B4%EA%B3%A0%EC%84%9C+when:14d&hl=ko&gl=KR&ceid=KR:ko", "google": true },
+  { "id": "gn-kotra", "매체": "KOTRA 해외시장뉴스 (구글 뉴스 경유)", "분류": "연구기관", "url": "https://news.google.com/rss/search?q=site:dream.kotra.or.kr+%EB%B0%98%EB%8F%84%EC%B2%B4+when:30d&hl=ko&gl=KR&ceid=KR:ko", "google": true },
+  { "id": "gn-equip-ir", "매체": "장비사 실적 (기사)", "분류": "기업 IR", "url": "https://news.google.com/rss/search?q=(ASML+OR+%22Applied+Materials%22+OR+%22Lam+Research%22+OR+%22Tokyo+Electron%22+OR+KLA)+(earnings+OR+guidance+OR+orders)+when:14d&hl=en-US&gl=US&ceid=US:en", "google": true },
+  { "id": "gn-tsmc-ir", "매체": "TSMC·메모리 실적 (기사)", "분류": "기업 IR", "url": "https://news.google.com/rss/search?q=(TSMC+revenue+OR+%22SK+hynix%22+earnings+OR+%22Samsung+Electronics%22+memory+earnings+OR+Micron+earnings)+when:14d&hl=en-US&gl=US&ceid=US:en", "google": true }
+]
