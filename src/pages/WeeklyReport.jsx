@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useData } from '../useData.js'
 import { BriefBody } from '../components/WeeklyBrief.jsx'
+import { SemiWeeklyBody } from '../components/SemiBriefing.jsx'
 
 // JH Weekly Report — 매주 월요일 Claude 예약 작업이 만드는 종합 주간 리포트
 // ① 업계 뉴스 레이더(vc-news) ② 산업 트래킹 주간 브리핑 ③ IPO(전주·금주 — 심사청구·심사승인·수요예측·상장) ④ 신규 펀딩(+주목 딜 뉴스 요약)
@@ -43,6 +44,7 @@ export default function WeeklyReport() {
   const [err, setErr] = useState('')
   const [showAllFunding, setShowAllFunding] = useState(false)
   const [brief, setBrief] = useState(null)
+  const [semi, setSemi] = useState(null)
 
   useEffect(() => {
     if (!id) return
@@ -55,6 +57,9 @@ export default function WeeklyReport() {
     // ② 산업 트래킹 — 같은 주 주간 브리핑 원본을 그대로 불러와 보여 준다(요약하지 않음)
     setBrief(null)
     fetch(`${BASE}data/briefs/${id}.json`).then((r) => (r.ok ? r.json() : null)).then((d) => { if (alive) setBrief(d) }).catch(() => {})
+    // ③ 반도체 브리핑 — 같은 주 반도체 주간 브리핑 원본(출처 번호는 S1, S2…)
+    setSemi(null)
+    fetch(`${BASE}data/semi/weekly/${id}.json`).then((r) => (r.ok ? r.json() : null)).then((d) => { if (alive) setSemi(d) }).catch(() => {})
     return () => { alive = false }
   }, [id])
 
@@ -89,7 +94,7 @@ export default function WeeklyReport() {
       {w && (
         <>
           <div className="card wb-hero">
-            <div className="wb-meta">{fmt(w.기간)} · 업계 레이더 · 산업 트래킹 · IPO {w.IPO?.length || 0}건(전주·금주) · 신규 펀딩 {F.건수 || 0}건</div>
+            <div className="wb-meta">{fmt(w.기간)} · 업계 레이더 · 산업 트래킹 · 반도체 · IPO {w.IPO?.length || 0}건(전주·금주) · 신규 펀딩 {F.건수 || 0}건</div>
             <h2>이번 주 한눈에</h2>
             <ul className="wb-list">{(w.한눈에 || []).map((s, i) => <li key={i}><T text={s} refs={refs} /></li>)}</ul>
           </div>
@@ -135,7 +140,12 @@ export default function WeeklyReport() {
             {brief ? <BriefBody brief={brief} /> : <div className="card"><p className="muted">이 주의 주간 브리핑이 없습니다.</p></div>}
           </div>
 
-          <h3 className="wb-sec">📅 ③ IPO 전주·금주 <span className="muted" style={{ fontSize: 12, fontWeight: 500 }}>심사청구 · 심사승인 · 수요예측 · 상장 (스팩 제외 · 금주는 공시 일정 기준)</span> <a className="linklike" style={{ marginTop: 0 }} href="#/ipo">IPO 탭 →</a></h3>
+          <h3 className="wb-sec">🔬 ③ 반도체 주간 브리핑 <a className="linklike" style={{ marginTop: 0 }} href="#/industry">반도체 브리핑 탭 →</a></h3>
+          <div className="wr-brief sb">
+            {semi ? <SemiWeeklyBody w={semi} prefix="S" /> : <div className="card"><p className="muted">이 주의 반도체 브리핑이 없습니다.</p></div>}
+          </div>
+
+          <h3 className="wb-sec">📅 ④ IPO 전주·금주 <span className="muted" style={{ fontSize: 12, fontWeight: 500 }}>심사청구 · 심사승인 · 수요예측 · 상장 (스팩 제외 · 금주는 공시 일정 기준)</span> <a className="linklike" style={{ marginTop: 0 }} href="#/ipo">IPO 탭 →</a></h3>
           <div className="card">
             {w.IPO?.length ? (
               <div className="scroll-box" style={{ '--scroll-h': '480px', minHeight: 0 }}>
@@ -166,7 +176,7 @@ export default function WeeklyReport() {
             ) : <p className="muted">해당 없음</p>}
           </div>
 
-          <h3 className="wb-sec">💰 ④ 신규 펀딩 <span className="muted" style={{ fontSize: 12, fontWeight: 500 }}>{F.건수 || 0}건 · 공개 금액 합계 약 {(F.공개합계억 || 0).toLocaleString()}억원</span> <a className="linklike" style={{ marginTop: 0 }} href="#/deals">Deal Market →</a></h3>
+          <h3 className="wb-sec">💰 ⑤ 신규 펀딩 <span className="muted" style={{ fontSize: 12, fontWeight: 500 }}>{F.건수 || 0}건 · 공개 금액 합계 약 {(F.공개합계억 || 0).toLocaleString()}억원</span> <a className="linklike" style={{ marginTop: 0 }} href="#/deals">Deal Market →</a></h3>
           {F.주목?.length > 0 && (
             <div className="wr-deals">
               {F.주목.map((x, i) => (
