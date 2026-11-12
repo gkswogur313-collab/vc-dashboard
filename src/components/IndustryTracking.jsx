@@ -35,18 +35,18 @@ const daysAgo = (n) => {
 }
 
 const TAB_KEY = 'industry-tab'
-const readTab = () => { try { return localStorage.getItem(TAB_KEY) || 'list' } catch { return 'list' } }
+const readTab = () => { try { return localStorage.getItem(TAB_KEY) || 'brief' } catch { return 'list' } }
 
-// 상단 탭: 리포트 목록 / 주간 브리핑 / 반도체 브리핑 (마지막으로 본 탭 기억)
+// 상단 탭: 주간 브리핑 / 반도체 브리핑 / 리포트 목록 (마지막으로 본 탭 기억)
 export default function IndustryTracking() {
   const [tab, setTab] = useState(readTab)
   const pick = (t) => { setTab(t); try { localStorage.setItem(TAB_KEY, t) } catch { /* 저장 불가 환경 무시 */ } }
   return (
     <div>
       <div className="tabs">
-        <button className={'tab-btn' + (tab === 'list' ? ' active' : '')} onClick={() => pick('list')}>📄 리포트 목록</button>
         <button className={'tab-btn' + (tab === 'brief' ? ' active' : '')} onClick={() => pick('brief')}>📋 주간 브리핑</button>
         <button className={'tab-btn' + (tab === 'semi' ? ' active' : '')} onClick={() => pick('semi')}>🔬 반도체 브리핑</button>
+        <button className={'tab-btn' + (tab === 'list' ? ' active' : '')} onClick={() => pick('list')}>📄 리포트 목록</button>
       </div>
       {tab === 'brief' ? <WeeklyBrief /> : tab === 'semi' ? <SemiBriefing /> : <ReportList />}
     </div>
