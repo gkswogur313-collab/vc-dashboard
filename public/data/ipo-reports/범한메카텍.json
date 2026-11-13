@@ -63,6 +63,33 @@
     "작성": "2026-11-03"
    },
    "메모": []
+  },
+  "승인": {
+   "기준일": "2026-11-12",
+   "generated_at": "2026-11-13T11:26:25+09:00",
+   "기사": [
+    {
+     "제목": "엠디에스코리아·범한메카텍, 코스닥 상장예심 통과",
+     "매체": "www.ebn.co.kr",
+     "날짜": "2026-11-12",
+     "링크": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB2cjlmZ2d3V0pMaTdJS2M4dF9MOV9pcGpFVmZGQVpwN3NGdm9fRzV5ZGVwRDZxeFFOZDhGbkNMdERtN2FFOXJHcVZ1LVdXRU9selBld2U3VGtOcFRick9leWxzSFROWWRT?oc=5"
+    },
+    {
+     "제목": "한국거래소, 엠디에스코리아·범한메카텍 2개사 코스닥 예심 승인",
+     "매체": "핀포인트뉴스",
+     "날짜": "2026-11-12",
+     "링크": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1PSjBTYTZtNFlOM3RkbS1CaFA3ODBkNjAtY3IxRFREWm05NXpMUldNcXBQRWc3cjNGSGRja25vSnExWE9MbjduN0l4T2lCTzNJVFFzbWo2d1Z4ZFF1X3hURnQ3blBBWE1xYjdTVkd1Z091RFXSAXdBVV95cUxQLVQwbUt4WXA0emNnZml5TG11N2ZFa0llMFVpZG1DblNjbEVESy00V1Bwd1BQclBmcnJkeXQ2N3hlVGNNYkNDTFhsRnQ2Nm8ycGZ5ZU1YMER0SHFUUlFUY01VNmUwZFZSZjhFeE52TlRSeEZvRUVCYw?oc=5"
+    },
+    {
+     "제목": "연구실 밖 1047시간…범한메카텍 CO₂ 포집 90% 입증",
+     "매체": "서울경제",
+     "날짜": "2026-10-28",
+     "링크": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4xMi05Y3pVMkxEalduTHdGZWVNQmdJZEJ6RjY1SW1YcXNzcFhpRTI2TGdwSGJmYy1HWEk3NkloNmJSWjRRTlFrN0pLeWpqR2JkekHSAVNBVV95cUxQVm5RSHFhRmhzNVR2dFhNcVA5LUZxUmhQZ2JmanVVRV8xMUdmZFdGODJ2NWxacmlLYWtndlFKVzhzVFBGblZ0QVAyeW0xcll5Z19IMA?oc=5"
+    }
+   ],
+   "요약필요": true,
+   "요약": null,
+   "메모": []
   }
  },
  "회사정보": {
@@ -78,8 +105,8 @@
  },
  "공모": {
   "청구일": "2026-07-31",
-  "승인일": "",
-  "심사상태": "청구서 접수",
+  "승인일": "2026-11-12",
+  "심사상태": "심사 승인",
   "신고서제출일": "",
   "수요예측시작": "",
   "수요예측종료": "",
@@ -92,6 +119,6 @@
   "공모금액": "",
   "주관사": "유진투자증권(주),엔에이치투자증권(주)"
  },
- "현재단계": "청구",
- "updated_at": "2026-11-03T16:22:59+09:00"
+ "현재단계": "승인",
+ "updated_at": "2026-11-13T11:26:25+09:00"
 }
