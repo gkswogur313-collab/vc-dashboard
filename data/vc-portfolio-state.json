@@ -1,0 +1,992 @@
+{
+ "에이티넘인베스트먼트": {
+  "url": "https://www.atinuminvest.co.kr/portfolio-type",
+  "sig": "div.collectionitem>div.modal-wrap>div.modal-white-bg>div.div-block-21>h1.company-name",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "한국투자파트너스": {
+  "url": "https://partners.koreainvestment.com/portfolio",
+  "sig": "div.wrapper>div.grid>div.portfolio-card>div>h6",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "아이엠엠인베스트먼트": {
+  "url": "https://imminvestment.com/portfolio/",
+  "sig": "div.item>a>div.pfList>dl>dt",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "케이비인베스트먼트": {
+  "url": "http://www.kbic.co.kr/main/portfolio",
+  "sig": "div.portfolio-item>a.portfolio>div.portfolio-overlay>div.wrapper>p.name",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "스톤브릿지벤처스": {
+  "url": "https://stonebridgeventures.vc/posts/partner/",
+  "sig": "div.tb-area>div.tb-detail>div.tb-split>div.tb-tit>p",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "에스비브이에이": {
+  "url": "https://www.sbvacorp.com/ko/portfolio",
+  "sig": "div.container-result>ul.accodian>li.accodian__list>h4.accodian__title>button.accodian__btn",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "우리벤처파트너스": {
+  "url": "https://woorivp.com/home/main/main.do",
+  "sig": "div.list>ul>li>dl>dt.name",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "스마일게이트인베스트먼트": {
+  "url": "https://www.smilegateinvestment.com/ko/portfolio.html?v=5",
+  "sig": "img:div.content>div.cont_box>ul.list_type1>li>img",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "디에스씨인베스트먼트": {
+  "url": "http://www.dscinvestment.com/dream/categories.php",
+  "sig": "ul.clearfix>li>a>div.mo_img>span.kr",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "에스비아이인베스트먼트": {
+  "url": "https://www.sbik.co.kr/portfolio/",
+  "sig": "img:article.pt-20>div.container>div.mt-14>a.pf-item>img.w-auto",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "컴퍼니케이파트너스": {
+  "url": "https://kpartners.co.kr/portfolio",
+  "sig": "div.sec_in>ul.pf_grid>li.pf_item>a.pf_card>div.pf_info",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "티에스인베스트먼트": {
+  "url": "https://www.tsinvestment.co.kr/portfolio/portfolio2.php?ckattempt=1",
+  "sig": "div.list_board>div.fund_logo>ul>li>p",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "케이투인베스트먼트파트너스": {
+  "url": "http://k2investment.co.kr/",
+  "sig": "div.timeline-balloon>div.balloon-cell>div.balloon-content>div.balloon-description>h5.text-color-dark",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "포레스트벤처스": {
+  "url": "https://www.forestventures.vc/portfolio/portfolio.php",
+  "sig": "img:div.list>a>div.thumb>div.c-logo>img",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "스틱벤처스": {
+  "url": "https://www.sticventures.co.kr/kor/sub/investments.php",
+  "sig": "div.info_wrap>div.info_cont>div.info_txt>ul>li.bold",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "키움인베스트먼트": {
+  "url": "https://www.kiwoominvest.com/portfolio/",
+  "sig": "img:div.filter-content>ul.filter-list>li.filter-item>a>img",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "새한창업투자": {
+  "url": "https://www.saehan.vc/portfolio",
+  "sig": "div.comp-mb5v059l5>div>div>div.N8MGzv>h5.font_5",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "퀀텀벤처스코리아": {
+  "url": "http://quantumepk.com/#",
+  "sig": "img:div.slide>div.fp-tableCell>div.col-xs-6>a>img",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "케이앤투자파트너스": {
+  "url": "https://www.kninvest.co.kr/sub/investment.php",
+  "sig": "div.invest_box_01>ul>li.invest_process>ul>li.invest_01_02",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "씨제이인베스트먼트": {
+  "url": "http://www.cjinvestment.net/#main2",
+  "sig": "section.main>div.cont>div.copy>p>span.break",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "뮤렉스파트너스": {
+  "url": "https://www.murexpartners.com/en/founders",
+  "sig": "div.team-item>div.team-desc>div>div.team-desc-cont>p.name",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "해시드벤처스": {
+  "url": "https://www.hashed.com/portfolio",
+  "sig": "ul.grid-module__grid--parent___3vOX6>li.portfolioListItem-module__portfolio-list--item___V2vDu>div.portfolioListItem-module__portfolio-list--left-column___2XHqj>div.portfolioListItem-module__portfolio-list--left-column--text-wrapper___3dd3A>button.portfolioListItem-module__company-name___2szPi",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "에스제이투자파트너스": {
+  "url": "https://www.sjinvest.co.kr/portfolio",
+  "sig": "img:div>div.hhxEkR>a.v9ZE1l>wow-image.Qh0lWW>img",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "하나증권": {
+  "url": "https://www.hanaw.com/main/finance/trade/FP_030808_T4.cmd",
+  "sig": "div.table-default>table>tbody>tr>td.tdfirst",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "현대기술투자": {
+  "url": "http://www.hvic.co.kr/kor/bbs/board.php?bo_table=investment_case",
+  "sig": "div.companie_wrap>div.companie_wrap>ul>li>a.under_line",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "디티앤인베스트먼트": {
+  "url": "https://dtni.co.kr/index.html#portfolio",
+  "sig": "img:div.container>div.row>div.col-lg-3>div.portfolio-wrap>img.rounded",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "티인베스트먼트": {
+  "url": "http://www.tinvestment.co.kr/",
+  "sig": "div.m3d_con_in>ul.ex01>li>ul>li",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "솔리더스인베스트먼트": {
+  "url": "https://solidusvc.com/portfolio.html#bio",
+  "sig": "main.page>div.pf-list>div.pf-grid>a.pf-item>span.pf-name",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "에스엘인베스트먼트": {
+  "url": "https://www.slinvestment.com/portfolio.html",
+  "sig": "section>div.section-inner>div.portfolio-grid>div.portfolio-item>div.portfolio-name",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "지앤텍벤처투자": {
+  "url": "https://www.gntechvc.co.kr/portfolio/clients",
+  "sig": "ul.portfolio__list>li.portfolio__item>a.portfolio__link>div.portfolio__inner>div.portfolio__mask",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "원익투자파트너스": {
+  "url": "http://www.wiipco.com/kr/venture/portfolio.php",
+  "sig": "div.portfolio-wrap>ul.clearfix>li>a>p",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "크릿벤처스": {
+  "url": "https://www.crit.vc/portfolio/index.html",
+  "sig": "main.portfolio-page>div.pf-body>div.pf-grid>a.pf-card>div.pf-over",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "데일리파트너스": {
+  "url": "https://www.dayli.partners/portfolio/portfolio.php",
+  "sig": "div.port-wrap>ul.port-item>li.port-list>a.link>div.name",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "대교인베스트먼트": {
+  "url": "http://www.daekyoinvest.com/portfolio/index.jsp",
+  "sig": "ul.widall>li>ul.two_depth>li>a",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "펜처인베스트": {
+  "url": "https://pentureinvest.com/board/equity/list",
+  "sig": "div.inner>div.portSection>ul.portList>li>p.name",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "에이벤처스": {
+  "url": "https://aven.vc/partners",
+  "sig": "div.gall_img>a.partner_link>div.gall_desc_wr>div.partners_info>h6",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "넥스트지인베스트먼트": {
+  "url": "https://www.nextginvest.com/PORTFOLIO",
+  "sig": "div.grid>a>figure>figcaption>h5.figure",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "더웰스인베스트먼트": {
+  "url": "https://www.investwells.com/partners/all",
+  "sig": "div.cont-wr>ul.inner>li>button>span",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "킹고투자파트너스": {
+  "url": "http://kingo.co.kr/sub.php?code=2",
+  "sig": "div.swiper>div.swiper-container01>div.swiper-wrapper>div.swiper-slide>div.company",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "메이플투자파트너스": {
+  "url": "http://www.mapleinvest.co.kr/#portfolio",
+  "sig": "div.wrap>div.allpf>ul.pfgrid>li.rv>b",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "시그나이트": {
+  "url": "https://www.signite.co/portfolio",
+  "sig": "main>div.sc-ae0b9dcc-4>div.sc-ae0b9dcc-1>div.sc-3d601874-0>div.sc-3d601874-3",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "알바트로스인베스트먼트": {
+  "url": "http://www.albatrossvc.co.kr/#portfolio",
+  "sig": "div.div_align>ul>div.portfolio_company_grid>div.portfolio_company_card>div.portfolio_company_name",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "씨케이디창업투자": {
+  "url": "https://www.ckdvc.co.kr/portfolio",
+  "sig": "img:div.p-portfolio-card>section.p-portfolio-section>div.p-portfolio-grid>a.p-portfolio-logo>img.p-portfolio-logo-img",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "퓨처플레이": {
+  "url": "https://futureplay.co/our-companies",
+  "sig": "div>div.divided-grid-container>a.group>div.absolute>div.font-bold",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "대전투자금융": {
+  "url": "https://www.invest-daejeon.co.kr/",
+  "sig": "div.ticker-list-box>div.ticker-item>div.ticker-link>div.ticker-title>p",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "라이트하우스컴바인인베스트": {
+  "url": "https://lhcinvest.com/#Portfolio",
+  "sig": "a>figure>figcaption>div.inner-box>h5.figure",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "엘에스케이인베스트먼트": {
+  "url": "http://errdoc.gabia.io/403.html",
+  "sig": "div.hosting-wrap>section.hosting-connect>div.hosting-app>dl>dt",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "플래티넘기술투자": {
+  "url": "http://hostinfo.cafe24.com/serviceExpire/expiration.html?domain=pltic.co.kr",
+  "sig": "div.card>div.admin>div.btns>a.btn>span",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "케이런벤처스": {
+  "url": "https://www.krunventures.com/portfolio",
+  "sig": "div>div>div.N8MGzv>p.font_7>a.wixui-rich-text__text",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "패스파인더에이치": {
+  "url": "https://www.pathfinderh.com/#s6",
+  "sig": "img:div.portfolio-page>div.portfolio-grid>a.portfolio-item>div.portfolio-logo>img",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "쿨리지코너인베스트먼트": {
+  "url": "https://ccvc.co.kr/portfolio",
+  "sig": "div.flex-center>div>div.portfolio-wrap>div.unselect>div.body2-bold",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "이앤벤처파트너스": {
+  "url": "http://www.envp.co.kr/sub/portfolio/portfolio.asp",
+  "sig": "ul.team_ani_ul>li>div.txtbox>dl>dt",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "이에스인베스터": {
+  "url": "https://www.esinvestor.com/kor/portfolio/portfolio.html",
+  "sig": "ul.content-list>li>a>div.txt-bx>p.title",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "토니인베스트먼트": {
+  "url": "http://www.tonyinvestment.com/?module=Board&action=SiteBoard&sMode=SELECT_FORM&iBrdNo=1",
+  "sig": "div.npolicy>div.area>div.cont>div>span",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "에버그린투자파트너스": {
+  "url": "http://evergreen-inv.co.kr/#portfolio",
+  "sig": "ul.logos>li>a.logo-cell>div.logo-info>p.logo-name",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "스프링캠프": {
+  "url": "https://springcamp.co/portfolio",
+  "sig": "app-portfolio>div.page-body>div.company-grid>a.company-card>div.card-name",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "비에이파트너스": {
+  "url": "https://www.bapvc.com/portfolio/",
+  "sig": "div.container>div.portfolio-grid>div.company>a>h3",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "데브시스터즈벤처스": {
+  "url": "https://www.devsistersventures.com/#companies",
+  "sig": "div.mt-3>div.company-card-list>a.company-card>div.content>div.description",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "인비저닝파트너스": {
+  "url": "https://envisioning.partners/portfolio?lan=kr",
+  "sig": "li.PortfolioListItem_item--3FiXi>div.PortfolioListItem_portfolio_wrap--2R1OY>div.PortfolioListItem_portfolio_area--3NB9j>div.PortfolioListItem_info_area--3K4ho>strong.PortfolioListItem_company--3diYS",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "지비벤처스": {
+  "url": "https://gbventures.co.kr/ko/portfolio",
+  "sig": "img:main.sc-bZnhIo>section.sc-iTONeN>div.sc-GVOUr>a.sc-ckMVTt>img.sc-fbPSWO",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "디쓰리쥬빌리파트너스": {
+  "url": "https://d3jubilee.com/Portfolio",
+  "sig": "div.col-xs-6>a>figure>figcaption>h5.figure",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "에스지씨파트너스": {
+  "url": "https://www.sgcpartners.co.kr/#contents_portfolio",
+  "sig": "div.company_list>div.company>a>dl.company_info>dd",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "아주IB투자": {
+  "url": "https://www.ajuib.co.kr/portfolio/portfolio",
+  "sig": "ul.box4>li.lst_load>div.portfolio_on>div.inner>span.title",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "로이투자파트너스": {
+  "url": "http://www.roipartners.co.kr/portfolio.html",
+  "sig": "img:div.inner>article>div.image>a>img",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "쏠레어파트너스": {
+  "url": "https://solairepartners.co.kr/portfolio/films",
+  "sig": "section>ul>li>span>span",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "지유투자": {
+  "url": "https://guequity.co.kr/PORTFOLIO",
+  "sig": "div.grid>a>figure>figcaption>h5.figure",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "코메스인베스트먼트": {
+  "url": "http://comesi.co.kr/pages/portfolio.php",
+  "sig": "dd>ul.portfolioList>li>a>div.nm",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "메인스트리트벤처스": {
+  "url": "https://www.mainst5.com/venture.html",
+  "sig": "section.section>div.portfolio-grid>a.portfolio-card>span.company-name",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "포지티브인베스트먼트": {
+  "url": "http://positiveinv.co.kr/#portfolio",
+  "sig": "ul.member-list>li.group>div.cnt>ul.career>li",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "마젤란기술투자": {
+  "url": "http://www.mtivc.com/page/sub03_1.php",
+  "sig": "div.sub_cont>div.mini_cont>ul.healthcare_cont>li>h3",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "피앤피인베스트먼트": {
+  "url": "http://www.pnpinvest.co.kr/#section04",
+  "sig": "div.gallery-wrap>div.whois-portfolio>div.whois-portfolio-item>a>div.whois-portfolio-item-title",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "경남벤처투자": {
+  "url": "http://www.gnvi.co.kr/sh_page/page39.php",
+  "sig": "div.pagecommon>ul>li>ul>li",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "에이스톤벤처스": {
+  "url": "https://www.astonevc.com/homepage/",
+  "sig": "div.tab-panels>section>ul.portfolioimgs>li>div.desc",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "비하이인베스트먼트": {
+  "url": "https://www.behighvc.co.kr/",
+  "sig": "span.wixui-rich-text__text>span.wixui-rich-text__text>span.wixui-rich-text__text>span.wixui-rich-text__text>span.wixui-rich-text__text",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "비비드인베스트먼트": {
+  "url": "http://www.vvdi.co.kr/#portfolio",
+  "sig": "div.relsites>div.col>div.card>div.card-body>h5.card-title",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "디에스투자파트너스": {
+  "url": "https://www.dsinvp.com/kor/main/",
+  "sig": "div.inner_bx>div.con_bx>div.con_w>ul>li",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "캐피탈원": {
+  "url": "https://www.capitalonevc.co.kr/",
+  "sig": "div.sc-iNGGcK>div.sc-cTAqQK>a.sc-jJoQJp>div.sc-caiLqq>div.sc-iAKWXU",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "에스앤에스인베스트먼트": {
+  "url": "https://snsinvestment.co.kr/portfolio/",
+  "sig": "div.vc_col-sm-3>div.vc_column-inner>div.wpb_wrapper>div.nectar-responsive-text>h2",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "제이엑스파트너스": {
+  "url": "https://www.jxpartners.co.kr/portfolio",
+  "sig": "div>div>div.N8MGzv>h2.font_2>span.wixui-rich-text__text",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "오엔벤처투자": {
+  "url": "https://www.onventure.co.kr/fund",
+  "sig": "img:div>div>div.W4V2qg>div.apPOZK>img.gRkIq0",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "오라클벤처투자": {
+  "url": "http://oraclevc.co.kr/",
+  "sig": "figure.u-block-hover>figcaption.u-block-hover__additional--fade>div.u-block-hover__additional--fade>ul.list-inline>li.list-inline-item",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "뮤어우즈벤처스": {
+  "url": "https://muirwoodsvc.com/#PORTFOLIO",
+  "sig": "a>figure>figcaption>div.inner-box>h5.figure",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "코리아에셋투자증권": {
+  "url": "https://www.kasset.co.kr/investment_note.do",
+  "sig": "div.row>div.collapse>ul.nav>li.dropdown>a.dropdown-toggle",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "제이케이피파트너스": {
+  "url": "http://errdoc.gabia.io/403.html",
+  "sig": "div.hosting-wrap>section.hosting-connect>div.hosting-app>dl>dt",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "엑스플로인베스트먼트": {
+  "url": "https://www.xivc.kr/portfolios",
+  "sig": "div.portfolio-wrapper>div.dynamic-collection-list>div.mix>div.posts-image>a.portfolio-name",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "현대투자파트너스": {
+  "url": "https://www.hyundai-invest.com/homepage/status/portfolio.hy",
+  "sig": "ul.aos-init>li>a>div.txt-box>h4",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "프로텍벤처스": {
+  "url": "https://protecventures.co.kr/kr_portfolio.html",
+  "sig": "div.col-12>div.block>div.under>dl.basic>dt",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "한일브이씨": {
+  "url": "https://www.hanilvc.com/inve/philosophy.do",
+  "sig": "div.wrap>div.privacyPop>div.docs-policy>div.inr_policy>p.section-head",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "빅무브벤처스": {
+  "url": "http://bigmoveventures.com/Portfolio/",
+  "sig": "div.vc_column-inner>div.wpb_wrapper>div.wpb_text_column>div.wpb_wrapper>h5",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "시너지아이비투자": {
+  "url": "https://synergyib.co.kr/portfolios",
+  "sig": "div.portList>div.item>div.position>dl>dt",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "세이지원파트너스": {
+  "url": "https://www.sageone.co.kr/%ED%99%88/portfolio",
+  "sig": "div.hJDwNd-AhqUyc-OwsYgb>div.jXK9ad-SmKAyb>div.tyJCtd>p.zfr3Q>span.C9DxTc",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "컴파벤처스": {
+  "url": "https://www.compaventures.com/sub/sub03_01.php",
+  "sig": "div.real-cont>div.portfolio>div.items>div.item>div.txt",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "지온인베스트먼트": {
+  "url": "https://www.geoninvestment.com/family",
+  "sig": "img:div>div>div.W4V2qg>div.apPOZK>img.gRkIq0",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "롯데벤처스": {
+  "url": "https://lotteventures.com/investment/portfolio",
+  "sig": "div.grid>a.block>div.group/card>div.absolute>p.mb-1",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "라이징에스벤처스": {
+  "url": "http://risingsv.co.kr/kor/portfolio/sub_01.html",
+  "sig": "div.portfolio-box>div.portfolio-list>a.portfolio-logo>div.portfolio-list-detail>p.p-company",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "바인벤처스": {
+  "url": "https://vinevc.co.kr/pages/portfolio",
+  "sig": "div>ul.contents_wrap>li.info_area>div.__subTitle3>p",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "스퀘어벤처스": {
+  "url": "https://www.sqvc.co.kr/",
+  "sig": "div>div>div.N8MGzv>p.font_8>span.wixui-rich-text__text",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "이앤인베스트먼트": {
+  "url": "http://www.eninvestment.co.kr/m31.asp?pn=3&sn=1",
+  "sig": "div.portfolio_lists>ul>li>a>div.cname",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "골든오크벤처스": {
+  "url": "https://goldenoakventures.co.kr/page/portfolio",
+  "sig": "div.row>div.col-xs-12>div.portfolio>dl.caption>dt",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "무신사파트너스": {
+  "url": "https://www.musinsapartners.co.kr/",
+  "sig": "div.container>section.section>div.title_area>h3>span.item",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "크로스로드파트너스": {
+  "url": "https://www.krossroad.co.kr/%EB%B3%B5%EC%A0%9C-vc-investments-1",
+  "sig": "p.font_8>span.color_37>span.wixui-rich-text__text>span.wixui-rich-text__text>span.wixui-rich-text__text",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "더벤처스": {
+  "url": "https://theventures.vc/ko/companies",
+  "sig": "main.flex-1>div.max-w-6xl>div.mb-24>a.grid>div.font-medium",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "진앤투자파트너스": {
+  "url": "http://www.genenpartners.com/bbs/board.php?bo_table=portfolio",
+  "sig": "div.list-row>div.list-item>div.name_wrap>a>h2",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "앨리스파트너스": {
+  "url": "https://www.alliespartners.co.kr/",
+  "sig": "img:div.grid>div>a.bg-white>div.w-[149.76px]>img.max-h-full",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "센틱스벤처스": {
+  "url": "https://www.centixvc.com/portfolio",
+  "sig": "img:div.framer-vfrw0i-container>a.framer-was3D>div.framer-1tjofqa>div>img",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "앤파트너스": {
+  "url": "https://n.partners/#partners",
+  "sig": "div.shell>div.partnersList>article>a.portfolioLink>h3",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "다성벤처스": {
+  "url": "https://dasungvc.co.kr/portfolio/",
+  "sig": "div.portfolio-list>div.portfolio>div.logo-wrap>div.title-wrap>h4",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "엔코어벤처스": {
+  "url": "https://www.ncorevc.com/?module=Board&action=SiteBoard&sMode=SELECT_FORM&iBrdNo=2",
+  "sig": "img:div.sconts_wid>ul.portf>li>a>img",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "그래비티벤처스": {
+  "url": "https://www.gravityventures.co.kr/ko/investment/our-partners",
+  "sig": "div.invest-pane>div.pcard-grid>a.pcard>div.pcard-overlay>div.pcard-name",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "에스케이증권": {
+  "url": "https://www.sks.co.kr/main/index.cmd",
+  "sig": "div.post_area>div.post_list>ul>li>div.post_label",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "웰컴벤처스": {
+  "url": "https://www.welcomevc.com/s-projects-basic",
+  "sig": "div>div>div.N8MGzv>h2.font_5>a.wixui-rich-text__text",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "동훈인베스트먼트": {
+  "url": "http://www.dhinvestment.co.kr/skin/page/portfolio.html",
+  "sig": "section.section>div.container>div.pf-grid>a.pf-card>span.pf-name",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "트리거투자파트너스": {
+  "url": "http://www.triggerip.com/portfolio",
+  "sig": "div.item-block>div.item-inner>div.item-h-con>div.button-wrap>a.e-btn",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "카스피안캐피탈": {
+  "url": "https://www.caspian.co.kr/?module=Board&action=SiteBoard&sMode=SELECT_FORM&iBrdNo=3",
+  "sig": "div.sconts_wid>ul.clfix>li>a>p",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "에스비파트너스": {
+  "url": "https://www.sbpartners.co.kr/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4",
+  "sig": "div>div>div.N8MGzv>h2.font_0>span.wixui-rich-text__text",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "스탤리온파트너스": {
+  "url": "http://www.stallionpartners.co.kr/main/?load_popup=1",
+  "sig": "div.fp-tableCell>div.namearea>ul>li>span.name",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "테스투자파트너스": {
+  "url": "https://www.tesinvestment.co.kr/portfolio.html",
+  "sig": "section.section>div.wrap>div.portfolio-grid>article.company>h3",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "삼천리인베스트먼트": {
+  "url": "https://www.sclinvestment.com/company/investment.php",
+  "sig": "div.contents>div.con>ul.logoArea>li.ty4>p.tag",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "유진투자증권": {
+  "url": "https://www.eugenefn.com/main.do",
+  "sig": "li>div>ul>li>a",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "지티오인베스트먼트": {
+  "url": "http://gtoinvest.com/page/fund",
+  "sig": "div.container>table.table>tbody>tr>td",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "인바이츠벤처스": {
+  "url": "https://www.invitesventures.com/en/portfolio/index.php",
+  "sig": "img:li>a.pop_terms>div.thumb>div.img>img",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "라인투자파트너스": {
+  "url": "https://lineinvest.kr/portfolio",
+  "sig": "div.pf_item>a.item_hover_wrap>div.item_txt_wrap>div.item_title_wrap>p.item_title",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "에프엠씨인베스트먼트": {
+  "url": "https://fmcinvest.com/#portfolio",
+  "sig": "section.portfolio>div.container>div.portfolio-tiles>article.portfolio-tile>h3",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "땡스벤처스": {
+  "url": "https://www.thnx.vc/portfolio",
+  "sig": "div.collection-item>a.large-portfolio-link>div.portfolio-link-top-contents>div.div-block-7>h4.display-heading",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "에이치엘비인베스트먼트": {
+  "url": "https://www.hlbkorea.com/group/invest/",
+  "sig": "div.pos3>div.select-box>div>div",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "에스엠시노기술투자": {
+  "url": "https://www.smsino.co.kr/page03.php",
+  "sig": "img:section.portfolio-page>div.portfolio-page-inner>div.portfolio-grid>a.portfolio-item>img",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "제이원창업투자": {
+  "url": "https://j1vc.com/?ckattempt=1",
+  "sig": "rs-module.revslider-initialised>rs-slides>rs-slide>rs-layer-wrap.rs-parallax-wrap>rs-layer.rs-layer",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "페인터즈앤벤처스": {
+  "url": "https://www.thepainters.vc/",
+  "sig": "div.rounded-lg>div.p-6>div.mb-4>div.flex>div.inline-flex",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "임베스트파트너스": {
+  "url": "http://www.imbestip.com/#section04",
+  "sig": "div>div.team>div.item>ul>li",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "임팩트파트너스": {
+  "url": "http://www.impactpartners.kr/sub03.html",
+  "sig": "img:div.portfolio_wrap>ul.partner_list>li>a>img",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "엔엑스브이피": {
+  "url": "https://www.nxvp.com/bbs/board.php?bo_table=s8_1",
+  "sig": "ul>li>a>div.portfolio-text>h4.porfolio-company",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "나이스투자파트너스㈜": {
+  "url": "http://niceinvestment.co.kr/#portfolio",
+  "sig": "div.portfolio_grid>div.pf_card>div.pf_body>div.pf_info>p.pf_name",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "펜타스톤인베스트먼트㈜": {
+  "url": "http://www.pentastone.co.kr/sh_page/page34.php",
+  "sig": "div>div.sub>ul.pop_link>li>a",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "동원기술투자㈜": {
+  "url": "https://www.dwinvestment.co.kr/",
+  "sig": "div.all>div.contents>div.organ>div.organ_chart>div.pie-chart",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "대아인베스트먼트㈜": {
+  "url": "https://www.daeainvestment.com/sub/portfolio.php",
+  "sig": "div.inner>div.contents_box>div.contents>div.txt_box>h2",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "㈜엔베스터": {
+  "url": "https://nvestor.co.kr/?ckattempt=1",
+  "sig": "div.rt-col-md-3>div.single-logo>div.single-logo-container>h3>a",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "㈜유일기술투자": {
+  "url": "http://www.ktfc.co.kr/investment/",
+  "sig": "ul.lst_invst>li>div.right>div.btm>p.txt",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "티더블유지에프파트너스㈜": {
+  "url": "http://twgf.co.kr/",
+  "sig": "div.ays-pb-modals>div.ays-pb-modal>div.ays_content_box>div.p4>div.p5",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "청담인베스트먼트㈜": {
+  "url": "https://www.cdinvestment.co.kr/bbs/content.php?co_id=portfolio",
+  "sig": "div.cd-content-shell>div.cd-content-grid>a.cd-content-card>div.cd-content-stack>strong.cd-content-card__title",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "라온벤처스": {
+  "url": "https://www.raon.vc/ko",
+  "sig": "table.tab-1>tbody>tr>td>p",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "주식회사 라데팡스인베스트먼트": {
+  "url": "https://ldinvestment.co.kr/itc/portfolio/portfolio?menuId=21",
+  "sig": "div.item-wrap>div.item>a>div.cont>p.tit",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "송현인베스트먼트": {
+  "url": "https://www.songhyuninvestment.co.kr/pages/board/board.list.php?board_no=29",
+  "sig": "li.aos-init>a>div.txt>div.title>h4.f-heading-5",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "그랜드벤처스": {
+  "url": "https://gvc.im/portfolio/",
+  "sig": "div.vc_column-inner>div.wpb_wrapper>div.wpb_text_column>div.wpb_wrapper>h3",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "㈜디에이밸류인베스트먼트": {
+  "url": "https://davalueinvest.com/#link05",
+  "sig": "section.portfolio>div.inner>ul>li>p",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "㈜에이피투자금융": {
+  "url": "https://www.ap-invest.co.kr/portfolio.asp",
+  "sig": "article.area>div.portfolio-cnt>ul>li>p",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "에볼루션인베스트먼트㈜": {
+  "url": "https://aevolution.vc/portfolio/",
+  "sig": "div.container>div.posts-02__wrapper>div.card-container>div.posts-02__text>h3.def-18_72",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "(주)에스제이지파트너스": {
+  "url": "https://sjgpartners.co.kr/bbs/board.php?bo_table=s3_1",
+  "sig": "ul>li>a>div.details>p",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "㈜이스트게이트인베스트먼트": {
+  "url": "http://www.firstegi.co.kr/",
+  "sig": "div.board-zone>div.list-box>ul>li>a",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "㈜유비쿼스인베스트먼트": {
+  "url": "http://www.ubinv.com/s4/s4_1.php",
+  "sig": "ul.clear>div.wow>li>a>p",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "주식회사 퍼시픽캐피탈": {
+  "url": "http://www.pacificcapital.co.kr/?act=info.page&pcode=sub3_1",
+  "sig": "div.cat>ul.logos>li>a>p",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "㈜브레이브뉴인베스트먼트": {
+  "url": "http://bravenew.co.kr/?act=affiliates.page&pcode=sub2_3",
+  "sig": "img:ul>li.img_frame>div>a>img",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "티케이지벤처스㈜": {
+  "url": "https://ventures.taekwang.com/kr/team/team02.do",
+  "sig": "div.member-info>div.info>div.career>ul>li",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "㈜수앤파이낸셜인베스트먼트": {
+  "url": "http://www.sunp.co.kr/kwa-285533",
+  "sig": "div.ABA-wrap-box>div.ABA-container-box-275>div.ABA-content-box>div>a",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "큐캐피탈파트너스㈜": {
+  "url": "https://www.qcapital.co.kr/portfolio/portfolio.php",
+  "sig": "ul>li.por>a>p.tit>span",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "주식회사 더웨이브캐피탈": {
+  "url": "https://www.wavecapital.co.kr/websquare/websquare.html?w2xPath=/index.xml&urlPath=/ui/portfolio/news_list.xml",
+  "sig": "div.w2group>div.w2group>div.swiper-wrapper>div.w2group>div.w2textbox",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "사제파트너스": {
+  "url": "https://www.sazze.vc/portfolio",
+  "sig": "div.comp-lqg4h9405>div>div>div.N8MGzv>p.font_9",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "㈜지에스벤처스": {
+  "url": "https://www.gsventures.vc/#Portfolio",
+  "sig": "a.con-box>div.img-box>div.info-box>div.mane-box>div.mane-txt",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "동국인베스트먼트(주)": {
+  "url": "https://www.dkinvest.com/ko/index",
+  "sig": "div>div>div.cont_wrap_01>ul>li",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "㈜솔론인베스트": {
+  "url": "https://xoloninvest.com/",
+  "sig": "tbody>tr>td.kboard-latest-title>a>div.kboard-default-cut-strings",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "㈜엘엑스벤처스": {
+  "url": "https://www.lxventures.vc/kr/index.do",
+  "sig": "div.LGLeeN-keyboard-shortcuts-view>table>tbody>tr>td",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "㈜큐더스벤처스": {
+  "url": "http://www.kudosventures.co.kr/m11.php",
+  "sig": "li>a>div.milestone>dl>dd",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "㈜옐로우독": {
+  "url": "https://www.yellowdog.kr/portfolios/",
+  "sig": "div.wpb_fp_col-md-3>figure.effect-marley>figcaption>div>h2",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ },
+ "㈜아펙스인베스트먼트": {
+  "url": "https://apexinve.com/#Portfolio",
+  "sig": "div.container>div.row>div.left-box>div.cl_caption>div",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "스카이투자파트너스㈜": {
+  "url": "https://www.skyinvp.com/portfolio",
+  "sig": "img:div>div>div.W4V2qg>a.apPOZK>img.gRkIq0",
+  "mode": "auto",
+  "at": "2026-11-15"
+ },
+ "㈜에프앤에프파트너스": {
+  "url": "https://www.fnfpartners.com/portfolio",
+  "sig": "div.grid>div.group>a.block>div.absolute>h4.text-white",
+  "mode": "learned-new",
+  "at": "2026-11-15"
+ }
+}
