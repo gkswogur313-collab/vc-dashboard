@@ -1,14 +1,14 @@
 {
- "generated_at": "2026-11-14T01:51:52.821Z",
- "count": 544,
+ "generated_at": "2026-11-15T01:20:11.801Z",
+ "count": 575,
  "sources": [
   {
    "id": "thelec-kr",
    "매체": "디일렉",
    "분류": "전문지",
    "ok": true,
-   "count": 19,
-   "added": 12
+   "count": 18,
+   "added": 0
   },
   {
    "id": "thelec-en",
@@ -16,7 +16,7 @@
    "분류": "전문지",
    "ok": true,
    "count": 26,
-   "added": 15
+   "added": 0
   },
   {
    "id": "semieng",
@@ -24,7 +24,7 @@
    "분류": "전문지",
    "ok": true,
    "count": 10,
-   "added": 2
+   "added": 0
   },
   {
    "id": "eetimes",
@@ -32,7 +32,7 @@
    "분류": "전문지",
    "ok": true,
    "count": 7,
-   "added": 3
+   "added": 0
   },
   {
    "id": "semianalysis",
@@ -70,7 +70,7 @@
    "매체": "SEMI (구글 뉴스 경유)",
    "분류": "협회·통계",
    "ok": true,
-   "count": 33,
+   "count": 34,
    "added": 8
   },
   {
@@ -78,39 +78,39 @@
    "매체": "SEMI 보도 (국내 기사)",
    "분류": "협회·통계",
    "ok": true,
-   "count": 7,
-   "added": 2
+   "count": 9,
+   "added": 1
   },
   {
    "id": "gn-ksia",
    "매체": "한국반도체산업협회 (기사)",
    "분류": "협회·통계",
    "ok": true,
-   "count": 34,
-   "added": 10
+   "count": 33,
+   "added": 3
   },
   {
    "id": "gn-sobujang",
    "매체": "소부장 (국내 기사)",
    "분류": "뉴스",
    "ok": true,
-   "count": 40,
-   "added": 8
+   "count": 38,
+   "added": 3
   },
   {
    "id": "gn-research-kr",
    "매체": "국내 연구기관 (기사)",
    "분류": "연구기관",
    "ok": true,
-   "count": 4,
-   "added": 2
+   "count": 2,
+   "added": 1
   },
   {
    "id": "gn-kotra",
    "매체": "KOTRA 해외시장뉴스 (구글 뉴스 경유)",
    "분류": "연구기관",
    "ok": true,
-   "count": 9,
+   "count": 7,
    "added": 0
   },
   {
@@ -119,7 +119,7 @@
    "분류": "기업 IR",
    "ok": true,
    "count": 100,
-   "added": 44
+   "added": 13
   },
   {
    "id": "gn-tsmc-ir",
@@ -127,10 +127,58 @@
    "분류": "기업 IR",
    "ok": true,
    "count": 29,
-   "added": 7
+   "added": 4
   }
  ],
  "items": [
+  {
+   "id": "3991434350c0",
+   "src": "gn-ksia",
+   "분류": "협회·통계",
+   "매체": "국악타임즈",
+   "제목": "\"사람과 기술이 함께 성장하는 반도체 산업\" 김영훈 고용노동부장관, 반도체 연구개발 현장의 근로시간제도 운영 실태와 애로사항 청취",
+   "링크": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1vWUtJd1EtejJGcC0zLXA1c0w3Tm5RVUp3dUlRekozSlpSY3lKZEFZalRNN3ViSG85RE8ydDB3MEZGZ2xSTEthaFVQbzMxclktUlI2T2RkcXJRTmtwekI2WkViYw?oc=5",
+   "날짜": "2026-11-15",
+   "요약": "",
+   "수집일": "2026-11-15",
+   "구글경유": true
+  },
+  {
+   "id": "68662ce731e4",
+   "src": "gn-equip-ir",
+   "분류": "기업 IR",
+   "매체": "Yahoo Finance",
+   "제목": "KLA (KLAC) Generates $1.34 Billion in Cash, What’s Next?",
+   "링크": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQd0NUWTJ1UTl3SFpYcUFpdGctUUZZVkZrY05VUjdnTTdwMHdRSHNSS1VhUHBPaVlnODRnUm9VUWZCUlFMa3VOelFGazhlR2lTbW1mZlRhRzQ3R3JqdDU2anJiemE5OGJOMm5pRWU4aXVEU29nQUFOT2Q1aVREUlBDSUw3R01COUY4c3BTbWhydDFVdw?oc=5",
+   "날짜": "2026-11-15",
+   "요약": "",
+   "수집일": "2026-11-15",
+   "구글경유": true
+  },
+  {
+   "id": "8667c2463802",
+   "src": "gn-equip-ir",
+   "분류": "기업 IR",
+   "매체": "The Globe and Mail",
+   "제목": "Applied Materials (AMAT): New Buy Recommendation for This Technology Giant",
+   "링크": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPWnAycmY3WTYxOXVpNjJ1bmtvTDd4R0RQMzVuSUF3dU10VXhwNmRCV0dISnJzUUhGbFFxbnd6UUpuMWJlM0VjWXNrZWw1Rks5bm15ekZ5OGNVWnZMbjdMeG1ma0VwaldCUmF4OExjX1ZzZFltTzRBUDZkQURLeFB0bVRyc0tRUndEUkppaUhnX2Z2V0g3YW54X21kQ0h6Y2ptQmxFUlRtNHlLSVV1c0J5c211YzJHejVTbmIyT0M2aEV3SnMwbnZvekg0MjFLcjF5NHgyRi1FRE1RYVotaDc5eWRtRF9wTHVMam1ETw?oc=5",
+   "날짜": "2026-11-15",
+   "요약": "",
+   "수집일": "2026-11-15",
+   "구글경유": true
+  },
+  {
+   "id": "df78c0c5a9b5",
+   "src": "gn-tsmc-ir",
+   "분류": "기업 IR",
+   "매체": "TIKR.com",
+   "제목": "“Being Prudent”: TSMC Stock Has Surged 41% in a Year. Is It Too Late to Buy?",
+   "링크": "https://news.google.com/rss/articles/CBMingFBVV95cUxOOFJOaHZRWjdpTy10QkRRT0thX1dvSlA0RXJUNUp0YnFkUkhJR0NlRHNyaEVYME1nVVcxNTFXYS00M2FKUENRVGRVM3ZicnBvc3dJdElwbXFJdURJc1BXRTJIaWdLQm4wQmh4VlNSS0F0RnhWRklVX1F4dU5fcUhnOHBUdTNoak1iUXBiaXhnN0gzUVBSajVqc1owZl9WQQ?oc=5",
+   "날짜": "2026-11-15",
+   "요약": "",
+   "수집일": "2026-11-15",
+   "구글경유": true
+  },
   {
    "id": "cca5e0a3ea27",
    "src": "thelec-kr",
@@ -417,6 +465,126 @@
    "날짜": "2026-11-14",
    "요약": "",
    "수집일": "2026-11-14",
+   "구글경유": true
+  },
+  {
+   "id": "5dab55dd65f2",
+   "src": "gn-semi",
+   "분류": "협회·통계",
+   "매체": "SEMI.org",
+   "제목": "朗拓科技（广州）有限公司",
+   "링크": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBNZzFEbmdVMTBrN1pZOWpFOW5uNXdmaEpUZmtTUWU2VXNKN0JxeXBndUNkQTkycEpnanY0V09YeFgxYzluRWVtYTBFOA?oc=5",
+   "날짜": "2026-11-14",
+   "요약": "",
+   "수집일": "2026-11-15",
+   "구글경유": true
+  },
+  {
+   "id": "188eb048a170",
+   "src": "gn-semi",
+   "분류": "협회·통계",
+   "매체": "semi.org",
+   "제목": "Safety Guidelines (S) - semi.org",
+   "링크": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQNzQ5anhIeFNfSnJLLVVBNnJYUk9zRkRYYzZqaUM1b2t5V3BuLUtqT0hjb2tZdzVwenMzdy1qczVPYURSTjB5QlVZWlRQeTZBM2FEX1pVSWpOYVdZTGJ3aWg1V3hLV2dRUnhyVHVBNkpoTDJsX1NObDZ6UnhTUVR3eVlMUnFuSTJ3TkNpZQ?oc=5",
+   "날짜": "2026-11-14",
+   "요약": "",
+   "수집일": "2026-11-15",
+   "구글경유": true
+  },
+  {
+   "id": "61980baea1b1",
+   "src": "gn-semi",
+   "분류": "협회·통계",
+   "매체": "SEMI (구글 뉴스 경유)",
+   "제목": "- Connect@SEMI",
+   "링크": "https://news.google.com/rss/articles/CBMilgJBVV95cUxOZVhDWld5ZnhxQ1A0TWFLQW1BU3FXTl9qY3NXUFhSWmJxU3JUZEUzSldwOHZPRDJZRndObnh5YzhWSm9ZUkEtZEhfNDNRX0c2cU9raDZObWEzUUZTdkttV2ZRMUpxck4xcnhJNVdWcnVqcmZUeXBqenZoT3FiR3J3VmFSTEhNUHdTQlZsUnZPM1dsaWdzR3pJQUd5bV9qSXNkd0VGUjFFdGJkN2FXczJWUFNMNDE5d05LbjhTMG1nYlBrc3JZeXlIZUpVOE5xTWlleEZHdWZHQTFzdG9BU3dnT2FKNG5qT3FnRHhUbkFQemc5MTlKU2lLazI0RFJsZDZIay1FeXZIV0JrdHNsYjJCUjR4anJDUQ?oc=5",
+   "날짜": "2026-11-14",
+   "요약": "",
+   "수집일": "2026-11-15",
+   "구글경유": true
+  },
+  {
+   "id": "78f49c778766",
+   "src": "gn-ksia",
+   "분류": "협회·통계",
+   "매체": "지디넷코리아",
+   "제목": "VKAISS 2026, 베트남과 한국의 AI 및 반도체 협력 강화",
+   "링크": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE90V2FJWm5kZVNVZk5IR2p1TWY0V25tUng4QU55cWk5VVhoVTQyZENuVkgzeXRNeTNVcTVrWEVnWTNfSngxSzNFX1NCcmpsMV9Yc2J5c1pR?oc=5",
+   "날짜": "2026-11-14",
+   "요약": "",
+   "수집일": "2026-11-15",
+   "구글경유": true
+  },
+  {
+   "id": "f40a95449c67",
+   "src": "gn-ksia",
+   "분류": "협회·통계",
+   "매체": "Vietnam.vn",
+   "제목": "베트남과 한국 간 반도체 교육 분야에서 지식 협력 및 공동 창조를 증진합니다.",
+   "링크": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOY3I2SjRMeU0wNEJyNHhManpBOE56SWM5SUppRFRselVNLVh6SFFIQlZBbWQ0bFRFb3hJVFBTSmVUS1dmSExnODltdG81aUNmX0tDQlAySGpDN2wzUmJKUV9VUHozZWtKWFNJbkwzYnc1SlJGdDhKcXdCcGktTVF4MEZ0MUlyVm9QMS1ZZjIxRFNCLWFXeVM5alZtaVM?oc=5",
+   "날짜": "2026-11-14",
+   "요약": "",
+   "수집일": "2026-11-15",
+   "구글경유": true
+  },
+  {
+   "id": "91001a53dc4e",
+   "src": "gn-sobujang",
+   "분류": "뉴스",
+   "매체": "FA저널",
+   "제목": "SFA, 3분기 별도 영업이익률 13.8%… 반도체 수주 비중 확대",
+   "링크": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBpZG95YmtHVDRlY2FzMDdsWXh5dGsxaFdmb1dnTWJ0NEkzR3ZscTU5Y0h1Z1N6N3VmWlNNcl8wbHhXWnBBSnlmTVQzU2RGQWVxbkdsUUVueDhURVZfa0Y3Vk9NV015UEJwZVNn?oc=5",
+   "날짜": "2026-11-14",
+   "요약": "",
+   "수집일": "2026-11-15",
+   "구글경유": true
+  },
+  {
+   "id": "8962fa9224eb",
+   "src": "gn-sobujang",
+   "분류": "뉴스",
+   "매체": "핀포인트뉴스",
+   "제목": "디스플레이 장비로 실적 확인… 디바이스, 반도체가 다음 성장축",
+   "링크": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5pSWpKSlZiRzdXTVBPVWJJYzRTdHRadUdJZUVzaEVhcmR6cHFuNzA5MlFHa2FTV3BfRW9EUy15bWNRSTlqWkczdENZT3VQZ0w4cm0tUGRQdEp4NllwcUdUT2N6Wmw4TUdFRUVLNkVBSEV6ZUHSAXdBVV95cUxQeHJGb2hyeHVWMERvU2N0NFVWX1NYaTRsTE9DcG4tYXRTVFRXZnM1OVFuN3l3cWw1c09oT1FERExaZlpfM1o5SGNKTEwxWVVqWFhHUVduWlZBM0dHejh3bTgzV0trUzNHRnk2Vm1sb01jVXJTWl9TTQ?oc=5",
+   "날짜": "2026-11-14",
+   "요약": "",
+   "수집일": "2026-11-15",
+   "구글경유": true
+  },
+  {
+   "id": "646a3a52600a",
+   "src": "gn-equip-ir",
+   "분류": "기업 IR",
+   "매체": "Yahoo Finance Singapore",
+   "제목": "Tokyo Electron Limited (8035.T) stock price, news, quote and history",
+   "링크": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBINVY0MjJfWlpvdmtZYkVSV2VDVF9JSzlmdWlVbTZhTk5QRkloc181akJBOUVVSWdYTm5aRkd2NjZCQTZuZmJjbmlrWlZlRGhXYzl1Yg?oc=5",
+   "날짜": "2026-11-14",
+   "요약": "",
+   "수집일": "2026-11-15",
+   "구글경유": true
+  },
+  {
+   "id": "9ef628ed1454",
+   "src": "gn-equip-ir",
+   "분류": "기업 IR",
+   "매체": "Simply Wall St",
+   "제목": "Why Now is the Time to buy ASML",
+   "링크": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNZ2JySE83ZTNfcWRnNW5OdUVnTFZNNHUzMmxUdFVVSHpwc3hWVUU5OWxTbTlQbFZrRVhLOTc4NDV3YWs5WmVIWDZMTXk4NGFRSWNFV0dqb19KUVd5ZjZ3d1paZG1JVFpuV3pPenFWRkczSHJRUUFHc3RmQnM1bk9uSERIYUY4UzRwc1hDY2xMOE10dDVrNWZCeExnWENxOENsM3lHTURHUkNRbV9iZm1kZmVIZnQ2ZU1QMnE1SklWVXpkVVJP?oc=5",
+   "날짜": "2026-11-14",
+   "요약": "",
+   "수집일": "2026-11-15",
+   "구글경유": true
+  },
+  {
+   "id": "ae8f99765162",
+   "src": "gn-equip-ir",
+   "분류": "기업 IR",
+   "매체": "TIKR.com",
+   "제목": "UBS Cut Its Applied Materials Target After a Record Quarter. It Still Sees 68% Upside",
+   "링크": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPXzZSdlZ5OUJ2R3BtS1NDc0pWdGtGanVkZk1JMTFCV25SdGptdWNMWEZLb0hvWDYyYWgtcER4M0haaWNnVFBsTThBUUpoNkprVjZhbkZEaWxRb0FBbndjdHI2V1JjM0dsMS12aVhUWGZBazYycjFYek0yRl9kRHB4VlVxQThteVB0Tk9rdWNFRERaSU5hWTRkUmh2aHI1d0I5akRSRTZRRWlfNTl1NEE?oc=5",
+   "날짜": "2026-11-14",
+   "요약": "",
+   "수집일": "2026-11-15",
    "구글경유": true
   },
   {
@@ -2292,6 +2460,102 @@
    "구글경유": true
   },
   {
+   "id": "08b8e8409663",
+   "src": "gn-equip-ir",
+   "분류": "기업 IR",
+   "매체": "Yahoo Finance",
+   "제목": "Applied Materials Says Chip Demand Remains “Much Higher Than Supply”",
+   "링크": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQQWtEUEkyOVg2X2V4WmxodlJZcG9WeksxR3E0VGUtSnh2aUF4SUNGMXVPakItVUdJb3ZnT1RHZWt4R1VrLTdtTGVXNU92SGRYZ0Z6Mlg5VzJ4WFNya1lkT0tLNExfQlVwT29UZGtXcmFLVUpSdktoZUZpY1dYeHFReFdSd1YtMHVLSURSczg5SXdYZnZuQUh4c010cw?oc=5",
+   "날짜": "2026-11-13",
+   "요약": "",
+   "수집일": "2026-11-15",
+   "구글경유": true
+  },
+  {
+   "id": "85e91b3c749a",
+   "src": "gn-equip-ir",
+   "분류": "기업 IR",
+   "매체": "TradingView",
+   "제목": "Applied Materials' results show strong semiconductor equipment demand, analysts say",
+   "링크": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNdE9rOTloR1UzUFJVbFF0WTdIV2RkazJMclpxRkx0X282Qlg4Q1RYMkNkaFRFLWROTkxhX3hMYm5vcVhKWUtjQVVTR0QxQ3ZrUk9kSm9KczI0WDU1c280cFE5N29vaHBuRmx0NVhaVm1jUVNrV2lNQUxfeG1KUU9rWkQ1eHF6R0hSN0xGSW0wTWRpUi1hZGtzMk9XMEItTjFfSEV3NzFvN3AxbEJHNUxudVVWd1c4Y0NmaFlzRkhTZ3llQ0xfSTlyUmNmbHhUZ0FYQW1XbU83QzVGRDJN?oc=5",
+   "날짜": "2026-11-13",
+   "요약": "",
+   "수집일": "2026-11-15",
+   "구글경유": true
+  },
+  {
+   "id": "dcfeb8698393",
+   "src": "gn-equip-ir",
+   "분류": "기업 IR",
+   "매체": "TradingView",
+   "제목": "ASML Stocks Fall as NVIDIA Shake-Up Spills Into Chip Equipment",
+   "링크": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQaXdjaDJZSUtNNm1jMFg4UkcwU1lyX1ZscVdOLVkyNldOQWdUS0JmVHZBWGF0Z3hMWVdldmJpdHBWTjNMRHNkYmZ2VjFadlhxYmZUZTFKRXhSUHJVTDN6bFhJSUN2QU5jZmhRR2lXUHNaSE9mT1Z2YjhyaG95d2RXOVVwWlJZX1FSM3BTYnQ3TzhDRVpUM1RDWnFzMmwxb1FiMFJmcEhOYmNuX2tEN1N0S0pSaHdlQVlfNlZLTl9kYw?oc=5",
+   "날짜": "2026-11-13",
+   "요약": "",
+   "수집일": "2026-11-15",
+   "구글경유": true
+  },
+  {
+   "id": "df8ad8cdc686",
+   "src": "gn-equip-ir",
+   "분류": "기업 IR",
+   "매체": "TradingView",
+   "제목": "AMAT CEO Says Chip Demand Robust, Adds ‘Multiyear’ Fab Investments Are Needed – Shares See Modest Rise After Sharp Run-Up",
+   "링크": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNZXB5b0ZfcHVLanBvbUtHLTFEOGhVeDd1UU9fVzhzMkIxOExYdVVGQ2FLUTRZTW9DbXdmMEJRLTRyNXJPc0M3eHVBclN1OXAzYkREd1VFYkN5Y2g2ZV8zbGVjUlYwMHhpSmhXLUhsdEsxTi1rZlVJNWNJRUh3ckNjRWhoU2lyWXRXNE54QVdaUWNJdFdWWUdxbFhuc3JNMDBGcU1xbVBNQ3FUMDlQNVFlZlNpdWdRQS1SZV9WdUg1cC1ZajIyYk93VW1kcF8tdVk5VDVGRGhEbDdvaDVRNUZBM2JmeVA5Q0U5NG0yOHU3SDVfQVRoSzhjbTFIVngzamF1RDBwQWlSWXY?oc=5",
+   "날짜": "2026-11-13",
+   "요약": "",
+   "수집일": "2026-11-15",
+   "구글경유": true
+  },
+  {
+   "id": "aaa3fb68e2dd",
+   "src": "gn-equip-ir",
+   "분류": "기업 IR",
+   "매체": "TIKR.com",
+   "제목": "Teradyne Stock Falls 21% in a Week as Applied Materials Drops 15%. Is the Chip-Equipment Selloff Overdone?",
+   "링크": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQN2s5bDU4cUlrcXFZRkFhNndHd21jUTlpR1lKZkl3Y3lwcVU2eldJVGRFVUlCMVVWbkkyTVpJcGNqaGRzVWs1bHJQc19DM0ItdWZpTG1YdWpzYU5HTzJYOVYtMFhSSjZMbC10aGhnM1doLTMzMXhHT19iNDVrd2RoamVqSEE3UVZFTXBNNXlVSjNTZ3dVajhpQlFzek9ncTQ5clVMS2xSX2Ffd2xFZWtSd0xHdm5tY0N1S1IxLXhiNENIaUV5ejlZ?oc=5",
+   "날짜": "2026-11-13",
+   "요약": "",
+   "수집일": "2026-11-15",
+   "구글경유": true
+  },
+  {
+   "id": "2463e8aa5ceb",
+   "src": "gn-equip-ir",
+   "분류": "기업 IR",
+   "매체": "TOKENPOST",
+   "제목": "Applied Materials Posts 53% Revenue Growth in Fiscal Fourth Quarter",
+   "링크": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE04NE9lb1VFbUZaNENZY1VIR1UyeUktMnRPcjd1bzcxQ1o3bExjUzVndk9XaTA2Y1FLbEU1eUxkUERSUXc3bkdjZFozZ3gzb0Q1ZWcxVERFZ0Y?oc=5",
+   "날짜": "2026-11-13",
+   "요약": "",
+   "수집일": "2026-11-15",
+   "구글경유": true
+  },
+  {
+   "id": "96511bf3a326",
+   "src": "gn-tsmc-ir",
+   "분류": "기업 IR",
+   "매체": "Yahoo! Finance Canada",
+   "제목": "Taiwan Semiconductor Manufacturing Company Limited (TSM) Stock Price, News, Quote & History",
+   "링크": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1ESjBlRGpDQXhyQTFJSTNwY08zMnRrcVpJNTJlUkJpU0twRFF0M0FDT2sxempYcW96azJ0VUEtNkxXUjVOX2pGZ0ZHcnkwak13?oc=5",
+   "날짜": "2026-11-13",
+   "요약": "",
+   "수집일": "2026-11-15",
+   "구글경유": true
+  },
+  {
+   "id": "16f31d4d6649",
+   "src": "gn-tsmc-ir",
+   "분류": "기업 IR",
+   "매체": "Beansprout",
+   "제목": "Inside the AI chip: Accessing TSMC and SK hynix through SGX SDRs",
+   "링크": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9tVFcybzZTNlJ1aDdXZE1IblZpNFgtdHNiSkNBTjcyYmFXeE9fcW1KNjlUS0FvcjAwengyWFZ1ODBOM1VFeThVUENJYWRSSVNYRmhkbEdwNA?oc=5",
+   "날짜": "2026-11-13",
+   "요약": "",
+   "수집일": "2026-11-15",
+   "구글경유": true
+  },
+  {
    "id": "36023098a0b8",
    "src": "thelec-kr",
    "분류": "전문지",
@@ -4092,6 +4356,18 @@
    "구글경유": true
   },
   {
+   "id": "72a5367e3720",
+   "src": "gn-sobujang",
+   "분류": "뉴스",
+   "매체": "마켓인",
+   "제목": "日 공작기계 AI 호황 뒤 부품 쟁탈전…\"韓에 수주 뺏길라\"",
+   "링크": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBpeUFCcllHVDNHQlQtYzVlTHdJMU5sTTNaN01mb2J1cTFGdU1VdWZTbjRNSGlTTlhfTENGMnVYeXhSN0hCX3NrSm1kQjk3ZkV5WEdWYzZTQmtVRGxBLTJWNW9JcDdvT0FSaXZzWmVUVDRrbDQ?oc=5",
+   "날짜": "2026-11-11",
+   "요약": "",
+   "수집일": "2026-11-15",
+   "구글경유": true
+  },
+  {
    "id": "2f626be877cf",
    "src": "semieng",
    "분류": "전문지",
@@ -4872,6 +5148,18 @@
    "구글경유": true
   },
   {
+   "id": "562a029973d3",
+   "src": "gn-equip-ir",
+   "분류": "기업 IR",
+   "매체": "Opening Bell Daily",
+   "제목": "Stock market week ahead: Cisco leads 9 big earnings reports",
+   "링크": "https://news.google.com/rss/articles/CBMifkFVX3lxTFAzNWNWdmg0QTZVVmZ4cHVnU2V1YVlnYzRfMTh5SmNrZ2pyMGhXa2hKVU5KMmdrcFRiS3BrSTI0RXB0bTh1eGdXXzkzNllYaUV6MmVWWUE5UWotaXlhcHRaLUd0TTZoRjVicktPUWwyUmpPSjJqeUk3R0ROZmVQQQ?oc=5",
+   "날짜": "2026-11-09",
+   "요약": "",
+   "수집일": "2026-11-15",
+   "구글경유": true
+  },
+  {
    "id": "881c7e199684",
    "src": "semianalysis",
    "분류": "뉴스레터",
@@ -4989,6 +5277,18 @@
    "날짜": "2026-11-08",
    "요약": "",
    "수집일": "2026-11-14",
+   "구글경유": true
+  },
+  {
+   "id": "d3dbeda924b9",
+   "src": "gn-research-kr",
+   "분류": "연구기관",
+   "매체": "연합뉴스",
+   "제목": "베트남 인건비 4.5배 올랐지만…한국 진출기업 92% \"철수 안해\"",
+   "링크": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE80cWY2djZhUVZRbHdEWWpaUExTczd2c2VHb0Z5TFMwNnJFLVVhRnhzenVIQ3F5U0kzU0ZWSkcyazBidUxsWkd0TXZHQ0w1X3cyNERpTXFCLUZGS1XSAWBBVV95cUxNdW1KNll0WVVhSkpJc2FfWU1kRlMyUjJrZ2JWVlNESDhXbEthY3JwaElROUh2ZE0zU1RnUlE5Q0ZZMWpSNE1QeFFyVE9SaVFyVzRxUEZHclhFVW5Xc3RXUmE?oc=5",
+   "날짜": "2026-11-08",
+   "요약": "",
+   "수집일": "2026-11-15",
    "구글경유": true
   },
   {
@@ -5604,6 +5904,42 @@
    "구글경유": true
   },
   {
+   "id": "09615312f5b8",
+   "src": "gn-semi",
+   "분류": "협회·통계",
+   "매체": "SEMI.org",
+   "제목": "END-TO-END SEMICONDUCTOR MANUFACTURING DATA",
+   "링크": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPN2FTRjh4WVp0NjBsTG1hZElXMlJEYll4cElNX25TUGUtekkxRnRpLXc2V01uTk9OcWJWc202dzlnQzR6NEgwcTZhcmI1NGJLSS1rSmRrV3N3V3ZQZHdaRUtEQnQ1cVRNQkJaOW1La29ITTM2V2lmVV8yZ3pqdDItZ1V3Nk5BdlNPdXFUNlZocTRWaGJNbTJWZzB2bTVvX2hZdFhCOFhLVDYtYjFP?oc=5",
+   "날짜": "2026-11-04",
+   "요약": "",
+   "수집일": "2026-11-15",
+   "구글경유": true
+  },
+  {
+   "id": "a90b3d9813ac",
+   "src": "gn-semi-kr",
+   "분류": "협회·통계",
+   "매체": "디지털데일리",
+   "제목": "온세미, IVR 혁신 기업 `페릭` 6억달러에 인수… AI 전력 반도체 정조준",
+   "링크": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5jckRpTnRRdlRURGJOR0lRUHoxVUJlNkdGZGF5cUdYcWNsVm1Kd2J2Z0pBNGxScldSLTJzSHFxb1NCRG96ZEtZUTduTmg2MDZXTFRnNjY5U1NzbnA5MWRDWnVn?oc=5",
+   "날짜": "2026-11-04",
+   "요약": "",
+   "수집일": "2026-11-15",
+   "구글경유": true
+  },
+  {
+   "id": "3744e7629833",
+   "src": "gn-tsmc-ir",
+   "분류": "기업 IR",
+   "매체": "TipRanks",
+   "제목": "Why Micron, SanDisk, and SK Hynix Stocks Are Falling Despite Strong AMD Earnings, November 4",
+   "링크": "https://news.google.com/rss/articles/CBMixwFBVV95cUxObE9mME5lQkxvYTAtZkwtd3hiUjc0eDVPamRxbEpMYmJiZHBtV2oyWllGSnJCU2pLV2VuLXV6SUY5VnU4dVl6YUhubUJVdm1HUi1ZaDJtLWxmNlktclNRdExMbHZnajFBUU1rblNsM3cwQ3NlS1FZY09SUXNsRzRXLWpkWEZzZlVYSFpybUxHMkQ3U2JoSGZTNkdoOW1WYmVwSzJ3ekNyTnRGVW1tTGRkbTNSMWdvaWprekk1d3NQNVRIZ2FNS1hV?oc=5",
+   "날짜": "2026-11-04",
+   "요약": "",
+   "수집일": "2026-11-15",
+   "구글경유": true
+  },
+  {
    "id": "9cc844f89af8",
    "src": "gn-semi",
    "분류": "협회·통계",
@@ -5673,6 +6009,30 @@
    "날짜": "2026-11-03",
    "요약": "",
    "수집일": "2026-11-12",
+   "구글경유": true
+  },
+  {
+   "id": "0e0e63f40557",
+   "src": "gn-semi",
+   "분류": "협회·통계",
+   "매체": "SEMI.org",
+   "제목": "SEMI Market Symposium Illuminates Fast-Evolving Industry AI Journey",
+   "링크": "https://news.google.com/rss/articles/CBMingFBVV95cUxQOEljNmdFblhORGxJdmNEX3hvNW0zQk9lZXZESy1IdkZ5MVhuV3N6ZFdINUJZN2ZQVDNySzl4bEd3VWZFUjRNS1ZDbHRGUnNkMU9DR0pkNnAzenBMdXVUU2pkSVdwMHJEeVpaZHB1UnN6a3BhX0JNRWVwalJ5OGJGNkpGNV91dDVxNGhHSVh2N1lSTXNEczN6R08wZS1IZw?oc=5",
+   "날짜": "2026-11-03",
+   "요약": "",
+   "수집일": "2026-11-15",
+   "구글경유": true
+  },
+  {
+   "id": "e24fadb791db",
+   "src": "gn-equip-ir",
+   "분류": "기업 IR",
+   "매체": "TradingView",
+   "제목": "What Is Going On With KLA Stock on Tuesday?",
+   "링크": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNbWtBZEJBbXk5a2RFc1V1WDM0NkE2Z1ZkakhDTldiVTVYRGdwSGxsdEZVUy1UT2NsaHVDVHNuVEtzNEoySlRRalBuV3d4LWhQNzlVYXdObkVkcEVsU19UVUNqY3ZVa204OFVuUU9YckNGQ0MxYWduN1NWanMzTVRFNHJ3aTBGZWp6T18xMzkyQlc1Y3F6T056SlBLOXF2ZHoyWVZv?oc=5",
+   "날짜": "2026-11-03",
+   "요약": "",
+   "수집일": "2026-11-15",
    "구글경유": true
   },
   {
@@ -5973,6 +6333,18 @@
    "날짜": "2026-11-02",
    "요약": "",
    "수집일": "2026-11-14",
+   "구글경유": true
+  },
+  {
+   "id": "da217fb006b5",
+   "src": "gn-semi",
+   "분류": "협회·통계",
+   "매체": "SEMI.org",
+   "제목": "What Is Driving Silicon Wafer Demand Recovery?",
+   "링크": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOY2VfRkFmRUhOU0VGTTB0VmZIQkt1VkNOdmo5dzc1T2laQlBSLXJrMGZZMHpWcmtlSlBvQTFWb0hEMEhQOFFZTWJDYVJrYmtWRDdnVjVXV2tzSGI5TnFYRS15NGdVZzZqSkxGaXJwT1lLdnZYRlNoNDdFVUhiWmktag?oc=5",
+   "날짜": "2026-11-02",
+   "요약": "",
+   "수집일": "2026-11-15",
    "구글경유": true
   },
   {
