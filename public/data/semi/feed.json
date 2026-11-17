@@ -1,22 +1,22 @@
 {
- "generated_at": "2026-11-16T01:26:16.071Z",
- "count": 603,
+ "generated_at": "2026-11-17T04:12:34.043Z",
+ "count": 676,
  "sources": [
   {
    "id": "thelec-kr",
    "매체": "디일렉",
    "분류": "전문지",
    "ok": true,
-   "count": 18,
-   "added": 3
+   "count": 16,
+   "added": 12
   },
   {
    "id": "thelec-en",
    "매체": "THE ELEC (영문)",
    "분류": "전문지",
    "ok": true,
-   "count": 23,
-   "added": 0
+   "count": 16,
+   "added": 9
   },
   {
    "id": "semieng",
@@ -24,15 +24,15 @@
    "분류": "전문지",
    "ok": true,
    "count": 10,
-   "added": 0
+   "added": 4
   },
   {
    "id": "eetimes",
    "매체": "EE Times",
    "분류": "전문지",
    "ok": true,
-   "count": 7,
-   "added": 0
+   "count": 5,
+   "added": 2
   },
   {
    "id": "semianalysis",
@@ -48,14 +48,15 @@
    "분류": "뉴스레터",
    "ok": true,
    "count": 20,
-   "added": 16
+   "added": 17
   },
   {
    "id": "chipletter",
    "매체": "The Chip Letter",
    "분류": "뉴스레터",
-   "ok": false,
-   "error": "HTTP 403"
+   "ok": true,
+   "count": 20,
+   "added": 20
   },
   {
    "id": "asianometry",
@@ -69,16 +70,15 @@
    "id": "gn-semi",
    "매체": "SEMI (구글 뉴스 경유)",
    "분류": "협회·통계",
-   "ok": true,
-   "count": 35,
-   "added": 5
+   "ok": false,
+   "error": "HTTP 429"
   },
   {
    "id": "gn-semi-kr",
    "매체": "SEMI 보도 (국내 기사)",
    "분류": "협회·통계",
    "ok": true,
-   "count": 10,
+   "count": 8,
    "added": 2
   },
   {
@@ -86,24 +86,23 @@
    "매체": "한국반도체산업협회 (기사)",
    "분류": "협회·통계",
    "ok": true,
-   "count": 32,
+   "count": 20,
    "added": 1
   },
   {
    "id": "gn-sobujang",
    "매체": "소부장 (국내 기사)",
    "분류": "뉴스",
-   "ok": true,
-   "count": 37,
-   "added": 3
+   "ok": false,
+   "error": "HTTP 429"
   },
   {
    "id": "gn-research-kr",
    "매체": "국내 연구기관 (기사)",
    "분류": "연구기관",
    "ok": true,
-   "count": 4,
-   "added": 1
+   "count": 5,
+   "added": 2
   },
   {
    "id": "gn-kotra",
@@ -111,26 +110,362 @@
    "분류": "연구기관",
    "ok": true,
    "count": 6,
-   "added": 3
+   "added": 2
   },
   {
    "id": "gn-equip-ir",
    "매체": "장비사 실적 (기사)",
    "분류": "기업 IR",
    "ok": true,
-   "count": 98,
-   "added": 9
+   "count": 66,
+   "added": 19
   },
   {
    "id": "gn-tsmc-ir",
    "매체": "TSMC·메모리 실적 (기사)",
    "분류": "기업 IR",
    "ok": true,
-   "count": 29,
-   "added": 4
+   "count": 28,
+   "added": 10
   }
  ],
  "items": [
+  {
+   "id": "a497d8191df6",
+   "src": "thelec-kr",
+   "분류": "전문지",
+   "매체": "디일렉",
+   "제목": "대한전선, 싱가포르서 2718억원 초고압 전력망 수주",
+   "링크": "https://www.thelec.kr/news/articleView.html?idxno=65487",
+   "날짜": "2026-11-17",
+   "요약": "대한전선이 싱가포르에서 2718억원 규모 초고압 전력망 구축 사업을 수주했다.대한전선은 16일 싱가포르 전력청으로부터 400킬로볼트(kV) 초고압 전력망 프로젝트를 수주했다고 공시했다. 계약금액은 지난해 연결 매출(3조6360억원)의 약 7.5%에 해당한다.대한전선은 초고압 케이블과 전력기기 등 관련 자재의 설계와 생산, 포설, 접속, 시험까지 일괄(턴키) 방식으로 사업을 맡는다.싱가포르는 데이터센터와 반도체 산업의 전력 수요 증가에 대응해 송전망을 확충하고 있다. 현지 정부는 2029년까지 최대 5조5000억원을 투자해 송전망을",
+   "수집일": "2026-11-17",
+   "구글경유": false
+  },
+  {
+   "id": "1ff1e82e02eb",
+   "src": "thelec-kr",
+   "분류": "전문지",
+   "매체": "디일렉",
+   "제목": "글로벌테크놀로지, 3분기 누적 매출 419억원...지난해 연매출 상회",
+   "링크": "https://www.thelec.kr/news/articleView.html?idxno=65490",
+   "날짜": "2026-11-17",
+   "요약": "반도체 팹리스 업체 글로벌테크놀로지가 올해 9개월 만에 지난해 연간 매출을 넘어섰다. 주력 제품인 발광다이오드(LED) 구동칩(LDI) 공급이 크게 늘면서 실적 개선을 이끌었다.글로벌테크놀로지는 16일 올해 3분기 매출이 131억원으로 전년 동기 대비 86.9% 증가했다고 공시했다. 영업손실은 4억원, 당기순손실은 7억원으로 전년 동기 대비 적자 폭이 줄었다.올해 1~3분기 누적 매출은 419억원으로 전년 동기 223억원보다 88.2% 증가했다. 지난해 연간 매출 297억원도 넘어섰다. 누적 영업이익은 7억원으로 전년 동기 대비 흑",
+   "수집일": "2026-11-17",
+   "구글경유": false
+  },
+  {
+   "id": "3c12cf3621a0",
+   "src": "thelec-kr",
+   "분류": "전문지",
+   "매체": "디일렉",
+   "제목": "디바이스, 수주잔고 1000억 돌파…3분기 누적 매출 넘었다",
+   "링크": "https://www.thelec.kr/news/articleView.html?idxno=65469",
+   "날짜": "2026-11-17",
+   "요약": "디바이스의 반도체, 디스플레이 장비 수주잔고가 1000억원을 넘어섰다. 삼성전자와 SK하이닉스, 중국 디스플레이 업체로부터 장비 수주를 확보하면서 올해 3분기까지 누적 매출을 웃도는 수주잔고를 쌓았다.16일 디바이스의 3분기보고서에 따르면 지난 9월 말 기준 수주잔고는 1016억원으로 집계됐다. 올해 1~3분기 누적 매출 873억원보다 16.4% 많은 규모다. 수주잔고는 공급계약을 체결했지만 아직 매출로 인식하지 않은 물량을 뜻한다.실적도 크게 개선됐다. 디바이스의 올해 1~3분기 매출은 873억원으로 전년 동기 570억원보다 53",
+   "수집일": "2026-11-17",
+   "구글경유": false
+  },
+  {
+   "id": "b1ae3843f297",
+   "src": "thelec-kr",
+   "분류": "전문지",
+   "매체": "디일렉",
+   "제목": "케이씨텍, SK하이닉스에 700억원 규모 세정장비 공급",
+   "링크": "https://www.thelec.kr/news/articleView.html?idxno=65494",
+   "날짜": "2026-11-17",
+   "요약": "케이씨텍이 SK하이닉스로부터 698억9551만원 규모의 반도체 웨이퍼 세정장비를 수주했다고 16일 공시했다. 지난해 연결 매출의 18.26%다. 최종 납기일은 내년 6월 25일이다. 대금은 장비 납품 후 90%, 검수 완료 후 10%를 받는다. SK하이닉스가 웨이퍼 세정장비 여러 대를 일괄 발주한 것으로 파악된다. 지난 10일에도 SK하이닉스로부터 211억2275만원 규모의 반도체 제조장비를 수주했다. 해당 계약의 최종 납기일은 내년 4월 1일이다. 두 건을 합친 이달 수주액은 약 910억원이다. 케이씨텍은 웨이퍼 표면의 불순물을",
+   "수집일": "2026-11-17",
+   "구글경유": false
+  },
+  {
+   "id": "d0ee252b819d",
+   "src": "thelec-kr",
+   "분류": "전문지",
+   "매체": "디일렉",
+   "제목": "AMD \"MI455X 토큰 처리량 엔비디아 대비 30% 향상\"",
+   "링크": "https://www.thelec.kr/news/articleView.html?idxno=65482",
+   "날짜": "2026-11-17",
+   "요약": "AMD가 최신 서버용 그래픽처리장치(GPU) 인스팅트의 인공지능(AI) 연산 성능을 공개하고 추가 제품군도 발표했다.AMD는 12일(현지시간) AMD 헬리오스에 탑재된 MI455X는 MLPerf의 AI 추론 성능 오프라인 테스트에서 딥시크-R1 모델 구동 시 GPU당 초당 2만1333토큰 처리량을 기록했다고 밝혔다. 지난 11일 공개된 엔비디아 베라 루빈 NVL72 서버 랙(Rack)의 동일 테스트 결과 대비 30% 높다.해당 추론 성능은 시스템 데이터 대역폭 차이에서 기인한다. MI455X는 엔비디아 루빈 GPU 대비 고대역폭메모",
+   "수집일": "2026-11-17",
+   "구글경유": false
+  },
+  {
+   "id": "5fa993afa476",
+   "src": "thelec-kr",
+   "분류": "전문지",
+   "매체": "디일렉",
+   "제목": "DB글로벌칩, '네뷸라 AI' 조직 개편...3년 내 독자 PMIC 확보",
+   "링크": "https://www.thelec.kr/news/articleView.html?idxno=65475",
+   "날짜": "2026-11-17",
+   "요약": "반도체 팹리스 기업 DB글로벌칩이 인공지능(AI) 기반 차세대 디스플레이 구동칩(DDI) 사업을 위해 연구개발(R&D) 조직을 확대 개편했다. 내년 신제품 양산을 추진하는 한편 현재 외부 업체에 의존하는 전력관리반도체(PMIC) 기술도 자체 확보할 계획이다. 독자 PMIC 개발과 상용화까지는 2~3년이 걸릴 것으로 예상된다.16일 업계에 따르면 DB글로벌칩은 최근 기존 PMIC 사업담당을 '네뷸라 AI 사업담당'으로 확대 개편했다. 이 조직은 PMIC와 미니 발광다이오드(LED) 컨트롤러, 미니 적녹청(RGB) LED 드라이버, 엣",
+   "수집일": "2026-11-17",
+   "구글경유": false
+  },
+  {
+   "id": "2dd6037c793e",
+   "src": "thelec-en",
+   "분류": "전문지",
+   "매체": "THE ELEC (영문)",
+   "제목": "Fortinet Korea Reappoints Kim Jong-deok After 20 Years",
+   "링크": "https://www.thelec.net/news/articleView.html?idxno=15667",
+   "날짜": "2026-11-17",
+   "요약": "Fortinet Korea announced on Nov. 16 that it had reappointed former country manager Kim Jong-deok, who previously led the company\\'s Korean operations from 2002 to 2006.Kim is an IT industry veteran with more than 30 years of experience in artificial intelligence (AI), data science, public cloud, virt",
+   "수집일": "2026-11-17",
+   "구글경유": false
+  },
+  {
+   "id": "d9651d90571a",
+   "src": "thelec-en",
+   "분류": "전문지",
+   "매체": "THE ELEC (영문)",
+   "제목": "Grepp Turns to AI to Catch Exam Cheating",
+   "링크": "https://www.thelec.net/news/articleView.html?idxno=15661",
+   "날짜": "2026-11-17",
+   "요약": "Grepp, the leading online exam proctoring company, is pursuing a business operating dedicated physical test centers that use artificial intelligence (AI) solutions to detect cheating involving AI and electronic devices. The company is also discussing potential applications with Prometric, a US-based",
+   "수집일": "2026-11-17",
+   "구글경유": false
+  },
+  {
+   "id": "e03086ae4e20",
+   "src": "semieng",
+   "분류": "전문지",
+   "매체": "Semiconductor Engineering",
+   "제목": "Self-Supervised Virtual Metrology For CMP MRR Prediction (SUTD, A*STAR, NUS)",
+   "링크": "https://semiengineering.com/self-supervised-virtual-metrology-for-cmp-mrr-prediction-sutd-astar-nus/",
+   "날짜": "2026-11-17",
+   "요약": "Researchers at Singapore University of Technology and Design (SUTD), A*STAR, and National University of Singapore (NUS) published “Self-Supervised Attention-Based Virtual Metrology for CMP MRR Prediction.” Excerpt “In this paper, we propose Global Regression Pretraining (GREP), a self-supervised, attention-based framework for CMP* MRR prediction. GREP learns temporal representations from unlabeled sensor signals through global proxy-target regression,... » read more The post Self-Supervised Virt",
+   "수집일": "2026-11-17",
+   "구글경유": false
+  },
+  {
+   "id": "d3fa4bda0fe6",
+   "src": "semieng",
+   "분류": "전문지",
+   "매체": "Semiconductor Engineering",
+   "제목": "Reducing High-Bandwidth Flash Latency In GPU Systems (Georgia Tech, Nvidia, Stanford)",
+   "링크": "https://semiengineering.com/reducing-high-bandwidth-flash-latency-in-gpu-systems-georgia-tech-nvidia-stanford/",
+   "날짜": "2026-11-17",
+   "요약": "Researchers at Georgia Tech, NVIDIA Research, and Stanford University published “SlipStream: Enabling HBF for GPU Systems by Mitigating the Latency and SRAM Overheads.” Abstract Excerpt “Large language model (LLM) inference demands ever more memory capacity for larger models and batch sizes. High-Bandwidth Flash (HBF) replaces the DRAM dies of HBM with NAND flash and provides... » read more The post Reducing High-Bandwidth Flash Latency In GPU Systems (Georgia Tech, Nvidia, Stanford) appeared fi",
+   "수집일": "2026-11-17",
+   "구글경유": false
+  },
+  {
+   "id": "1fbf931f86b6",
+   "src": "eetimes",
+   "분류": "전문지",
+   "매체": "EE Times",
+   "제목": "Beyond Low Energy: New Product Frontiers for Lossless Audio, Edge-AI and Display Streaming",
+   "링크": "https://www.eetimes.com/beyond-low-energy-new-product-frontiers-for-lossless-audio-edge-ai-and-display-streaming/",
+   "날짜": "2026-11-17",
+   "요약": "Join our expert-led webinar to discover how the TL753X SoC leverages High Definition Technology (HDT) for innovative applications. The post Beyond Low Energy: New Product Frontiers for Lossless Audio, Edge-AI and Display Streaming appeared first on EE Times .",
+   "수집일": "2026-11-17",
+   "구글경유": false
+  },
+  {
+   "id": "377894fe472d",
+   "src": "gn-semi-kr",
+   "분류": "협회·통계",
+   "매체": "이코노미트리뷴",
+   "제목": "[반도체포커스] AI 투자 낙관론 위기?…세미애널리시스 전망 하향에 반도체 업계 '수요 다변화'",
+   "링크": "https://news.google.com/rss/articles/CBMid0FVX3lxTE44ZWVyYWV1Y1JZQUNydUdLdWdFazRuTWFzNjlCWUE5X2VSNDJNaXQ4R1JfUlQtNG5oU0N6LWNLS1cwbzIxTG9EYVF2NjJ2SW4zUS13TTYwQzJYSzR4MjBBelg2QnBld1I1MjQ0b2xuOU8xWWJmeHhR?oc=5",
+   "날짜": "2026-11-17",
+   "요약": "",
+   "수집일": "2026-11-17",
+   "구글경유": true
+  },
+  {
+   "id": "6693ee52d41d",
+   "src": "gn-semi-kr",
+   "분류": "협회·통계",
+   "매체": "재경일보",
+   "제목": "온세미컨덕터 주가 4.98% 하락 마감 67.52달러 기록 : 기업주식정보",
+   "링크": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5wbHNDNkNad1V4MXh3Q0RVN2RkdUthdXhyczFMSlg3TlNPeVo1aEJPTF9HeTYzdUlBYVhLOGd0MGNHZkxXSDBDOWlXQQ?oc=5",
+   "날짜": "2026-11-17",
+   "요약": "",
+   "수집일": "2026-11-17",
+   "구글경유": true
+  },
+  {
+   "id": "feb298bba312",
+   "src": "gn-research-kr",
+   "분류": "연구기관",
+   "매체": "데일리머니",
+   "제목": "반도체 공장·AI센터 건설 붐…철강 수요 회복 '청신호'",
+   "링크": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAzSWJRNWEwd0FYbEpTQWl1WWZOTEFwS2xCX19waXRUb2c2TlhzTExBWHJlRElGWGF3SVRuUmRPV1hsb1pEWW5jZHZnVGtiVGhuZ2d3aEZ3eGVId2NNOGdFM3hIYVdLT0NkbDc5X2drU2RiT28xWlHSAXZBVV95cUxQM0liUTVhMHdBWGxKU0FpdVlmTkxBcEtsQl9fcGl0VG9nNk5Yc0xMQVhyZURJRlhhd0lUblJkT1dYbG9aRFluY2R2Z1RrYlRobmdnd2hGd3hlSHdjTThnRTN4SGFXS09DZGw3OV9na1NkYk9vMVpR?oc=5",
+   "날짜": "2026-11-17",
+   "요약": "",
+   "수집일": "2026-11-17",
+   "구글경유": true
+  },
+  {
+   "id": "d8af22a17aa2",
+   "src": "gn-research-kr",
+   "분류": "연구기관",
+   "매체": "연합투데이",
+   "제목": "반도체 공장·AI 데이터센터 투자 확대…내년 철강 수요 회복 기대",
+   "링크": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9XRENCQXZHVVNTV3VRM05oMVdTQlo2cmVJRHJibE5KVzE2MFVmMFNMUXVqblBvZEEzREtRbWV4VlVHNlpVMVRGSWhwOWFDaHQ1X0FrRXRpdlUwMDA5UjM4ODFlenczSTRHVXBoRnJvb9IBb0FVX3lxTE9XRENCQXZHVVNTV3VRM05oMVdTQlo2cmVJRHJibE5KVzE2MFVmMFNMUXVqblBvZEEzREtRbWV4VlVHNlpVMVRGSWhwOWFDaHQ1X0FrRXRpdlUwMDA5UjM4ODFlenczSTRHVXBoRnJvbw?oc=5",
+   "날짜": "2026-11-17",
+   "요약": "",
+   "수집일": "2026-11-17",
+   "구글경유": true
+  },
+  {
+   "id": "dee298f760f9",
+   "src": "gn-equip-ir",
+   "분류": "기업 IR",
+   "매체": "Yahoo! Finance Canada",
+   "제목": "ASML Holding N.V. (ASML) Stock Price, News, Quote & History",
+   "링크": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1xYTJNLWlrdEl5bkZ5REJDbzVqREU2amNmcFY1bXp3TU5fQjJfaWtlTUN2NHViZUVtTmIxV18zWUZ5QWx4Y0lRWTJmcHhXQTREcHc?oc=5",
+   "날짜": "2026-11-17",
+   "요약": "",
+   "수집일": "2026-11-17",
+   "구글경유": true
+  },
+  {
+   "id": "221f927af0ff",
+   "src": "gn-equip-ir",
+   "분류": "기업 IR",
+   "매체": "The Futurum Group",
+   "제목": "Applied Materials Q4 FY 2026: AI Chip Demand Lifts Equipment Sales",
+   "링크": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNSGVxdG5qYks1M205V1pvNzNXOUhheTVXYjlCVVlqOHlQcFo1OTVvQU9HVElfZmVoTzBCRHpyYnliRkxSa0dReEtxRDU3bEl5eGZObTVDeWdMUW95UzV2SkpGVk1RMDUxWnJTTXpjb2tBekNKM2x4blZKMThpT2pwSGxtNGdHVmNUZ1B0dUZyQ0xpYUVmVjlndEpVWkxYVndGc2c?oc=5",
+   "날짜": "2026-11-17",
+   "요약": "",
+   "수집일": "2026-11-17",
+   "구글경유": true
+  },
+  {
+   "id": "1c717270cd4c",
+   "src": "gn-equip-ir",
+   "분류": "기업 IR",
+   "매체": "Yahoo Finance",
+   "제목": "KLA (KLAC) Upgraded to Strong Buy: Here's What You Should Know",
+   "링크": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOZDV3WDlITzhfd3A4dmZWVGxJdWd3TUdMQkVqM3VvYmtsLTdaSjRUcXhJZzI5SGY3d3psOWFyMXVLQXM5QlFHbThsdDNMLTBPNkhIRnMxdkoxN2dDZ1dQNjh1YUhYZVpzZVNmazYtRnZlSElzM2RWLVp1TDZuak5sSzdTY0RkNXZWT0t2NV9zSkJHd0NFVHhRSQ?oc=5",
+   "날짜": "2026-11-17",
+   "요약": "",
+   "수집일": "2026-11-17",
+   "구글경유": true
+  },
+  {
+   "id": "81b6888a6ecf",
+   "src": "gn-equip-ir",
+   "분류": "기업 IR",
+   "매체": "24/7 Wall St.",
+   "제목": "Arm and Marvell Sink 8% as AI Chip Selloff Deepens Ahead of NVIDIA Earnings; Applied Materials Drops 5%",
+   "링크": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQNi00YzEwYTlPWjg4TnVZMTVnQW8wbmh0UVplcWFmY1pWenBNQ1MtUDJWNGVsdlBWZ3pZcXhRTnNnWmdZdUlyZnpTNlB2NldfR3RNdHp2eEVsRnNPSy0tZVRnVkVLdjZUQ3VzZ3EzZ3lUX0UxYXVmQ2pXeEI4RHpMQUpGa2RMR0x1WkJlcHY3X2tYaFVmNWpRVk1PM3NuRld6ajVtdWp2Y3dmNld0Xy05cGVPQ2stSEpNZjBEV2VWaV9ZSWFNaF9HN2VWb3lEQmZ0UmM4OTlNMVlWaUpS?oc=5",
+   "날짜": "2026-11-17",
+   "요약": "",
+   "수집일": "2026-11-17",
+   "구글경유": true
+  },
+  {
+   "id": "37e2cb53f9b7",
+   "src": "gn-equip-ir",
+   "분류": "기업 IR",
+   "매체": "Yahoo! Finance Canada",
+   "제목": "Lam Research Corporation (LRCX) Stock Price, News, Quote & History",
+   "링크": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9fYnRPaFY2SlJHZUQ0dTJIZUY3LWNzTF9FNmxmYUZiZnpXM2dpVFFRRjYyTW5SV3B4djYwS21fbVphSDU4MUQ2blBUbmo2V09ISHc?oc=5",
+   "날짜": "2026-11-17",
+   "요약": "",
+   "수집일": "2026-11-17",
+   "구글경유": true
+  },
+  {
+   "id": "40c1e25750f9",
+   "src": "gn-equip-ir",
+   "분류": "기업 IR",
+   "매체": "24/7 Wall St.",
+   "제목": "ASML Plunged 17% Lower Over 3 Months: This Wall Street Desk Expects 88% Gains Over the Next 12",
+   "링크": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNUmtfcVVoWkt3b3VrbzdVM1g2STlWM2lpeXp0Vm5BY2ZsOG51S3dXbVVYZ242S2lnS0ludXFjQzduenc2OHM0alFmY1Rxb3EzRDh5UHpHbU1Ea1oyc0JNVTRreTl2MWxjWDlVamdzRk9mZnZCZ1BNNnl6WTJUTUdLR3lPUGpFLU5NWEtQcFI0bmxLOWliWGd1bF9fWEZ6QWVwdHV3V29TbndCSWpqeTJCVG5qaU95QUI1R0JlM0JmaTVqVXQxZ3FhLUlBLVlxWG95?oc=5",
+   "날짜": "2026-11-17",
+   "요약": "",
+   "수집일": "2026-11-17",
+   "구글경유": true
+  },
+  {
+   "id": "f0395a0d6643",
+   "src": "gn-equip-ir",
+   "분류": "기업 IR",
+   "매체": "Investing.com",
+   "제목": "Why is Applied Materials stock sliding today?",
+   "링크": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQYjVDb2NhQ2NaaTc4SHFtTHRiX1p1WGRmMG9FbzloRk90RWh3a0ZsVnM2Q2I4TjZFSXNmMW5HLXVvcGpXZ2N0WGg5TEs1eHF5WlBUc1o1T083aUZGWnI4WERqU0M5M29kQ1NQTjd0cnhFWWxqQmMtLVhQZmx1XzRVT3dERWlsRXBWRUdtZGZZMllWSElHbkRvYTRhbC1KaXozc19BQ2JZaHpyZw?oc=5",
+   "날짜": "2026-11-17",
+   "요약": "",
+   "수집일": "2026-11-17",
+   "구글경유": true
+  },
+  {
+   "id": "3543fb39d124",
+   "src": "gn-equip-ir",
+   "분류": "기업 IR",
+   "매체": "TradingKey",
+   "제목": "Applied Materials Inc Stock (AMAT) Moved Down by 4.44% on Nov 16: Facts Behind the Movement",
+   "링크": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOdEZwTk16SDRSU1g2TUxKd2hSd3JHSzBDOTNtM3JNVHBnT0U1Qm5Dd2N0eVM4OXhiaTlwQVhDejlwejBsTkVmNzFiTnJUVS1JOWx3Y253SUUta25YQTlHZEZ2am9EQkx6SG1YQk9Hc2dGOFhFWHBZbkMxZW5Cd3FBY2RUYUJOc2ZzTFBN?oc=5",
+   "날짜": "2026-11-17",
+   "요약": "",
+   "수집일": "2026-11-17",
+   "구글경유": true
+  },
+  {
+   "id": "25910f1b6632",
+   "src": "gn-equip-ir",
+   "분류": "기업 IR",
+   "매체": "shattered.io",
+   "제목": "Arm, Marvell Sink 8% in AI Chip Selloff Before Nvidia",
+   "링크": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPYm91T0xmM2dMeUpGV3otNk53Qi1kMDQ3bWFEME5TdUd6TW9pZmlvZ0x1Z3F3SGUyeG9DTWJUcG40ZXR2ejAzLVpwLVBTYlpzWEtGeUZ2aGZhRlJyR1BNTGpoOVVQVDhRUHJ2T19GRTdjOUZuX0JkajlCeS03aVpmTm1XWTR2M2VkWmpmemtEbXU3WlMwUGZ3cGFNYS11UXN2X0FITm82MmtKRHlm?oc=5",
+   "날짜": "2026-11-17",
+   "요약": "",
+   "수집일": "2026-11-17",
+   "구글경유": true
+  },
+  {
+   "id": "839e90e59721",
+   "src": "gn-equip-ir",
+   "분류": "기업 IR",
+   "매체": "장비사 실적 (기사)",
+   "제목": "ASML's Berkshire Buzz Meets Nvidia's Earnings Test: What Actually Matters for the Stock - ad-hoc-news.de",
+   "링크": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOa2FtdUtaMzNUOXJ1MkZMVlFaSk82RURBRjc0WDZ4Z1pkWmp1MTF4VnFJRHFSVkdxZ1FLNWZDcWhZbmZtNEcyQmc0UUpQODFPdURYdjFkN0xYZnpEa0RNSnVWS2c2cTg2MnkwMjE3Y3U2c3Y1MEZYbU9yRmc3YkI5bXloY3dsd1JIMjFrMnNZRVBka3otcmtsaHhlbFgxdGxUbUpkUTNQUENYLWotN1JwU2FCV2Y2UXRqMTBCTjFiZ0pLWEFweWpQV09WUXg4dkhTT0dKMFVCbkxfU3hSQkpUNmlEaUFicDhBb0tvOERrTQ?oc=5",
+   "날짜": "2026-11-17",
+   "요약": "",
+   "수집일": "2026-11-17",
+   "구글경유": true
+  },
+  {
+   "id": "4df865663d95",
+   "src": "gn-tsmc-ir",
+   "분류": "기업 IR",
+   "매체": "Coinpaper",
+   "제목": "AI Chip Stocks Crash: SK Hynix Falls 8%, TSMC Drops 6% Ahead of Nvidia Earnings",
+   "링크": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNR0o4MFVZQ2s4NFJDWU95a1JRODZ3UE5RRXJ5UzVDV1VFanVSVWFMMVlRVFVkZGt0RWZGcllmQ3VzWmNsTHVGRDB2bVMyUW4tLW80ZHVYZnhVX2k1LXo5VU9USmRvVVp5QXdNX3JYU2ZFdFNvalNMaGszVmFlbTZ4QzFLcV9XUmY3UnZsd252eVczZEdQaUJCMFlfcFNHWm5wWkpYUWJB?oc=5",
+   "날짜": "2026-11-17",
+   "요약": "",
+   "수집일": "2026-11-17",
+   "구글경유": true
+  },
+  {
+   "id": "5c00a277fc67",
+   "src": "gn-tsmc-ir",
+   "분류": "기업 IR",
+   "매체": "The Globe and Mail",
+   "제목": "4 Chip Stocks Down as Much as 36% From Their Highs to Buy and Hold for the Next Decade",
+   "링크": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNRG5qdERqZlBXT2d3Y0dVbkVOSkl4Q0J3NGJ4d0FwMkhJajBucVVSYWJwSHAyQkU5ZnZhWldGT1pZVEJ4TVFjZ19Ta3pLZFlEMFAyMnpqdTNNd1hwOUg0eEhaQkFFRE9IQk1fdDNDc3JDVVE0WFpLUmgtN3luZUFUOFdZZW92M2x0YkxFdTI3dlNITmNITGExU1QwSExsY0VVcGxIc2hrOWFzNzQ3bS0yNE45MkxGVThsczMtdGVMT2luWkxoOWI3cDQ3S0ZBUnhxMWV2amNnVWt4VGlRYkw1R1JjX1BtOEgwMkozTVQ3eXdNQ0lvWXNjMHZHZ2xEZw?oc=5",
+   "날짜": "2026-11-17",
+   "요약": "",
+   "수집일": "2026-11-17",
+   "구글경유": true
+  },
+  {
+   "id": "220ecb8f4ba5",
+   "src": "gn-tsmc-ir",
+   "분류": "기업 IR",
+   "매체": "NAI500",
+   "제목": "AI Chip Selloff Opens Contrarian Opportunities for Decade-Long Investors",
+   "링크": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQY01jd3BxbTJibHQyWWtSdTZVTTRKZlNlZ2wxYjEyMGh0bUk2ODBzM2pCbENTWmZNdTYxQ1VvYU9yWVVNM1pINlpDcHg0My1JdTZJQnNGR3FINjhCMXNIRkY1elRHWUFTYTQ2SVNPbXJqQ29RUmJjay1IMUw5OGJzSndwRHZmRWZsVU1TX2tITkw4NXNOMkhSWnpvY2h2UkxRN1dyNEtJNkI?oc=5",
+   "날짜": "2026-11-17",
+   "요약": "",
+   "수집일": "2026-11-17",
+   "구글경유": true
+  },
   {
    "id": "2da16ff0e281",
    "src": "thelec-kr",
@@ -201,6 +536,318 @@
    "날짜": "2026-11-16",
    "요약": "",
    "수집일": "2026-11-16",
+   "구글경유": true
+  },
+  {
+   "id": "576a2d282c5d",
+   "src": "thelec-kr",
+   "분류": "전문지",
+   "매체": "디일렉",
+   "제목": "서진시스템, 매출 1조 돌파…영업익 흑자전환",
+   "링크": "https://www.thelec.kr/news/articleView.html?idxno=65468",
+   "날짜": "2026-11-16",
+   "요약": "서진시스템이 올해 3분기까지 누적 매출 1조원을 돌파하며 역대 최대 연간 매출 기록을 경신했다.서진시스템은 지난 3분기 매출 5621억원, 영업이익 387억원을 기록했다고 16일 밝혔다. 매출은 전년 동기 대비 196% 증가했으며 영업이익은 흑자전환했다.1~3분기 누적 매출은 1조2200억원으로 전년 동기 대비 78% 늘었다. 종전 최대였던 2024년 연간 매출을 3개 분기 만에 넘어섰다. 누적 영업이익도 약 36억원으로 흑자를 기록했다.실적 성장은 반도체 장비 사업이 주도했다. 에너지저장장치(ESS)와 고체산화물 연료전지(SOFC",
+   "수집일": "2026-11-17",
+   "구글경유": false
+  },
+  {
+   "id": "cae8f18bf21e",
+   "src": "thelec-kr",
+   "분류": "전문지",
+   "매체": "디일렉",
+   "제목": "디케이락, 175억 차입 결정…항공 신사업 확대",
+   "링크": "https://www.thelec.kr/news/articleView.html?idxno=65374",
+   "날짜": "2026-11-16",
+   "요약": "산업용 밸브·피팅 전문 제조 기업 디케이락이 항공, 반도체 분야 사업 확대를 위해 단기차입금을 늘렸다.디케이락은 11일 공시를 통해 금융 기관으로부터 단기차입금 175억원을 차입한다고 밝혔다. 454억원에서 629억원으로 증가했다. 자기자본의 12.8%다.디케이락 관계자는 \"항공, 반도체 피팅 생산 인프라 구축과 부품 국산화를 위해 단기차입금을 확보했다\"라고 설명했다. 디케이락은 에너지, 반도체, 항공, 방산 분야에 쓰이는 산업용 밸브와 피팅을 전문적으로 생산한다. 피팅은 튜브나 파이프를 연결해 유체가 누출되지 않도록 하는 배관 부",
+   "수집일": "2026-11-17",
+   "구글경유": false
+  },
+  {
+   "id": "bdf81a8da2ec",
+   "src": "thelec-kr",
+   "분류": "전문지",
+   "매체": "디일렉",
+   "제목": "효성중공업, SKT AI 데이터센터에 초고압 전력설비 공급",
+   "링크": "https://www.thelec.kr/news/articleView.html?idxno=65471",
+   "날짜": "2026-11-16",
+   "요약": "효성중공업이 SK텔레콤의 인공지능(AI) 데이터센터에 초고압 전력설비를 공급한다. 양사는 800볼트(V) 직류배전과 반도체 변압기(SST) 등 차세대 전력기술 개발도 협력한다.효성중공업은 16일 서울 중구 SKT타워에서 SK텔레콤과 'AI 데이터센터 구축을 위한 전략적 파트너십 업무협약(MOU)'을 체결했다고 밝혔다.효성중공업은 SK텔레콤의 AI 데이터센터용 345킬로볼트(kV) 변전소에 핵심 전력설비를 공급한다. 양사는 설비 생산과 납품 일정을 사전에 조율해 안정적인 공급체계를 구축하기로 했다.차세대 전력기술도 공동으로 실증한다.",
+   "수집일": "2026-11-17",
+   "구글경유": false
+  },
+  {
+   "id": "402e69dcebad",
+   "src": "thelec-kr",
+   "분류": "전문지",
+   "매체": "디일렉",
+   "제목": "캠시스, 3분기 영업익 74억원…흑자전환",
+   "링크": "https://www.thelec.kr/news/articleView.html?idxno=65463",
+   "날짜": "2026-11-16",
+   "요약": "캠시스는 3분기 매출 1537억원, 영업이익 74억원을 기록했다고 16일 밝혔다. 매출은 지난해 같은 기간 1114억원보다 38% 증가했다. 영업익익은 전년 동기 33억원 적자에서 107억원 개선되며 흑자전환했다.실적 개선은 모바일 카메라모듈 사업이 이끌었다. 플래그십 스마트폰용 제품 비중을 높이고 생산 효율을 개선하면서 수익성이 좋아졌다. 캠시스는 베트남 생산법인에서 카메라모듈을 생산해 삼성전자에 공급하고 있다. 1~3분기 누적 매출은 4490억원으로 전년 동기보다 13.3% 증가했다. 누적 영업이익은 160억원으로 지난해 같은",
+   "수집일": "2026-11-17",
+   "구글경유": false
+  },
+  {
+   "id": "d3802b92d0d1",
+   "src": "thelec-kr",
+   "분류": "전문지",
+   "매체": "디일렉",
+   "제목": "노타, 인텔 K-AI 풀스택 얼라이언스 참여...AI 최적화 협력 강화",
+   "링크": "https://www.thelec.kr/news/articleView.html?idxno=65446",
+   "날짜": "2026-11-16",
+   "요약": "노타가 인텔코리아의 'K-AI 풀스택 얼라이언스'에 참여한다고 14일 밝혔다.K-AI 풀스택 얼라이언스는 인텔 반도체를 탑재한 국산 서버 설계, 공급 목적의 개방형 AI 협력체다. 하드웨어부터 소프트웨어, AI 서비스 전반에서 23개 참여사가 협업한다. 노타는 보유한 '노타 비전 에이전트' 등 AI 솔루션, AI 모델 최적화 소포트웨어 역량으로 협력체 참여사들과 공동으로 고객을 발굴할 계획이다.노타 비전 에이전트는 시각언어모델(VLM) 기반 영상 관제 솔루션이다. 영상 속 객체와 상황, 맥락을 분석하고 보고서를 자동 작성하거나 질의",
+   "수집일": "2026-11-17",
+   "구글경유": false
+  },
+  {
+   "id": "783b8f8f8074",
+   "src": "thelec-kr",
+   "분류": "전문지",
+   "매체": "디일렉",
+   "제목": "권미령 파네시아 총괄, IITP 원장 표창 수상",
+   "링크": "https://www.thelec.kr/news/articleView.html?idxno=65445",
+   "날짜": "2026-11-16",
+   "요약": "파네시아는 권미령 총괄대표가 정보통신기획평가원(IITP) 원장 표창을 받았다고 13일 밝혔다. 지난 11일 '2027 AI·ICT 기술전망 컨퍼런스' 개회식에서 '정보통신기술(ICT) 성과확산 유공자 포상' 시상식이 열렸다. 권 총괄대표는 AI 데이터센터 연결 기술 개발과 연구 성과 창출, 국가 ICT 기술력 향상에 기여한 공로를 인정받았다.파네시아는 해당 행사의 ICT 연구개발(R&D) 우수 성과 전시에 2년 연속 선정됐다. 전시에서 AI 데이터센터의 장치 간 통신을 지원하는 개방형 표준 기반 링크 반도체를 소개했다.파네시아는 신",
+   "수집일": "2026-11-17",
+   "구글경유": false
+  },
+  {
+   "id": "d169d2919cb7",
+   "src": "thelec-en",
+   "분류": "전문지",
+   "매체": "THE ELEC (영문)",
+   "제목": "Samsung SDI to Unveil ESS Batteries at RE+ 2026",
+   "링크": "https://www.thelec.net/news/articleView.html?idxno=15629",
+   "날짜": "2026-11-16",
+   "요약": "Samsung SDI will showcase lithium iron phosphate (LFP) batteries for energy storage systems (ESS) and high-power products for artificial intelligence (AI) data centers at a US energy industry exhibition.Samsung SDI said on Nov. 15 that it will participate in RE+ 2026 in Las Vegas. The three-day even",
+   "수집일": "2026-11-17",
+   "구글경유": false
+  },
+  {
+   "id": "5d865892a530",
+   "src": "thelec-en",
+   "분류": "전문지",
+   "매체": "THE ELEC (영문)",
+   "제목": "Doosan Enerbility Shares AI Operation Tech with Power Firms",
+   "링크": "https://www.thelec.net/news/articleView.html?idxno=15632",
+   "날짜": "2026-11-16",
+   "요약": "Doosan Enerbility has shared artificial intelligence (AI)-based technologies for operating and maintaining power generation equipment with domestic power companies.Doosan Enerbility said on Nov. 15 that it held the 2026 Power Generation Operation Technology Exchange at its headquarters in Changwon,",
+   "수집일": "2026-11-17",
+   "구글경유": false
+  },
+  {
+   "id": "78c4d51d2035",
+   "src": "thelec-en",
+   "분류": "전문지",
+   "매체": "THE ELEC (영문)",
+   "제목": "HD Hyundai, Anduril Launch 600-Ton Unmanned Surface Vessel",
+   "링크": "https://www.thelec.net/news/articleView.html?idxno=15634",
+   "날짜": "2026-11-16",
+   "요약": "HD Hyundai and US artificial intelligence (AI) defense company Anduril have completed the joint development of an autonomous surface vessel (ASV).HD Hyundai said on Nov. 15 that it held a launching ceremony for Alpha, a 600-ton medium-sized ASV, at HD Hyundai Heavy Industries in Ulsan on Nov. 12.An",
+   "수집일": "2026-11-17",
+   "구글경유": false
+  },
+  {
+   "id": "68fba3df4080",
+   "src": "thelec-en",
+   "분류": "전문지",
+   "매체": "THE ELEC (영문)",
+   "제목": "LS Electric Wins $93.83 Million Power Equipment Deal With US Tech Giant",
+   "링크": "https://www.thelec.net/news/articleView.html?idxno=15649",
+   "날짜": "2026-11-16",
+   "요약": "LS Electric will supply approximately 130 billion won worth of power equipment to an artificial intelligence (AI) data center operated by a major US technology company.LS Electric said on Nov. 16 that it had signed a $93.83 million contract with a global technology company to supply power systems.Th",
+   "수집일": "2026-11-17",
+   "구글경유": false
+  },
+  {
+   "id": "681878fe4231",
+   "src": "thelec-en",
+   "분류": "전문지",
+   "매체": "THE ELEC (영문)",
+   "제목": "Hyosung Heavy Industries to Supply Power Equipment to SK Telecom AI Data Centers",
+   "링크": "https://www.thelec.net/news/articleView.html?idxno=15653",
+   "날짜": "2026-11-16",
+   "요약": "Hyosung Heavy Industries will supply extra-high-voltage power equipment to SK Telecom’s artificial intelligence (AI) data centers. The two companies will also collaborate on developing next-generation power technologies, including 800-volt (V) direct current (DC) distribution and solid-state transfo",
+   "수집일": "2026-11-17",
+   "구글경유": false
+  },
+  {
+   "id": "efa025c91d34",
+   "src": "thelec-en",
+   "분류": "전문지",
+   "매체": "THE ELEC (영문)",
+   "제목": "SECERN AI Approved for Three Divisions of Ministry’s M.AX Alliance",
+   "링크": "https://www.thelec.net/news/articleView.html?idxno=15619",
+   "날짜": "2026-11-16",
+   "요약": "Artificial intelligence (AI) company SECERN AI said it had received approval to register in three divisions of the M.AX (Manufacturing AI Transformation) Alliance, led by the Ministry of Trade, Industry and Resources: Industrial Complex AX, Defense and Factory. The M.AX Alliance is a public-private",
+   "수집일": "2026-11-17",
+   "구글경유": false
+  },
+  {
+   "id": "f8e05c503f4d",
+   "src": "thelec-en",
+   "분류": "전문지",
+   "매체": "THE ELEC (영문)",
+   "제목": "Younglimwon SoftLab’s Cloud ERP Revenue Rises 36% as AI Features Expand",
+   "링크": "https://www.thelec.net/news/articleView.html?idxno=15613",
+   "날짜": "2026-11-16",
+   "요약": "Adopts AI auto-entry and workflow automation; pursues AI agent technology developmentYounglimwon SoftLab recorded revenue growth of more than 30% in its cloud-based enterprise resource planning (ERP) business this year. The company is expanding artificial intelligence (AI)-powered workflow automatio",
+   "수집일": "2026-11-17",
+   "구글경유": false
+  },
+  {
+   "id": "5d9502ec0212",
+   "src": "semieng",
+   "분류": "전문지",
+   "매체": "Semiconductor Engineering",
+   "제목": "What Is Acoustic Micro Imaging? A Quick Guide To This Inspection Process",
+   "링크": "https://semiengineering.com/what-is-acoustic-micro-imaging-a-quick-guide-to-this-inspection-process/",
+   "날짜": "2026-11-16",
+   "요약": "Obtaining clear images of gaps and delaminations in advanced packages. The post What Is Acoustic Micro Imaging? A Quick Guide To This Inspection Process appeared first on Semiconductor Engineering .",
+   "수집일": "2026-11-17",
+   "구글경유": false
+  },
+  {
+   "id": "c0a09e5bc760",
+   "src": "semieng",
+   "분류": "전문지",
+   "매체": "Semiconductor Engineering",
+   "제목": "Are AI Agents The New Semiconductor IP?",
+   "링크": "https://semiengineering.com/are-ai-agents-the-new-semiconductor-ip/",
+   "날짜": "2026-11-16",
+   "요약": "Agents are emerging as reusable design tools, but trust and use models remain challenging. The post Are AI Agents The New Semiconductor IP? appeared first on Semiconductor Engineering .",
+   "수집일": "2026-11-17",
+   "구글경유": false
+  },
+  {
+   "id": "c5d1cd510fff",
+   "src": "eetimes",
+   "분류": "전문지",
+   "매체": "EE Times",
+   "제목": "Technology as a Trojan Horse",
+   "링크": "https://www.eetimes.com/technology-as-a-trojan-horse/",
+   "날짜": "2026-11-16",
+   "요약": "Jensen Huang is no longer leading Nvidia, but his Trojan horse question remains, for chips and for the rest of the technology stack: sell and try to control, or don’t sell and maybe delay? The post Technology as a Trojan Horse appeared first on EE Times .",
+   "수집일": "2026-11-17",
+   "구글경유": false
+  },
+  {
+   "id": "f6205c977a73",
+   "src": "gn-equip-ir",
+   "분류": "기업 IR",
+   "매체": "Yahoo Finance",
+   "제목": "Jim Cramer Says Lam Research Has Come Down Enough. It’s ‘Absolutely My Favorite’",
+   "링크": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNWEdpenYwQ29wdDhLSy1TNmZVdFJGZktiUjhIb2Y0QVFEbDZKaDNpR2g1cU9MbmRBY3RqeFkwRWdfSDIwYTVKdnRJWlBFN05sVlZqTkNTN3Q3b2M1N1M1a3RuM1pkb3RUbDBleVI1LTVJeHIxeTdqYjNwNm5zanNBTUtjdnYxNE16M24wYXhyNmhKX2VISk41NQ?oc=5",
+   "날짜": "2026-11-16",
+   "요약": "",
+   "수집일": "2026-11-17",
+   "구글경유": true
+  },
+  {
+   "id": "dc87aca2ee84",
+   "src": "gn-equip-ir",
+   "분류": "기업 IR",
+   "매체": "24/7 Wall St.",
+   "제목": "Jim Cramer Says Lam Research Has Come Down Enough. It’s ‘Absolutely My Favorite’",
+   "링크": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQV1hDX0FVZkFiVXYyaF91WE5NN0RROC1DbVU4aUFNMDFmck1QVlVxcFNrMnBfd2VIaUxlWEhoVmFLWjhpVlg0WHJGUS0tNEVpczlYaEJnWlZLdlgyRUFPdzBadS0zcDloUFgwUjJMNENHbkNyLTVXVmNJb0xIOHNsdDc5UVRNU3ktR2FuNml1M2UzYXBleW9ZejFKdDVSWjcyUkF5bHhucFh1VjdZQXFmLVZ0VzBzQUl5dU80Vg?oc=5",
+   "날짜": "2026-11-16",
+   "요약": "",
+   "수집일": "2026-11-17",
+   "구글경유": true
+  },
+  {
+   "id": "b1738a5a8a46",
+   "src": "gn-equip-ir",
+   "분류": "기업 IR",
+   "매체": "Simply Wall St",
+   "제목": "How Strong Demand Outlook Will Impact Applied Materials Stock",
+   "링크": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOTDc1UTM4UkJPTXdVZ3BpRC1XRGVESndUNEljVzdwRTFPb055ME83LXdSdXJtYUZZQ0tZMllxcmgxU0FzWkZvVzFWa1REazVxQzZXM1FvRjNQRFJwNldXOUFIeVgtWjgxYTVPT01FYTAtdmVMdWpqTEtZZXZvWWU3aDVYWUJZdTJHVGItQTZVMUU5T0pRVDlZTGRCUGpMVl9nNjdxdmMxY2ZKYkhMTVpfMFdpRXJyVEExRnlUdzFLQVAxUUVlVmR3dF9aZ2V0aXh2bnNHUjBJdWV2UdIB3wFBVV95cUxNYXFwbnNhTWZjV252YjZiTUszRklsQ3dFZ1VZamxZY1hSM1pSa2lNZ25yY2xOWmpVMm5fSVlDckJhZUYzbUxvbDBzTHV6Nlc0S21lZ1NaWmJJbUVIZnhnMVhyX0R2WkRLMXNXT1lKZ3JuMWlFTWF4bjdfVlBCd1ljOHMyU0t2QVVLSkFpdzFVUFpqdzlZWkgyY21iZmM5RGt2QTVEamE5QUt6YlpCbDNZUUxqVlQ4cnZGdGUydmsyRHE4djFYUmZmWVdJQ05pRmZWUVlISlFmQVJBNFVOS3FZ?oc=5",
+   "날짜": "2026-11-16",
+   "요약": "",
+   "수집일": "2026-11-17",
+   "구글경유": true
+  },
+  {
+   "id": "d170ee0411d8",
+   "src": "gn-equip-ir",
+   "분류": "기업 IR",
+   "매체": "Blockchain News",
+   "제목": "ASML Stock Price Prediction: AI demand lifts guidance, but price action is still repairing damage",
+   "링크": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNNE16OG80X3h6Um83WXp0LWpBVFllcXE0RmlmNjFnNHU2NVVSbV95WmlleXE1bGNuRE1hUVl3T196MDNGZDF6al9NeVlSYnRyUzBFXzdpQWVjaUlLTERteE1aQ0IwSnhtcVpxRlBZdnZiZWgwdXhmYWtCTlp3UHE5ZEdoR3p1c3RUT0JwWHdPdEZ2d3RCZWl5VVc4aVhSYU13VlRF?oc=5",
+   "날짜": "2026-11-16",
+   "요약": "",
+   "수집일": "2026-11-17",
+   "구글경유": true
+  },
+  {
+   "id": "1025bf35be2f",
+   "src": "gn-equip-ir",
+   "분류": "기업 IR",
+   "매체": "장비사 실적 (기사)",
+   "제목": "Applied Materials stock: EUR 325.18, down 0.53% premarket - ad-hoc-news.de",
+   "링크": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPeTJiVThZSU1tWl9KU1NuSV9lQTI4S0g4UGVtNEZVM18zR0dqZlNFQ041ZVM1MlRvODZvQUpJbTlyUWZfMW9hWmNHVUpfYlQ5bU0yVEthXzdUNWxYYjNzYmV2U2VaRHk1LW1BdzEwZ1hIMXRXRHFIbHFUTm8zZzkwU182ZHJIOWREaTFQTnBEQU4tenhYVVlSRXJ0NjZvYWNWQmZFblVFelJINUpJX29ubWpn?oc=5",
+   "날짜": "2026-11-16",
+   "요약": "",
+   "수집일": "2026-11-17",
+   "구글경유": true
+  },
+  {
+   "id": "343faa8c821d",
+   "src": "gn-tsmc-ir",
+   "분류": "기업 IR",
+   "매체": "Finimize",
+   "제목": "Asia’s AI Supply Chain Stocks Took A Hit Before Nvidia’s Earnings",
+   "링크": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNVk9Dc1VjSGpRcFJTbU1JTnY2YmpwMXQ2TG53UVd6VG8yOWJ5M2drY1Jzd29ZdVF5SXlqSkVsdzNnR19YUERabDRaOFdIOC05RVRRdUh6ZEdNUkNZdm85b2ZqeVVNS2Rtam9HNnpzNTJOZERsTHFfemhzem5EUTMwTTEwdTJhRW9aSC0zY3dndmdmVEdVMklj?oc=5",
+   "날짜": "2026-11-16",
+   "요약": "",
+   "수집일": "2026-11-17",
+   "구글경유": true
+  },
+  {
+   "id": "f8e02b4d62b8",
+   "src": "gn-tsmc-ir",
+   "분류": "기업 IR",
+   "매체": "Business Insider",
+   "제목": "Nvidia's Stock Slump Is Putting Asia's AI Boom to the Test",
+   "링크": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPRFNsUFVMbG9uamlXY1BYLXA4X25meGVsMk1NM0lwODd5bXNYMWRudmJZODFTOFVxQkJUbkgtNnJZMDhIcnRNYl83bFVNTVFCb3pGaUhNY2U4V1JnNHRmT3pheElXWnpuZWZSV0t4ZFFLNFpMZ21OVVdCU2JtS0NTXzVPdFpmYmwtMnZBd2dVQlcxRHVLWFBDNlRKXzU5bGxx?oc=5",
+   "날짜": "2026-11-16",
+   "요약": "",
+   "수집일": "2026-11-17",
+   "구글경유": true
+  },
+  {
+   "id": "c142b61ce01c",
+   "src": "gn-tsmc-ir",
+   "분류": "기업 IR",
+   "매체": "BigGo Finance",
+   "제목": "Samsung Electronics, SK Hynix Open Mixed as Investors Await Nvidia Results, Anthropic IPO",
+   "링크": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5DUFBlYnUwakFsOVVOOVpheDVmeW5pZHN2cV8zS3Q5Qm5DR3FtSEFmZHd0ZmE1Ty1Hc215QWZydUhTRHc5TEhmdFJmUWwwTzBVamhWT0FqMDBNTmFRdkUzSVVwbDl6VWdUaTVhSlBrZnd0NDVyWlE?oc=5",
+   "날짜": "2026-11-16",
+   "요약": "",
+   "수집일": "2026-11-17",
+   "구글경유": true
+  },
+  {
+   "id": "84809652bdbb",
+   "src": "gn-tsmc-ir",
+   "분류": "기업 IR",
+   "매체": "BigGo Finance",
+   "제목": "Asian Chip Stocks Retreat as Nvidia Earnings Test AI Trade After Huang Exit",
+   "링크": "https://news.google.com/rss/articles/CBMidkFVX3lxTFA3U09pR1dJVDlyN0RNTlUxSl9PdTFkUmRDZTBvQ0cyWmhNZ3hkM3F5YThvTHNnNkVXd0NFY0lYMFNOREdGQ2tNRl92VldsdEw3ZUVtQ3E3c1d0TlZ4aV9BaGlHOG5adHllbUtNVVAyVHhaSC1xNXc?oc=5",
+   "날짜": "2026-11-16",
+   "요약": "",
+   "수집일": "2026-11-17",
+   "구글경유": true
+  },
+  {
+   "id": "3c95b303df05",
+   "src": "gn-tsmc-ir",
+   "분류": "기업 IR",
+   "매체": "Analytics Insight",
+   "제목": "NVIDIA Stock Slump Hits Asian Markets Ahead of Earnings Report",
+   "링크": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPSnduS0kyTmZjRUlrLWNSM2lfVE5xZ2lJOXhPSUxTQTREYVpsWWlkWHBkQXpoMllJNjZRWC1EMklKeGp1RE5GY1NiZlU2Zm9HRWd2NkYxOE9EdHh1SkFCb1FueXJDZ2JNRk5iRTA5M2k5cTFrWm9FeXBTMTlTRjl0bGVpTjQ1T2RGbVlMd1A2REp0VkQtR2xjYy0zcFZQc3ZUSlHSAa8BQVVfeXFMTm0ycm9LdUNWOEFJYi1feG1pVllqUU1TRXNEQXRzWFgwR2Z6Nmk1YWNUeUxLSmlXbXBNZlhjSTdBN2ZObHhXc1p0My1PS0V0WGVYOXJoekt0WEpfaXFUaHl6RlRDRS10MnJQa1BJdjN2SWxiWW5PLVR5YlRobklLSmlfZnJlZTg3ZWJYaFlpakV5VngyZXY0NTIxN05lN1Vwb1RFQ1h4N2dmSFlPdV9tUQ?oc=5",
+   "날짜": "2026-11-16",
+   "요약": "",
+   "수집일": "2026-11-17",
    "구글경유": true
   },
   {
@@ -297,6 +944,18 @@
    "날짜": "2026-11-15",
    "요약": "",
    "수집일": "2026-11-16",
+   "구글경유": true
+  },
+  {
+   "id": "0eea448c800e",
+   "src": "gn-equip-ir",
+   "분류": "기업 IR",
+   "매체": "Yahoo Finance",
+   "제목": "Applied Materials Beats and Raises, But Investors Stay Unconvinced",
+   "링크": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOMnBPVjR4dmRVTFZSaElhUDQ2dDJPZ3dkRUZEcDYzWGtoa0xqZjRhLW9JWXE2bmpIU2tsN1g0clhTUWdmV3lDekwyLTZ5S0FrZDBWOU5NWUY1RDZXRERVYWRtRk5HZWRZZzlabFpydXM4b1RaYlhCRF9VejlmenlaZDlBd2t1UWhtX0dWc3IyY2JiRU03cDM5aWZLc2J6V0t0SlVLbjJTRGo?oc=5",
+   "날짜": "2026-11-15",
+   "요약": "",
+   "수집일": "2026-11-17",
    "구글경유": true
   },
   {
@@ -2724,6 +3383,54 @@
    "구글경유": true
   },
   {
+   "id": "172ef56f6cac",
+   "src": "gn-ksia",
+   "분류": "협회·통계",
+   "매체": "뉴스1",
+   "제목": "반도체 산업 근로시간제도 간담회",
+   "링크": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFA0VU1VeGtlNTlXY3hNZjZPV0h4S0hCZDdaMHktWllSYUprb1RXb2QtVGwtYXFOMEphbnBNcC0zMlVHOXdDVndxSzJBOA?oc=5",
+   "날짜": "2026-11-13",
+   "요약": "",
+   "수집일": "2026-11-17",
+   "구글경유": true
+  },
+  {
+   "id": "434866b0a68c",
+   "src": "gn-equip-ir",
+   "분류": "기업 IR",
+   "매체": "www.marketscreener.com",
+   "제목": "Transcript : Applied Materials, Inc., Q4 2026 Earnings Call, Nov 12, 2026",
+   "링크": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPWlNsX2ZtNXVQSHJqNmYyLUpCcmlqbjdaM3JSNng4RXZoc29QUC1fRzN1WWFONDI4TEV4SzUxRE05Y0NzNWZkZHp5cS1mM0hfYThnaFNVX1hqTXNqUERxb2FxUHh4bExRR3JFU0RsNTM5U3RxOGlqMVZmdFVpeTVKTnpTaGlnMDZFY1ZmVUVmeWxkMTYtakRoX1h1elozNHlTb3ZsUlZCX1JiTmExdkJFQzV3N01JVU52cWNZ?oc=5",
+   "날짜": "2026-11-13",
+   "요약": "",
+   "수집일": "2026-11-17",
+   "구글경유": true
+  },
+  {
+   "id": "1950b7d811b2",
+   "src": "gn-equip-ir",
+   "분류": "기업 IR",
+   "매체": "TipRanks",
+   "제목": "Applied Materials price target lowered to $520 from $650 at BofA",
+   "링크": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOTUotV0JwM251cGk5RXNsalByUTVEQUd5SGJNTnlNbjFqR3V1aVdFUm5wenRhNDZMQlFJMHctbFFWT0tSb1FaWVRtS1Zlc2RMbVNSazVHd2gteFZvSjJ1Ym50UUJnOVpYUm90ZnBSSWlFbVhSMTBQT00zeVRXZUl5T1NJMVc3LVY3YUVXdkRYaXNMaUdvOERENlgwb3FkUXFCam1td2hUdlRiLW1id2ctM193?oc=5",
+   "날짜": "2026-11-13",
+   "요약": "",
+   "수집일": "2026-11-17",
+   "구글경유": true
+  },
+  {
+   "id": "eef39a12ef03",
+   "src": "gn-equip-ir",
+   "분류": "기업 IR",
+   "매체": "TipRanks",
+   "제목": "Applied Materials price target lowered to $500 from $610 at Wells Fargo",
+   "링크": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPY0lYZ09BdnVacTctSWFXdTlmZ1hueDdlMXN3QWpNX3EwWTF3R1I2Q1FMWXVIX1FXZ0Exc0FURDNyR1AwTml2YVRwVjB4ZmdzUmQwOUxiaVF4NHR4eGt0WDUzWlhMSjU1aDVtUzF4NmdKUVpvZE81R0NfbE4tcW9DTFR5VHV4QnRSRmpjVThMeVhQTE9EMlZqUmJPME9MYVJpb1l3N1owTnJGR01mb3NfRWZYamxOcnZ1aVJ3?oc=5",
+   "날짜": "2026-11-13",
+   "요약": "",
+   "수집일": "2026-11-17",
+   "구글경유": true
+  },
+  {
    "id": "36023098a0b8",
    "src": "thelec-kr",
    "분류": "전문지",
@@ -4992,6 +5699,18 @@
    "구글경유": true
   },
   {
+   "id": "cb32b17865d5",
+   "src": "gn-tsmc-ir",
+   "분류": "기업 IR",
+   "매체": "Chosunbiz",
+   "제목": "Morgan Stanley cuts Samsung, SK hynix targets on 2028 earnings cliff risk",
+   "링크": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOdmlCYVpBNFNrMU05emlMZHp4ZnFXX3YzNDlhdUlvcEhrOGU4TDlReGczYi1CS0dNRVVTMU9yZ2VueEhXbVk4c0xDU01XRFZhSlBHNkhYTkdwOHJPM0psUExtaFFITGJaUllpTElRYm5PaVhwRndEcXA4aG4zT0k3NdIBlAFBVV95cUxOaDVYRHUtVXpRZDVZVUJ1VjA1eWJjOUVIMXZQYWhTaU1kNnI1dEhtZnZlUmdPMVpUUGU3MjJCbmthcVdmbVFDbjc0dE1KYTJQd0Rsa1k2Z21Bc3RmWS1lNzZWRThtNENiQzBpQWdERFNwZGtjZWo2QnlrQWJwOHkyMTVNS0hnTDY0RE51S1R2WENoNDZj?oc=5",
+   "날짜": "2026-11-10",
+   "요약": "",
+   "수집일": "2026-11-17",
+   "구글경유": true
+  },
+  {
    "id": "e2e0ab15e66d",
    "src": "gn-semi",
    "분류": "협회·통계",
@@ -5712,6 +6431,18 @@
    "구글경유": true
   },
   {
+   "id": "e4b80a56e768",
+   "src": "gn-tsmc-ir",
+   "분류": "기업 IR",
+   "매체": "Sammy Fans",
+   "제목": "TSMC explores 3D DRAM at Nvidia’s request, threatening Samsung, SK Hynix and Micron’s memory lead",
+   "링크": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPVGxmcHQ0OUdDOFFOTDFoMFpLdUJMMXJJcmdLaGlyUUNqOHZzQmQyTW4zTXBUZ1p6R2ZJWlV2WlNnN1oxekhraFBGM1VDNXFaWXRFUUYwZjNINWpweXJXRXhaV3lzUjB2T0N4QWU5a2ZIWHh5VlFzNUpmUTk5VU90cXVvZXdRbnN5Z3FmYdIBkgFBVV95cUxOazdwNjZ0MXdFU2sxeHYtOFJROG90QzFIVkpPSGxIdEpTYXRadzhNdVF0SGVqX2U0MGNNbkN1RFA2T1RKaEczRDBIU195VXFacndTbE12VV8yclEzUW1lTjBYaTJfeTV6bmxFUXM2TndaUVJNLTdZQ3NnV1ZGNVdfWXpySEN0YmJpdmRSV0hURmtQdw?oc=5",
+   "날짜": "2026-11-07",
+   "요약": "",
+   "수집일": "2026-11-17",
+   "구글경유": true
+  },
+  {
    "id": "51318c175f43",
    "src": "semianalysis",
    "분류": "뉴스레터",
@@ -6262,6 +6993,18 @@
    "요약": "",
    "수집일": "2026-11-16",
    "구글경유": true
+  },
+  {
+   "id": "96b0fa82060f",
+   "src": "chipletter",
+   "분류": "뉴스레터",
+   "매체": "The Chip Letter",
+   "제목": "Arm & SoftBank: Part 2 - Masa’s gifts arrive",
+   "링크": "https://thechipletter.substack.com/p/arm-and-softbank-part-2-masas-gifts",
+   "날짜": "2026-11-04",
+   "요약": "Part 2 of an extended discussion, covering what happened following the Softbank takeover of Arm in 2016",
+   "수집일": "2026-11-17",
+   "구글경유": false
   },
   {
    "id": "9cc844f89af8",
@@ -7056,6 +7799,18 @@
    "구글경유": true
   },
   {
+   "id": "b219949e0577",
+   "src": "gn-kotra",
+   "분류": "연구기관",
+   "매체": "KOTRA 무역투자24",
+   "제목": "베트남 新화학물질법 시행, 화학물질 관리체계 개편에 따른 우리 기업 영향은?",
+   "링크": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPaXQ5X0RUODJMSjNXR1dTNXhEWWVOT3NPM01iWjAtZWRsZnVnV3Z3VFBxMmx5Ui1VaG13TG5GTHEtbTRlaWNoX2VmbzF6ajlqRUhqMF9UamthRk1JN3d6SmRZbVotNG53SWVkaWE4UV9nSjhKaEdzSHdXZjZwQ2VzV1hoSjR6SUZnbVh3Z0ZrNnd3bUV3Y19NWmtLb1FhZDUwTGN1d196RlFxa3NUUWVtbi1Kd1NNekl5ZnhSUHVjanNXNWxGSVlRb1pyTmpBc25iYVhCOGdR?oc=5",
+   "날짜": "2026-10-28",
+   "요약": "",
+   "수집일": "2026-11-17",
+   "구글경유": true
+  },
+  {
    "id": "bae9fdaee98c",
    "src": "gn-kotra",
    "분류": "연구기관",
@@ -7101,6 +7856,18 @@
    "날짜": "2026-10-22",
    "요약": "",
    "수집일": "2026-11-12",
+   "구글경유": true
+  },
+  {
+   "id": "553108946c1f",
+   "src": "gn-kotra",
+   "분류": "연구기관",
+   "매체": "KOTRA 무역투자24",
+   "제목": "[KIAT Policy Brief 2026-11] 대만 반도체 산학 협력 인재 양성 생태계",
+   "링크": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQd1hGS2lvOTA5U3dKa2hIenVqSkE0YXdKT0xZYlBaeWVzUV9BUzJPLWFLSFZYZVhLLXJ6RkVBeWJ6UzVjVFJIcEE4RjYtZlFETlhFaGxvN3ZYenJ4RTU3SEJ1QWNTRHJnOUpMUDFfY2lDZ2kwUGlRc1VKeC13UElmSm1VSzVkM2FtNHdJcnJYaXJqcXpUZnlObEFrYS1UTFlHTUpOMGNKTjRXam4wV1J1OEJ2X0N1Zm9FN3NEUWNnMFN3dTlfdFhITDZRSHRSZ01lOFFEaDUyYTEwNHpxbi16OE5GZDFzdUtEN0hHeWtncmlTWm5sOHA5WjVOdDJKVkxmTGRUMg?oc=5",
+   "날짜": "2026-10-22",
+   "요약": "",
+   "수집일": "2026-11-17",
    "구글경유": true
   },
   {
@@ -7176,6 +7943,18 @@
    "구글경유": true
   },
   {
+   "id": "1bc445bedaa9",
+   "src": "chipletter",
+   "분류": "뉴스레터",
+   "매체": "The Chip Letter",
+   "제목": "Pat Gelsinger : Why This is the Best Time to Build Hardware",
+   "링크": "https://thechipletter.substack.com/p/pat-gelsinger-why-this-is-the-best",
+   "날짜": "2026-10-13",
+   "요약": "From the A16Z podcast",
+   "수집일": "2026-11-17",
+   "구글경유": false
+  },
+  {
    "id": "2edf2c87c8f3",
    "src": "semianalysis",
    "분류": "뉴스레터",
@@ -7233,6 +8012,18 @@
    "날짜": "2026-09-26",
    "요약": "1,000+ facilities across 60+ operators mapped, built retail-first and flipped by AI, largest hyperscaler leases 1/5 national capacity, 100MW in 12 months, Eastern Data Western Compute",
    "수집일": "2026-11-12",
+   "구글경유": false
+  },
+  {
+   "id": "229a4d39e313",
+   "src": "chipletter",
+   "분류": "뉴스레터",
+   "매체": "The Chip Letter",
+   "제목": "Arm & SoftBank: Part 1- Masa comes calling, bearing gifts",
+   "링크": "https://thechipletter.substack.com/p/arm-and-softbank-part-1-masa-comes",
+   "날짜": "2026-09-26",
+   "요약": "Part 1 of an extended discussion, covering the Softbank takeover of Arm in 2016",
+   "수집일": "2026-11-17",
    "구글경유": false
   },
   {
@@ -7308,6 +8099,30 @@
    "구글경유": false
   },
   {
+   "id": "2102426e1738",
+   "src": "chipletter",
+   "분류": "뉴스레터",
+   "매체": "The Chip Letter",
+   "제목": "The Air Computer",
+   "링크": "https://thechipletter.substack.com/p/the-air-computer",
+   "날짜": "2026-09-13",
+   "요약": "Can you build a computer with water, air and clever geometry?",
+   "수집일": "2026-11-17",
+   "구글경유": false
+  },
+  {
+   "id": "e72721eb4ffc",
+   "src": "chipletter",
+   "분류": "뉴스레터",
+   "매체": "The Chip Letter",
+   "제목": "The Innovative HP Computer Behind a Hedge Fund Pioneer",
+   "링크": "https://thechipletter.substack.com/p/the-innovative-hp-computer-behind",
+   "날짜": "2026-09-06",
+   "요약": "A Machine for All Markets?",
+   "수집일": "2026-11-17",
+   "구글경유": false
+  },
+  {
    "id": "6b1d9ab9897a",
    "src": "gn-semi",
    "분류": "협회·통계",
@@ -7318,6 +8133,18 @@
    "요약": "",
    "수집일": "2026-11-12",
    "구글경유": true
+  },
+  {
+   "id": "be48b984b3e4",
+   "src": "chipletter",
+   "분류": "뉴스레터",
+   "매체": "The Chip Letter",
+   "제목": "Where will RISC-V be in 20 Years? Poll Results",
+   "링크": "https://thechipletter.substack.com/p/where-will-risc-v-be-in-20-years",
+   "날짜": "2026-09-02",
+   "요약": "All the way back in August 2023, in the midst of a series of posts on the RISC-V architecture, I ran a reader poll on the future of the architecture, with the following introduction:",
+   "수집일": "2026-11-17",
+   "구글경유": false
   },
   {
    "id": "9ac0c530767b",
@@ -7332,6 +8159,18 @@
    "구글경유": true
   },
   {
+   "id": "002efc4e26fb",
+   "src": "chipletter",
+   "분류": "뉴스레터",
+   "매체": "The Chip Letter",
+   "제목": "RISC-V : What Really Matters",
+   "링크": "https://thechipletter.substack.com/p/risc-v-what-really-matters-and-what",
+   "날짜": "2026-08-16",
+   "요약": "Readers may have seen the recent post from Dmitri Grinberg RISC-V: They Should Have Known Better which sets out, at some length, his criticisms of the ISA.",
+   "수집일": "2026-11-17",
+   "구글경유": false
+  },
+  {
    "id": "72223b5ec520",
    "src": "fabknow",
    "분류": "뉴스레터",
@@ -7341,6 +8180,18 @@
    "날짜": "2026-08-14",
    "요약": "Financing anything is just pulling forward the future.",
    "수집일": "2026-11-12",
+   "구글경유": false
+  },
+  {
+   "id": "a387ec6a7989",
+   "src": "chipletter",
+   "분류": "뉴스레터",
+   "매체": "The Chip Letter",
+   "제목": "Apple and AI : Siri the Early Years",
+   "링크": "https://thechipletter.substack.com/p/apple-and-ai-siri-the-early-years",
+   "날짜": "2026-08-13",
+   "요약": "One of the reasons for studying technology history is to look for recurring patterns: characteristics of either the technology itself or of firms that are built around it that are repeated time and time again.",
+   "수집일": "2026-11-17",
    "구글경유": false
   },
   {
@@ -7365,6 +8216,30 @@
    "날짜": "2026-06-25",
    "요약": "Unitree Playbook, China's Scaling Law, Geopolitics, and Humanoids in the wild",
    "수집일": "2026-11-12",
+   "구글경유": false
+  },
+  {
+   "id": "33f26c89ff00",
+   "src": "chipletter",
+   "분류": "뉴스레터",
+   "매체": "The Chip Letter",
+   "제목": "The Secret Life of Computers",
+   "링크": "https://thechipletter.substack.com/p/the-secret-life-of-computers",
+   "날짜": "2026-06-22",
+   "요약": "A brilliant and fun exposition of the development of computer technology",
+   "수집일": "2026-11-17",
+   "구글경유": false
+  },
+  {
+   "id": "b8aacb1cb492",
+   "src": "chipletter",
+   "분류": "뉴스레터",
+   "매체": "The Chip Letter",
+   "제목": "Floating Point: The Origin Story",
+   "링크": "https://thechipletter.substack.com/p/floating-point-the-origin-story",
+   "날짜": "2026-06-03",
+   "요약": "Where does floating point arithmetic come from?",
+   "수집일": "2026-11-17",
    "구글경유": false
   }
  ]
