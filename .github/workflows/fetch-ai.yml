@@ -4,6 +4,12 @@ on:
   schedule:
     - cron: "4 22 * * *"     # 매일 07:04 KST
   workflow_dispatch:
+  push:                     # 피드 목록·수집기를 고치면 바로 재수집
+    branches: [main]
+    paths:
+      - scripts/fetch-ai.mjs
+      - scripts/ai/feeds.json
+      - .github/workflows/fetch-ai.yml
 
 permissions:
   contents: write
