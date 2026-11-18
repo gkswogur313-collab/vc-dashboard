@@ -27,6 +27,11 @@ for (const c of tb.장 || []) {
   need(/^ch\d{2}$/.test(c.id || ''), `장 id 형식(chNN): ${c.id}`)
   need(!ids.has(c.id), `장 id 중복: ${c.id}`); ids.add(c.id)
   need(c.제목 && c.요약 && Array.isArray(c.절) && c.절.length > 0, `${c.id}: 제목·요약·절 필요`)
+  if (c.최근업데이트 !== undefined) {
+    need(Array.isArray(c.최근업데이트), `${c.id}: 최근업데이트는 배열`)
+    for (const u of c.최근업데이트 || []) need(/^\d{4}-\d{2}-\d{2}$/.test(u.날짜 || '') && u.내용, `${c.id}: 최근업데이트 항목은 날짜(YYYY-MM-DD)·내용 필요`)
+    need(!c.자동갱신, `${c.id}: 자동갱신 장에는 최근업데이트를 쓰지 않는다(본문을 바로 고친다)`)
+  }
   for (const s of c.절 || []) {
     need(s.제목 && Array.isArray(s.본문) && s.본문.length > 0, `${c.id}: 절 제목·본문 필요`)
     if (s.표) need(Array.isArray(s.표.머리) && s.표.행?.every((r) => r.length === s.표.머리.length), `${c.id} '${s.제목}': 표 열 수 불일치`)
@@ -108,6 +113,10 @@ for (const ch of tb.장) {
   c.push(H(HeadingLevel.HEADING_1, `${ch.번호}장. ${ch.제목}`))
   if (ch.자동갱신) c.push(new Paragraph({ children: [t(`이 장은 매주 반도체 브리핑을 반영해 갱신됩니다 (마지막 갱신 ${tb.updated_at}).`, { size: 17, color: DIM, italics: true })] }))
   c.push(P(ch.요약, { run: { italics: true, color: '344054' } }))
+  if (ch.최근업데이트?.length) {
+    c.push(label('최근 업데이트 (분기마다 본문에 통합)'))
+    for (const u of ch.최근업데이트) c.push(B(`${u.날짜} · ${u.내용}`))
+  }
   for (const s of ch.절) {
     c.push(H(HeadingLevel.HEADING_2, s.제목))
     for (const x of s.본문) c.push(P(x))

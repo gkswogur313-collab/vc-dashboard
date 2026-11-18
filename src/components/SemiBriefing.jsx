@@ -92,7 +92,7 @@ export function Textbook({ tb, error, openCh, setOpenCh }) {
               <div className="sb-toc-pname">{p.name}</div>
               {p.items.map((c) => (
                 <button key={c.id} className="sb-toc-item" onClick={() => setOpenCh(c.id)}>
-                  <span className="sb-toc-no">{c.번호}</span>{c.제목}{c.자동갱신 && <span className="sb-live">자동 갱신</span>}
+                  <span className="sb-toc-no">{c.번호}</span>{c.제목}{c.자동갱신 && <span className="sb-live">자동 갱신</span>}{c.최근업데이트?.length > 0 && <span className="sb-live sb-upd">업데이트 {c.최근업데이트.length}</span>}
                 </button>
               ))}
             </div>
@@ -119,7 +119,7 @@ export function Textbook({ tb, error, openCh, setOpenCh }) {
               {parts.map((p) => (
                 <div key={p.name}>
                   <div className="sb-side-part">{p.name}</div>
-                  {p.items.map((c) => <button key={c.id} className={'sb-side-item' + (c.id === openCh ? ' active' : '')} onClick={() => setOpenCh(c.id)}>{c.번호}. {c.제목}</button>)}
+                  {p.items.map((c) => <button key={c.id} className={'sb-side-item' + (c.id === openCh ? ' active' : '')} onClick={() => setOpenCh(c.id)}>{c.번호}. {c.제목}{c.최근업데이트?.length > 0 && <span className="sb-upd-dot" aria-label="최근 업데이트 있음" />}</button>)}
                 </div>
               ))}
               <div className="sb-side-part">부록</div>
@@ -151,6 +151,12 @@ function Chapter({ ch, refs, updated }) {
       <h2 className="sb-ch-title">{ch.번호}장. {ch.제목}</h2>
       {ch.자동갱신 && <div className="sb-live-note">이 장은 매주 반도체 브리핑을 반영해 갱신됩니다 · 마지막 갱신 {updated}</div>}
       <p className="sb-lead">{ch.요약}</p>
+      {ch.최근업데이트?.length > 0 && (
+        <div className="sb-box sb-box-upd">
+          <h4>🆕 최근 업데이트 <span className="muted" style={{ fontWeight: 500, fontSize: 12 }}>매주 브리핑 반영 · 분기마다 본문에 통합</span></h4>
+          <ul className="wb-list">{ch.최근업데이트.map((u, i) => <li key={i}><span className="muted">{u.날짜.slice(5).replace('-', '.')} · </span><T text={u.내용} refs={refs} /></li>)}</ul>
+        </div>
+      )}
       {ch.절.map((s, i) => (
         <section key={i} className="sb-sec">
           <h3>{s.제목}</h3>

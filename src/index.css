@@ -719,6 +719,12 @@ button { font-family: inherit; cursor: pointer; }
 .sb-box-sum { background: var(--accent-soft); }
 .sb-box-vc { background: #f59e0b14; border: 1px solid #f59e0b44; }
 .sb-box-vc h4 { color: #b45309; }
+/* 교과서 '최근 업데이트' — 매주 브리핑 반영, 분기마다 본문에 통합 */
+.sb-box-upd { background: #0ea5e914; border: 1px solid #0ea5e944; margin-bottom: 14px; }
+.sb-box-upd h4 { color: #0369a1; }
+.sb-upd { background: #0ea5e922; color: #0284c7; }
+.sb-live + .sb-upd { margin-left: 6px; }
+.sb-upd-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #0ea5e9; margin-left: 6px; vertical-align: middle; }
 .sb-terms { margin-top: 16px; }
 .sb-terms dl { display: grid; gap: 4px; }
 .sb-terms dl > div { display: grid; grid-template-columns: 150px 1fr; gap: 10px; padding: 6px 0; border-bottom: 1px dashed var(--border); font-size: 13.5px; }
