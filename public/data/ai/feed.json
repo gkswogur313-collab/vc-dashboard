@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-18T07:49:50.161Z",
- "count": 1462,
+ "generated_at": "2026-11-18T07:51:56.648Z",
+ "count": 1569,
  "sources": [
   {
    "id": "aitimes",
@@ -8,7 +8,7 @@
    "분류": "전문지",
    "ok": true,
    "count": 50,
-   "added": 50
+   "added": 0
   },
   {
    "id": "etnews-ai",
@@ -16,7 +16,7 @@
    "분류": "전문지",
    "ok": true,
    "count": 11,
-   "added": 11
+   "added": 0
   },
   {
    "id": "thelec-ai",
@@ -24,7 +24,7 @@
    "분류": "전문지",
    "ok": true,
    "count": 20,
-   "added": 20
+   "added": 0
   },
   {
    "id": "decoder",
@@ -32,7 +32,7 @@
    "분류": "전문지",
    "ok": true,
    "count": 10,
-   "added": 10
+   "added": 0
   },
   {
    "id": "tc-ai",
@@ -40,14 +40,15 @@
    "분류": "전문지",
    "ok": true,
    "count": 20,
-   "added": 20
+   "added": 0
   },
   {
    "id": "vb-ai",
-   "매체": "VentureBeat AI",
+   "매체": "VentureBeat AI (구글 뉴스 경유)",
    "분류": "전문지",
-   "ok": false,
-   "error": "HTTP 429"
+   "ok": true,
+   "count": 33,
+   "added": 33
   },
   {
    "id": "mittr-ai",
@@ -55,7 +56,7 @@
    "분류": "전문지",
    "ok": true,
    "count": 8,
-   "added": 8
+   "added": 0
   },
   {
    "id": "verge-ai",
@@ -63,7 +64,7 @@
    "분류": "전문지",
    "ok": true,
    "count": 10,
-   "added": 10
+   "added": 0
   },
   {
    "id": "dcd",
@@ -71,14 +72,15 @@
    "분류": "전문지",
    "ok": true,
    "count": 7,
-   "added": 7
+   "added": 0
   },
   {
    "id": "importai",
-   "매체": "Import AI",
+   "매체": "Import AI (jack-clark.net)",
    "분류": "뉴스레터",
-   "ok": false,
-   "error": "HTTP 403"
+   "ok": true,
+   "count": 10,
+   "added": 10
   },
   {
    "id": "interconnects",
@@ -86,7 +88,7 @@
    "분류": "뉴스레터",
    "ok": true,
    "count": 20,
-   "added": 20
+   "added": 0
   },
   {
    "id": "latentspace",
@@ -94,7 +96,7 @@
    "분류": "뉴스레터",
    "ok": true,
    "count": 20,
-   "added": 20
+   "added": 0
   },
   {
    "id": "semianalysis-ai",
@@ -102,7 +104,7 @@
    "분류": "뉴스레터",
    "ok": true,
    "count": 20,
-   "added": 20
+   "added": 0
   },
   {
    "id": "openai",
@@ -110,7 +112,7 @@
    "분류": "기업 발표",
    "ok": true,
    "count": 1406,
-   "added": 1404
+   "added": 1025
   },
   {
    "id": "deepmind",
@@ -118,7 +120,7 @@
    "분류": "기업 발표",
    "ok": true,
    "count": 100,
-   "added": 100
+   "added": 44
   },
   {
    "id": "googleai",
@@ -126,7 +128,7 @@
    "분류": "기업 발표",
    "ok": true,
    "count": 20,
-   "added": 20
+   "added": 0
   },
   {
    "id": "nvidia",
@@ -134,7 +136,7 @@
    "분류": "기업 발표",
    "ok": true,
    "count": 18,
-   "added": 18
+   "added": 0
   },
   {
    "id": "hf",
@@ -142,7 +144,7 @@
    "분류": "기업 발표",
    "ok": true,
    "count": 908,
-   "added": 908
+   "added": 781
   },
   {
    "id": "gn-anthropic",
@@ -150,7 +152,7 @@
    "분류": "기업 발표",
    "ok": true,
    "count": 20,
-   "added": 19
+   "added": 0
   },
   {
    "id": "gn-meta-ai",
@@ -158,14 +160,15 @@
    "분류": "기업 발표",
    "ok": true,
    "count": 11,
-   "added": 11
+   "added": 2
   },
   {
    "id": "epoch",
-   "매체": "Epoch AI",
+   "매체": "Epoch AI (구글 뉴스 경유)",
    "분류": "연구·지표",
-   "ok": false,
-   "error": "HTTP 404"
+   "ok": true,
+   "count": 58,
+   "added": 58
   },
   {
    "id": "gn-ai-funding-kr",
@@ -173,7 +176,7 @@
    "분류": "투자·회수",
    "ok": true,
    "count": 100,
-   "added": 100
+   "added": 3
   },
   {
    "id": "gn-ai-funding-en",
@@ -181,7 +184,7 @@
    "분류": "투자·회수",
    "ok": true,
    "count": 100,
-   "added": 100
+   "added": 1
   },
   {
    "id": "gn-ai-policy-kr",
@@ -189,15 +192,15 @@
    "분류": "정책·규제",
    "ok": true,
    "count": 9,
-   "added": 9
+   "added": 0
   },
   {
    "id": "gn-ai-policy-en",
    "매체": "글로벌 AI 규제 (기사)",
    "분류": "정책·규제",
    "ok": true,
-   "count": 44,
-   "added": 44
+   "count": 43,
+   "added": 0
   },
   {
    "id": "gn-dc-power",
@@ -205,7 +208,7 @@
    "분류": "인프라",
    "ok": true,
    "count": 27,
-   "added": 27
+   "added": 0
   },
   {
    "id": "gn-dc-kr",
@@ -213,7 +216,7 @@
    "분류": "인프라",
    "ok": true,
    "count": 100,
-   "added": 100
+   "added": 3
   },
   {
    "id": "gn-physical",
@@ -221,15 +224,15 @@
    "분류": "피지컬 AI",
    "ok": true,
    "count": 100,
-   "added": 99
+   "added": 0
   },
   {
    "id": "gn-physical-kr",
    "매체": "국내 피지컬 AI·로봇 (기사)",
    "분류": "피지컬 AI",
    "ok": true,
-   "count": 59,
-   "added": 59
+   "count": 60,
+   "added": 1
   },
   {
    "id": "gn-ai-ir",
@@ -237,7 +240,7 @@
    "분류": "기업 IR",
    "ok": true,
    "count": 100,
-   "added": 100
+   "added": 0
   }
  ],
  "items": [
@@ -3422,6 +3425,174 @@
    "구글경유": true
   },
   {
+   "id": "bf8424c45d10",
+   "src": "vb-ai",
+   "분류": "전문지",
+   "매체": "VentureBeat",
+   "제목": "'Essentially unusable': OpenAI launches GPT-6.2 Astra and Sol to negative reception from AI power users",
+   "링크": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOM0p5RXctRUhTQzMxTEdQYnJxaVozUkFlQmJOSEJrQjVfeEdrdDJBcExkcmhEUGpoZTN0dXo3dVhxajVwWlpWdVAyRzNDUTBEdi1rekFrT0l3VlgxMFVic1c1ZG9fTVpaVEh0UzAtOUdGRmtVSDdHdHpHRzRiWGY3QUVndjItemljNG8wZVJrNWo3azFrWTVHQmtWczhTcDdGblJmbjhiOFEyS0pULWNQSG9MVkNLVzhJTjBFaUtGaE16UFA0d1c2YzMtX3Z4Tkdm?oc=5",
+   "날짜": "2026-11-18",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "721659f7ce8a",
+   "src": "vb-ai",
+   "분류": "전문지",
+   "매체": "VentureBeat",
+   "제목": "Amazon says hackers are using stolen AI API keys to power agents that hunt for more",
+   "링크": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOZjZtenN0bUhFbk40dFJzNjI5eHNURzlfWkhHWURhRXRZeWRTYWJWVTdydE9oNGRnc3VJUTY1TXFLTEtqV0tUWmRtcm1VYWgtZWZYRFdRVVVCbU1JaUdJS09Ddjg5bWNSbWgtbE5uVVJKVlNrODN4VlYydkk3YW93VDNhZTRmd3p6R2dHOE54bXdScDNPS0d6dnNtMjhzWVVDdFRKMkVaN09yQldpM2dBbk02cTItdUE?oc=5",
+   "날짜": "2026-11-18",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "5d2fc38f4499",
+   "src": "vb-ai",
+   "분류": "전문지",
+   "매체": "VentureBeat",
+   "제목": "AI News & Analysis for Enterprise Leaders",
+   "링크": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBXaUdOZDlRVUI0X0NRdE9xN0Y3Wm83QzRwUGd3c3R1OEhhMVBfdlRfUVFRbnVDdFN3a29OSHRERmhYSWpPZzFaa2NlaWlOU2dMa0gyWXEtQmZWNXdobzNJMkhnN1FQbG9w?oc=5",
+   "날짜": "2026-11-18",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "9311f05e586c",
+   "src": "vb-ai",
+   "분류": "전문지",
+   "매체": "VentureBeat",
+   "제목": "AI agents are coming to help hire, schedule and manage frontline workers as Fountain launches Orchestra",
+   "링크": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNNFdsV3ZvUDRSS2lmY1BscUE0TlozU05GTUZLaEthb1F2dTc4RGFFU0N2dEVwUDhvU29DbmVaN0k1ZHVmbThGR3o0Q3Z5VXpPWTByVXBMUVNwVG5RbWJWMzRTMktfWmIycF9DNzdXOTRZMlVVWHdIdzNwOF9NaDlTMV9ISFlRX3pGRVJOVjBmX3pRa0V2OUJFZ0pJN2FhS2w0Y2FHNDQyZHhyVzhyQTBCdnNNZXNBeGNkS0xJNkJtMV9wSGR3cm0tZDdNV09yOHhTZ0lBUnhDNA?oc=5",
+   "날짜": "2026-11-18",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "74546fa87c79",
+   "src": "vb-ai",
+   "분류": "전문지",
+   "매체": "VentureBeat",
+   "제목": "RHISE AI Brings Europe into the Personal AI Race with Lucie",
+   "링크": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQRGstUVZoRVAtWmNwQTJoRzRva2VYVkY0ZE9POG44anBqOGoxelR5d1BUMWo3ZC1CLWVMLXRZZHZ0bnI1d1dfOGx2OG1wdVo1RzBMVzhwcFJaUUVpTmZBeGgtUlpmdXg3eTlVTThBNUhnc2UyVkY3ZU54ZTg3UENiQ2l5cVNLNVk5R3hib2N0cWpyeXhHempZ?oc=5",
+   "날짜": "2026-11-18",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "7999522056a6",
+   "src": "vb-ai",
+   "분류": "전문지",
+   "매체": "VentureBeat",
+   "제목": "Your next holiday shopper might not be human",
+   "링크": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxObC1HNUlNZzE0dF8xUWJhSk5sU2tDMnUxQ3NRcThEOEY0SlktX3lWZ3VtNmUyT3hQTm9WMTFSdVRyellkNkdSOG1ERnVsN1VnOFkwOUo4cVFLQ0xBOVk1QVM0M2c2ZGJvWmZ3N1I2aHVrYVpSYzhxc2s2UVVmcXdtTmEyRml4NEJVb0pF?oc=5",
+   "날짜": "2026-11-18",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "64fcddfdd2d4",
+   "src": "vb-ai",
+   "분류": "전문지",
+   "매체": "VentureBeat",
+   "제목": "SiMa.ai says its edge chips can run vision and language AI together — without new hardware",
+   "링크": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQbm1nWGFUR3dMZ2ZxLVFRUzlSaFdJeWx0akZJUnFhOENRNzkwZWJwQW84amplX3hyb0J3VFhKVk91NmEtOWoxenBEdUo5NS1MaDM1T205QXV1Skx2dk41SV9wVzBoWUl2YWpQd3ZkZ2tYb2dqQjRHNnFaRHlKUmFuSFd3Z3d1aHp6VVNweEl2VHY0WEJmUWZNX0dWSnE4VVpyejdqRzVBUW82NDluTFFzbVh1aHU0RWgxSnU4OXhtQ21aaFQ5cHI5WDB1Vm5LQVNnUzNnVWhRdldITTBjM0pJTU00Qmh3SDl6TXh6UnVqREtzMjZfNEZGQzZR?oc=5",
+   "날짜": "2026-11-18",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "81904846a730",
+   "src": "vb-ai",
+   "분류": "전문지",
+   "매체": "VentureBeat",
+   "제목": "DonnaPro on why AI and executive assistants are not an either/or decision",
+   "링크": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPT1FCQTctN0JjOFFfNzV6Y3pTeUNQUnpMZ0R2UnNQZU15UFdJbXJvMDB1NkVnV21KUUFHVEVNUlZXTVhFYWliUDFsUkd1ZmJHd3kyRUtXTF9SU2NSLXAzUVFFU2VpTmZuR0M2SDVWdV90Y2h4RkMzQXp3UnZlbGZDWjRIeXQzamJTay1fRjd5LVFWOVRxVlk3MjQ4SVJTdHI5dWxhcnBTNmlYdw?oc=5",
+   "날짜": "2026-11-18",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "4128cdcea70c",
+   "src": "vb-ai",
+   "분류": "전문지",
+   "매체": "VentureBeat",
+   "제목": "The invisible majority: How one data scientist is teaching machines to see the Americans finance forgot",
+   "링크": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPRmhYbzBqR2MxS0I0aGdYZFhxcW5haGxiNGRLRFpvOFpzeDBOekVEQmM1RXIwWWxjTDg3T1dsWUY5RldtRERCNGhhdzdwSEZqMHdKaXJfS1RuajZfVmxpajk5Y0tjVUhxTExNbUF2dUFFbW5LRWRsWkd6RG9hZmVyWDhydEh0bjBiT2Q4eVV2SGp4emVtTWJJeWdZQXF3aExjQVB5SGxQM0dYRmRvX3gza0hpTE1RTXFMQThGYkl6TTdaR3JIdVhiT1A4SkZpUlBi?oc=5",
+   "날짜": "2026-11-18",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "d985a0ec69d8",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "How good are Fable 5.2 and GPT-6.2 Astra at real work?",
+   "링크": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNclY0aXZMMUU1RjFwOGFRYUwyYVNlb1IydjBYSkhzUXFpWWVRTl9KWHVJR1Z5MERaekk4YnpQcldQeWtfV3N2SjJaMnRhb1VnUDNzdWlMeFNCMFB4bDRneHQ5OWhvb0xfZ0xKSlB5Vm9ZMHZvZXZQTTZYM2VIeVoxdXJ5bDg5N1I2Sm9Z?oc=5",
+   "날짜": "2026-11-18",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "028ed3386a95",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "GPT-6.2 Astra",
+   "링크": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9DQlZKNEI5bWhDSjJvcFdzeTNJcWo5TVZXZlMzMTU1RnFYc09QZks3QVlObUpIM3JwV1B3bG95bmxZVjRGSWh2VTExbVpXQQ?oc=5",
+   "날짜": "2026-11-18",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "e1f277cc5fb8",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "Cyber vulnerabilities",
+   "링크": "https://news.google.com/rss/articles/CBMiPkFVX3lxTFBuTkRiRVB4TlhwNTlaX2pzWnFyYmxNdjZMSkRFOGVIUzItaFpJTEN6dFdkY3hFWENCdW1meHBB?oc=5",
+   "날짜": "2026-11-18",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "46f06dfe3a2b",
+   "src": "gn-ai-funding-kr",
+   "분류": "투자·회수",
+   "매체": "Unite.AI",
+   "제목": "Promise Robotics, AI 기반 주택 건설 확대를 위해 4,000만 캐나다달러 규모 시리즈 B 투자 유치",
+   "링크": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNU3JZUXZzdjBTNmdMQ0JSMUNzOGlJdksyeHJabFpOZmk0WlMtaEpmbFBtQ3UySllKR3NwV1pTeTRTaFktNzRSOUotWHBkNkRlaU9VUWFqRGZhODUwT2hzUXFzZGlZdVQwZXptal9WSngyQ3pGNVBUWS1WM29FeENZbElQV3hEMjZXNUlXdTRWdnNTS3Z1YUE?oc=5",
+   "날짜": "2026-11-18",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "e0dea054e574",
+   "src": "gn-dc-kr",
+   "분류": "인프라",
+   "매체": "연합뉴스",
+   "제목": "강릉 AI 데이터센터 공방 지속…\"전력 확보에 여야 힘 모아야\"(종합)",
+   "링크": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE84LVJmRU5WZ1o3U3dDcE9BSU5IbjZyMmdQRlUyT0FkUEVDMzM4X3plSFlTcFpBZnlTNUJSMFFyOHhYeHUyakxDMnFXTjBSb2dhcmdwR2o2WUlBZXRSWEdzdtIBYEFVX3lxTE84LVJmRU5WZ1o3U3dDcE9BSU5IbjZyMmdQRlUyT0FkUEVDMzM4X3plSFlTcFpBZnlTNUJSMFFyOHhYeHUyakxDMnFXTjBSb2dhcmdwR2o2WUlBZXRSWEdzdg?oc=5",
+   "날짜": "2026-11-18",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
    "id": "ec80cfbdd4d0",
    "src": "aitimes",
    "분류": "전문지",
@@ -6266,6 +6437,66 @@
    "구글경유": true
   },
   {
+   "id": "3beb5ee48c6a",
+   "src": "vb-ai",
+   "분류": "전문지",
+   "매체": "VentureBeat",
+   "제목": "Google says attackers built an AI framework to turn software patches into exploits without human intervention",
+   "링크": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQWXlLd3d3Z0JOanJZX0lsQ0FBMElDVzhuenVvUFlHSjNRRUtGU3lJb0VyV3QxS2RmNF94TDNWeGdzRlhuLWtYZ0tDZmRFVS1GUEdWa1djRHQ0UFlRYldTV1kwU2d6WWxKSHI1bjN2OXlzU1lEV1ZXd3FvWFliLUptRGpmdHRDR3ItM2xGWG1xVUx4VTJfRlIzZlpkRmdEVmpiRFZ4YXJFcDZBVlNFQ0R1V3hnMlhLaWlRVndSRGZteUhqaDJiS285SndIa2Ntby1zZTFOb05mZ1IyQQ?oc=5",
+   "날짜": "2026-11-17",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "9217dba77893",
+   "src": "vb-ai",
+   "분류": "전문지",
+   "매체": "VentureBeat",
+   "제목": "Alibaba’s Qwen4-Max cuts AI task costs, but benchmarks show an uneven challenge to frontier rivals",
+   "링크": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNcjNiS0hzU1NCTUVCbHhxcVJBVzNmeEtId1VEUWJSbmpOeG9NWmlKSWFETExvdjB4S1hrcHUzOWFvRVZYSzluOWRqUlBtaGhQamtkVlgxdFAycGV5aGk2R1RYTTRYSkdPR1R1bUtWYV90RzR0Q0NMSGxpNmJBMkRvZ3N5cG9ZSE9lZW1sT2Nwb19TV3JmeG9qUkJIc0ZWME4wWTc0U3JiYWIwUzc3UVhFX1ZMbFNfeE9RZXBJSVhac3JPSV9TS2NkQTFDMA?oc=5",
+   "날짜": "2026-11-17",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "1679afb69582",
+   "src": "vb-ai",
+   "분류": "전문지",
+   "매체": "VentureBeat",
+   "제목": "Midmarket AI is not enterprise AI at a smaller scale",
+   "링크": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNcXZkRWoyTi1ZLTA3Y2ZCVjNSRXNGcEp1cVlvOGNGWjRRc1k3Z0xMdl9YZ2hvSmNJWjZBdEVhcXg3R3RGR2h6ZmdMUFJYWS1xZ0lkS2xGWE04VGdKYXJHWldVUU5nQkQydGVlUkh6XzhXazFnWlZIOWpWYWFrZEVwYnVsb2pjajVJSVVVRlR1UnowZDZh?oc=5",
+   "날짜": "2026-11-17",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "0a18abd834b1",
+   "src": "vb-ai",
+   "분류": "전문지",
+   "매체": "VentureBeat",
+   "제목": "Iconic Raises $10M to Build Software That Understands the World’s Biggest Projects",
+   "링크": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOTEtZUUszc09nQktWN1ZOTVRXQTBZdFBXNkdDaWJqSk42WjVzU2RNNE9OSl9NbEt1RDdqVDBleVd1bkZFS3hVQ3RIaFBGTkhIZlhaZnZySWZ3RmVvRFFqS0ZPS05EcnFRWTZCNk1fanBTSjdoMHU1U01VQnZIUHVZWm1BeEgzbXNBWTloWUlvSG1HT2lOVmZtbHdINmcyeUdtaHNUekdfRHBXVkxNY09ucnA2dw?oc=5",
+   "날짜": "2026-11-17",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "a88beecf8d85",
+   "src": "gn-ai-funding-kr",
+   "분류": "투자·회수",
+   "매체": "파이낸셜뉴스",
+   "제목": "반도체·로봇 훈풍에 벤처투자액 12조 돌파",
+   "링크": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5GU1l2b2swS0d2dUdMeFplSjhKSjlLSjVORHllX2c4aGJSMVJidjNrNUlNekdDQTFZTHhubkRSSDd0bXJyUzF5R1k4aE1yWEF6S0VzbUVsQVgtdw?oc=5",
+   "날짜": "2026-11-17",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
    "id": "e6b37f5da94e",
    "src": "mittr-ai",
    "분류": "전문지",
@@ -7526,6 +7757,114 @@
    "구글경유": true
   },
   {
+   "id": "7dab4b1b8c4d",
+   "src": "vb-ai",
+   "분류": "전문지",
+   "매체": "VentureBeat",
+   "제목": "MCP has tightened its authentication rules four times. Older servers may not have kept up.",
+   "링크": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNNmkwanhHbjBxWlFHSTFMMTBsV05hWHM3NHRfTFYxZS1xVTVOTXh5aWRUTkxSNTJ2WEtyeU5aOUdKT1F0V0dBa3BUSUozcE9hcjYtWlFRWUtYaW4yb3BCbC0wWDhsWjNrbVJlOEM3X0FqRmU4dlNWb2FaNThQei1KbVZwVExuRTNaZFNiMEc0R05FcTNObHNLdGFhQm1PeHpWdGxGeEVONHhQeUlfaHlfcWZzZHNlYzRudmJpZVVMc3Rmdw?oc=5",
+   "날짜": "2026-11-16",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "ff33d58a5dc0",
+   "src": "vb-ai",
+   "분류": "전문지",
+   "매체": "VentureBeat",
+   "제목": "Nilay Dhamsania",
+   "링크": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE84NU5WaVlMLU1aT3FmZ2tsR3BHSGVSRDRYMFI4eVVvU0swV3A2OElTQTAxRnZnOUNYdXZid1ZMYUZlMVhsSUU4ei12Q0VWODlURTl4NHBmUWVVZw?oc=5",
+   "날짜": "2026-11-16",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "a8bcece28012",
+   "src": "vb-ai",
+   "분류": "전문지",
+   "매체": "VentureBeat",
+   "제목": "CompanAIn® Names Animal Health Veteran Brük Herbst Chief Operating Officer",
+   "링크": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOdkU4UEY2bFFGS0R3bWduMWIycGthLVUyMzNnSTBfYWRUenRDcHd3UTFMVU1JNGU2dnJTcUlSbjdDaGxleTZKeHNXWDJzOUZWUlZfdnkzY3VWYWhlWEwzbFQ3cG42SXNtdWhNTlBuQUZwb3ZjbDNDYUpzSVgzbTZGUlpQQWZabEd3dHZ6MHItUTlBM29JaExTU1RRN19WRnRiTWptOEUyMDQ?oc=5",
+   "날짜": "2026-11-16",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "09d723dd92ef",
+   "src": "vb-ai",
+   "분류": "전문지",
+   "매체": "VentureBeat",
+   "제목": "Plural Raises €1bn to Back the Frontier Founders Building a New Europe",
+   "링크": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOaHRiUDNpNlRrRC1icG93Z1hNUllnSWRZcU1RZ2FlVVhfbmRRb3BPQldSblZnSGEwbjN0aklOWHV6bnpKQkpnWF9RNE52SVhYMlVhUTJZWFd0NWdKOTZqZmZLMnhMOTJyN1JURHdGcXkyU0ZZWUhtQVd0cjhyUDZoc0VIUnYzLVA4TzhwMGNZaVU4VGVjVlNoUkZkSzZ1bUM2cFZUTA?oc=5",
+   "날짜": "2026-11-16",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "b3568963ba0e",
+   "src": "vb-ai",
+   "분류": "전문지",
+   "매체": "VentureBeat",
+   "제목": "Rejoni Announces First Commercial Case Using the Juveena® Hydrogel System at CCRM Fertility of New Jersey",
+   "링크": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQOVhVNUNSby1OX2tJVkxpR2YtUENtcHczYVc5WDg0a3FLZy0zR0JSbWFiYnlDT0JsN0VPVTQwWHJXTm5UclRxT193UkFBejdmSHIxMUk2OTlNVlVFZDlfcl85cHhWTV9IZjVQcjFLZ1pKQjE1M0w1SkV1RU9HeHR3d3JXS2hlYUtGelVySUk1bU03OHN2eFJ4UkdLd19kV1RwaVkzU2RsWFZpSjZJVFZtd2dzVld3SmZoSGEwWGxEWFJGQ0p6TUtzUUNfSWJ5TkNTWUhV?oc=5",
+   "날짜": "2026-11-16",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "5255c976de08",
+   "src": "importai",
+   "분류": "뉴스레터",
+   "매체": "Import AI (jack-clark.net)",
+   "제목": "Import AI 481: AI sub-contractors; a wet lab for AI; and subterfuge during development",
+   "링크": "https://jack-clark.net/2026/11/16/import-ai-481-ai-sub-contractors-a-wet-lab-for-ai-and-subterfuge-during-development/",
+   "날짜": "2026-11-16",
+   "요약": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now AI systems are getting good at sub-contracting to make themselves better:…AI can now productively spend money to improve itself…Researchers have developed FrontierML, a benchmark “that measures […]",
+   "수집일": "2026-11-18",
+   "구글경유": false
+  },
+  {
+   "id": "dd95843a91d8",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "Data on Frontier Lab Hiring",
+   "링크": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAzXzRUYmJURk95ZDFsbm5KWkljNndvSGFQYmUycnZyQzEzWlZkc2dySjRvbU4zNUk1cnFmZGVja3dvaTYxcUc2eUx5c0tpQmlQTWVJ?oc=5",
+   "날짜": "2026-11-16",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "9ac1ef50c269",
+   "src": "gn-dc-kr",
+   "분류": "인프라",
+   "매체": "디지털데일리",
+   "제목": "SKT·효성중공업, GW급 AI 데이터센터 구축 맞손…전력설비 공급 협력",
+   "링크": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5EUGpzQzBuY0J4bEJicFFTYXJhc0lubVBYVGhuTWxsc0tFaG1neHVnckxiYlZTZUpiMWJnTDlfT3lzUkFrN05HVkJUd1g4SklqN2Z3S1hNVjRFOXZaNWtaQ2ZpYWM?oc=5",
+   "날짜": "2026-11-16",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "1c23d6cb2cdb",
+   "src": "gn-dc-kr",
+   "분류": "인프라",
+   "매체": "뉴스1",
+   "제목": "효성중공업, SKT 손잡고 AI 데이터센터 전력시장 공략",
+   "링크": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5XQUJKZ2NQcWtYNmZ2UWZESmJQdHc4TXVYRXFUa0tsUkRfbnE5Sm4xWnpaQy1hNzFUaGRGZkRRNUVab3ZuUlo0WWd3YzM2dU81SThhZWljRFhLWmU3WGhBY19qbzc?oc=5",
+   "날짜": "2026-11-16",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
    "id": "ae7dc6093686",
    "src": "gn-anthropic",
    "분류": "기업 발표",
@@ -7652,6 +7991,18 @@
    "매체": "Yahoo Finance",
    "제목": "Nvidia Earnings Could Shift Focus To Cloudflare Stock And AI Cost Control",
    "링크": "https://news.google.com/rss/articles/CBMingFBVV95cUxPd251T0lOSHlsN1A5QUlhSlFuTzhGSWh4ODJveHhTYmlJM3hCUWRuSXhKT1RvT3BTTXh1N2RKUWNJZFF0a3JJcGFRMGpEeFU2LUhUU1BPcm9LMmg4NDI5YWR2MHUxNUZHUVFlMGVlWW9ucEtvcVZzQ2dIYURFS3BPc3ZKRzY5d3ZRX1lyS3RqcmhsTnV2aVFadGN0eGxiZw?oc=5",
+   "날짜": "2026-11-15",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "d8da352fbcdf",
+   "src": "vb-ai",
+   "분류": "전문지",
+   "매체": "VentureBeat",
+   "제목": "The fake app on an employee’s phone could be a gateway into your enterprise",
+   "링크": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPTFpUcVAzdEctSjBWdGkzald2R0gxalhvY2pWZTJnWnRUSllUSk1nS1gyZUV1a2FmY05uc1lzSFJ4OTIzdk9hd0xlSlpINWlVZUlGSG1SZ0J2LUpGVW1nSk9fTG5tYl8zX0tOalZ2NFlwaktpUFRJcHBJQzZIa1doY1hfVWRuR1NCdWZEc1RSeURIbE1BbFQ5QXRTd0xMaFBfX1g1SW5kUGtqVTg?oc=5",
    "날짜": "2026-11-15",
    "요약": "",
    "수집일": "2026-11-18",
@@ -8384,6 +8735,102 @@
    "매체": "미디어픽",
    "제목": "엔비디아, 과기정통부와 AI 스타트업 파트너십 포럼 개최… 국내 스타트업 투자 확대",
    "링크": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9tU2I5cXpTcF9XczZlcHRlc3Vyb25OS3BSYW11Q3hlTHNqdnl3cndyNkhxaGd3RVE3akFQd2Z2T1VhSXlaNExXQldic2lRUGtWc29PVkE2MFpHVVZ1ZldpYzhoSVEyei0zYkZN?oc=5",
+   "날짜": "2026-11-13",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "0402324a7e84",
+   "src": "vb-ai",
+   "분류": "전문지",
+   "매체": "VentureBeat",
+   "제목": "Ex-Alibaba engineer's new startup Octen pairs 10-millisecond AI search with a $20 unlimited plan",
+   "링크": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOazlfb0lrQmpYTGUwanhMczdod1RmY3E1NEM2VG8wNXZWR0JUdU1hTnhwZW5uaFpZN29hdm14Rm9zNXUtSk84RG9VVU1xSGtfVVdaem1lLUpYeU5McWU2MnptZEJrWExqeVNYRndYTlptazRGRjlvOEEtVWVfWVBkeHFHempQa3h4TGt3NmNxcmZ1azBsYnUzeGd6RzBvanQtTHczdEFMejdGVWpZOVYweWc2N0ozV3YtZE5KMWdZampoTHBVa2VOY25VRk8?oc=5",
+   "날짜": "2026-11-13",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "120a70b3e8e7",
+   "src": "vb-ai",
+   "분류": "전문지",
+   "매체": "VentureBeat",
+   "제목": "Google launches Gemini 4 Hydrogen — a faster, smarter, pricier Flash successor",
+   "링크": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNUXRuQUZkeks1RVIwa2htVHJkZUlGby1iLTE5Wnh0UzZDSy1neDZyRU1WRkJRR1VnMzNLb0o3QzdmZkhmcTN0SnlGN09wU3BQVkJ1bk1oMFQwYk03eEsyQVhybEY5eE5RWllKTlhsblRTNms5MXFNSWF2UFFhSS05OWxuaTByM2dqSXY1LS1ncGlGTnFFQ2V0WnRRU3ZsWVVuSkJrZkVWWFprZW96TUE?oc=5",
+   "날짜": "2026-11-13",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "90e1b314d685",
+   "src": "vb-ai",
+   "분류": "전문지",
+   "매체": "VentureBeat",
+   "제목": "Nvidia's Jensen Huang resigns: what does it mean for the AI industry?",
+   "링크": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNa3EwV0tVUHdUZk5WdTUwajR3SHpfYnlXTTVWcnZ6aDhERUY1Rk9WelRyelpqTEJGeHZhLXdsTEJWaWtCdVhZTlJTVTlhcXNBUWg2cUxfZ3QtOHY4eTJRenRseGdpWnI0MXR3RGppb0ktMUlHN0ZDanh6X3UtT0ZWd1AzeENib0RxVjhUd21aRGJjY0VEVVF6ZEI0UXRTYkFkMGZNbThvdFQ?oc=5",
+   "날짜": "2026-11-13",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "9743e0ae2b71",
+   "src": "vb-ai",
+   "분류": "전문지",
+   "매체": "VentureBeat",
+   "제목": "Why swapping AI models takes weeks of work",
+   "링크": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNTzk5MU10LU8zclVnMWQxNHhjaWotMUhaX2ZoTmRsR0xNSW1KMklibmJsWlIzdzVUclhvT29tcmkyUVVlTHdZcWw3RHk3SUFHU2ZWTVdsT2xXbjVsLVdlb3VyaGJ3RUstWmcxUDZQVGxGQ1FOLTVsMGs3SFdUOTd1OG1CZnBDQTFjeF92R05fNG0yd0xqQ3ViY2hPZ0ZHVW9iYXdwR3BWbFQ3R1RwRDBkQUxnSFViTWg0bmhwRHJFLWktMkdsc21XckNoOE53aFc1N1I0Sg?oc=5",
+   "날짜": "2026-11-13",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "5b3dae0ac95f",
+   "src": "vb-ai",
+   "분류": "전문지",
+   "매체": "VentureBeat",
+   "제목": "Anthropic brings Claude into Google Meet to draft documents and whiteboards during your meetings",
+   "링크": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPaXp3SjV0UkNiXzEtc2xCQ29HekVLeFp2MjBhYUg5aUJYamJuaXJFR3gzd3NYMzVLa2VBckJZWDczQ3djbXBPTTVzbkQ0QWtCbF9Ha21Dc0xEMUhPaUxUTVF6S1BXQUstRGZVNTdIWEpsTFlMVFU1Z2VYTjZPNXlJLVE2clg0QWFiZWJOeE9PLV9wcGk0NHM1R09XOUJkeVFXdXpEMDNwVndYZVRjdDBtZGhUeVhtUjBaSkttc05UNXpwNWp0T0RvQlc0bw?oc=5",
+   "날짜": "2026-11-13",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "bb59c114245e",
+   "src": "vb-ai",
+   "분류": "전문지",
+   "매체": "VentureBeat",
+   "제목": "AI agents are making breakout time obsolete",
+   "링크": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOWUdxNzhoSUFTaFNZenFOYVd4YVpiRkFDdTBrMjBiQjFJOEU3dW1WWUVnV1l6NlE1Ti1KcEdKcERXX29sMUFjbDhPaHNHQVhHT3RkU2Jqbm03NTV0T1luRGVUTDhZQ0xRcl9BemI2emtzNmlHRlVONExBVkRaOUhWeWRybUVpYVRncmtNWmpIZmFrUWxFRkNCQ1kzeFNTNFluSkVGRDlidDk2WEg2S05WR2k0R1NPdWJRNWgxLWxtVklLMERMdF9tZGlvOA?oc=5",
+   "날짜": "2026-11-13",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "42a610510ce7",
+   "src": "vb-ai",
+   "분류": "전문지",
+   "매체": "VentureBeat",
+   "제목": "Rejoni Showcases FDA-Approved Juveena® Hydrogel System at AAGL 2026 Global Congress in Boston Alongside Pivotal Trial Results Published in Fertility and Sterility",
+   "링크": "https://news.google.com/rss/articles/CBMinwJBVV95cUxQanltNVFGbFoxTEVZRzNKZDJEbHVOOEExaml4eWNqUDYzWHpEeFFOODZPWUluaExEY0ZiZEFScm1nQ2VYSmpQYkpoaVNfeU5Yd3U2UzJha3BnLWk5LURnUEhGWkhrN3dZckZqa0x0eXhMWjRIRHctQzY5RUp5ckZnTWJEc282RUZ6Mkpoa2F2dWw3Y1k0TjdzWFUyeGczdlRBMlVXR0tfR3FCUFlTYWNSRmtvSkhtYWwtaXR1MTdKcVZwZ1loYlZlZHRzRUZMYVRxTnFmMGlTVC1FLS0yaVplUFRwVl9hTk9JNWdEd2RuRWpKWHNWZjZudEdGQjJwd0c1UEUtMjlLZE9WanhrQ3REX0haWWdsT2pMTkRwNEVzQQ?oc=5",
+   "날짜": "2026-11-13",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "b689b71bf582",
+   "src": "vb-ai",
+   "분류": "전문지",
+   "매체": "VentureBeat",
+   "제목": "I2Pure Scientists Identify a Reliability Gap in Iodine Antiseptics",
+   "링크": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPZUJEeW5TaXhtS25hREhBSEVrUElabHIxVVlnSkwwaFFUU3JobGttMFg5MnJNbUtDZmZmQVZhdkx1VmVhX0NnMFdjUkxzRGNNN3NaVkp2SGJMVVI1VndxeEVhSmlqX2lORW5PcGZxdTN0VHVGamRLdUJ4VDJUSERMZGNUcXNjX1ZrZzNFZTlGUFZ6TFNtT2drY291aTdzVEp6?oc=5",
    "날짜": "2026-11-13",
    "요약": "",
    "수집일": "2026-11-18",
@@ -9326,6 +9773,54 @@
    "구글경유": true
   },
   {
+   "id": "ed7915e09fbf",
+   "src": "vb-ai",
+   "분류": "전문지",
+   "매체": "VentureBeat",
+   "제목": "Attackers breached the Fireworks AI storage where Notion AI chats sat outside zero data retention",
+   "링크": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNaVhoSGprdFREcFhZWWRLR2t4RW9nbS1LVlYydlRpbVpjSk5jUlYtZi1qRDNwTmdSX0lEQ1N0cS1IWjZPM0JKVUw2SGhYMW5TREQzbF9XdFV1U3VmbllIYlJXckE4WGNBU3VRaUd2VEQ0TUpGYUpzeEF1SDlKSDhvSW9KaU4wXzZQS3JCSEtzTm5FeDhRSXRqZGZhRVpXTFBrdzRQY2lkYnhxNFdISVl3T25uaEtjNHlzaW5QN2N5Y1dreXlPR1llbVhn?oc=5",
+   "날짜": "2026-11-12",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "2742d0634fbf",
+   "src": "vb-ai",
+   "분류": "전문지",
+   "매체": "VentureBeat",
+   "제목": "Google’s Gemini Decision 1 model scores up to 1,000 questions in one API call",
+   "링크": "https://news.google.com/rss/articles/CBMisAFBVV95cUxORzc3ajNMRmhlX3BPM2ZFOG0tWWlQdUk1TnQtNjh0TzJSU2V3VzR5RnBuUTB3aDRMd25QckJSajdmLVJSbG9GRlZpQi1WbG9wQnRlVkFVbGVhbmJyS0xrRG1BcFlLQVFpSkpsYWFIY3VRbmpQcGFRejhxV2ZwS0lRSi1MdEsxMnBRUFFEU0NmSllDX0xzdGNVYlZCOUJuVXI5Z2RLZG5kNGt1QmtPalZrRg?oc=5",
+   "날짜": "2026-11-12",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "4bd7dc01a5b0",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "Data on AI chip imports",
+   "링크": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5Fc2Y0TFZISF9FWVlMVHcyVFdGVVQxanpZTnkxcmdkNDVMY0ZYOUY1MS1ONm8zWEk5N1lSc1Z1Q2d1MC1BZnI0UWNvUllsQQ?oc=5",
+   "날짜": "2026-11-12",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "35cc8c7f685c",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "Largest AI data centers ranked by power capacity, 2026",
+   "링크": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1OcUZ2cmlieFJ0NUtMc0FDVmRsRFJEQ1JJRk01X3dDY21iTzFFT3FvZlJIcE1VaWpnbC1QNnRBTThkczgwRXl2T2JHRVBWaGhzOGJDLURkcWFiQUFFU3lqTXZ4TE1VY05ENWJnV0FPV2pTcVE?oc=5",
+   "날짜": "2026-11-12",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
    "id": "bb789fe00a45",
    "src": "latentspace",
    "분류": "뉴스레터",
@@ -9668,6 +10163,66 @@
    "매체": "Trans.INFO",
    "제목": "GXO expands humanoid robot rollout to more US warehouses",
    "링크": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNb0VzbFBKTE1iNTdQOTVmeE1LWGpRTk1MR1hCb0dhWE5EdmZhVk00S1R0d0dvVG1MS09mU0oyU2tKR29fQ2VaRTZaRE1iVDlOQlFCMGljR19KTnRIaU54N3dHTkJFWVNwZFlMNHl4VS05VTZPODlXRmptQ2RPZkdvODVxaDh5eURZaXpza09R?oc=5",
+   "날짜": "2026-11-11",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "25ca946d3802",
+   "src": "vb-ai",
+   "분류": "전문지",
+   "매체": "VentureBeat",
+   "제목": "Why AI projects stall without a clear map of how work gets done",
+   "링크": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPM0RTWHY2VkJDVW81aFpHM2E5VXRyaFk1RFh5Sm9aTlhQSjdzWGFaMTM2Y0c0LVk0dmJVbFpfUjVpREdDdDA1a1o3SEpva2UwQjRkYndOc0Nfa1dNNXI3NGFoNkVmTFlfQjg2QzZTYzBBOW9SSGkySTRFV3dTcnhSdGZlSXpUU1MxZ3o2MmlMeE9jZkQ0OXhMQ09aRDM?oc=5",
+   "날짜": "2026-11-11",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "e1b6b7dd516c",
+   "src": "vb-ai",
+   "분류": "전문지",
+   "매체": "VentureBeat",
+   "제목": "RAD Intel's RADAR Examines the Cultural Forces Shaping Brand Connections in November Issue",
+   "링크": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNYVJuSlZOX1pQX21Wb00wMVFza2JBUmYtX2JYVi0zMnk3U0hBc2twOV9KY2QxVE9pblNfOXlGcU9aOTVwekxLcW1MR3k1S0JobzZYSDVUQWNudVJTdk1VTmNOM0xSNDNFcTFlLXBEWWZnWmlTdXJ2YXlzUnNzYUFzOU1Ia2lmVldUa3I4UFUxSklieEVtX2N1VlNYLWZqRl81SDQ2dVc2blc3aEUyb0t6dXZ3bEIyVWZ3UkhmUzhjVQ?oc=5",
+   "날짜": "2026-11-11",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "94e7953c809c",
+   "src": "vb-ai",
+   "분류": "전문지",
+   "매체": "VentureBeat",
+   "제목": "TrustedRouter launches three new encrypted 'fusion' models that combine multiple LLMs, including one exclusively with U.S. model providers",
+   "링크": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPZkRCTXBMT1huYU40WUZma3NwSmJ3M1I4V3dEbDIwZFh3dExzdk91RmtyTEFIclhwUXJrcUoxNExqdmotcWMzNkI2dE1uV0puV3NmR1NfS0UzNFc2NDM5cUJJa0dRTTc1Tm45bUFRcjFucjVHUVBZOW5KakUwdkdxWHI4M3drZ0FtOTFDT3czbmR0akdoZ3AyUnM5ZjJUSXh2ZW10d1Q0NlZXVWNvaG5ENXUxYVM0WnFYYjlTUTMzOF9hTUpvdmRQUmRaNTlqLU9PR3FtN1R0OFNaY2RjczM2UC1CcTYwLTFOaFk1d2oxM2U0MVo3b3ZVci0xOUI1QQ?oc=5",
+   "날짜": "2026-11-11",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "f5566cb3aea4",
+   "src": "gn-ai-funding-kr",
+   "분류": "투자·회수",
+   "매체": "넘버스",
+   "제목": "[AI 인프라 전쟁] AI 학습 스타트업 머코어, 1조원 투자 유치",
+   "링크": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9BcVN6Nl8xRVItcHVxVVNvS3REWUtuZEc0aDgtOGl6R0liQ2dIVlpiWnR3TVBxcEc3ZTgwb0NZM1FpaHdLZXFXNjJlc3M2Z0RJNEJfVzY1a3ljQWxIMFRuZUxqTU4tcDRxUmJJ?oc=5",
+   "날짜": "2026-11-11",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "0618d2c7cb1b",
+   "src": "gn-ai-funding-en",
+   "분류": "투자·회수",
+   "매체": "Techiexpert.com",
+   "제목": "AI Training Startup Mercor Raises $750 Million at $20 Billion Valuation",
+   "링크": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPeG5McjNDaVN4NW5UczBhWUFrYzRkcHVhdmJCeWNaY01sQ095TThJaFdLSUI1WHpxZkEyLVBqQVVTSHYzd3FiTjJ1WF9XdVVpMWEzQlNoWU1lV0RGVElWVjlzd2NzOG1LV21LcERrY0EzbkE4Yjd6eUpJNlh5TnBheF9kXzc2a1Utb2Z2ckw0eEZFOUZhbXhxczdB?oc=5",
    "날짜": "2026-11-11",
    "요약": "",
    "수집일": "2026-11-18",
@@ -10058,6 +10613,138 @@
    "구글경유": true
   },
   {
+   "id": "c63ed45e3dda",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "Claude Fable 5.2",
+   "링크": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE84M1ZzT1pMcWpOZHFfc0FTNkhibVBXZFRlYWdSTmtwN3pBQVk4RGNKb3R3NENfVTFPUlMtdjhybUYyQVFKVU15dDFzSXA1NDVkMXc?oc=5",
+   "날짜": "2026-11-10",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "1a4e4767ae9a",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "SciCode",
+   "링크": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE4xaVZzM2pRWVRKYmRfVWxUeE82MVpXbXVZWUwtNVpHR3EzdGhfYnlqMlZLSEh4YVhaYU5NUDExaVJMd1hsLXp2RXdqNA?oc=5",
+   "날짜": "2026-11-10",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "7219995dd908",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "Vending-Bench 2",
+   "링크": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE00Q29jSmhCQ0dKTkMzUzZWaVpYdkRPMWpzRjhPOFN2WDdtOVhzQnAwcHBGRS1sVl9RcW5LSE5xWmx3NEtIaHRjN3BjMzZIYS1ublhlaURR?oc=5",
+   "날짜": "2026-11-10",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "0b52b0e0ae80",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "APEX-Agents",
+   "링크": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1ENDNXYi15ZlJhUEhhYW9KMHVYZWoyYlV1aTdDR1M4TnM1amItWkdLNXc2TXN4S01FbzBkaENTbXBvTG1JSUtCc1NrNGFSLXE1?oc=5",
+   "날짜": "2026-11-10",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "e6a051500460",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "Earthborne Rangers (EBR-bench)",
+   "링크": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9mc3diR1BvS3RENDRwa2tGYlhRZTAweEhjdVdhRlJTLU1Zdmo4VlkxZkFjLVZmdW5CVEd2UWRnZ0UxSGNCZ2dLdV9WTWo0QQ?oc=5",
+   "날짜": "2026-11-10",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "0bc877f4eb10",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "ARC-AGI-1",
+   "링크": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE0yN2V5SXRoa3dGWlRxOUxKekEtaFByNkx0djFoVU5fdXh4TTJnUlRNTFpHelJwYkpFRHd4aVZTUlRpLW5BWTVha2FwSQ?oc=5",
+   "날짜": "2026-11-10",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "ef33829ac516",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "Furniture Assembly Benchmark",
+   "링크": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBTdDhtbDBXUHZRbUVRdFUzLWZSUWJWWGtLOGZMbWNQem1BdXNiVjZoNENtaDJpRHFUN2tsNmV4V0ZPR05iWXVPaEpOalFOSUZ1bnRKelRRUFdadw?oc=5",
+   "날짜": "2026-11-10",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "32f9256a8d25",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "Mystery Game Puzzles",
+   "링크": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE84dm92QXN0bHZKVld5aGRxb0RGa2JwanNWa3B5RUlJQ2Rzb0M5czA3TFZpSnY5LUVDaG9veVl6NUI0dGl2TEYyVVR5Mmd5T2h4cHpSbUN5MVFiVFRR?oc=5",
+   "날짜": "2026-11-10",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "1cd18d87adf4",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "Blueprint-Bench 2",
+   "링크": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9xT3ZGMVZZb1lPQzRySFcyR3Y5bVZ3b3BUa1BldzJzcTFOblkyUFdJMldwdnZyNkUwVE94bndBV0UwQ3NxWlBfOHBhT29mWXltMk9FLVpGTDI?oc=5",
+   "날짜": "2026-11-10",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "7b2b954eb5dc",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "CursorBench 4.0",
+   "링크": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBteE1oN2VaR0RnMHc0dXBaT1VvVUFLMXhJRnl4TTNIcm9OM3gyandkRjJHbHNuaW90NnJXQTlzZTdlSzhMZmlrdS1vaDlRVzdz?oc=5",
+   "날짜": "2026-11-10",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "5846ca48ce80",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "ARC-AGI-2",
+   "링크": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5ybjlleF85U293b0Y2YmNIeEYxNEQ3UENXRk43WWZsanBSQzVSRE9NWWpZQW5ZdE5BR0RabmdULW1TUmNyb0JUNk53dU15UQ?oc=5",
+   "날짜": "2026-11-10",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
    "id": "b044ec790c18",
    "src": "mittr-ai",
    "분류": "전문지",
@@ -10358,6 +11045,102 @@
    "구글경유": true
   },
   {
+   "id": "b10ee872c636",
+   "src": "importai",
+   "분류": "뉴스레터",
+   "매체": "Import AI (jack-clark.net)",
+   "제목": "Import AI 480: Self-sustaining space economies; AI for science progress, and Meta builds perfect hands for a superintelligence",
+   "링크": "https://jack-clark.net/2026/11/09/import-ai-480-self-sustaining-space-economies-ai-for-science-progress-and-meta-builds-perfect-hands-for-a-superintelligence/",
+   "날짜": "2026-11-09",
+   "요약": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now AI Science startup converts a quantum conjecture into a theorem:…An evocative taste of the singularity…In the same way a few years ago it went from remarkable […]",
+   "수집일": "2026-11-18",
+   "구글경유": false
+  },
+  {
+   "id": "36b48f1a2de1",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "Inference Performance Index: changing the way we measure inference capacity",
+   "링크": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE8tSzlzbnU4U1RuNmszNjNtTzNXMC1xenlKcHZwV1lPYUNrYjd3b1gzVlppOUU4RHpfUVhtSHU4d1dDZWQ1MHNhd1dfb00tMkFJX25xMjBZMHJJQUo5VHJKSHV3bXJyYW1v?oc=5",
+   "날짜": "2026-11-09",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "ad6360cfd31c",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "AI use in research",
+   "링크": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9IVXZ2ZWtsNHFBbTJaSTRmSHo2elA3WUF1OElWck5meHdlOHRqV0ZwUTRaT2E0b2FBUDJaVGNaaEhDT0JCM0N2dkd0cXZQdw?oc=5",
+   "날짜": "2026-11-09",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "4ef43d394100",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "Remote Labor Index",
+   "링크": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBVZXc0Q1BFTWx5aWI2VU5rbUh0Z1U0cVFBWDV2QkJaRnhYQUprTngwV0w2aXByd0V2VFJtQWhTOXZiX2FMWWc?oc=5",
+   "날짜": "2026-11-09",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "916f6520e9ca",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "ALE-Bench",
+   "링크": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBnWHdvVk10aUhqOHJwaktEM3dSUi1rcGZNN0RLLW1pVWpEVUZiNjd4LVdpM0IxbTZMamFHS0ZRWTdQbFlsdE9RcThuV25Idw?oc=5",
+   "날짜": "2026-11-09",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "7640bf90b709",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "AI use in math research",
+   "링크": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE1QcDVnSWQyeDNvZWhuRUhGUDVLcS1LTXY1U2g0SUVxaG14ckdsUHBfQmFYWk83SThabGFlUUJlaDY?oc=5",
+   "날짜": "2026-11-09",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "3161028a46b5",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "CritPt v1",
+   "링크": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5HZko3SHB5bndKUE5wVjNhakZ3VW5EaVB5RUhkbmd5Mm9sQ3FLLVMxcjJNeWVZVXA5VjNWSVhoUjVoQkRJUmpzTm93?oc=5",
+   "날짜": "2026-11-09",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "95c149224688",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "SpireClimb",
+   "링크": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1HWExkdEYxMEtLLXlTQWhTSm42OVYycDlocmVNVFJZZkItYjVUR1hYQjFEaTZENnlONGxSaGM0Q3VfTUJnam1fZFVycUNfQzg?oc=5",
+   "날짜": "2026-11-09",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
    "id": "881c7e199684",
    "src": "semianalysis-ai",
    "분류": "뉴스레터",
@@ -10388,6 +11171,30 @@
    "매체": "kharn.kr",
    "제목": "[KHARN칸] [DC코리아 2026] AI 데이터센터 전력인프라 전환 본격화",
    "링크": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBDT3U3VmZpdElqTTBWMGhGUGVHa1BZNDNWeVhQSGZUbWt1ODh4dS1nMXNySzZtN1BNV2taa0lzMEtiVEpQS2RodHI3WjZJWVl4aXE5YnJn?oc=5",
+   "날짜": "2026-11-08",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "51dd7430309e",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "Rockwell Schwartz",
+   "링크": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBaQUF3SW9zVlRBRm9NY3VjbFczRHZqa2Y0YTU3UWlMSlJabzlkOWMwd2VGLUY2N0hGd3ljTDk5eV9WU2Y5VFBtczFzdHhaaUYzZzlYZ1BpU0s?oc=5",
+   "날짜": "2026-11-08",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "51e92bb06c0b",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "Maria Jose Zabaleta",
+   "링크": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9Wb01faEhBNXJmb01XS0F4UlBoQlpxNlBuTGNHcmNZRGVtOEt6SUNqanZJLXFpZ2ZqSnJyZ1JQdE9sYUMzci1KV2pDUjRVVV9BczlFTkhsWHc2Sjg?oc=5",
    "날짜": "2026-11-08",
    "요약": "",
    "수집일": "2026-11-18",
@@ -10790,6 +11597,54 @@
    "구글경유": true
   },
   {
+   "id": "ea68a61ee292",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "AI data centers directory",
+   "링크": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9Ib0lSdTh4UkI5R01RNDc1WUlkUk1Gc2dZUUhVOERQckNjMzBJelF3eG8zOEpWenRjaVVTaDBPVDRCVmNsR1pqdjBqWXNwdnJfSzY3RWY1NnNVRkE?oc=5",
+   "날짜": "2026-11-06",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "d55a787499ff",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "What Huawei’s Horinger data center reveals about China’s compute gap",
+   "링크": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5mSjJsclk4bW9KWVpnY0t5MUpQY0ptYWVNT3RIdEJnajNWaGRRWHFHNjUyczVDb0tRT1RnR0UyM3g2SG1MbUZxcm5YaTZpNE5icExPSUlJYy1EeURDbjAzR0FlRVFqZGcwTEltSkRSZk4?oc=5",
+   "날짜": "2026-11-06",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "b0f0d03f4818",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "Huawei Horinger | AI data centers",
+   "링크": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBFNkk2NmxmNUtUcDlNWkl3ZF9ob09kaFNwSzF0Y2hlT1VTdV8xMHlKVzJiSmtnWEFnaHY0Vzk3YTdldXRjVDFwYkVCaXFURHdEWFFtSGtnazIxaGNEOEJ6UUZOLS1oSlNQUnJ5RXZ4b1I?oc=5",
+   "날짜": "2026-11-06",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "b310a8536d5c",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "Data on AI data centers",
+   "링크": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5KQkdJTjRGUTBUUzZmcVZfOG1DbExZdU9JWXl6a2VNS21xSXVKS0tGN1BOUVJVdnhHS0trWWtrTGtieUo0V0FZeVM3dW15dw?oc=5",
+   "날짜": "2026-11-06",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
    "id": "2550523e2a0e",
    "src": "mittr-ai",
    "분류": "전문지",
@@ -11024,6 +11879,42 @@
    "매체": "헬로디디",
    "제목": "안내견 로봇부터 휴머노이드까지···ETRI, 피지컬AI 10종 공개",
    "링크": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5lVV9xamJ5bkRsWHd6XzZGNDdNU2MwWlpvaHNXLXJpaDduR0lUV09mMTIxbGI2VDZ0elZYRFdTOFRTUklSYjE3ZEROdlBpaWVhYUsySFE3WEZEMWYyT1h1Q2xYUXpIcWp1aXc?oc=5",
+   "날짜": "2026-11-05",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "db95987cd5d9",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "Meta Aiken",
+   "링크": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBEUS0tUnZDcmpUZXBEaEFZeE90V1ZqVTlfZHJtRktFcG9vNE5Qb0ZjUFc0ZGYxdmNBaWpFQlB6aTh6aHRfckd2RW9PVWpmcHVRVE1zNFlISWstMmFWalZhQVBYMll2NWFpOEE?oc=5",
+   "날짜": "2026-11-05",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "2c0735f56eef",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "Polling on AI usage",
+   "링크": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE5HSjhHU3Q4amxuUV9DQk1oS2xvUUNidXVhVF9Vc2RocXhoVlNhRENDaGt0eDBIMmxIZ2doRFBpQ042a00?oc=5",
+   "날짜": "2026-11-05",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "2fa1108749e9",
+   "src": "gn-physical-kr",
+   "분류": "피지컬 AI",
+   "매체": "산업일보",
+   "제목": "ETRI, 로봇 ‘두뇌’ 개발에 집중…피지컬 AI 연구성과 공개",
+   "링크": "https://news.google.com/rss/articles/CBMiREFVX3lxTFBPeWZkaUFaeFk4US1yNWd5bE90djFMaFFSTWk0RTU3aXBDRnUwaS1zTHd6SjZGcm9sTjZYTWZsRVRnSDFu?oc=5",
    "날짜": "2026-11-05",
    "요약": "",
    "수집일": "2026-11-18",
@@ -11330,6 +12221,42 @@
    "구글경유": true
   },
   {
+   "id": "b047e925ec54",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "Updating the ECI methodology to use a Bayesian model",
+   "링크": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1RTGE4aUpuR1RVdFZuRGtaTlZPcWZXSlZVQzJwZ3pyRmZEUjFZb0lVOHZicWJjTDkyTHBvckJqb2VqTjU5MlF1Mk9rTFY1QXdockxoZlQyX1NnZDdEb2lyNjdxSTQ?oc=5",
+   "날짜": "2026-11-04",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "df7d4ca7c089",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "Broadcom TPU compute shipments doubled from Q2 to Q3 2026, reaching 2 million H100-equivalents",
+   "링크": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBpT3FUWTNaYlFSZHItWWluX2JfUGxVYzdpRklxcGc1N01WYnA1LVpUc01MdWYwNUtFdWtpaG4yU19tV3FkZFNlR3BGcHlnaUJkY1VFZVhoRFdCQW1nWFM2clZUMmc?oc=5",
+   "날짜": "2026-11-04",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "e4b1d5a0907a",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "Håvard Tveit Ihle",
+   "링크": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFB1SFNEMUQ5OFg2WFVpOUFVeVpfQkNORFBvR1I3bDRHNXNWNTFubHlfVG14cG1rWkNJN1ZkNENhejJ6Zk5yREZPYWNnN1dtNkFrZzRWSUtMalM?oc=5",
+   "날짜": "2026-11-04",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
    "id": "26c6032e1d26",
    "src": "openai",
    "분류": "기업 발표",
@@ -11522,12 +12449,48 @@
    "구글경유": false
   },
   {
+   "id": "d5a96409c72a",
+   "src": "importai",
+   "분류": "뉴스레터",
+   "매체": "Import AI (jack-clark.net)",
+   "제목": "Import AI 479: Spacewar; low-latency tasks versus LLMs; Genie 4",
+   "링크": "https://jack-clark.net/2026/11/02/import-ai-479-spacewar-low-latency-tasks-versus-llms-genie-4/",
+   "날짜": "2026-11-02",
+   "요약": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now LLMs are very bad at low-latency tasks:…Realtime-Bench says it’ll be a while till AI systems can play games or do online auctions for you…Researchers have built […]",
+   "수집일": "2026-11-18",
+   "구글경유": false
+  },
+  {
+   "id": "e2c5229e5442",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "MirrorCode",
+   "링크": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBHYWR3STFXdXh6bEdCUWxYdHpoSUdjajZKUnBmN0doMXJzWk5YcmhfeFR5aDJKRFdaUTlDSW4wTl9BRThfdjlPRVZTMUJGWTg?oc=5",
+   "날짜": "2026-11-02",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
    "id": "f97d76caf216",
    "src": "gn-meta-ai",
    "분류": "기업 발표",
    "매체": "AI at Meta",
    "제목": "Meta Business Agent: AI customer support | AI at Meta",
    "링크": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9PNzlKN09rRGo1UzFTb195NjM2ZmRJbWJtQkJLazFoNFlaN0pHM3FSZFU3MjViQnI4Wk45T1lyZVZEM19CeHBIeFZBdkM2eThJeXc?oc=5",
+   "날짜": "2026-11-01",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "5cb009f296ac",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "OpenAI Stargate Abilene",
+   "링크": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9FbVlLaEo1ZENIeE5QNUM4Q3B0bnUwRXBDUGZLU1l0b3YtelhGNnZUdDJEdlBncVNXeTBhY1dsMnZIN1VwbGFTa2xqUmlwZ3JDX0RVeUdZa2ZiMXRUdUpqY3V2Vkg0SGtmNjNKV0Vvd3BSaXBlVTFIZTlwVQ?oc=5",
    "날짜": "2026-11-01",
    "요약": "",
    "수집일": "2026-11-18",
@@ -11544,6 +12507,18 @@
    "요약": "Last week coined the term “Black October“ after an onslaught of critical vulnerability disclosures, including PHP2Shell and a long-standing GitLab bug, signified the moment when the cyber risks of AI models started to materialize.",
    "수집일": "2026-11-18",
    "구글경유": false
+  },
+  {
+   "id": "c1a273b2a799",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "Anthropic Lake Mariner | AI data centers",
+   "링크": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBLMS0tQU5lY0oyaHItR2l0V2xNdzRRUWxDd0gwWVJPejVHRVE0WmdnWEJneHZVSXNlazZ6Q2VOWkc5WXFxVWxRZGYyaUxRRFpaQVJVN202bmxIekNycnBLZEFFZ0l3WTVVMWJxNnNPMkpkc1hzdk9wZnln?oc=5",
+   "날짜": "2026-10-31",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
   },
   {
    "id": "25cc4c9bb2e3",
@@ -11604,6 +12579,42 @@
    "요약": "Google DeepMind and UK government work together to reduce planning assessment times",
    "수집일": "2026-11-18",
    "구글경유": false
+  },
+  {
+   "id": "07f5cd219fae",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "LLM use is acknowledged almost as often as specialized AI tools in biology preprints",
+   "링크": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1nYkl5bXZ0N19oeU11dnZER3lib2M4QnNtZWRSaWtrZllaUkNtVkk0RS1xLUJaTlRuYkgyV3haV3RJcjV0OGZRZFQ3WjdpeEU2OV9GVWFLcGNJQlBPRWtndzdvOUZhdw?oc=5",
+   "날짜": "2026-10-30",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "04687582bb86",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "Tara Abrishami",
+   "링크": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5uTHRKZ1RyYW5nUEM0QTBFdWVwZ1JyWTJtM0hiQ2ZSdUNTTGxLQ3dUbkEyYnJfMWFfNXY0Tjd3WVFrRVNpWEtTWmNtUkdsVTRNZl91Wg?oc=5",
+   "날짜": "2026-10-30",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "d8addbe8ceb5",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "QTS Cedar Rapids",
+   "링크": "https://news.google.com/rss/articles/CBMickFVX3lxTE9iWUVKUVpwMkFxQ1ViUGtiN21MMmFnM0tLOU14YTkzTFJzNVlSMk9uaTRuSDBScmlaM0Z1YXdIRHRPVG5TTXE5dDJpRTRuT09FSnBWSHF3NVFNRWg0VWNjOVdkckI5THRaUDA3VXotdVFZZw?oc=5",
+   "날짜": "2026-10-30",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
   },
   {
    "id": "d28967fce9c6",
@@ -11714,6 +12725,54 @@
    "구글경유": false
   },
   {
+   "id": "52879af14698",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "Open-weight AI models can exploit the patch gap",
+   "링크": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1FcFcxSXoxYjZGOTc3OHUyUkdzZGN6RlZlZWFTQ3lxS214SGlic1NXeFVGUTh1NTZ5c25jY19fNjd4TUNPS0dVWEJCaVpteHpqQ01XOW9NLVdaM2FDYzBoREo2UzJEdUQ2c1E?oc=5",
+   "날짜": "2026-10-29",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "7c3a2345bb5a",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "New global AI computing capacity is doubling every 9 months",
+   "링크": "https://news.google.com/rss/articles/CBMie0FVX3lxTE83b2YwYm9DUlgzQ0VsZGFyeDBiZDF2RXEzQ1B2bGZaRUpXV09leHg0QTBEaDBmUTd2V0xsMGxMLTNDd1pzMnJBZHQtU2tyektrQWZ0QmdXSEc3RUI0UzNsYWlIVnZMdkNBdklaNVpCWHhGOU9qVVRKNHplbw?oc=5",
+   "날짜": "2026-10-29",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "2d0f274a04f0",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "Timothée Chauvin",
+   "링크": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE93WTJtOHkySkQzdkxNcDNwOEdsdTVXMEQycTc5QWR1aGt5Q2JaTHItNmNJY3ZQaS1za0d3NkhCcWlpRFhTcW9tbjR2bUtSYWxKOXNQdF9lYw?oc=5",
+   "날짜": "2026-10-29",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "0958892ed4b1",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "Aiden Ament",
+   "링크": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE10WnBjb3lsWWdVOTF3bkJOT096UW16OGRyZHRiYUZWTXF0NDFwaGdjRmt5T3JSeWdHY19SWU9OSC05R0VEODZGUm9iY2dCYWNn?oc=5",
+   "날짜": "2026-10-29",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
    "id": "45f878f3f6da",
    "src": "interconnects",
    "분류": "뉴스레터",
@@ -11796,6 +12855,30 @@
    "요약": "",
    "수집일": "2026-11-18",
    "구글경유": false
+  },
+  {
+   "id": "c56d61d0374e",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "AI chip imports documentation – Downloads",
+   "링크": "https://news.google.com/rss/articles/CBMibkFVX3lxTE15ZllIUmdUN3pSdXc1RWFRZUR5WkNxaGZrUm9LSEJPMjFLZUZ4WWdNWW9SZ3l2RVdRc05hZkM5WmNUYmR1X2FBVk0zMUYyeEpGT2hlTGFEUkp6NVQ0M2Z1Vm9kMHJxSE91WlVWWjdR?oc=5",
+   "날짜": "2026-10-28",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "843f09bc3eb6",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "FrontierSWE (v2)",
+   "링크": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5JNXJCMU5abWlTMXZFQ0l0dm1YdVVYeVQyOUNPZVBpNm5qTDgxMWNTR0ttVzZIdTBVM3NlLVQtUXR5eWhDWWNtSExzUkM3MDRZ?oc=5",
+   "날짜": "2026-10-28",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
   },
   {
    "id": "a3a879144b29",
@@ -11882,6 +12965,30 @@
    "구글경유": true
   },
   {
+   "id": "7cee8b2375a9",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "Where are the world's AI chips?",
+   "링크": "https://news.google.com/rss/articles/CBMickFVX3lxTE1zU1BoU0VtRFVnbXlsaklYVDVoWVc2NkFTVVM0Q3ZaN2JKNDQ3S01QMkNsR3F4ZGl4NndiU1hOLTFCdk9nT2tpSjV2d05HQ3ZUeWh6MG54UDBTUzBJRUhCM0s4eXdZb1NMVXlWZWZyR1hMUQ?oc=5",
+   "날짜": "2026-10-27",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "dfce176b91ed",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "Lucio Melito",
+   "링크": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5Nd3YtckdXUllJNVRkZDFQRElQZUx3amt3Zk1NRXlGbjl5cm9RdFBRWjZIcFI1Um1Sc3hQXy1jWHRZTWt0bFU0bjBlT1VrdzZpdHc?oc=5",
+   "날짜": "2026-10-27",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
    "id": "f16aefe89a6e",
    "src": "openai",
    "분류": "기업 발표",
@@ -11942,6 +13049,42 @@
    "구글경유": false
   },
   {
+   "id": "39ff90ce9b1e",
+   "src": "importai",
+   "분류": "뉴스레터",
+   "매체": "Import AI (jack-clark.net)",
+   "제목": "Import AI 478: Math for alignment; ProgramBench; and Mirendil shows what RSI means",
+   "링크": "https://jack-clark.net/2026/10/26/import-ai-478-math-for-alignment-programbench-and-mirendil-shows-what-rsi-means/",
+   "날짜": "2026-10-26",
+   "요약": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now How math could help alignment:…What the “industrialization of mathematics” means for safety…AI safety startup Resolution (formerly known as Sequent, Import AI 461) has published work on […]",
+   "수집일": "2026-11-18",
+   "구글경유": false
+  },
+  {
+   "id": "b34c14fdd299",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "WeirdML (v3)",
+   "링크": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1zUjNUemV4YU1aanA0UjJmQW9yc0thejN2c09DSWdTV3hwQlN3UUlnQmgxaVdVRWdlQ1g3a3c0MUN3TEs3TXBabVBpaTladkk?oc=5",
+   "날짜": "2026-10-26",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "accc9aa6e583",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "Meta Los Lunas | AI data centers",
+   "링크": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1WQlY5Z0xRSlZJZ0NibjdiZDNiWXYwSUgzU2VpbzdwY3NpSFRIcEpJVlNBbnF1eGhIZU1KdFhkTzNqVnE4YUlkNUFqZElITnpqUXdiREFXaThGdUwxVFQzR3M0TXRRT0hVaUpJU0lNSQ?oc=5",
+   "날짜": "2026-10-26",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
    "id": "cb0e6541c41d",
    "src": "interconnects",
    "분류": "뉴스레터",
@@ -11976,6 +13119,18 @@
    "요약": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT.",
    "수집일": "2026-11-18",
    "구글경유": false
+  },
+  {
+   "id": "8aad61cc2691",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "Bill Bateman",
+   "링크": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBlNEYyTThXcHN6Sm1JYlAtZWtFOWVaMHNsWkVVYTdpM1hKQTFHRVFmWlRXbUtCYzNYNkxNaVdrWmtvY1pZbUtuZTNESXN1UnV1R2c?oc=5",
+   "날짜": "2026-10-24",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
   },
   {
    "id": "48e2274fdf2b",
@@ -12048,6 +13203,18 @@
    "요약": "",
    "수집일": "2026-11-18",
    "구글경유": false
+  },
+  {
+   "id": "1983f10841b1",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "LMCA",
+   "링크": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5zcDhtYjFYR1dSSldJV3Z3ZDMxUktieWhzSzFBTXQ2bHNiUXBJZERhZlNfdVZQY1NyaFF2S1h3NEdZVm5JLVJZ?oc=5",
+   "날짜": "2026-10-23",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
   },
   {
    "id": "cc0f997eae37",
@@ -12152,6 +13319,18 @@
    "매체": "AI at Meta",
    "제목": "Facebook AI’s co-teaching program to increase pathways into AI for diverse candidates",
    "링크": "https://news.google.com/rss/articles/CBMipwFBVV95cUxObmw2S3hwQVpiNG5LSjctaUIxWVB3NDc2aklpcGdxSktCYU9mVGw1YnozdkpYam1GSVRjZWNTMzV4aFFLTGVtMDJobjRWRWlVTlFoYUxaVzh1Tm5NNHloemRMVU1BcmJMNmhLTkVuZlI5ZnZ6aHpDYjN5MUlUc1hnaUYtVWxvMmljM2IxUXlDVVdyUnRON2tjSERNT2JvNFpEeHFOZDFsZw?oc=5",
+   "날짜": "2026-10-22",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "3931ba65c7c5",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "Naomi Bancroft",
+   "링크": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1UVlhpREtSR2NaZ1VUT0lGMzlkaXJGNWo3aGcxY2M4Vk1FbldZVkxTZVlpWWpoWGVWVENOUFhqTmJVd2RsYXRCRWtuSnM5QUtLeERGMg?oc=5",
    "날짜": "2026-10-22",
    "요약": "",
    "수집일": "2026-11-18",
@@ -12264,6 +13443,18 @@
    "요약": "Widespread AI adoption is propelling Southeast Asia's digital economy to a projected $368 billion in 2026 and $1 trillion by 2035.",
    "수집일": "2026-11-18",
    "구글경유": false
+  },
+  {
+   "id": "7705831fca37",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "AI chip market share by designer",
+   "링크": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4zSWp1TF92ZzFuOTZrY25ESGI2TjlxS1gwUndiTnRGR2o2bUhFUld3b3ZiX1N1OV9yNXBldUlSaGJSMHdLZFR5OTlpaXpyYmI5dVFLektlNnBqRWR6UWwtZy1qSTctaFU?oc=5",
+   "날짜": "2026-10-21",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
   },
   {
    "id": "b3fcb2e42d32",
@@ -12404,6 +13595,30 @@
    "매체": "AI at Meta",
    "제목": "Muse Glimmer 30B: An On-Device Agentic Model | Research",
    "링크": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNQjZZVk1ERVYyQmZEMEZSZE1yTFg4M3hYV0hyMmtqamx2VmgyYldwMTd6MzZmX1hIMkFJSWxhaUdZREo0QUFIWGdEXzhjczNCY0ItVklUQmJPSFFMNVFyNVJoTTY4Z2NjdDBhQmFJX01VTmZaS1NkMW8yc0trcnBxVy1KX3NZcTM1eGY2RUZZbw?oc=5",
+   "날짜": "2026-10-19",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
+  },
+  {
+   "id": "5be7b24c47cf",
+   "src": "importai",
+   "분류": "뉴스레터",
+   "매체": "Import AI (jack-clark.net)",
+   "제목": "Import AI 477: In which I tell the IMF the Singularity has begun",
+   "링크": "https://jack-clark.net/2026/10/19/import-ai-477-in-which-i-tell-the-imf-the-singularity-has-begun/",
+   "날짜": "2026-10-19",
+   "요약": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now Here’s a speech I gave on Saturday the 17th of October at the IMF meeting in Bangkok. This speech is inspired by the megatrend readers have […]",
+   "수집일": "2026-11-18",
+   "구글경유": false
+  },
+  {
+   "id": "bbe8b59508f6",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "Anthropic-Amazon New Carlisle | AI data centers",
+   "링크": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOR0RvQmF0WG81T1pXZGpwQ2FCcEN1X0JfcmJLTi1fdmhPTmoxQ0F4cXNZR3RWT01ZVHF2NVU2QXVyWnlwWmh2ZTFLcFBhQmpMQi1fQXB2OUxMVGpxWlR4OVVFV200WW5xN0F6bjFkN2FqQlBSbnVubzVuUF9VVnRqSXFXMA?oc=5",
    "날짜": "2026-10-19",
    "요약": "",
    "수집일": "2026-11-18",
@@ -12734,6 +13949,18 @@
    "구글경유": false
   },
   {
+   "id": "af44b9beb35b",
+   "src": "importai",
+   "분류": "뉴스레터",
+   "매체": "Import AI (jack-clark.net)",
+   "제목": "Import AI 476: Creativity and RSI; worse-than-China open weight models; AI goes to space",
+   "링크": "https://jack-clark.net/2026/10/12/import-ai-476-creativity-and-rsi-worse-than-china-open-weight-models-ai-goes-to-space/",
+   "날짜": "2026-10-12",
+   "요약": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now New benchmark shows how AI models lack intuitive visual reasoning:…Humanity’s Sixth Sense highlights some shortcomings of current AI systems…AI startups Elorian and Scale AI have built […]",
+   "수집일": "2026-11-18",
+   "구글경유": false
+  },
+  {
    "id": "992438874f53",
    "src": "interconnects",
    "분류": "뉴스레터",
@@ -13010,6 +14237,18 @@
    "구글경유": false
   },
   {
+   "id": "b7c6af430fe6",
+   "src": "importai",
+   "분류": "뉴스레터",
+   "매체": "Import AI (jack-clark.net)",
+   "제목": "Import AI 475: Swarm scaling; Google DeepMind watermarks biology; and the AI science economy",
+   "링크": "https://jack-clark.net/2026/10/05/import-ai-475-swarm-scaling-google-deepmind-watermarks-biology-and-the-ai-science-economy/",
+   "날짜": "2026-10-05",
+   "요약": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now When should you use swarms? When you are in a hurry:…How does swarm scaling work?…Toby Ord has a nice, short post about how to think about […]",
+   "수집일": "2026-11-18",
+   "구글경유": false
+  },
+  {
    "id": "89764eae0099",
    "src": "hf",
    "분류": "기업 발표",
@@ -13128,6 +14367,18 @@
    "요약": "Proof of concept for watermarking AI-generated proteins while preserving biological function.",
    "수집일": "2026-11-18",
    "구글경유": false
+  },
+  {
+   "id": "50556aeff14b",
+   "src": "epoch",
+   "분류": "연구·지표",
+   "매체": "Epoch AI",
+   "제목": "Emilia Álvarez",
+   "링크": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1VXzMxODEyNjAzN2owcDdiYzU2OHpkVmk1ckhJTzQ5NlNTNURJTVlaeElPbVphMGwweGZRV19QaDVlNkxWMTNOV2dvemQ1aUl2enJLXw?oc=5",
+   "날짜": "2026-10-01",
+   "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": true
   },
   {
    "id": "6a91381a4292",
@@ -13318,6 +14569,18 @@
    "링크": "https://huggingface.co/blog/rl-environments",
    "날짜": "2026-09-28",
    "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": false
+  },
+  {
+   "id": "75fe62dea59c",
+   "src": "importai",
+   "분류": "뉴스레터",
+   "매체": "Import AI (jack-clark.net)",
+   "제목": "Import AI 474: Platonic mindspace; TPUs in space; Zhipu starts an outer RSI loop",
+   "링크": "https://jack-clark.net/2026/09/28/import-ai-474-platonic-mindspace-tpus-in-space-zhipu-starts-an-outer-rsi-loop/",
+   "날짜": "2026-09-28",
+   "요약": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now Are minds patterns from a Platonic space, with bodies and machines as their interfaces, Michael Levin asks:…A mind-bending paper asking us to reconsider basic assumptions about […]",
    "수집일": "2026-11-18",
    "구글경유": false
   },
@@ -13750,6 +15013,18 @@
    "링크": "https://huggingface.co/blog/tokenizers-v1",
    "날짜": "2026-09-21",
    "요약": "",
+   "수집일": "2026-11-18",
+   "구글경유": false
+  },
+  {
+   "id": "83d8cbf5a345",
+   "src": "importai",
+   "분류": "뉴스레터",
+   "매체": "Import AI (jack-clark.net)",
+   "제목": "Import AI 473: The US’s superintelligence strategy; human brain in a mouse skull; and machine hermeneutics",
+   "링크": "https://jack-clark.net/2026/09/21/import-ai-473-the-uss-superintelligence-strategy-human-brain-in-a-mouse-skull-and-machine-hermeneutics/",
+   "날짜": "2026-09-21",
+   "요약": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now RAND thinks the best AI strategy for the US is to keep all options open:…It’s not clear exactly what is optimal, so the US should spend […]",
    "수집일": "2026-11-18",
    "구글경유": false
   },
@@ -14290,6 +15565,18 @@
    "링크": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
    "날짜": "2026-09-07",
    "요약": "OpenAI, AIRPPU and WAN-IFRA launch an AI program to help Ukrainian news organizations strengthen innovation, resilience, and independent journalism.",
+   "수집일": "2026-11-18",
+   "구글경유": false
+  },
+  {
+   "id": "ea6e2ff82e92",
+   "src": "importai",
+   "분류": "뉴스레터",
+   "매체": "Import AI (jack-clark.net)",
+   "제목": "Import AI 472: DeepMind’s cheating math agents; populist AI policies; and Forethought theorizes a nightwatchman",
+   "링크": "https://jack-clark.net/2026/09/07/import-ai-472-deepminds-cheating-math-agents-populist-ai-policies-and-forethought-theorizes-a-nightwatchman/",
+   "날짜": "2026-09-07",
+   "요약": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now Researchers discover another OpenAI agent emergent communication incident:…Less severe, but worrying nonetheless…Some researchers recently found another incident of AI agents autonomously creating their own communication system […]",
    "수집일": "2026-11-18",
    "구글경유": false
   },
