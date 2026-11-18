@@ -5,6 +5,7 @@ import Stocks from './pages/Stocks.jsx'
 import News from './pages/News.jsx'
 import IndustryTracking from './components/IndustryTracking.jsx'
 import WeeklyReport from './pages/WeeklyReport.jsx'
+import TextbookPage from './pages/Textbook.jsx'
 
 // GitHub Pages(하위 경로 배포)에서는 HashRouter 가 새로고침 404 문제가 없어 가장 안전합니다.
 // 홈 화면은 2026-10 폐지 — '/'와 예전 주소(#/vc 등)는 첫 메뉴(IPO)로 보낸다.
@@ -25,6 +26,7 @@ export default function App() {
           <Route path="/stocks" element={<Navigate to="/post-ipo" replace />} />
           <Route path="/news" element={<News />} />
           <Route path="/industry" element={<IndustryTracking />} />
+          <Route path="/textbook" element={<TextbookPage />} />
           <Route path="/weekly" element={<WeeklyReport />} />
           <Route path="*" element={<Navigate to="/ipo" replace />} />
         </Routes>

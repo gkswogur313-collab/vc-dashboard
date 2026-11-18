@@ -1,9 +1,11 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { useData } from '../useData.js'
 
 // 산업 트래킹 › 반도체 브리핑
-//  · 위: 반도체 교과서 — public/data/semi/textbook.json (화면에서 장별 열람) + public/briefs/semi/textbook.docx (워드)
-//  · 아래: 반도체 주간 브리핑 — public/data/semi/index.json + weekly/<주 시작일>.json, 워드 public/briefs/semi/<id>.docx
+//  · 반도체 교과서(Textbook) — public/data/semi/textbook.json + public/briefs/semi/textbook.docx (워드)
+//    2026-11부터 좌측 '교과서' 탭(src/pages/Textbook.jsx)에서 보여준다. 기술 노트의 '교과서에서 더 보기'는 #/textbook?ch=<장 id>로 이동.
+//  · 반도체 주간 브리핑 — public/data/semi/index.json + weekly/<주 시작일>.json, 워드 public/briefs/semi/<id>.docx
 // 매주 월요일 Claude 예약 작업이 브리핑을 쓰고 교과서 15장(최신 기술동향)을 갱신한다. 작성 규칙: scripts/semi/GUIDE.md
 // 본문의 [n]은 출처 번호 → 누르면 원문이 새 탭으로 열린다.
 
@@ -40,17 +42,17 @@ export function T({ text, refs, prefix }) {
 }
 
 export default function SemiBriefing() {
-  const { data: tb, error: tbErr } = useData('semi/textbook.json')
-  const [openCh, setOpenCh] = useState(null) // 교과서 열람 중인 장 id (null이면 닫힘)
+  const { data: tb } = useData('semi/textbook.json')
   const chTitles = useMemo(() => Object.fromEntries((tb?.장 || []).map((c) => [c.id, `${c.번호}장 ${c.제목}`])), [tb])
-  const bookRef = useRef(null)
-  const openChapter = (id) => {
-    setOpenCh(id)
-    setTimeout(() => bookRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50)
-  }
+  const navigate = useNavigate()
+  const openChapter = (id) => navigate(`/textbook?ch=${encodeURIComponent(id)}`)
   return (
     <div className="wb sb">
-      <div ref={bookRef}><Textbook tb={tb} error={tbErr} openCh={openCh} setOpenCh={setOpenCh} /></div>
+      <div className="card" style={{ display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap', padding: '12px 16px' }}>
+        <span aria-hidden>📘</span>
+        <span style={{ flex: 1, minWidth: 180 }}>반도체 교과서는 좌측 <b>교과서</b> 탭으로 옮겼습니다.</span>
+        <button className="btn-ghost" onClick={() => navigate('/textbook')}>교과서 열기 →</button>
+      </div>
       <h3 className="wb-sec">🗓️ 반도체 주간 브리핑 <span className="muted" style={{ fontSize: 12, fontWeight: 500 }}>소재·부품·장비부터 칩·정책까지 · 매주 월요일 발행</span></h3>
       <SemiWeekly onOpenChapter={openChapter} chTitles={chTitles} />
     </div>
@@ -58,7 +60,7 @@ export default function SemiBriefing() {
 }
 
 // ───────────────────────── 교과서 ─────────────────────────
-function Textbook({ tb, error, openCh, setOpenCh }) {
+export function Textbook({ tb, error, openCh, setOpenCh }) {
   const refs = useMemo(() => new Map((tb?.refs || []).map((r) => [r.n, r])), [tb])
   const chapters = tb?.장 || []
   const idx = chapters.findIndex((c) => c.id === openCh)
@@ -384,7 +386,7 @@ export function SemiWeeklyBody({ w, onOpenChapter, chTitles = {}, prefix = '' })
             <p>{P(s.설명)}</p>
             {s.교과서 && (onOpenChapter
               ? <button className="linklike" onClick={() => onOpenChapter(s.교과서)}>📘 교과서 {chTitles[s.교과서] || ''}에서 더 보기 →</button>
-              : <a className="linklike" href="#/industry">📘 반도체 교과서에서 더 보기 →</a>)}
+              : <a className="linklike" href={`#/textbook?ch=${encodeURIComponent(s.교과서)}`}>📘 반도체 교과서에서 더 보기 →</a>)}
           </div>
         ))}
       </div>

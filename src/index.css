@@ -485,9 +485,11 @@ button { font-family: inherit; cursor: pointer; }
     background: var(--surface); border-top: 1px solid var(--border);
     padding: 6px 4px calc(6px + env(safe-area-inset-bottom));
     justify-content: space-around;
+    overflow-x: auto; scrollbar-width: none; /* 메뉴가 늘어 좁은 폰에서는 가로로 밀어 본다 */
   }
+  .bottom-nav::-webkit-scrollbar { display: none; }
   .tab {
-    flex: 1; display: flex; flex-direction: column; align-items: center; gap: 2px;
+    flex: 1 0 40px; white-space: nowrap; display: flex; flex-direction: column; align-items: center; gap: 2px;
     padding: 6px 2px; color: var(--text-dim); font-size: 10.5px; font-weight: 600;
     border-radius: 8px; min-width: 0;
   }

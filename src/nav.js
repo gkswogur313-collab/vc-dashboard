@@ -7,6 +7,7 @@ export const SECTIONS = [
   { path: '/dart',     label: '공시분석',    short: '공시', icon: '📑' },
   { path: '/deals',    label: 'Deal Market', short: '딜',   icon: '🤝' },
   { path: '/industry', label: '산업 트래킹', short: '산업', icon: '🏭' },
+  { path: '/textbook', label: '교과서',      short: '교과서', icon: '📘' },
   { path: '/news',     label: 'News',        short: '뉴스', icon: '📰' },
   { path: '/gp',       label: 'GP 검색',     short: 'GP',   icon: '🔎' },
   { path: '/sourcing', label: '세컨더리·소싱', short: '소싱', icon: '🔄' },
