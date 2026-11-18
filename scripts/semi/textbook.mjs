@@ -1,6 +1,8 @@
-// 반도체 교과서 — 검증 + 출처 번호 정리 + 워드(.docx) 생성
+// 교과서(반도체·AI 공용) — 검증 + 출처 번호 정리 + 워드(.docx) 생성
 // 사용: node scripts/semi/textbook.mjs            → public/data/semi/textbook.json 검증·정리 후 public/briefs/semi/textbook.docx 생성
-//       node scripts/semi/textbook.mjs --check    → 검증만(파일을 고치지 않음)
+//       node scripts/ai/textbook.mjs              → 같은 일을 AI 교과서(public/data/ai/textbook.json)에 (내부적으로 --book ai)
+//       --check                                   → 검증만(파일을 고치지 않음)
+// · 장의 `참고`: [{ 책: 'semi'|'ai', 장: 'chNN', 설명? }] — 다른 교과서의 관련 장 링크(더 깊이 보기). 화면·워드 모두 표시
 // · 본문의 [n]이 모두 refs에 있는지 확인하고, 처음 나오는 순서대로 1,2,3… 으로 다시 번호를 매긴다(안 쓰는 출처는 지운다).
 // · 개정이력 맨 위 버전·날짜를 version/updated_at 에 맞춘다.
 import { readFile, writeFile, mkdir } from 'node:fs/promises'
@@ -11,9 +13,21 @@ import {
 } from 'docx'
 import { diagramPng } from './diagram.mjs'
 
-const FILE = 'public/data/semi/textbook.json'
-const OUT = 'public/briefs/semi/textbook.docx'
+const BOOKS = {
+  semi: { file: 'public/data/semi/textbook.json', out: 'public/briefs/semi/textbook.docx', name: '반도체' },
+  ai: { file: 'public/data/ai/textbook.json', out: 'public/briefs/ai/textbook.docx', name: 'AI' },
+}
+const bi = process.argv.indexOf('--book')
+const BOOK = bi > 0 ? process.argv[bi + 1] : 'semi'
+if (!BOOKS[BOOK]) { console.error(`--book 은 ${Object.keys(BOOKS).join('/')} 중 하나`); process.exit(1) }
+const FILE = BOOKS[BOOK].file
+const OUT = BOOKS[BOOK].out
 const checkOnly = process.argv.includes('--check')
+// 다른 교과서의 장 제목(참고 링크 검증·표시용)
+const OTHER = {}
+for (const [k, v] of Object.entries(BOOKS)) {
+  try { OTHER[k] = Object.fromEntries(JSON.parse(await readFile(v.file, 'utf-8')).장.map((c) => [c.id, `${c.번호}장 ${c.제목}`])) } catch { OTHER[k] = {} }
+}
 const tb = JSON.parse(await readFile(FILE, 'utf-8'))
 const errs = []
 const need = (c, m) => { if (!c) errs.push(m) }
@@ -32,6 +46,7 @@ for (const c of tb.장 || []) {
     for (const u of c.최근업데이트 || []) need(/^\d{4}-\d{2}-\d{2}$/.test(u.날짜 || '') && u.내용, `${c.id}: 최근업데이트 항목은 날짜(YYYY-MM-DD)·내용 필요`)
     need(!c.자동갱신, `${c.id}: 자동갱신 장에는 최근업데이트를 쓰지 않는다(본문을 바로 고친다)`)
   }
+  for (const r of c.참고 || []) need(BOOKS[r.책] && OTHER[r.책][r.장], `${c.id}: 참고 {책:${r.책}, 장:${r.장}} — 존재하는 교과서·장이어야 한다`)
   for (const s of c.절 || []) {
     need(s.제목 && Array.isArray(s.본문) && s.본문.length > 0, `${c.id}: 절 제목·본문 필요`)
     if (s.표) need(Array.isArray(s.표.머리) && s.표.행?.every((r) => r.length === s.표.머리.length), `${c.id} '${s.제목}': 표 열 수 불일치`)
@@ -97,7 +112,7 @@ const c = []
 c.push(new Paragraph({ spacing: { before: 2400, after: 200 }, children: [t(tb.제목, { bold: true, size: 64, color: ACCENT })] }))
 c.push(new Paragraph({ spacing: { after: 400 }, children: [t(tb.부제 || '', { size: 26, color: DIM })] }))
 c.push(new Paragraph({ children: [t(`버전 ${tb.버전} · ${tb.updated_at} 갱신`, { size: 22 })] }))
-c.push(new Paragraph({ children: [t('JH VC Dashboard › 교과서 탭 · 매주 반도체 브리핑을 반영해 갱신', { size: 18, color: DIM })] }))
+c.push(new Paragraph({ children: [t(`JH VC Dashboard › 교과서 탭 · 매주 ${BOOKS[BOOK].name} 브리핑을 반영해 갱신`, { size: 18, color: DIM })] }))
 c.push(new Paragraph({ children: [new PageBreak()] }))
 const big = (s) => new Paragraph({ children: [t(s, { bold: true, size: 34, color: ACCENT })], spacing: { before: 240, after: 160 } })
 c.push(big('읽는 법'))
@@ -111,7 +126,7 @@ for (const ch of tb.장) {
   c.push(new Paragraph({ children: [new PageBreak()] }))
   if (ch.파트 && ch.파트 !== part) { part = ch.파트; c.push(new Paragraph({ children: [t(part, { size: 20, color: DIM, bold: true })], spacing: { after: 40 } })) }
   c.push(H(HeadingLevel.HEADING_1, `${ch.번호}장. ${ch.제목}`))
-  if (ch.자동갱신) c.push(new Paragraph({ children: [t(`이 장은 매주 반도체 브리핑을 반영해 갱신됩니다 (마지막 갱신 ${tb.updated_at}).`, { size: 17, color: DIM, italics: true })] }))
+  if (ch.자동갱신) c.push(new Paragraph({ children: [t(`이 장은 매주 ${BOOKS[BOOK].name} 브리핑을 반영해 갱신됩니다 (마지막 갱신 ${tb.updated_at}).`, { size: 17, color: DIM, italics: true })] }))
   c.push(P(ch.요약, { run: { italics: true, color: '344054' } }))
   if (ch.최근업데이트?.length) {
     c.push(label('최근 업데이트 (분기마다 본문에 통합)'))
@@ -129,6 +144,7 @@ for (const ch of tb.장) {
   }
   if (ch.핵심정리?.length) { c.push(label('핵심 정리')); for (const x of ch.핵심정리) c.push(B(x)) }
   if (ch.체크포인트?.length) { c.push(label('심사역 체크포인트')); for (const x of ch.체크포인트) c.push(B(x)) }
+  if (ch.참고?.length) { c.push(label('함께 보기')); for (const r of ch.참고) c.push(B(`${BOOKS[r.책].name} 교과서 ${OTHER[r.책][r.장]}${r.설명 ? ` — ${r.설명}` : ''}`)) }
   if (ch.용어?.length) { c.push(label('용어')); c.push(table(['용어', '뜻'], ch.용어.map((u) => [u.용어, u.뜻]), [2300, 7000])) }
 }
 
@@ -173,6 +189,6 @@ const doc = new Document({
     children: c,
   }],
 })
-await mkdir('public/briefs/semi', { recursive: true })
+await mkdir(OUT.replace(/\/[^/]+$/, ''), { recursive: true })
 await writeFile(OUT, await Packer.toBuffer(doc))
 console.log(`검증 통과 · ${tb.장.length}개 장 · 출처 ${tb.refs.length}건 · 버전 ${tb.버전} → ${OUT}`)

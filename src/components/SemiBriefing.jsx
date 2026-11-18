@@ -2,16 +2,29 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useData } from '../useData.js'
 
-// 산업 트래킹 › 반도체 브리핑
-//  · 반도체 교과서(Textbook) — public/data/semi/textbook.json + public/briefs/semi/textbook.docx (워드)
+// 산업 트래킹 › 반도체 브리핑 · AI 브리핑 (같은 컴포넌트를 DOMAINS 설정으로 나눠 쓴다)
+//  · 교과서(Textbook) — public/data/<semi|ai>/textbook.json + public/briefs/<semi|ai>/textbook.docx (워드)
 //    2026-11부터 좌측 '교과서' 탭(src/pages/Textbook.jsx)에서 보여준다. 기술 노트의 '교과서에서 더 보기'는 #/textbook?ch=<장 id>로 이동.
 //  · 반도체 주간 브리핑 — public/data/semi/index.json + weekly/<주 시작일>.json, 워드 public/briefs/semi/<id>.docx
-// 매주 월요일 Claude 예약 작업이 브리핑을 쓰고 교과서 15장(최신 기술동향)을 갱신한다. 작성 규칙: scripts/semi/GUIDE.md
+//  · AI 주간 브리핑 — public/data/ai/… 같은 구조. '밸류체인' 대신 '레이어'(인프라·하드웨어·모델·애플리케이션·피지컬 AI)+태그
+// 매주 월요일 Claude 예약 작업이 브리핑을 쓰고 교과서 '최신 기술동향' 장을 갱신한다. 작성 규칙: scripts/semi/GUIDE.md, scripts/ai/GUIDE.md
 // 본문의 [n]은 출처 번호 → 누르면 원문이 새 탭으로 열린다.
 
 const BASE = import.meta.env.BASE_URL
 const fmtRange = (g) => (g ? `${g.from.replace(/-/g, '.')} ~ ${g.to.slice(5).replace('-', '.')}` : '')
-const SEG_ICON = { '소재': '🧪', '부품': '🔩', '장비': '🛠️', '메모리': '💾', '파운드리·로직': '🏭', '패키징·테스트': '📦', '설계·AI칩': '🧠', '정책·공급망': '🏛️' }
+export const DOMAINS = {
+  semi: {
+    key: 'semi', name: '반도체', icon: '🔬', sub: '소재·부품·장비부터 칩·정책까지', segField: '밸류체인', segTitle: '🔗 밸류체인별 시그널',
+    kwTitle: '📊 밸류체인 구간별 언급 흐름', domField: '국내기업', domTitle: '🇰🇷 국내 소부장·반도체 기업 동향', domHead: '기업',
+    segIcon: { '소재': '🧪', '부품': '🔩', '장비': '🛠️', '메모리': '💾', '파운드리·로직': '🏭', '패키징·테스트': '📦', '설계·AI칩': '🧠', '정책·공급망': '🏛️' },
+  },
+  ai: {
+    key: 'ai', name: 'AI', icon: '🤖', sub: '인프라·하드웨어·모델·애플리케이션·피지컬 AI', segField: '레이어', segTitle: '🧱 레이어별 시그널',
+    kwTitle: '📊 레이어·태그별 언급 흐름', domField: '국내', domTitle: '🇰🇷 국내 AI 기업·정책 동향', domHead: '기업·기관',
+    segIcon: { '인프라': '🏗️', '하드웨어': '🧠', '모델': '🧬', '애플리케이션': '🧩', '피지컬 AI': '🦾' },
+  },
+}
+const TAG_CLASS = { '정책·규제': 'sb-tag-pol', '투자·회수': 'sb-tag-inv' }
 
 function Cite({ n, refs, prefix = '' }) {
   const r = refs.get(n)
@@ -41,21 +54,26 @@ export function T({ text, refs, prefix }) {
   return <>{parts}</>
 }
 
-export default function SemiBriefing() {
-  const { data: tb } = useData('semi/textbook.json')
+export default function SemiBriefing() { return <DomainBriefing domain="semi" /> }
+export function AiBriefing() { return <DomainBriefing domain="ai" /> }
+
+function DomainBriefing({ domain }) {
+  const D = DOMAINS[domain]
+  const { data: tb } = useData(`${domain}/textbook.json`)
   const chTitles = useMemo(() => Object.fromEntries((tb?.장 || []).map((c) => [c.id, `${c.번호}장 ${c.제목}`])), [tb])
   const navigate = useNavigate()
-  const openChapter = (id) => navigate(`/textbook?ch=${encodeURIComponent(id)}`)
+  const openChapter = (id) => navigate(`/textbook?book=${domain}&ch=${encodeURIComponent(id)}`)
   return (
     <div className="wb sb">
-      <h3 className="wb-sec">🗓️ 반도체 주간 브리핑 <span className="muted" style={{ fontSize: 12, fontWeight: 500 }}>소재·부품·장비부터 칩·정책까지 · 매주 월요일 발행</span></h3>
-      <SemiWeekly onOpenChapter={openChapter} chTitles={chTitles} />
+      <h3 className="wb-sec">🗓️ {D.name} 주간 브리핑 <span className="muted" style={{ fontSize: 12, fontWeight: 500 }}>{D.sub} · 매주 월요일 발행</span></h3>
+      <SemiWeekly domain={domain} onOpenChapter={openChapter} chTitles={chTitles} />
     </div>
   )
 }
 
 // ───────────────────────── 교과서 ─────────────────────────
-export function Textbook({ tb, error, openCh, setOpenCh }) {
+export function Textbook({ tb, error, openCh, setOpenCh, book = 'semi', otherTitles = {}, onOpenOther }) {
+  const D = DOMAINS[book]
   const refs = useMemo(() => new Map((tb?.refs || []).map((r) => [r.n, r])), [tb])
   const chapters = tb?.장 || []
   const idx = chapters.findIndex((c) => c.id === openCh)
@@ -81,7 +99,7 @@ export function Textbook({ tb, error, openCh, setOpenCh }) {
         </div>
         <div className="sb-book-btns">
           <button className="btn-ghost" onClick={() => setOpenCh(openCh ? null : chapters[0]?.id)}>{openCh ? '닫기' : '📖 열람'}</button>
-          <a className="btn-primary wb-dl" href={`${BASE}briefs/semi/textbook.docx`} download={`반도체_교과서_v${tb.버전}.docx`}>⬇ 워드로 받기</a>
+          <a className="btn-primary wb-dl" href={`${BASE}briefs/${book}/textbook.docx`} download={`${D.name}_교과서_v${tb.버전}.docx`}>⬇ 워드로 받기</a>
         </div>
       </div>
 
@@ -129,7 +147,7 @@ export function Textbook({ tb, error, openCh, setOpenCh }) {
             </div>
           </nav>
           <article className="sb-article">
-            {openCh === 'appendix' ? <Appendix ap={tb.부록} /> : openCh === 'glossary' ? <Glossary tb={tb} onOpen={setOpenCh} /> : openCh === 'history' ? <History tb={tb} /> : idx >= 0 ? <Chapter ch={chapters[idx]} refs={refs} updated={tb.updated_at} /> : null}
+            {openCh === 'appendix' ? <Appendix ap={tb.부록} /> : openCh === 'glossary' ? <Glossary tb={tb} onOpen={setOpenCh} /> : openCh === 'history' ? <History tb={tb} name={D.name} /> : idx >= 0 ? <Chapter ch={chapters[idx]} refs={refs} updated={tb.updated_at} name={D.name} otherTitles={otherTitles} onOpenOther={onOpenOther} /> : null}
             <div className="sb-pager">
               <button className="btn-ghost" disabled={idx <= 0} onClick={() => setOpenCh(chapters[idx - 1].id)}>‹ 이전 장</button>
               <button className="btn-ghost" disabled={idx < 0 || idx >= chapters.length - 1} onClick={() => setOpenCh(chapters[idx + 1].id)}>다음 장 ›</button>
@@ -141,7 +159,7 @@ export function Textbook({ tb, error, openCh, setOpenCh }) {
   )
 }
 
-function Chapter({ ch, refs, updated }) {
+function Chapter({ ch, refs, updated, name = '반도체', otherTitles = {}, onOpenOther }) {
   const used = useMemo(() => {
     const s = new Set(); for (const m of JSON.stringify(ch).matchAll(/\[(\d+)\]/g)) s.add(+m[1]); return [...s].sort((a, b) => a - b)
   }, [ch])
@@ -149,7 +167,7 @@ function Chapter({ ch, refs, updated }) {
     <>
       <div className="sb-ch-part">{ch.파트}</div>
       <h2 className="sb-ch-title">{ch.번호}장. {ch.제목}</h2>
-      {ch.자동갱신 && <div className="sb-live-note">이 장은 매주 반도체 브리핑을 반영해 갱신됩니다 · 마지막 갱신 {updated}</div>}
+      {ch.자동갱신 && <div className="sb-live-note">이 장은 매주 {name} 브리핑을 반영해 갱신됩니다 · 마지막 갱신 {updated}</div>}
       <p className="sb-lead">{ch.요약}</p>
       {ch.최근업데이트?.length > 0 && (
         <div className="sb-box sb-box-upd">
@@ -176,6 +194,17 @@ function Chapter({ ch, refs, updated }) {
       ))}
       {ch.핵심정리?.length > 0 && <div className="sb-box sb-box-sum"><h4>핵심 정리</h4><ul className="wb-list">{ch.핵심정리.map((x, i) => <li key={i}><T text={x} refs={refs} /></li>)}</ul></div>}
       {ch.체크포인트?.length > 0 && <div className="sb-box sb-box-vc"><h4>심사역 체크포인트</h4><ul className="wb-list">{ch.체크포인트.map((x, i) => <li key={i}><T text={x} refs={refs} /></li>)}</ul></div>}
+      {ch.참고?.length > 0 && (
+        <div className="sb-box sb-box-see">
+          <h4>📚 함께 보기</h4>
+          <ul className="wb-list">{ch.참고.map((r, i) => (
+            <li key={i}>
+              <button className="linklike" style={{ marginTop: 0 }} onClick={() => onOpenOther?.(r.책, r.장)}>{DOMAINS[r.책]?.name} 교과서 {otherTitles[r.책]?.[r.장] || r.장} →</button>
+              {r.설명 && <span className="muted"> — {r.설명}</span>}
+            </li>
+          ))}</ul>
+        </div>
+      )}
       {ch.용어?.length > 0 && (
         <div className="sb-terms">
           <h4>용어</h4>
@@ -264,11 +293,11 @@ function Appendix({ ap }) {
   )
 }
 
-function History({ tb }) {
+function History({ tb, name = '반도체' }) {
   return (
     <>
       <h2 className="sb-ch-title">개정 이력</h2>
-      <p className="sb-lead">매주 반도체 주간 브리핑을 반영해 15장(최신 기술동향)을 중심으로 고쳐 씁니다.</p>
+      <p className="sb-lead">매주 {name} 주간 브리핑을 반영해 '최신 기술동향' 장과 각 장의 최근 업데이트를 고쳐 쓰고, 분기마다 본문에 통합합니다.</p>
       <div className="sb-tbl-wrap">
         <table className="tbl sb-tbl">
           <thead><tr><th style={{ width: 100 }}>날짜</th><th style={{ width: 60 }}>버전</th><th>내용</th></tr></thead>
@@ -280,8 +309,9 @@ function History({ tb }) {
 }
 
 // ───────────────────────── 주간 브리핑 ─────────────────────────
-function SemiWeekly({ onOpenChapter, chTitles }) {
-  const { data: index, error } = useData('semi/index.json')
+function SemiWeekly({ domain = 'semi', onOpenChapter, chTitles }) {
+  const D = DOMAINS[domain]
+  const { data: index, error } = useData(`${domain}/index.json`)
   const weeks = index?.weeks || []
   const [sel, setSel] = useState('')
   const id = sel || weeks[0]?.id || ''
@@ -292,15 +322,15 @@ function SemiWeekly({ onOpenChapter, chTitles }) {
     if (!id) return
     let alive = true
     setW(null); setErr('')
-    fetch(`${BASE}data/semi/weekly/${id}.json`)
+    fetch(`${BASE}data/${domain}/weekly/${id}.json`)
       .then((r) => { if (!r.ok) throw new Error(`브리핑 로드 실패 (${r.status})`); return r.json() })
       .then((d) => { if (alive) setW(d) })
       .catch((e) => { if (alive) setErr(e.message) })
     return () => { alive = false }
-  }, [id])
+  }, [id, domain])
   const idx = weeks.findIndex((x) => x.id === id)
 
-  if (error || (index && weeks.length === 0)) return <div className="card"><div className="list-empty">아직 발행된 반도체 브리핑이 없습니다. 매주 월요일 오전에 지난주 브리핑이 올라옵니다.</div></div>
+  if (error || (index && weeks.length === 0)) return <div className="card"><div className="list-empty">아직 발행된 {D.name} 브리핑이 없습니다. 매주 월요일 오전에 지난주 브리핑이 올라옵니다.</div></div>
   if (!index) return <div className="card"><div className="list-empty">불러오는 중…</div></div>
 
   return (
@@ -313,18 +343,21 @@ function SemiWeekly({ onOpenChapter, chTitles }) {
           </select>
           <button className="btn-ghost wb-step" disabled={idx <= 0} onClick={() => setSel(weeks[idx - 1].id)} aria-label="다음 주">›</button>
         </div>
-        <a className="btn-primary wb-dl" href={`${BASE}briefs/semi/${id}.docx`} download={`반도체_주간브리핑_${id}.docx`}>⬇ 워드로 받기</a>
+        <a className="btn-primary wb-dl" href={`${BASE}briefs/${domain}/${id}.docx`} download={`${D.name}_주간브리핑_${id}.docx`}>⬇ 워드로 받기</a>
       </div>
       {err && <div className="card"><div className="list-empty">{err}</div></div>}
       {!w && !err && <div className="card"><div className="list-empty">불러오는 중…</div></div>}
-      {w && <SemiWeeklyBody w={w} onOpenChapter={onOpenChapter} chTitles={chTitles} />}
+      {w && <SemiWeeklyBody w={w} domain={domain} onOpenChapter={onOpenChapter} chTitles={chTitles} />}
     </>
   )
 }
 
 
-// 주간 브리핑 본문 — 반도체 브리핑 탭과 JH Weekly Report ③에서 같이 쓴다 (prefix: 출처 번호 앞 글자, JH Weekly 안에서는 'S')
-export function SemiWeeklyBody({ w, onOpenChapter, chTitles = {}, prefix = '' }) {
+// 주간 브리핑 본문 — 반도체·AI 브리핑 탭과 JH Weekly Report ③④에서 같이 쓴다 (prefix: 출처 번호 앞 글자, JH Weekly 안에서는 'S'·'A')
+export function SemiWeeklyBody({ w, domain = 'semi', onOpenChapter, chTitles = {}, prefix = '' }) {
+  const D = DOMAINS[domain]
+  const segs = w[D.segField] || []
+  const dom = w[D.domField] || []
   const refs = useMemo(() => new Map((w?.refs || []).map((r) => [r.n, r])), [w])
   const maxKw = Math.max(1, ...(w?.키워드 || []).map((k) => Math.max(k.count, k.prev)))
   const P = (t) => <T text={t} refs={refs} prefix={prefix} />
@@ -348,14 +381,14 @@ export function SemiWeeklyBody({ w, onOpenChapter, chTitles = {}, prefix = '' })
         </div>
       )}
 
-      <h3 className="wb-sec">🔗 밸류체인별 시그널</h3>
+      <h3 className="wb-sec">{D.segTitle}</h3>
       <div className="sb-chain">
-        {w.밸류체인.map((g) => (
+        {segs.map((g) => (
           <div className="card sb-seg" key={g.구간}>
-            <div className="sb-seg-head"><span aria-hidden>{SEG_ICON[g.구간] || '•'}</span> {g.구간}</div>
+            <div className="sb-seg-head"><span aria-hidden>{D.segIcon[g.구간] || '•'}</span> {g.구간}</div>
             {g.시그널.map((s, i) => (
               <div className="sb-sig" key={i}>
-                <div className="sb-sig-title">{s.제목}</div>
+                <div className="sb-sig-title">{s.제목}{(s.태그 || []).map((t) => <span key={t} className={'sb-tag ' + (TAG_CLASS[t] || '')}>{t}</span>)}</div>
                 <p>{P(s.내용)}</p>
                 {s.함의 && <p className="wr-so"><b>그래서 →</b> {P(s.함의)}</p>}
               </div>
@@ -364,14 +397,14 @@ export function SemiWeeklyBody({ w, onOpenChapter, chTitles = {}, prefix = '' })
         ))}
       </div>
 
-      {w.국내기업?.length > 0 && (
+      {dom.length > 0 && (
         <>
-          <h3 className="wb-sec">🇰🇷 국내 소부장·반도체 기업 동향</h3>
+          <h3 className="wb-sec">{D.domTitle}</h3>
           <div className="card">
             <div className="sb-tbl-wrap">
               <table className="tbl sb-tbl sb-co">
-                <thead><tr><th>기업</th><th>구분</th><th>내용</th></tr></thead>
-                <tbody>{w.국내기업.map((x, i) => <tr key={i}><td><b>{x.기업}</b></td><td className="muted">{x.구분}</td><td>{P(x.내용)}</td></tr>)}</tbody>
+                <thead><tr><th>{D.domHead}</th><th>구분</th><th>내용</th></tr></thead>
+                <tbody>{dom.map((x, i) => <tr key={i}><td><b>{x.기업}</b></td><td className="muted">{x.구분}</td><td>{P(x.내용)}</td></tr>)}</tbody>
               </table>
             </div>
           </div>
@@ -387,7 +420,7 @@ export function SemiWeeklyBody({ w, onOpenChapter, chTitles = {}, prefix = '' })
             <p>{P(s.설명)}</p>
             {s.교과서 && (onOpenChapter
               ? <button className="linklike" onClick={() => onOpenChapter(s.교과서)}>📘 교과서 {chTitles[s.교과서] || ''}에서 더 보기 →</button>
-              : <a className="linklike" href={`#/textbook?ch=${encodeURIComponent(s.교과서)}`}>📘 반도체 교과서에서 더 보기 →</a>)}
+              : <a className="linklike" href={`#/textbook?book=${domain}&ch=${encodeURIComponent(s.교과서)}`}>📘 {D.name} 교과서에서 더 보기 →</a>)}
           </div>
         ))}
       </div>
@@ -412,6 +445,14 @@ export function SemiWeeklyBody({ w, onOpenChapter, chTitles = {}, prefix = '' })
         </>
       )}
 
+      {w.반도체연계?.length > 0 && (
+        <div className="card sb-box" style={{ marginTop: 14 }}>
+          <h4>🔬 반도체 브리핑에서 다룬 소식</h4>
+          <ul className="wb-list">{w.반도체연계.map((x, i) => <li key={i}>{P(x)}</li>)}</ul>
+          <a className="linklike" href="#/industry">반도체 브리핑 보기 →</a>
+        </div>
+      )}
+
       {w.교과서반영?.length > 0 && (
         <div className="card sb-box sb-box-sum" style={{ marginTop: 14 }}>
           <h4>📘 이번 주 교과서 반영</h4>
@@ -421,7 +462,7 @@ export function SemiWeeklyBody({ w, onOpenChapter, chTitles = {}, prefix = '' })
 
       {w.키워드?.length > 0 && (
         <>
-          <h3 className="wb-sec">📊 밸류체인 구간별 언급 흐름</h3>
+          <h3 className="wb-sec">{D.kwTitle}</h3>
           <div className="card">
             <div className="wb-kw">
               {w.키워드.map((k) => (

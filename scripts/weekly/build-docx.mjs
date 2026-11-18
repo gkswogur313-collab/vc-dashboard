@@ -8,6 +8,7 @@ import {
 } from 'docx'
 import { keywordChartPng } from '../lib/keyword-chart.mjs'
 import { renderSemiWeekly } from '../semi/build-docx.mjs'
+import { renderAiWeekly } from '../ai/build-docx.mjs'
 
 const w = JSON.parse(await readFile(process.argv[2], 'utf-8'))
 const refs = new Map((w.refs || []).map((r) => [r.n, r]))
@@ -126,8 +127,15 @@ try { semi = JSON.parse(await readFile(`public/data/semi/weekly/${w.id}.json`, '
 if (semi) c.push(...await renderSemiWeekly(semi, { prefix: 'S', top: false, h1: H2, h2: (s) => new Paragraph({ children: [t(s, { bold: true, size: 20 })], spacing: { before: 120, after: 40 } }) }))
 else c.push(P([dim('이 주의 반도체 브리핑이 없습니다.')]))
 
-// ④ IPO — 전주(대상 주) + 금주(발행 주, 공시 일정 기준)
-c.push(H1('④ IPO 전주 · 금주 (심사청구 · 심사승인 · 수요예측 · 상장)'))
+// ④ AI 주간 브리핑 — 같은 주 원본 그대로(요약하지 않음). 출처는 A1, A2…로 구분
+c.push(H1('④ AI 주간 브리핑'))
+let ai = null
+try { ai = JSON.parse(await readFile(`public/data/ai/weekly/${w.id}.json`, 'utf-8')) } catch { /* 없음 */ }
+if (ai) c.push(...await renderAiWeekly(ai, { prefix: 'A', top: false, h1: H2, h2: (s) => new Paragraph({ children: [t(s, { bold: true, size: 20 })], spacing: { before: 120, after: 40 } }) }))
+else c.push(P([dim('이 주의 AI 브리핑이 없습니다.')]))
+
+// ⑤ IPO — 전주(대상 주) + 금주(발행 주, 공시 일정 기준)
+c.push(H1('⑤ IPO 전주 · 금주 (심사청구 · 심사승인 · 수요예측 · 상장)'))
 {
   const md = (d) => (d || '').slice(5).replace('-', '/')
   const when = (x) => (x.기간 ? x.기간.split('~').map(md).join('~') : md(x.날짜))
@@ -141,9 +149,9 @@ c.push(H1('④ IPO 전주 · 금주 (심사청구 · 심사승인 · 수요예�
   }
 }
 
-// ④ 펀딩
+// ⑥ 펀딩
 const F = w.펀딩 || {}
-c.push(H1('⑤ 신규 펀딩'))
+c.push(H1('⑥ 신규 펀딩'))
 c.push(P([t(`이번 주 ${F.건수 || 0}건 · 공개 금액 합계 약 ${(F.공개합계억 || 0).toLocaleString()}억원`, { bold: true })]))
 if (F.주목?.length) {
   c.push(H2('주목 딜'))

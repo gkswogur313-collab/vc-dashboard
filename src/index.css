@@ -724,6 +724,11 @@ button { font-family: inherit; cursor: pointer; }
 .sb-box-upd h4 { color: #0369a1; }
 .sb-upd { background: #0ea5e922; color: #0284c7; }
 .sb-live + .sb-upd { margin-left: 6px; }
+.sb-tag { display: inline-block; font-size: 10.5px; font-weight: 700; padding: 1px 7px; border-radius: 999px; margin-left: 6px; vertical-align: 1px; background: var(--accent-soft); color: var(--accent); }
+.sb-tag-pol { background: #a855f722; color: #9333ea; }
+.sb-tag-inv { background: #f59e0b22; color: #b45309; }
+.sb-box-see { background: #14b8a614; border: 1px solid #14b8a644; }
+.sb-box-see h4 { color: #0f766e; }
 .sb-upd-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #0ea5e9; margin-left: 6px; vertical-align: middle; }
 .sb-terms { margin-top: 16px; }
 .sb-terms dl { display: grid; gap: 4px; }
