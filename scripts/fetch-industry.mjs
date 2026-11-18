@@ -61,6 +61,9 @@ function friendlyError(e) {
   return msg.slice(0, 60)
 }
 
+// 게시판 운영자의 테스트 글(예: KEEI 'i11923-serve3', 'dotdot') — 날짜가 없고 제목이 공백 없는 영문·숫자 토막이면 버린다
+const isJunk = (r) => !r.날짜 && /^[A-Za-z0-9._-]{1,40}$/.test((r.제목 || '').trim())
+
 async function crawlOne(src, parser) {
   const base = { id: src.id, 테마: src.테마, 기관: src.기관, url: src.url, 게시판: parser?.board?.(src.id) || '' }
   if (!parser) return { ...base, ok: false, error: '파서 없음', items: [] }
@@ -76,7 +79,7 @@ async function crawlOne(src, parser) {
       body = parser.crawl ? await parser.crawl(src.id, src.url, { fetchText, UA }) : await fetchText(target, opts)
     }
     try { base.게시판 = parser.board?.(src.id, parser.fetchUrl || parser.crawl ? '' : body) || base.게시판 } catch { /* 이름 추출 실패는 무시 */ }
-    const rows = (parser.parse(body, src.url, src.id) || []).filter((r) => r && r.제목)
+    const rows = (parser.parse(body, src.url, src.id) || []).filter((r) => r && r.제목 && !isJunk(r))
     if (!rows.length) return { ...base, ok: false, error: '목록 0건(구조 변경?)', items: [] }
     const items = rows.map((r) => ({
       id: idOf(`${r.링크 || src.url}|${r.제목}`),
@@ -113,7 +116,7 @@ async function main() {
 
   // 병합: 기존 항목 유지 + 신규/수정 덮어쓰기. 세부 테마는 태그 규칙이 바뀌어도 반영되게 매번 재계산.
   const map = new Map()
-  for (const it of prev?.items || []) map.set(it.id, { ...it, 세부: tagTitle(it.제목) })
+  for (const it of prev?.items || []) if (!isJunk(it)) map.set(it.id, { ...it, 세부: tagTitle(it.제목) })
   const now = new Date().toISOString().slice(0, 10)
   for (const r of results) for (const it of r.items) map.set(it.id, { ...it, 수집일: map.get(it.id)?.수집일 || now })
   const items = [...map.values()]
