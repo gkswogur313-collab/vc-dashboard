@@ -48,11 +48,6 @@ export default function SemiBriefing() {
   const openChapter = (id) => navigate(`/textbook?ch=${encodeURIComponent(id)}`)
   return (
     <div className="wb sb">
-      <div className="card" style={{ display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap', padding: '12px 16px' }}>
-        <span aria-hidden>📘</span>
-        <span style={{ flex: 1, minWidth: 180 }}>반도체 교과서는 좌측 <b>교과서</b> 탭으로 옮겼습니다.</span>
-        <button className="btn-ghost" onClick={() => navigate('/textbook')}>교과서 열기 →</button>
-      </div>
       <h3 className="wb-sec">🗓️ 반도체 주간 브리핑 <span className="muted" style={{ fontSize: 12, fontWeight: 500 }}>소재·부품·장비부터 칩·정책까지 · 매주 월요일 발행</span></h3>
       <SemiWeekly onOpenChapter={openChapter} chTitles={chTitles} />
     </div>

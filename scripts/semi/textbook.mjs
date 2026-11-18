@@ -92,7 +92,7 @@ const c = []
 c.push(new Paragraph({ spacing: { before: 2400, after: 200 }, children: [t(tb.제목, { bold: true, size: 64, color: ACCENT })] }))
 c.push(new Paragraph({ spacing: { after: 400 }, children: [t(tb.부제 || '', { size: 26, color: DIM })] }))
 c.push(new Paragraph({ children: [t(`버전 ${tb.버전} · ${tb.updated_at} 갱신`, { size: 22 })] }))
-c.push(new Paragraph({ children: [t('JH VC Dashboard › 산업 트래킹 › 반도체 브리핑에서 매주 자동 갱신', { size: 18, color: DIM })] }))
+c.push(new Paragraph({ children: [t('JH VC Dashboard › 교과서 탭 · 매주 반도체 브리핑을 반영해 갱신', { size: 18, color: DIM })] }))
 c.push(new Paragraph({ children: [new PageBreak()] }))
 const big = (s) => new Paragraph({ children: [t(s, { bold: true, size: 34, color: ACCENT })], spacing: { before: 240, after: 160 } })
 c.push(big('읽는 법'))
