@@ -1,10 +1,14 @@
-import { useState, useMemo } from 'react'
+import { useState, useMemo, Fragment } from 'react'
 import { useData } from '../useData.js'
-import { normName } from './Sourcing.jsx'
+import { normName, DartCell, RunwayCell, DartDetail } from './Sourcing.jsx'
+import { buildDartLinks, expiringFunds, runwayLabel } from './sourcingLink.js'
+import { exportXlsx, today, dartUrl } from './dartShared.js'
 
 // 신주 후보(펀딩 기반) — 펀딩 List(funding.json)를 기업별로 묶어 '마지막 투자 이후 경과 기간'을 보여준다.
 // 다음 라운드를 준비할 시점의 기업을 찾는 용도. 상장사(국내 전 종목·최근 상장)는 기본 제외.
 //  - funding.json cols: [date,name,sector,amount,stage,investors]
+// 공시분석 연결: dart-index.json(감사보고서) + dart-alias.json(이름 보정) + diva.json(주주 조합 만기) — 세컨더리·소싱과 같은 로직.
+// 행 클릭 → 감사보고서 재무·등급·런웨이·주주 조합 펼침. '엑셀' 버튼 → 현재 필터 결과 전체(표시 상한 무관) 내보내기.
 
 const ROW_CAP = 500
 const TODAY = new Date()
@@ -28,6 +32,13 @@ export default function FundingFollowup() {
   const { data: tickers } = useData('tickers-kr.json')
   const { data: postIpo } = useData('post-ipo.json')
   const { data: ipo } = useData('ipo.json')
+  const { data: dIdx } = useData('dart-index.json')
+  const { data: alias } = useData('dart-alias.json')
+  const { data: diva } = useData('diva.json')
+  const [open, setOpen] = useState(null)
+  const [onlyDart, setOnlyDart] = useState(false)
+  const [busy, setBusy] = useState(false)
+  const links = useMemo(() => (dIdx ? buildDartLinks(dIdx, alias, diva) : null), [dIdx, alias, diva])
   const [q, setQ] = useState('')
   const [range, setRange] = useState('18-30')
   const [stage, setStage] = useState('전체')
@@ -62,10 +73,12 @@ export default function FundingFollowup() {
         name: last[ix.name], sector: last[ix.sector] || c.rounds.find((r) => r[ix.sector])?.[ix.sector] || '',
         elapsed: monthsSince(last[ix.date]),
         listed: listed.has(c.key), inIpo: inIpo.has(c.key),
+        rounds: c.rounds,
+        dart: links ? links.lookup(last[ix.name]) : null,
       })
     }
     return out
-  }, [data, ix, tickers, postIpo, ipo, noGrant])
+  }, [data, ix, tickers, postIpo, ipo, noGrant, links])
 
   const stages = useMemo(() => {
     const cnt = {}
@@ -78,6 +91,7 @@ export default function FundingFollowup() {
     const [, lo, hi] = RANGES[range]
     const rows = companies.filter((c) => {
       if (exclListed && c.listed) return false
+      if (onlyDart && !c.dart) return false
       if (c.elapsed < lo || c.elapsed > hi) return false
       if (stage !== '전체' && c.last[ix.stage] !== stage) return false
       if (kw) {
@@ -89,7 +103,34 @@ export default function FundingFollowup() {
     const dir = sort.dir === 'asc' ? 1 : -1
     const val = { elapsed: (c) => c.elapsed, name: (c) => c.name, n: (c) => c.n, date: (c) => c.last[ix.date] }[sort.key]
     return rows.sort((a, b) => { const x = val(a), y = val(b); return (x < y ? -1 : x > y ? 1 : 0) * dir })
-  }, [companies, q, range, stage, exclListed, sort, ix])
+  }, [companies, q, range, stage, exclListed, onlyDart, sort, ix])
+
+  // 엑셀 — 시트1: 기업별(펀딩 + 공시 재무), 시트2: 라운드 내역
+  const download = async () => {
+    setBusy(true)
+    try {
+      const n = (v) => (v === null || v === undefined ? '' : v)
+      const header = ['마지막 투자일', '경과(개월)', '기업명', '분야', '투자금', '단계', '투자사', '라운드 수', '상장·IPO',
+        '공시 연결', '등급', '등급 근거', '사업연도', '매출(억)', '매출 YoY(%)', '영업이익(억)', '순이익(억)', '현금(억)',
+        '추정 런웨이', '감사의견', '계속기업 불확실성', '주주 조합', '2년 내 만기 조합', '감사보고서', '홈페이지']
+      const rows = view.map((c) => {
+        const d = c.dart
+        const exp = d ? expiringFunds(d, 24) : []
+        return [c.last[ix.date], c.elapsed, c.name, c.sector, won(c.last[ix.amount]), c.last[ix.stage] || '', c.last[ix.investors] || '', c.n,
+          c.listed ? '상장' : c.inIpo ? 'IPO 진행' : '',
+          d ? 'O' : '', d ? n(d.grade) : '', d ? d.why.join(' · ') : '', d ? n(d.fy) : '', d ? n(d.rev) : '', d ? n(d.rev_g) : '',
+          d ? n(d.op) : '', d ? n(d.ni) : '', d ? n(d.cash) : '', d ? runwayLabel(d.runway) : '', d ? n(d.opinion) : '', d?.gc ? 'Y' : '',
+          d ? (d.funds || []).map((f) => f.name).join(', ') : '', exp.map((f) => `${f.asso.조합명}(${f.asso.만기일})`).join(', '),
+          d ? dartUrl(d.rcept_no) : '', d?.url || '']
+      })
+      const rHeader = ['기업명', '투자일', '단계', '투자금', '투자사', '분야']
+      const rRows = view.flatMap((c) => c.rounds.map((r) => [c.name, r[ix.date], r[ix.stage] || '', won(r[ix.amount]), r[ix.investors] || '', r[ix.sector] || '']))
+      await exportXlsx(`신주후보_${RANGES[range][0].replace(/[~\s]/g, '')}_${today()}`, [
+        { name: '신주 후보', header, rows },
+        { name: '라운드 내역', header: rHeader, rows: rRows },
+      ])
+    } finally { setBusy(false) }
+  }
 
   if (!data) return <div className="card"><div className="list-empty">펀딩 데이터를 불러오는 중…</div></div>
   if (!data.items?.length) return <div className="card"><div className="list-empty">아직 펀딩 데이터가 없습니다. 워크플로(fetch-funding) 실행 후 표시됩니다.</div></div>
@@ -112,6 +153,9 @@ export default function FundingFollowup() {
         </span>
         <span style={{ flex: 1 }} />
         <span className="muted" style={{ fontSize: 12.5 }}>{updated ? `갱신 ${updated}` : ''}</span>
+        <button className="chip" style={{ fontSize: 12 }} onClick={download} disabled={busy || !view.length} title="현재 필터 결과 전체를 엑셀로 받습니다(표시 상한 없음)">
+          {busy ? '만드는 중…' : `⬇ 엑셀 (${view.length.toLocaleString()}건)`}
+        </button>
       </div>
 
       <div className="lp-bar" style={{ flexWrap: 'wrap', gap: 8 }}>
@@ -125,10 +169,12 @@ export default function FundingFollowup() {
         </select>
         <label className="pl-check"><input type="checkbox" checked={noGrant} onChange={(e) => setNoGrant(e.target.checked)} /> 지원금·팁스 선정은 투자에서 제외</label>
         <label className="pl-check"><input type="checkbox" checked={exclListed} onChange={(e) => setExclListed(e.target.checked)} /> 상장사 제외</label>
+        <label className="pl-check"><input type="checkbox" checked={onlyDart} onChange={(e) => setOnlyDart(e.target.checked)} /> 공시 연결된 회사만</label>
+        <span className="muted" style={{ fontSize: 12.5 }}>{links ? `공시 연결 ${view.filter((c) => c.dart).length.toLocaleString()}곳 · 행을 누르면 공시분석 재무가 펼쳐집니다` : '공시 데이터 불러오는 중…'}</span>
       </div>
 
       <div className="scroll-box" style={{ '--scroll-h': 'max(300px, calc(100vh - 360px))' }}>
-        <table className="tbl tbl-grid" style={{ minWidth: 760 }}>
+        <table className="tbl tbl-grid" style={{ minWidth: 1080 }}>
           <thead><tr>
             <Th k="date" label="마지막 투자일" style={{ width: 104 }} />
             <Th k="elapsed" label="경과" style={{ width: 104 }} />
@@ -138,14 +184,17 @@ export default function FundingFollowup() {
             <th style={{ width: 92 }}>단계</th>
             <th>투자사</th>
             <Th k="n" label="라운드" style={{ width: 70, textAlign: 'right' }} />
+            <th>공시 재무(등급·매출·YoY)</th>
+            <th style={{ width: 84, textAlign: 'right' }}>런웨이</th>
           </tr></thead>
           <tbody>
-            {shown.map((c) => (
-              <tr key={c.key}>
+            {shown.map((c) => { const isOpen = open === c.key; return (
+              <Fragment key={c.key}>
+              <tr className="row-click" onClick={() => setOpen(isOpen ? null : c.key)}>
                 <td style={{ whiteSpace: 'nowrap', color: 'var(--muted, #8a94a6)' }}>{(c.last[ix.date] || '').slice(2)}</td>
                 <td style={{ whiteSpace: 'nowrap', fontWeight: 700 }}>{fmtElapsed(c.elapsed)}</td>
                 <td style={{ fontWeight: 600 }}>
-                  {c.name}
+                  <span className="muted">{isOpen ? '▾ ' : '▸ '}</span>{c.name}
                   {c.listed && <span className="badge" style={{ marginLeft: 6 }}>상장</span>}
                   {!c.listed && c.inIpo && <span className="badge" style={{ marginLeft: 6 }}>IPO 진행</span>}
                 </td>
@@ -154,8 +203,16 @@ export default function FundingFollowup() {
                 <td><span className="muted">{c.last[ix.stage] || '—'}</span></td>
                 <td>{c.last[ix.investors]}</td>
                 <td style={{ textAlign: 'right' }} className="muted">{c.n}</td>
+                <td><DartCell r={c.dart} /></td>
+                <td style={{ textAlign: 'right' }}><RunwayCell r={c.dart} /></td>
               </tr>
-            ))}
+              {isOpen && (
+                <tr className="detail-row"><td colSpan={10}><div className="firm-detail">
+                  <DartDetail r={c.dart} c={{ rounds: c.rounds.map((r) => ({ date: r[ix.date], stage: r[ix.stage], amount: won(r[ix.amount]), investors: r[ix.investors] })) }} />
+                </div></td></tr>
+              )}
+              </Fragment>
+            ) })}
           </tbody>
         </table>
       </div>

@@ -156,7 +156,7 @@ function LastRound({ c }) {
 }
 
 // 공시 재무 한 칸 — 등급 · 매출 · 성장률
-function DartCell({ r }) {
+export function DartCell({ r }) {
   if (!r) return <span className="muted sm">—</span>
   return (
     <span style={{ whiteSpace: 'nowrap', fontSize: 12.5 }}>
@@ -167,7 +167,7 @@ function DartCell({ r }) {
   )
 }
 
-function RunwayCell({ r }) {
+export function RunwayCell({ r }) {
   if (!r) return <span className="muted">—</span>
   const m = r.runway
   const style = m !== null && m !== Infinity && m < 12 ? { color: DOWN, fontWeight: 700 } : undefined
@@ -176,7 +176,7 @@ function RunwayCell({ r }) {
 }
 
 // 펼침 — 감사보고서 재무·신호·주주 조합
-function DartDetail({ r, c }) {
+export function DartDetail({ r, c }) {
   if (!r) {
     return (
       <div className="muted sm" style={{ lineHeight: 1.7 }}>
