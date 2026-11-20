@@ -32,7 +32,7 @@ export default function PostIPO() {
   useEffect(() => {
     if (!curCode) { setCandles([]); return }
     let alive = true; setCLoading(true)
-    fetch(`/api/ohlc?code=${encodeURIComponent(curCode)}&market=${curMkt}&from=${curFrom}`)
+    fetch(`/api/ohlc?code=${encodeURIComponent(curCode)}&market=${curMkt}&from=${curFrom}&v=2`) // v: 캐시 무효화용
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => { if (alive) setCandles((d && d.candles) || []) })
       .catch(() => { if (alive) setCandles([]) })
@@ -92,7 +92,7 @@ export default function PostIPO() {
         </div>
         {cLoading ? (
           <div className="list-empty" style={{ height: 320, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>차트를 불러오는 중…</div>
-        ) : shownCandles.length < 2 ? (
+        ) : shownCandles.length < 1 ? (
           <div className="list-empty" style={{ height: 320, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>차트 데이터가 없습니다. (배포 환경에서 조회됩니다)</div>
         ) : (
           <CandleChart candles={shownCandles} height={320} />

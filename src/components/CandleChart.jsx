@@ -6,7 +6,7 @@ export default function CandleChart({ candles, height = 300, us = false }) {
   const UP = us ? '#16a34a' : '#e5484d'
   const DN = us ? '#e5484d' : '#3d7bf0'
   const data = (candles || []).filter((k) => k && k.h != null && k.l != null)
-  if (data.length < 2) return <div className="mc-empty" style={{ height }} />
+  if (data.length < 1) return <div className="mc-empty" style={{ height }} />
 
   const W = 1000                 // viewBox 가로(고정) — preserveAspectRatio=none으로 가로 채움
   const padT = 10, padB = 22, padR = 52
@@ -19,14 +19,18 @@ export default function CandleChart({ candles, height = 300, us = false }) {
   const rng = hi - lo || 1
   const y = (v) => padT + plotH * (1 - (v - lo) / rng)
   const n = data.length
-  const step = plotW / n
+  // 봉이 적을 때 가로로 늘어나지 않도록 최소 슬롯 수를 두고 왼쪽부터 채움(왼쪽 정렬)
+  const MIN_SLOTS = 60
+  const step = plotW / Math.max(n, MIN_SLOTS)
   const bw = Math.max(1, Math.min(step * 0.66, 14)) // 봉 몸통 너비
 
   // 가격 눈금 4개
   const ticks = [0, 0.25, 0.5, 0.75, 1].map((t) => lo + rng * t)
   const fmt = (v) => (v >= 10000 ? Math.round(v).toLocaleString('ko-KR') : v.toFixed(v < 100 ? 2 : 0))
   // x축 날짜 라벨 (양끝 + 중간 몇 개)
-  const labelIdx = [0, Math.floor(n / 4), Math.floor(n / 2), Math.floor((3 * n) / 4), n - 1]
+  const labelIdx = [...new Set([0, Math.floor(n / 4), Math.floor(n / 2), Math.floor((3 * n) / 4), n - 1])]
+  const minGap = 70 // 라벨 겹침 방지(viewBox 단위)
+  const labels = labelIdx.filter((i, k) => k === 0 || step * (i - labelIdx[k - 1]) >= minGap)
 
   return (
     <svg viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="none" style={{ width: '100%', height: H, display: 'block' }}>
@@ -53,7 +57,7 @@ export default function CandleChart({ candles, height = 300, us = false }) {
         )
       })}
       {/* x축 날짜 */}
-      {labelIdx.map((i) => (
+      {labels.map((i) => (
         <text key={i} x={Math.min(Math.max(step * (i + 0.5), 16), plotW - 16)} y={H - 6}
               fontSize="10.5" fill="var(--text-dim)" textAnchor="middle">{(data[i].d || '').slice(2)}</text>
       ))}

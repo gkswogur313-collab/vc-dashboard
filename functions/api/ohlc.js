@@ -1,4 +1,5 @@
-// Cloudflare Pages Function — 단일 종목 캔들(OHLC) 데이터 (Yahoo Finance)
+// Cloudflare Pages Function — 단일 종목 캔들(OHLC) 데이터 (국내: 네이버 일봉 우선 + Yahoo 보조)
+// ※ Yahoo는 갓 상장한 국내 종목 일봉에 구멍(고가·저가 null, 날짜 누락)이 잦음 → 네이버를 기본으로 쓰고, 더 많은 쪽을 채택.
 // 요청: /api/ohlc?code=005930&market=KOSPI&from=2024-08-06
 // 응답: { candles: [{ d:'YYYY-MM-DD', o,h,l,c }], code }
 // Post-IPO 캔들차트에서 종목 클릭 시 그 종목만 불러옴.
@@ -16,8 +17,12 @@ export async function onRequestGet(context) {
   const cacheKey = new Request(new URL(url.toString()).toString())
   const hit = await cache.match(cacheKey); if (hit) return hit
 
-  let candles = []
-  try { candles = await fetchYahooOHLC(yahooSymbol(code, market), from) } catch (e) { /* 빈 배열 */ }
+  const isKr = /^[0-9A-Z]{6}$/.test(code) && /\d/.test(code) && market !== 'US'
+  const [nv, yh] = await Promise.all([
+    isKr ? fetchNaverOHLC(code, from).catch(() => []) : Promise.resolve([]),
+    fetchYahooOHLC(yahooSymbol(code, market), from).catch(() => []),
+  ])
+  const candles = nv.length >= yh.length ? nv : yh
 
   const resp = json({ candles, code })
   context.waitUntil(cache.put(cacheKey, resp.clone()))
@@ -49,6 +54,34 @@ async function fetchYahooOHLC(symbol, from) {
     } catch (e) { /* 다음 호스트 */ }
   }
   return []
+}
+
+// 네이버 금융 일봉(siseJson) — 국내주 OHLC
+const ymd = (d) => d.toISOString().slice(0, 10).replace(/-/g, '')
+async function fetchNaverOHLC(code, from) {
+  const end = ymd(new Date(Date.now() + 9 * 3600000)) // KST 기준 오늘
+  const start = from ? from.replace(/-/g, '') : ymd(new Date(Date.now() - 5 * 365 * 86400000))
+  const u = `https://api.finance.naver.com/siseJson.naver?symbol=${code}&requestType=1&startTime=${start}&endTime=${end}&timeframe=day`
+  const res = await fetch(u, { headers: { 'User-Agent': UA, Referer: 'https://finance.naver.com/' } })
+  if (!res.ok) return []
+  return parseNaverOHLC(await res.text())
+}
+
+// 네이버 siseJson 텍스트 → 캔들 배열 (순수 함수, 테스트용)
+// 행: [날짜(YYYYMMDD), 시가, 고가, 저가, 종가, 거래량, ...]
+export function parseNaverOHLC(text) {
+  let rows
+  try { rows = JSON.parse(String(text).replace(/'/g, '"')) } catch (e) { return [] }
+  if (!Array.isArray(rows)) return []
+  const out = []
+  for (const r of rows) {
+    if (!Array.isArray(r) || r.length < 5 || !/^\d{8}$/.test(String(r[0]).trim())) continue
+    const d = String(r[0]).trim()
+    const o = Number(r[1]), h = Number(r[2]), l = Number(r[3]), c = Number(r[4])
+    if (!c || !h || !l) continue
+    out.push({ d: `${d.slice(0, 4)}-${d.slice(4, 6)}-${d.slice(6, 8)}`, o: o || c, h, l, c })
+  }
+  return out
 }
 
 // Yahoo 차트 JSON → 캔들 배열 (순수 함수, 테스트용)
