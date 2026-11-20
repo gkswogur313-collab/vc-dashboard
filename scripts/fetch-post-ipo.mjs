@@ -152,6 +152,35 @@ async function fetchOHLC(code, marketHint, from) {
   return { candles: [], market: marketHint }
 }
 
+// 네이버 금융 일봉(siseJson) — 국내주 OHLC. Yahoo가 신규상장 초기 일봉을 누락하는 문제 보완.
+async function fetchNaverOHLC(code, from) {
+  const ymd = (d) => d.toISOString().slice(0, 10).replace(/-/g, '')
+  const end = ymd(new Date(Date.now() + 9 * 3600000))
+  const u = `https://api.finance.naver.com/siseJson.naver?symbol=${code}&requestType=1&startTime=${from.replace(/-/g, '')}&endTime=${end}&timeframe=day`
+  for (let t = 0; t < 3; t++) {
+    try {
+      const res = await fetch(u, { headers: { 'User-Agent': UA, Referer: 'https://finance.naver.com/' } })
+      if (res.ok) return parseNaverOHLC(await res.text())
+    } catch (e) { /* 재시도 */ }
+    await sleep(400 * (t + 1))
+  }
+  return []
+}
+export function parseNaverOHLC(text) {
+  let rows
+  try { rows = JSON.parse(String(text).replace(/'/g, '"')) } catch (e) { return [] }
+  if (!Array.isArray(rows)) return []
+  const out = []
+  for (const r of rows) {
+    if (!Array.isArray(r) || r.length < 5 || !/^\d{8}$/.test(String(r[0]).trim())) continue
+    const d = String(r[0]).trim()
+    const o = Number(r[1]), h = Number(r[2]), l = Number(r[3]), c = Number(r[4])
+    if (!c) continue
+    out.push({ d: `${d.slice(0, 4)}-${d.slice(4, 6)}-${d.slice(6, 8)}`, o: o || c, h: h || c, l: l || c, c })
+  }
+  return out
+}
+
 async function main() {
   const ipo = JSON.parse(fs.readFileSync('public/data/ipo.json', 'utf8'))
   const today = new Date().toISOString().slice(0, 10)
@@ -182,7 +211,9 @@ async function main() {
           if (s) { hit = { code: s.code, market: s.market || 'KOSPI' }; via = s.via; recovered++; recoveredMap.push({ 회사명: r.회사명, code: s.code, 매칭명: s.name, via: s.via }) }
         }
         if (!hit) { noCode++; missNames.push(r.회사명); return null }
-        const { candles, market } = await fetchOHLC(hit.code, hit.market, r.상장일)
+        const [yh, nv] = await Promise.all([fetchOHLC(hit.code, hit.market, r.상장일), fetchNaverOHLC(hit.code, r.상장일)])
+        const market = yh.candles.length ? yh.market : hit.market
+        const candles = nv.length >= yh.candles.length ? nv : yh.candles
         if (candles.length < 1) { noPrice++; missNames.push(r.회사명 + '(시세X)'); return null }
         const 공모가 = won(r.확정공모가)
         const calc = computePostIpo(candles, 공모가)
