@@ -1,0 +1,93 @@
+{
+ "회사명": "인스페이스",
+ "시장": "KQ",
+ "file": "인스페이스",
+ "단계": {
+  "청구": {
+   "기준일": "2026-11-20",
+   "generated_at": "2026-11-21T11:57:55+09:00",
+   "기사": [
+    {
+     "제목": "인스페이스, 발전소 24시간 지키는 'AI 드론 방호체계' 구축…위험 대응력 강화",
+     "매체": "리드경제",
+     "날짜": "2026-11-18",
+     "링크": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5SczRfMThJTXBtUUN2MnVMS0lTV0RWN0t5V3hPNlIyVy1idkwwZ3dMclRVQ2Y2X2FQQWREM3gyVWdkeDRmN2QzYVZLbjVBVHFQV2RyRjF0YTg5aFlIdmQ3UzVKVTlwMUxobkxkYVM5dEY?oc=5"
+    },
+    {
+     "제목": "인스페이스, 발전소 방호 새 패러다임 열었다…AI가 위험 찾고 드론이 현장 대응",
+     "매체": "전자신문",
+     "날짜": "2026-11-18",
+     "링크": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1aekdsR21mQWdQMlFaaFQ3TFZkM3NCSDFtdnh4VW1LZGJhVGRvQWwxbER1NGtKcnFXU3M4RGF4c1dpcWFTLWVFRWVFakg3dw?oc=5"
+    },
+    {
+     "제목": "인스페이스, 중부발전 보령본부에 AI 드론 방호체계 구축…24시간 자율순찰",
+     "매체": "테크월드",
+     "날짜": "2026-11-18",
+     "링크": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1nb2xKRk9HckV2QlhHR00wcF9EdHlHazl6SnJMbkNOVFBrQ3NRbm5qN1FfXzNjdkFUT1l0RnN6NnlOaXptZDhHTEVlNXNPdUp2Ukpjd1dPMDdENHp5NHVsY3p4bUdFdFly?oc=5"
+    },
+    {
+     "제목": "[스타트업 안테나] 인스페이스 AI 드론 구축·윌로그 세계일류상품 선정·PFCT 금융 AI 연구 성과",
+     "매체": "테크42",
+     "날짜": "2026-11-18",
+     "링크": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxQVW1NaWFKZlBDQmEyVEpXOXlBb2ZGaEdYVTg5cGtiY3FOY0dOMFFoM1kwMVprY3Foc0ZMMHNJUUZDTWpzSXhqXzNwVDhCTU5qbk00ZTd2TW1ReGs0OVFxWTRhdWl3Tkw5WXd6QWFoZ0M2bXF3Uk9iaGZpVTZ0SEk0YmxFYzhZSl9TRW9jdEI0eHBVSDhiT2tIaE85dG04NWI1V29jbzdYeFZyNzlUanJvd1RURWJfdGVqdFRlUWNLZHNNSzdRdWZJOFdTVXlFUUpsU0txYkg1UUR4ZFNWWTRlTnl4T3k2c2Jaak95MWppWnE3Y1VSNUw0NndtbmlJMHJJMGZHdTNISV9TOVdrek9lTGtuclM4WTAwbGt3RDlSVk8tSTk4Nk5uNDdIdk1EV1dnYlMzdVVQZHBuTTZZUEhyeDV3?oc=5"
+    },
+    {
+     "제목": "AI 드론이 24시간 지키는 보령발전본부, 인스페이스·한국중부발전 지능형 방호체계 구축 완료",
+     "매체": "https://www.2news.co.kr/",
+     "날짜": "2026-11-17",
+     "링크": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1jSFNsMl9QUEpnOWt5eFVJTVVUblE4OGZ6Qm5jNmxJSGpKS2ZRX3BQd2tBQmNLRlZQbUJyeUg4VXhkcEJqbGdMU2gwb1pkekxPZDNtei10U3J3NTRpbG4wMGpBaWdPdUZn?oc=5"
+    },
+    {
+     "제목": "중복상장 해소한 인스페이스, 코스닥 기술특례 '속도'… 120억 실탄 확보",
+     "매체": "뉴스톱",
+     "날짜": "2026-11-09",
+     "링크": "https://news.google.com/rss/articles/CBMib0FVX3lxTE82YzFkS203X3R3QjBuU0ZWYzBuTFVQcXpMTUhiWHdfZmJaR2l2aUNYVEdKanNMamsxbFl3R01WZHNtQ05RdGxlajAySXlZV1hVcFBnaGVTQVNmbnJzMlhydGEtMU5LbWlYb2FxekZKdw?oc=5"
+    },
+    {
+     "제목": "인스페이스, 인니 산림·농업·해양에 위성·드론·AI 적용 나서",
+     "매체": "지디넷코리아",
+     "날짜": "2026-11-06",
+     "링크": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1KMzlmUmYtRzhCZjVGWG8yX3kxV3V3aGRQN0Jnd243aWF2dXdZc1FkR2lNaXozUmRFUEJxOG40cHY0c0RRNnljbU96R1U4WUo2aThyM3ZR?oc=5"
+    },
+    {
+     "제목": "인스페이스, 인도네시아 산림·농업·해양 AI 분석모델 개발 추진",
+     "매체": "테크월드",
+     "날짜": "2026-11-06",
+     "링크": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5ZN3RIcUtNRFdhZmhFa2o1enJ1MW5KTkZ0R1p0b29TXzFCa0pBUHJhaHJKRHp1bXZsaDJiWTk2YUl1WnE3RURnU244aDYxY05rMktMbHU4NDVFYm5RSkluNzFRY0JvQ1VX?oc=5"
+    }
+   ],
+   "요약필요": true,
+   "요약": null,
+   "메모": []
+  }
+ },
+ "회사정보": {
+  "정식명칭": "(주)인스페이스",
+  "영문명": "HANCOM inSPACE Co.,Ltd.",
+  "대표자": "최명진",
+  "설립일": "2012-02-01",
+  "업종코드": "58222",
+  "결산월": "12월",
+  "주소": "대전광역시 유성구 엑스포로 1 12층 (도룡동,사이언스센터)",
+  "홈페이지": "",
+  "전화": "070-4914-1413"
+ },
+ "공모": {
+  "청구일": "2026-11-20",
+  "승인일": "",
+  "심사상태": "청구서 접수",
+  "신고서제출일": "",
+  "수요예측시작": "",
+  "수요예측종료": "",
+  "청약시작": "",
+  "청약종료": "",
+  "납입일": "",
+  "상장예정일": "",
+  "상장일": "",
+  "확정공모가": "",
+  "공모금액": "",
+  "주관사": "대신증권(주)"
+ },
+ "현재단계": "청구",
+ "updated_at": "2026-11-21T11:57:55+09:00"
+}
