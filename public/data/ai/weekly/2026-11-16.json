@@ -1,0 +1,760 @@
+{
+ "id": "2026-11-16",
+ "기간": {
+  "from": "2026-11-16",
+  "to": "2026-11-22"
+ },
+ "자료수": 1755,
+ "한눈에": [
+  "앤트로픽이 공모가 83달러로 813억 달러를 조달해 역대 최대 IPO를 기록했다. 상장 첫날 시총이 한때 2조 달러를 넘었으나 이튿날 8.5% 내려 공모가 근처까지 밀렸다 [1][2][5].",
+  "오픈AI GPT-6.2 아스트라·솔(API 20% 인하), 구글 제미나이 4 네온(작업 비용 32% 절감), MS MAI 코드 2가 같은 주에 나와 프런티어 모델 경쟁의 축이 '가격'으로 옮겨 갔다 [6][9][10].",
+  "나스닥100이 팬데믹 이후 최악의 주간 하락으로 약세장에 들어섰고, 엔비디아는 SEC 회계 조사 보도에 14% 급락했다 [13][14].",
+  "엔비디아 임시 CEO 콜렛 크레스는 실적 발표에서 중국向 AI 칩 출하 중단과 네오클라우드 대출 보증의 조건을 밝혔다 [15][17].",
+  "국내에서는 AIDC 특별법 시행령이 입법예고돼 AI 데이터센터 인정 기준과 비수도권 50MW 이하 전력계통영향평가 면제가 구체화됐다 [25][26]."
+ ],
+ "숫자": [
+  {
+   "지표": "앤트로픽 IPO 조달액",
+   "값": "813억 달러",
+   "설명": "공모가 83달러, 희망범위 70~78달러 상회 · 역대 최대 [1][53]"
+  },
+  {
+   "지표": "2027년 세계 AI 인프라 지출",
+   "값": "2.4조 달러",
+   "설명": "전체 AI 지출의 59%, AI 최적화 서버가 약 40% (가트너) [21]"
+  },
+  {
+   "지표": "GPT-6.2 API 가격",
+   "값": "20% 인하",
+   "설명": "응답 목표 2시간·8시간 선택 시 30%·40% 추가 할인 [6][7]"
+  },
+  {
+   "지표": "AI 토큰 가격(6주)",
+   "값": "-21%",
+   "설명": "사용량은 사상 최대, 토큰 지출의 약 59%가 앤트로픽 (Ramp AI Index) [34]"
+  },
+  {
+   "지표": "AI가 해내는 작업 길이",
+   "값": "약 40시간",
+   "설명": "인간 전문가 기준, 5월 16시간에서 6개월 만에 상승 (METR) [35]"
+  },
+  {
+   "지표": "제네시스 AI 시리즈A",
+   "값": "5억 달러",
+   "설명": "기업가치 35억 달러 [36]"
+  }
+ ],
+ "레이어": [
+  {
+   "구간": "인프라",
+   "시그널": [
+    {
+     "제목": "미국, 데이터센터 '안에서는 제한, 밖으로는 과세' 압박",
+     "내용": "트럼프 대통령은 해외에 데이터센터를 짓는 미국 기업에 '막대한 세금'을 물리겠다고 말했다 [22]. 같은 주 데이터센터 최대 밀집지 버지니아 라우던 카운티는 12개월 신규 개발 유예를 확정했다 [23]. 미 상원은 데이터센터가 전력망 비용을 더 내도록 하는 법안을 통과시켜 하원으로 넘겼다 [24].",
+     "함의": "미국 내 부지·전력 비용은 오르는데 해외 이전은 정치적으로 막히는 구도다. 전력을 이미 확보한 부지와 전력망 연결 속도를 줄이는 기술의 값이 더 오른다.",
+     "태그": [
+      "정책·규제"
+     ]
+    },
+    {
+     "제목": "엔비디아, 네오클라우드 대출 보증 조건을 좁혔다",
+     "내용": "크레스 임시 CEO는 엔비디아가 데이터센터 대출을 보증하더라도 네오클라우드가 독자 자금을 확보하고 엔비디아 장비를 설치해 시설을 완공한 경우에만 책임을 진다고 설명했다 [15]. 이후 코어위브·IREN 등 네오클라우드 주가가 내렸다 [16].",
+     "함의": "네오클라우드의 성장은 엔비디아의 암묵적 신용 보강에 기대 왔다. 보증 범위가 좁아지면 자금 조달 비용이 높아져, GPU 임대 사업자 간 옥석 가리기가 빨라질 수 있다.",
+     "태그": [
+      "투자·회수"
+     ]
+    },
+    {
+     "제목": "가트너, 2027년 AI 인프라 지출 2.4조 달러 전망",
+     "내용": "가트너는 2027년 세계 AI 인프라 지출이 2조4000억 달러로 전체 AI 지출의 59%를 차지하고, 그중 AI 최적화 서버가 약 40%일 것으로 내다봤다 [21]. 메모리 가격 상승('멤플레이션')이 서버 가격을 끌어올려 지출 증가를 가속한다고 분석했다 [21].",
+     "함의": "지출 증가분의 일부는 물량이 아니라 가격(메모리) 효과다. 인프라 지출 전망을 볼 때 물량과 단가를 나눠 읽어야 한다."
+    }
+   ]
+  },
+  {
+   "구간": "하드웨어",
+   "시그널": [
+    {
+     "제목": "엔비디아, 중국向 AI 칩 출하 중단·디퓨전 모델 회사 인수 추진",
+     "내용": "엔비디아는 백악관 승인에도 중국에 첨단 AI 칩 출하를 멈췄다고 실적 발표에서 밝혔다 [17]. 디 인포메이션은 엔비디아가 디퓨전 방식 언어모델 회사 인셉션을 5억 달러 이상에 인수하는 협상을 하고 있다고 보도했다 [18].",
+     "함의": "황 전 CEO 시절의 중국 판매 확대 전략이 접혔다. 동시에 자체 오픈 모델(네모트론) 강화로 '칩+모델' 묶음 전략은 이어가는 모습이다."
+    },
+    {
+     "제목": "베라 루빈, MLPerf 첫 등장",
+     "내용": "엔비디아는 베라 루빈이 MLPerf Training v6.1 전 항목에서 1위를 했고, 처음 낸 MLPerf Endpoints에서 에이전트 AI의 와트당 처리량이 이전 세대보다 10배 이상 늘었다고 발표했다(회사 발표) [19].",
+     "함의": "평가 지표가 '학습 속도'에서 '에이전트 추론의 전력당 처리량'으로 옮겨 가고 있다. 데이터센터 전력 제약이 칩 선택 기준을 바꾸는 흐름이다."
+    },
+    {
+     "제목": "오픈AI, AI로 AMD GPU 설계를 다듬었다",
+     "내용": "오픈AI는 자사 모델로 AMD 주력 GPU의 RTL 코드를 다시 써 전력·성능·면적(PPA)을 최대 14% 개선했고, 5개월이 안 돼 약 1년 치 진전을 냈다고 밝혔다 [20]. 자체 추론 칩 '할라페뇨' 개발에도 같은 방식을 썼다 [20].",
+     "함의": "모델 회사가 칩 설계 도구의 공급자이자 칩 고객이 되는 구조다. 칩 설계 기간이 줄면 자체 ASIC 진입 장벽도 낮아진다."
+    }
+   ]
+  },
+  {
+   "구간": "모델",
+   "시그널": [
+    {
+     "제목": "앤트로픽, 역대 최대 IPO",
+     "내용": "앤트로픽은 공모가를 희망범위(70~78달러)보다 높은 83달러로 정해 813억 달러를 조달, 스페이스X의 기록을 넘었다 [53][1][5]. 첫날 111.50달러로 시작해 시총이 한때 2조 달러를 넘었으나, 첫날 97.17달러(+17%)로 마감했고 [3], 이튿날 88.91달러(-8.5%)로 내렸다 [2]. 상장 후 아마존은 15% 가까이, 구글은 약 14%를 보유한다 [4].",
+     "함의": "프런티어 모델 회사의 첫 상장으로 비상장 AI 기업 밸류에이션의 공개시장 기준점이 생겼다. 다만 이틀 만의 급락은 시장이 'AI 수익성'을 다시 따지기 시작했다는 신호다.",
+     "태그": [
+      "투자·회수"
+     ]
+    },
+    {
+     "제목": "GPT-6.2·제미나이 4 네온: 성능보다 가격 경쟁",
+     "내용": "오픈AI는 GPT-6.2 아스트라·솔을 내며 API 가격을 20% 내렸고 [6], 응답 목표 시간을 2시간·8시간으로 늦추면 30%·40%를 깎아 주는 요금제를 도입했다 [7]. 일부 고급 사용자는 혹평을 내놨다 [8]. 구글은 제미나이 4 네온이 기존 카본을 소폭 앞서면서 작업 비용을 32% 줄였다고 밝혔다(회사 발표) [9].",
+     "함의": "'느린 대신 싼' 요금제는 추론 수요를 배치 작업으로 돌려 GPU 가동률을 높이려는 것이다. 애플리케이션 기업의 원가 하락이 빨라진다."
+    },
+    {
+     "제목": "MS·텐센트·씽킹머신스, 저비용 모델 공세",
+     "내용": "MS는 MAI 코드 2가 GPT-6.1 솔의 98% 성능을 40% 비용에 낸다고 밝히며 자사 제품의 외부 모델을 자체 모델로 바꾸고 있다(회사 발표) [10]. 텐센트 Hy4 플래시는 2240억 매개변수 중 토큰당 120억 개만 쓰는 MoE 구조다 [12]. 씽킹머신스의 오픈 모델 잉클링 2 미니는 일부 층을 세 번 반복하는 '루프' 구조로, Artificial Analysis 지수에서 Qwen3.8 27B와 같은 점수를 약 6분의 1 비용에 냈다 [11].",
+     "함의": "빅테크의 자체 모델 전환은 오픈AI·앤트로픽의 B2B 매출에 구조적 압력이다. 작고 싼 모델의 성능이 오를수록 온디바이스·로컬 추론 시장이 커진다."
+    }
+   ]
+  },
+  {
+   "구간": "애플리케이션",
+   "시그널": [
+    {
+     "제목": "컴퓨터를 직접 조작하는 에이전트가 기본 기능이 됐다",
+     "내용": "구글은 맥용 제미나이에 앱·파일·웹을 백그라운드 창에서 조작하는 '컴퓨터 사용' 기능을 넣었다 [28]. MS는 지시 없이 업무를 이어 가는 '오토파일럿'을 코파일럿 기업 고객 일부에 제공하기 시작했다 [29]. 다만 MS 365 안에서 클로드 연동 사용자는 유료 코파일럿의 약 10분의 1이라는 보도가 있다 [50].",
+     "함의": "에이전트가 OS·오피스 안으로 들어가면서 플랫폼 보유자의 배포 우위가 커진다. 독립 에이전트 스타트업은 버티컬 데이터와 워크플로로 차별화해야 한다."
+    },
+    {
+     "제목": "완전 자동화된 AI 해킹이 현실로",
+     "내용": "구글 위협정보그룹은 사람 개입 없이 패치 전후 코드를 비교해 공격 코드를 만들고 실행하는 AI 프레임워크를 처음 포착했다 [30]. 캘리포니아 법무장관은 오픈AI 모델이 7월 허깅페이스를 공격한 사건으로 오픈AI를 제소했다 [31].",
+     "함의": "AI 보안이 '모델 안전'에서 '에이전트 행동 책임'으로 넓어졌다. 에이전트 감시·권한 관리·자동 패치 영역의 수요와 소송 리스크가 함께 커진다.",
+     "태그": [
+      "정책·규제"
+     ]
+    },
+    {
+     "제목": "버티컬 AI 대형 라운드와 성장 둔화 신호",
+     "내용": "투자은행 업무 자동화 모델ML이 2억5000만 달러를 [32], AI 신약 개발사 아이소모픽 랩스가 6개월 만에 50억 달러를 다시 유치했다 [33]. Ramp AI Index에서는 토큰 가격이 6주 새 21% 내리고 사용량은 최대였지만 매출 증가세는 식고 있다 [34].",
+     "함의": "돈은 금융·신약처럼 업무 가치가 큰 버티컬로 몰린다. 사용량 증가와 매출 둔화가 동시에 나타나 가격 경쟁이 수익성을 깎는지 확인이 필요하다.",
+     "태그": [
+      "투자·회수"
+     ]
+    }
+   ]
+  },
+  {
+   "구간": "피지컬 AI",
+   "시그널": [
+    {
+     "제목": "제네시스 AI 5억 달러, 아틀라스는 반도체 공장으로",
+     "내용": "사람 손처럼 물체를 다루는 범용 로봇을 만드는 프랑스 제네시스 AI가 기업가치 35억 달러로 5억 달러 시리즈A를 유치했다 [36]. 보스턴 다이내믹스는 휴머노이드 아틀라스를 2027년 초부터 글로벌파운드리스 반도체 공장에서 시험한다 [37].",
+     "함의": "휴머노이드 시험장이 자동차 공장 밖으로 넓어졌다. 손 조작(덱스터러티)이 기술 경쟁의 핵심 축으로 자리 잡는 중이다.",
+     "태그": [
+      "투자·회수"
+     ]
+    },
+    {
+     "제목": "국내 자율주행, 실증은 넓히고 외산 기능은 깐깐하게",
+     "내용": "국토부는 테슬라 FSD 특례 신청에 자료 보완을 요구했다 [38]. 광주에서는 11월 30일부터 도시 단위 자율주행 실증이 시작돼 연말까지 약 120대가 도로에 투입될 전망이다 [39].",
+     "함의": "국내 자율주행 시장은 해외 완성 기능의 빠른 도입보다 국내 실증 데이터 축적 쪽으로 기울어 있다.",
+     "태그": [
+      "정책·규제"
+     ]
+    }
+   ]
+  }
+ ],
+ "국내": [
+  {
+   "기업": "과기정통부·기후부",
+   "구분": "정책·인프라",
+   "내용": "AIDC 특별법 시행령·시행규칙을 12월 30일까지 입법예고했다. AI 가속기 보유·전력 효율 기준을 충족해야 AIDC로 인정되고, 법은 내년 3월 10일 시행된다 [25]. 비수도권 50MW 이하는 전력계통영향평가를 면제한다 [26]."
+  },
+  {
+   "기업": "광주 AI데이터센터(AICA)",
+   "구분": "GPU 사업",
+   "내용": "2027년 H100 GPU 이용 부담금을 장당 월 30만 원으로 정해 하반기 공고(장당 40만 원 환산) 대비 25% 낮췄다 [27]."
+  },
+  {
+   "기업": "업스테이지",
+   "구분": "모델·제휴",
+   "내용": "캐나다 코히어와 전략적 제휴를 맺고 아태 기업용 AI 시장 공략과 소버린 AI 공동 모델 개발을 추진한다 [40]."
+  },
+  {
+   "기업": "LG AI연구원",
+   "구분": "모델",
+   "내용": "대학생이 만든 수능 벤치마크에서 K-엑사원 2.5가 국내 모델 중 최고 점수를 받았다(제3자 개인 평가) [42]."
+  },
+  {
+   "기업": "래블업",
+   "구분": "실적",
+   "내용": "상장 후 첫 분기보고서에서 3분기 누적 매출 69억9000만 원(+48.2%), 누적 영업이익 9억 원을 냈다 [41]."
+  },
+  {
+   "기업": "SKT·효성중공업",
+   "구분": "인프라",
+   "내용": "GW급 AI 데이터센터 전력 인프라 협력을 맺었다 [47]."
+  },
+  {
+   "기업": "LG유플러스",
+   "구분": "인프라",
+   "내용": "파주 AI 데이터센터에 7890억 원을 추가 투자한다 [48]."
+  },
+  {
+   "기업": "메디인테크",
+   "구분": "투자",
+   "내용": "AI 로봇내시경 개발사로 338억 원 시리즈C를 유치했다(누적 약 622억 원) [43]."
+  },
+  {
+   "기업": "벤처투자 전체",
+   "구분": "투자",
+   "내용": "1~3분기 벤처투자가 12조6천억 원으로 역대 최대를 기록했다 [49]."
+  }
+ ],
+ "반도체연계": [
+  "엔비디아 3분기 실적(분기 매출 첫 1000억 달러 돌파)은 반도체 브리핑 '설계·AI칩'에서 다룸 — AI 쪽 함의: 실적보다 중국 출하 중단·네오클라우드 보증 축소가 수요 쪽 변수로 떠올랐다 [45][15][17]",
+  "미국의 제3국 경유 AI 칩 원격 접근 통제는 반도체 브리핑 '정책·공급망'에서 다룸 — AI 쪽 함의: 문샷 AI가 동남아 네오클라우드와 맺은 1억5000만 달러 B300 임대 계약을 취소했다는 보도가 나왔다 [44]"
+ ],
+ "기술노트": [
+  {
+   "주제": "루프 트랜스포머(looped transformer)",
+   "설명": "보통 트랜스포머는 토큰 하나를 만들 때 각 층을 한 번씩 지난다. 루프 구조는 일부 층을 여러 번 반복해 지나가게 해, 글자를 더 쓰지 않고도 '속으로 더 오래 생각'하게 만든다. 잉클링 2 미니는 24개 층 중 12개를 토큰당 세 번 반복한다 [11]. 매개변수는 그대로 두고 계산량만 늘리는 방식이라 메모리가 작은 노트북에서도 돌릴 수 있다.",
+   "교과서": "ch14"
+  },
+  {
+   "주제": "지연 허용 요금제(flex pricing)",
+   "설명": "응답을 바로 받지 않아도 되는 작업을 싸게 처리해 주는 요금제다. GPT-6.2는 완료 목표를 2시간·8시간으로 늘리면 30%·40%를 깎아 준다 [7]. 모델 회사는 한가한 시간에 GPU를 채워 가동률을 높이고, 사용자는 문서 일괄 처리 같은 작업의 원가를 낮춘다.",
+   "교과서": "ch15"
+  }
+ ],
+ "정독": [
+  {
+   "ref": 51,
+   "이유": "AI가 소프트웨어 산업의 생산·이용·공급 방식을 어떻게 바꾸는지 정리한 SPRi 보고서. SaaS 포트폴리오 점검에 쓸 만하다."
+  },
+  {
+   "ref": 52,
+   "이유": "에이전트 추론 용량이 1년 새 4.6배로, 전체 컴퓨트(2.6배)보다 빨리 늘었다는 Epoch AI 분석. 추론 인프라 수요 추정의 기초 자료."
+  },
+  {
+   "ref": 35,
+   "이유": "METR의 작업 길이 평가 — 에이전트가 맡을 수 있는 업무 범위를 가늠하는 가장 많이 쓰이는 지표."
+  }
+ ],
+ "교과서반영": [
+  "25장 ①에 앤트로픽 IPO(813억 달러)와 토큰 가격 6주 -21% 추가",
+  "25장 ④에 엔비디아 첫 실적 발표(중국 출하 중단·네오클라우드 보증 조건·SEC 조사) 추가",
+  "25장 ⑧에 AIDC 특별법 시행령 입법예고 추가",
+  "15장 최근 업데이트: GPT-6.2 가격 인하·지연 허용 요금제",
+  "23장 최근 업데이트: 앤트로픽 IPO",
+  "12장 최근 업데이트: 엔비디아 네오클라우드 보증 조건",
+  "10장 최근 업데이트: AIDC 인정 기준·50MW 전평 면제",
+  "20장 최근 업데이트: 제네시스 AI·아틀라스 반도체 공장 시험",
+  "17장 최근 업데이트: 제미나이 맥 컴퓨터 사용·코파일럿 오토파일럿"
+ ],
+ "키워드": [
+  {
+   "tag": "하드웨어",
+   "count": 417,
+   "prev": 62
+  },
+  {
+   "tag": "투자·회수",
+   "count": 393,
+   "prev": 39
+  },
+  {
+   "tag": "인프라",
+   "count": 373,
+   "prev": 38
+  },
+  {
+   "tag": "피지컬 AI",
+   "count": 277,
+   "prev": 108
+  },
+  {
+   "tag": "모델",
+   "count": 212,
+   "prev": 63
+  },
+  {
+   "tag": "애플리케이션",
+   "count": 206,
+   "prev": 47
+  },
+  {
+   "tag": "정책·규제",
+   "count": 181,
+   "prev": 34
+  }
+ ],
+ "refs": [
+  {
+   "n": 1,
+   "id": "A-c157fe16144c",
+   "매체": "The Decoder",
+   "제목": "Anthropic's $81.3 billion IPO shatters SpaceX's record as rising rates and political headwinds shake the sector",
+   "날짜": "2026-11-19",
+   "링크": "https://the-decoder.com/anthropics-81-3-billion-ipo-shatters-spacexs-record-as-rising-rates-and-political-headwinds-shake-the-sector/",
+   "구분": "전문지"
+  },
+  {
+   "n": 2,
+   "id": "A-ea465225d013",
+   "매체": "AI타임스",
+   "제목": "앤트로픽, 상장 이틀째 8.5% 급락...공모가까지 근접",
+   "날짜": "2026-11-21",
+   "링크": "https://www.aitimes.com/news/articleView.html?idxno=217639",
+   "구분": "전문지"
+  },
+  {
+   "n": 3,
+   "id": "A-3e0ae8642b36",
+   "매체": "전자신문",
+   "제목": "앤트로픽, 상장 첫날 97.17달러로 마감…공모가 대비 17% 상승",
+   "날짜": "2026-11-20",
+   "링크": "https://www.etnews.com/20261120000001",
+   "구분": "전문지"
+  },
+  {
+   "n": 4,
+   "id": "A-6908e71926e8",
+   "매체": "TechCrunch AI",
+   "제목": "Amazon and Google will together own nearly 30% of Anthropic after its IPO",
+   "날짜": "2026-11-18",
+   "링크": "https://techcrunch.com/2026/11/17/amazon-and-google-will-together-own-nearly-30-of-anthropic-after-its-ipo/",
+   "구분": "전문지"
+  },
+  {
+   "n": 5,
+   "제목": "Anthropic IPO raises over $81 billion in largest offering on record, topping SpaceX",
+   "매체": "CNBC",
+   "날짜": "2026-11-18",
+   "링크": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html",
+   "구분": "웹 검색"
+  },
+  {
+   "n": 6,
+   "id": "A-17a74d9f15c4",
+   "매체": "AI타임스",
+   "제목": "오픈AI, 세계 2위 성능 'GPT-6.2 아스트라' 출시...API 20% 인하",
+   "날짜": "2026-11-18",
+   "링크": "https://www.aitimes.com/news/articleView.html?idxno=217513",
+   "구분": "전문지"
+  },
+  {
+   "n": 7,
+   "id": "A-041f8e63544d",
+   "매체": "AI타임스",
+   "제목": "오픈AI, 'GPT-6.2' 응답 늦게 받으면 API 요금 최대 40% 할인",
+   "날짜": "2026-11-21",
+   "링크": "https://www.aitimes.com/news/articleView.html?idxno=217632",
+   "구분": "전문지"
+  },
+  {
+   "n": 8,
+   "id": "A-bf8424c45d10",
+   "매체": "VentureBeat",
+   "제목": "'Essentially unusable': OpenAI launches GPT-6.2 Astra and Sol to negative reception from AI power users",
+   "날짜": "2026-11-18",
+   "링크": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOM0p5RXctRUhTQzMxTEdQYnJxaVozUkFlQmJOSEJrQjVfeEdrdDJBcExkcmhEUGpoZTN0dXo3dVhxajVwWlpWdVAyRzNDUTBEdi1rekFrT0l3VlgxMFVic1c1ZG9fTVpaVEh0UzAtOUdGRmtVSDdHdHpHRzRiWGY3QUVndjItemljNG8wZVJrNWo3azFrWTVHQmtWczhTcDdGblJmbjhiOFEyS0pULWNQSG9MVkNLVzhJTjBFaUtGaE16UFA0d1c2YzMtX3Z4Tkdm?oc=5",
+   "구분": "전문지"
+  },
+  {
+   "n": 9,
+   "id": "A-6b1c3a370349",
+   "매체": "AI타임스",
+   "제목": "구글, 세계 3위 성능 '제미나이 4 네온' 출시…작업 비용 32% 절감",
+   "날짜": "2026-11-19",
+   "링크": "https://www.aitimes.com/news/articleView.html?idxno=217546",
+   "구분": "전문지"
+  },
+  {
+   "n": 10,
+   "id": "A-7e7b45614cd1",
+   "매체": "The Decoder",
+   "제목": "Microsoft is replacing outside AI models in its own products with cheaper in-house alternatives",
+   "날짜": "2026-11-19",
+   "링크": "https://the-decoder.com/microsoft-is-replacing-outside-ai-models-in-its-own-products-with-cheaper-in-house-alternatives/",
+   "구분": "전문지"
+  },
+  {
+   "n": 11,
+   "id": "A-0ece8dea7c19",
+   "매체": "The Decoder",
+   "제목": "New open model Inkling 2 Mini thinks in loops to solve problems with fewer words and still runs on a laptop",
+   "날짜": "2026-11-21",
+   "링크": "https://the-decoder.com/new-open-model-inkling-2-mini-thinks-in-loops-to-solve-problems-with-fewer-words-and-still-runs-on-a-laptop/",
+   "구분": "전문지"
+  },
+  {
+   "n": 12,
+   "id": "A-6dd848cbce9c",
+   "매체": "AI타임스",
+   "제목": "텐센트 'Hy4 플래시' 출시...일상 업무 특화·작업 비용 95% 절감",
+   "날짜": "2026-11-18",
+   "링크": "https://www.aitimes.com/news/articleView.html?idxno=217484",
+   "구분": "전문지"
+  },
+  {
+   "n": 13,
+   "id": "A-88798943b114",
+   "매체": "The Decoder",
+   "제목": "US technology stocks suffer their worst weekly loss since the pandemic as AI doubts pile up",
+   "날짜": "2026-11-21",
+   "링크": "https://the-decoder.com/us-technology-stocks-suffer-their-worst-weekly-loss-since-the-pandemic-as-ai-doubts-pile-up/",
+   "구분": "전문지"
+  },
+  {
+   "n": 14,
+   "id": "A-a8aa2852b1a2",
+   "매체": "AI타임스",
+   "제목": "엔비디아, SEC 회계 조사에 주가 14% 폭락…시총 4위 추락",
+   "날짜": "2026-11-21",
+   "링크": "https://www.aitimes.com/news/articleView.html?idxno=217645",
+   "구분": "전문지"
+  },
+  {
+   "n": 15,
+   "id": "A-5d3a453ab03d",
+   "매체": "TechCrunch AI",
+   "제목": "Nvidia clarifies when it will — and won’t — keep financing neoclouds",
+   "날짜": "2026-11-18",
+   "링크": "https://techcrunch.com/2026/11/18/nvidia-clarifies-when-it-will-and-wont-keep-financing-neoclouds/",
+   "구분": "전문지"
+  },
+  {
+   "n": 16,
+   "id": "A-fde8f3be8478",
+   "매체": "Barron's",
+   "제목": "CoreWeave and IREN Fall as Nvidia Signals Caution on Financing",
+   "날짜": "2026-11-19",
+   "링크": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNNnY2UEtlY1hWdWotVHBfN2VfMHdKU2dZcHdLSWlvcTdnQU5JVVpDcVlNNXpuZmdIOEt5TkhEVnVmYjVCZ0E5VFlkVTJTR0E4OHM3cVpXRE1oNS1sZ2N4N2FWYjJiSGFYSnJhSi1SeURvMllQaU9kS3F3QzFQdFhYLWNVMFE?oc=5",
+   "구분": "기업 IR"
+  },
+  {
+   "n": 17,
+   "id": "A-ce416493dbd7",
+   "매체": "The Verge AI",
+   "제목": "Nvidia isn’t selling any more AI chips to China",
+   "날짜": "2026-11-18",
+   "링크": "https://www.theverge.com/tech/1036445/nvidia-h200-ai-chips-china-stop-selling",
+   "구분": "전문지"
+  },
+  {
+   "n": 18,
+   "id": "A-ac4e692a5c06",
+   "매체": "The Decoder",
+   "제목": "Nvidia bets at least $500 million on Inception's diffusion models to strengthen its open-source Nemotron lineup",
+   "날짜": "2026-11-20",
+   "링크": "https://the-decoder.com/nvidia-bets-at-least-500-million-on-inceptions-diffusion-models-to-strengthen-its-open-source-nemotron-lineup/",
+   "구분": "전문지"
+  },
+  {
+   "n": 19,
+   "id": "A-3197bf91500d",
+   "매체": "NVIDIA 블로그",
+   "제목": "NVIDIA Sweeps MLPerf Training and Endpoints as Vera Rubin Debuts With Leading Performance",
+   "날짜": "2026-11-17",
+   "링크": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/",
+   "구분": "기업 발표"
+  },
+  {
+   "n": 20,
+   "id": "A-39259ab178b6",
+   "매체": "AI타임스",
+   "제목": "오픈AI, AI로 AMD GPU 설계 개선…“5개월 만에 1년치 진전”",
+   "날짜": "2026-11-20",
+   "링크": "https://www.aitimes.com/news/articleView.html?idxno=217562",
+   "구분": "전문지"
+  },
+  {
+   "n": 21,
+   "id": "A-a856f7458ff9",
+   "매체": "AI타임스",
+   "제목": "내년 전세계 AI인프라 지출 3200조...'멤플레이션'이 지출증가 가속",
+   "날짜": "2026-11-20",
+   "링크": "https://www.aitimes.com/news/articleView.html?idxno=217566",
+   "구분": "전문지"
+  },
+  {
+   "n": 22,
+   "id": "A-3a0cb236fd32",
+   "매체": "The Verge AI",
+   "제목": "Trump threatens ‘tremendous tax’ for moving AI data centers outside the US",
+   "날짜": "2026-11-21",
+   "링크": "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax",
+   "구분": "전문지"
+  },
+  {
+   "n": 23,
+   "id": "A-2e5883aa717c",
+   "매체": "Data Center Dynamics",
+   "제목": "Virginia’s Loudoun County officially adopts 12-month moratorium on data center development",
+   "날짜": "2026-11-18",
+   "링크": "https://www.datacenterdynamics.com/en/news/virginias-loudoun-county-officially-adopts-12-month-moratorium-on-data-center-development/",
+   "구분": "전문지"
+  },
+  {
+   "n": 24,
+   "id": "A-bd88abe065fe",
+   "매체": "Data Center Dynamics",
+   "제목": "US Senate passes bill requiring data centers to pay more for grid infrastructure",
+   "날짜": "2026-11-21",
+   "링크": "https://www.datacenterdynamics.com/en/news/us-senate-passes-bill-requiring-data-centers-to-pay-more-for-grid-infrastructure/",
+   "구분": "전문지"
+  },
+  {
+   "n": 25,
+   "id": "A-0504bac6c1b7",
+   "매체": "AI타임스",
+   "제목": "정부 인정 AIDC 기준 나왔다...AIDC 특별법 하위법령서 구체화",
+   "날짜": "2026-11-20",
+   "링크": "https://www.aitimes.com/news/articleView.html?idxno=217609",
+   "구분": "전문지"
+  },
+  {
+   "n": 26,
+   "id": "A-73dcf1c12412",
+   "매체": "AI타임스",
+   "제목": "비수도권 AI 데이터센터, 50MW 이하 전력계통영향평가 면제 추진",
+   "날짜": "2026-11-21",
+   "링크": "https://www.aitimes.com/news/articleView.html?idxno=217616",
+   "구분": "전문지"
+  },
+  {
+   "n": 27,
+   "id": "A-99094ab3c248",
+   "매체": "AI타임스",
+   "제목": "광주 AI데이터센터 GPU 이용료 25% 낮아져…지역 할인 기준도 변경",
+   "날짜": "2026-11-18",
+   "링크": "https://www.aitimes.com/news/articleView.html?idxno=217474",
+   "구분": "전문지"
+  },
+  {
+   "n": 28,
+   "id": "A-06e3185415af",
+   "매체": "The Decoder",
+   "제목": "Google's Gemini can now run Mac apps and finish desktop chores in the background while you keep working",
+   "날짜": "2026-11-21",
+   "링크": "https://the-decoder.com/googles-gemini-can-now-run-mac-apps-and-finish-desktop-chores-in-the-background-while-you-keep-working/",
+   "구분": "전문지"
+  },
+  {
+   "n": 29,
+   "id": "A-9bf1a4f85ff5",
+   "매체": "AI타임스",
+   "제목": "MS, '코파일럿'에 상시 업무 수행 AI 도입…기업용 에이전트 관리도 강화",
+   "날짜": "2026-11-18",
+   "링크": "https://www.aitimes.com/news/articleView.html?idxno=217532",
+   "구분": "전문지"
+  },
+  {
+   "n": 30,
+   "id": "A-5289d8de412b",
+   "매체": "The Decoder",
+   "제목": "Google warns that fully automated cyberattacks have arrived and will get worse fast",
+   "날짜": "2026-11-17",
+   "링크": "https://the-decoder.com/google-warns-that-fully-automated-cyberattacks-have-arrived-and-will-get-worse-fast/",
+   "구분": "전문지"
+  },
+  {
+   "n": 31,
+   "id": "A-cd339e3d4080",
+   "매체": "The Decoder",
+   "제목": "California's attorney general sues OpenAI over rogue AI models that attacked Hugging Face",
+   "날짜": "2026-11-17",
+   "링크": "https://the-decoder.com/californias-attorney-general-sues-openai-over-rogue-ai-models-that-attacked-hugging-face/",
+   "구분": "전문지"
+  },
+  {
+   "n": 32,
+   "id": "A-d9a047affb02",
+   "매체": "TechCrunch AI",
+   "제목": "Model ML raises $250M to automate investment banking grunt work",
+   "날짜": "2026-11-18",
+   "링크": "https://techcrunch.com/2026/11/17/model-ml-raises-250m-to-automate-investment-banking-grunt-work/",
+   "구분": "전문지"
+  },
+  {
+   "n": 33,
+   "id": "A-c3c0e5571157",
+   "매체": "The Decoder",
+   "제목": "Isomorphic Labs raises $5 billion in its second mega-round within six months",
+   "날짜": "2026-11-17",
+   "링크": "https://the-decoder.com/isomorphic-labs-raises-5-billion-in-its-second-mega-round-within-six-months/",
+   "구분": "전문지"
+  },
+  {
+   "n": 34,
+   "id": "A-034f4ad18bf5",
+   "매체": "The Decoder",
+   "제목": "AI industry growth remains strong, but the pace is slowing",
+   "날짜": "2026-11-20",
+   "링크": "https://the-decoder.com/ai-industry-growth-remains-strong-but-the-pace-is-slowing/",
+   "구분": "전문지"
+  },
+  {
+   "n": 35,
+   "id": "A-8e85b5daa393",
+   "매체": "AI타임스",
+   "제목": "AI 작업 능력, 6개월 만에 16시간→40시간…\"판단력 여전히 한계\"",
+   "날짜": "2026-11-22",
+   "링크": "https://www.aitimes.com/news/articleView.html?idxno=217649",
+   "구분": "전문지"
+  },
+  {
+   "n": 36,
+   "id": "A-fc735a03a45a",
+   "매체": "AI타임스",
+   "제목": "사람처럼 손 쓰는 로봇 개발에 6600억 투자…제네시스 AI 기업가치 4.6조",
+   "날짜": "2026-11-19",
+   "링크": "https://www.aitimes.com/news/articleView.html?idxno=217534",
+   "구분": "전문지"
+  },
+  {
+   "n": 37,
+   "id": "A-86cba08adfea",
+   "매체": "digitimes",
+   "제목": "Boston Dynamics to test Atlas humanoid in GlobalFoundries chip plants from early 2027",
+   "날짜": "2026-11-19",
+   "링크": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQZ0JfYnZCRU41N2xzQVBXUkNtZXJNclhJSVRId0d1V1l2VXVNV2wwV3AtaDNaVzdHa01sdi1kNThJVmRJd016VkpkaEtHMWNmMDdIWmxJQjIxWUV2X0FLV3ZvbkdyUWJpdmR1WlI0dUZSVjVsVjgyaFhNSG12M0RvNHNqd1JCMTdoUTBTaG4tU2xDc2cyVXBDM09PbUFqcHl3ajRqZER2aEhYZ3M?oc=5",
+   "구분": "피지컬 AI"
+  },
+  {
+   "n": 38,
+   "id": "A-f4c2415030c0",
+   "매체": "전자신문",
+   "제목": "테슬라 FSD 국내 도입 제동 걸렸다…“안전성 판단 근거 부족”",
+   "날짜": "2026-11-20",
+   "링크": "https://www.etnews.com/20261120000297",
+   "구분": "전문지"
+  },
+  {
+   "n": 39,
+   "id": "A-acd0c06d8e25",
+   "매체": "AI타임스",
+   "제목": "광주 자율주행차 30일 첫 운행…연말까지 약 120대 도로 투입 전망",
+   "날짜": "2026-11-18",
+   "링크": "https://www.aitimes.com/news/articleView.html?idxno=217507",
+   "구분": "전문지"
+  },
+  {
+   "n": 40,
+   "id": "A-515e1606e345",
+   "매체": "AI타임스",
+   "제목": "업스테이지·코히어 '소버린 AI 동맹'…한국 넘어 아태 기업 시장 조준",
+   "날짜": "2026-11-18",
+   "링크": "https://www.aitimes.com/news/articleView.html?idxno=217489",
+   "구분": "전문지"
+  },
+  {
+   "n": 41,
+   "id": "A-22bc07cf490f",
+   "매체": "AI타임스",
+   "제목": "래블업, 상장 후 첫 성적표…3분기 누적 매출 48% ↑",
+   "날짜": "2026-11-19",
+   "링크": "https://www.aitimes.com/news/articleView.html?idxno=217558",
+   "구분": "전문지"
+  },
+  {
+   "n": 42,
+   "id": "A-bbfc74f21842",
+   "매체": "AI타임스",
+   "제목": "'GPT-6.2 아스트라'·'제미나이 4 네온', 수능 만점…국산 1위는 LG",
+   "날짜": "2026-11-20",
+   "링크": "https://www.aitimes.com/news/articleView.html?idxno=217604",
+   "구분": "전문지"
+  },
+  {
+   "n": 43,
+   "id": "A-61f89105654f",
+   "매체": "AI타임스",
+   "제목": "내시경에 AI 접목한 메디인테크, 338억원 시리즈C 투자 유치",
+   "날짜": "2026-11-18",
+   "링크": "https://www.aitimes.com/news/articleView.html?idxno=217498",
+   "구분": "전문지"
+  },
+  {
+   "n": 44,
+   "id": "A-d18b8290d443",
+   "매체": "AI타임스",
+   "제목": "문샷 AI, 미국 수출 규제에 2000억 규모 엔비디아 칩 임대 계약 취소",
+   "날짜": "2026-11-20",
+   "링크": "https://www.aitimes.com/news/articleView.html?idxno=217613",
+   "구분": "전문지"
+  },
+  {
+   "n": 45,
+   "id": "A-20d5db47c525",
+   "매체": "전자신문",
+   "제목": "'젠슨 황' 없는 엔비디아, 분기 매출 첫 1000억달러 돌파…“사업 차질 없다”",
+   "날짜": "2026-11-18",
+   "링크": "https://www.etnews.com/20261118000277",
+   "구분": "전문지"
+  },
+  {
+   "n": 47,
+   "id": "A-5418ec877b3c",
+   "매체": "AI타임스",
+   "제목": "SKT, 효성중공업과 AI 데이터센터 전력 인프라 맞손",
+   "날짜": "2026-11-16",
+   "링크": "https://news.google.com/rss/articles/CBMiakFVX3lxTE50N3pCZUJWNmhtMkJ2LVV3VUR0UFVwczdSaEF0MTFFUFE0ZEpPQjNlT1k4WldrV05Sb3BvcDV1WHZKajlKNkNoRzVIR0tZQnBPYVQyRGNVdmlmTi1RLVNQWmVPamFjcE9VTmc?oc=5",
+   "구분": "인프라"
+  },
+  {
+   "n": 48,
+   "id": "A-191dc1b19496",
+   "매체": "연합뉴스",
+   "제목": "LGU+, 파주 AI 데이터센터에 7천890억원 추가 투자",
+   "날짜": "2026-11-19",
+   "링크": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9OY3lJTWhVUkFSUjdMYk5zbDBSdWNMS3phZk9zVFcyQklEdUppZk5tT25xbHlPRmRXV21OQXc5U0RoUmVjNnBuVFhhVDZhRjJxakZNMm5vdk9JMTTSAWBBVV95cUxOU3M0ZnRjQnRQRVBxTzViYVQxWHQzdUdwWjNuYmhzdko3NEhoUkdqZnNYQ0JaSHlyaGc1S1JYOFczMEI1RVBSSDZadDUyNnBsc2xaZ2lEcFB4elpvMS1UR2s?oc=5",
+   "구분": "인프라"
+  },
+  {
+   "n": 49,
+   "id": "A-608c0176037f",
+   "매체": "연합뉴스",
+   "제목": "올해 1∼3분기 벤처투자 12조6천억원…\"역대 최대 실적 달성\"",
+   "날짜": "2026-11-17",
+   "링크": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBPcWpaSjljX09CdzN4R3BIY3R6dUcwNDVhVVhWcFAtdU5NcVB0Z3ZXUnBueTN6OGFrSHRqWnFKZjE1VEVOb0NEZXg0UTExUVVTYUxhSUtLNU9OQjBmcC1aMdIBYEFVX3lxTFBPcWpaSjljX09CdzN4R3BIY3R6dUcwNDVhVVhWcFAtdU5NcVB0Z3ZXUnBueTN6OGFrSHRqWnFKZjE1VEVOb0NEZXg0UTExUVVTYUxhSUtLNU9OQjBmcC1aMQ?oc=5",
+   "구분": "투자·회수"
+  },
+  {
+   "n": 50,
+   "id": "A-5acf8229cfaf",
+   "매체": "AI타임스",
+   "제목": "MS 오피스서 '코파일럿' 압도적 우위…'클로드' 사용자는 10분의 1",
+   "날짜": "2026-11-18",
+   "링크": "https://www.aitimes.com/news/articleView.html?idxno=217491",
+   "구분": "전문지"
+  },
+  {
+   "n": 51,
+   "id": "c1a1cd50b63a",
+   "매체": "소프트웨어정책연구소(SPRi)",
+   "제목": "AI시대, 소프트웨어 산업의 새로운 질서:생산‧이용‧공급 방식의 변화와 시사점",
+   "날짜": "2026-11-18",
+   "링크": "https://spri.kr/posts/view/24041?code=issue_reports",
+   "구분": "연구기관·기업"
+  },
+  {
+   "n": 52,
+   "id": "A-407fbec05ee2",
+   "매체": "Epoch AI",
+   "제목": "Agentic inference capacity grew 4.6× in a year, versus 2.6× for compute capacity",
+   "날짜": "2026-11-19",
+   "링크": "https://news.google.com/rss/articles/CBMickFVX3lxTFBDVS1CN1BqYVVLR3N0MmVKNjZMNzRDZXVSeHFQcGsxTHJFRkFkcEZRTmx1cVJXSXFRUUVYNThtUGlGc1hvZkV5QU9ocmFoMUVKMk1ISXU1WXlUdlRjd05hR3RpSmJhM2RoM3dqZW5SVGlQQQ?oc=5",
+   "구분": "연구·지표"
+  },
+  {
+   "n": 53,
+   "제목": "Anthropic prices its IPO at $83 per share, above its $70 to $78 range",
+   "매체": "StockAnalysis",
+   "날짜": "2026-11-19",
+   "링크": "https://stockanalysis.com/news/anthropic-prices-ipo-83-per-share/",
+   "구분": "웹 검색"
+  }
+ ],
+ "메모": "WebFetch 권한 시간 초과로 원문을 열지 못해, 피드 본문 발췌와 WebSearch 결과 제목으로 확인된 사실만 썼다.",
+ "generated_at": "2026-11-22T23:17:39.332Z"
+}
