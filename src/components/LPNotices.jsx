@@ -69,7 +69,7 @@ export default function LPNotices({ lp }) {
             </div>
             <input className="pl-search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="🔎 제목 검색..." />
           </div>
-          <div className="scroll-box" style={{ '--scroll-h': '490px' }}>
+          <div className="scroll-box" style={{ '--scroll-h': '620px' }}>
             <table className="tbl">
               <thead><tr><th style={{ width: 60 }}>번호</th><th style={{ width: 90 }}>구분</th><th>제목</th><th style={{ width: 108 }}>날짜</th></tr></thead>
               <tbody>
@@ -93,7 +93,7 @@ export default function LPNotices({ lp }) {
             <span className="muted" style={{ fontSize: 12.5 }}>기관·공고명으로 검색</span>
             <input className="pl-search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="🔎 LP·공고명 검색..." />
           </div>
-          <div className="scroll-box" style={{ '--scroll-h': '490px' }}>
+          <div className="scroll-box" style={{ '--scroll-h': '620px' }}>
             <table className="tbl">
               <thead><tr><th style={{ width: 56 }}>번호</th><th>LP명</th><th>공고명</th><th style={{ width: 96 }}>공고일</th><th style={{ width: 96 }}>신청기한</th><th style={{ width: 100 }}>선정(예정)</th><th style={{ width: 100 }}>결성기한</th></tr></thead>
               <tbody>
@@ -103,14 +103,16 @@ export default function LPNotices({ lp }) {
                     <tr key={n.no}>
                       <td className="muted">{n.no}</td>
                       <td>{n.LP명}</td>
-                      <td>
-                        <a href={n.링크} target="_blank" rel="noreferrer" className="lp-link">{n.공고명}</a>
-                        {n.신청기한 && <span className={'badge ' + (open ? 'lp-open' : 'lp-closed')} style={{ marginLeft: 8 }}>{open ? '접수중' : '마감'}</span>}
+                      <td className="lp-title-cell">
+                        <div className="lp-title-wrap">
+                          <a href={n.링크} target="_blank" rel="noreferrer" className="lp-link lp-ellipsis" title={n.공고명}>{n.공고명}</a>
+                          {n.신청기한 && <span className={'badge ' + (open ? 'lp-open' : 'lp-closed')}>{open ? '접수중' : '마감'}</span>}
+                        </div>
                       </td>
-                      <td className="muted">{n.공고일}</td>
-                      <td className="muted">{n.신청기한 || '—'}</td>
-                      <td className="muted">{n.선정예정일 || '—'}</td>
-                      <td className="muted">{n.결성기한 || '—'}</td>
+                      <td className="muted lp-date">{n.공고일}</td>
+                      <td className="muted lp-date">{n.신청기한 || '—'}</td>
+                      <td className="muted lp-date">{n.선정예정일 || '—'}</td>
+                      <td className="muted lp-date">{n.결성기한 || '—'}</td>
                     </tr>
                   )
                 })}
