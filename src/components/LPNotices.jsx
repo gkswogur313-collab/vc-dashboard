@@ -69,7 +69,7 @@ export default function LPNotices({ lp }) {
             </div>
             <input className="pl-search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="🔎 제목 검색..." />
           </div>
-          <div className="scroll-box" style={{ '--scroll-h': 'max(280px, calc(50vh - 120px))' }}>
+          <div className="scroll-box" style={{ '--scroll-h': '490px' }}>
             <table className="tbl">
               <thead><tr><th style={{ width: 60 }}>번호</th><th style={{ width: 90 }}>구분</th><th>제목</th><th style={{ width: 108 }}>날짜</th></tr></thead>
               <tbody>
@@ -93,7 +93,7 @@ export default function LPNotices({ lp }) {
             <span className="muted" style={{ fontSize: 12.5 }}>기관·공고명으로 검색</span>
             <input className="pl-search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="🔎 LP·공고명 검색..." />
           </div>
-          <div className="scroll-box" style={{ '--scroll-h': 'max(280px, calc(50vh - 120px))' }}>
+          <div className="scroll-box" style={{ '--scroll-h': '490px' }}>
             <table className="tbl">
               <thead><tr><th style={{ width: 56 }}>번호</th><th>LP명</th><th>공고명</th><th style={{ width: 96 }}>공고일</th><th style={{ width: 96 }}>신청기한</th><th style={{ width: 100 }}>선정(예정)</th><th style={{ width: 100 }}>결성기한</th></tr></thead>
               <tbody>
