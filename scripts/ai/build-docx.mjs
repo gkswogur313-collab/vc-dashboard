@@ -20,17 +20,8 @@ export async function renderAiWeekly(b, opt = {}) {
   const pre = opt.prefix || ''
   const refs = new Map((b.refs || []).map((r) => [r.n, r]))
   const t = (text, o = {}) => new TextRun({ text, font: FONT, ...o })
-  const runs = (text, o = {}) => {
-    const out = []; let last = 0; text = String(text || '')
-    for (const m of text.matchAll(/\s*\[(\d+)\]/g)) {
-      if (m.index > last) out.push(t(text.slice(last, m.index), o))
-      const r = refs.get(+m[1]); const sup = t(`[${pre}${m[1]}]`, { superScript: true, color: ACCENT })
-      out.push(r?.링크 ? new ExternalHyperlink({ link: r.링크, children: [sup] }) : sup)
-      last = m.index + m[0].length
-    }
-    if (last < text.length) out.push(t(text.slice(last), o))
-    return out
-  }
+  // 워드에는 출처를 넣지 않는다(종이 절약, 사용자 지정 2026-11) — [n] 번호를 지우고 출처 목록도 뺀다. 화면에는 그대로 나온다.
+  const runs = (text, o = {}) => [t(String(text || '').replace(/\s*\[(?:\d+|[A-Z]\d+)\]/g, ''), o)]
   const P = (x, o = {}) => new Paragraph({ children: Array.isArray(x) ? x : runs(x, o.run), spacing: { after: 110, line: 300 }, ...o.para })
   const B = (x) => new Paragraph({ children: Array.isArray(x) ? x : runs(x), numbering: { reference: 'dots', level: 0 }, spacing: { after: 60, line: 290 } })
   const H1 = opt.h1 || ((s) => new Paragraph({ heading: HeadingLevel.HEADING_1, children: [t(s)] }))
@@ -88,9 +79,7 @@ export async function renderAiWeekly(b, opt = {}) {
     if (ch) c.push(new Paragraph({ alignment: AlignmentType.CENTER, children: [new ImageRun({ type: 'png', data: ch.png, transformation: { width: 600, height: Math.round(600 * ch.height / ch.width) } })] }))
     else c.push(P(b.키워드.map((k) => `${k.tag} ${k.count}/${k.prev}`).join(' · ')))
   }
-  c.push(L(opt.top === false ? 'AI 브리핑 출처' : '출처'))
-  for (const r of b.refs) c.push(new Paragraph({ spacing: { after: 40 }, children: [t(`[${pre}${r.n}] ${r.매체 || ''} · ${r.날짜 || '-'} · `, { size: 16 }), new ExternalHyperlink({ link: r.링크, children: [t(r.제목, { style: 'Hyperlink', size: 16 })] })] }))
-  if (b.메모) c.push(P([t(b.메모, { size: 16, color: DIM })]))
+  if (b.메모) c.push(P(runs(b.메모, { size: 16, color: DIM })))
   return c
 }
 

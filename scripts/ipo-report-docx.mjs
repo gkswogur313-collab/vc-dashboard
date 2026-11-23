@@ -42,18 +42,8 @@ function table(rows, widths, { firstHead = true, rightFrom = 99 } = {}) {
 const kv = (pairs) => table(pairs.filter(([, v]) => v), [2400, 6600], { firstHead: false })
 const range = (a, b) => (a ? (b && b !== a ? `${a} ~ ${b}` : a) : '')
 
-// "문장 [1]" → 텍스트 + 위첨자 링크
-function cited(text, refs) {
-  const out = []; let last = 0
-  for (const m of String(text).matchAll(/\s*\[(\d+)\]/g)) {
-    if (m.index > last) out.push(t(text.slice(last, m.index)))
-    const r = refs.get(+m[1]); const sup = t(`[${m[1]}]`, { superScript: true, color: ACCENT })
-    out.push(r?.링크 ? new ExternalHyperlink({ link: r.링크, children: [sup] }) : sup)
-    last = m.index + m[0].length
-  }
-  if (last < text.length) out.push(t(text.slice(last)))
-  return out
-}
+// 워드에는 출처를 넣지 않는다(종이 절약, 사용자 지정 2026-11) — [n] 번호·출처 목록·원문 링크를 뺀다. 화면에는 그대로 나온다.
+function cited(text) { return [t(String(text).replace(/\s*\[(?:\d+|[A-Z]\d+)\]/g, ''))] }
 const STAGE_NAME = { 청구: '심사청구', 승인: '심사승인', 상장: '상장' }
 const ORDER = ['상장', '승인', '청구'] // 최신 단계 먼저
 
@@ -78,14 +68,6 @@ function stageBlock(st, v) {
       c.push(table([['구분', ...f.머리.slice(1)], ...f.행].map((r) => Array.from({ length: n }, (_, i) => r[i] ?? '')), [first, ...Array(n - 1).fill(rest)], { rightFrom: 1 }))
       c.push(para([t(`단위: ${f.단위} · ${f.기준} 기준 · 증권신고서 원문 표 그대로`, { color: DIM, size: 17 })], { spacing: { before: 60 } }))
     } else c.push(para([t('요약재무정보 표를 찾지 못했습니다.', { color: DIM })]))
-    if (v.증권신고서) c.push(para([t('DART 원문: ', { size: 18 }), link(`${v.증권신고서.보고서명} (접수 ${v.증권신고서.접수일})`, v.증권신고서.링크, { size: 18 })]))
-  }
-  if (s?.refs?.length) {
-    c.push(h2('출처'))
-    for (const r of s.refs) c.push(new Paragraph({ spacing: { after: 40 }, children: [t(`[${r.n}] `, { size: 17 }), link(r.제목, r.링크, { size: 17 }), t(`  ${r.매체 || ''} ${r.날짜 || ''}`, { color: DIM, size: 16 })] }))
-  } else if (v.기사?.length) {
-    c.push(h2('수집된 기사'))
-    for (const a of v.기사) c.push(new Paragraph({ numbering: { reference: 'dots', level: 0 }, spacing: { after: 40 }, children: [link(a.제목, a.링크, { size: 18 }), t(`  ${a.매체 || ''} ${a.날짜 || ''}`, { color: DIM, size: 16 })] }))
   }
   if (v.메모?.length) c.push(para([t('참고: ' + v.메모.join(' / '), { color: DIM, size: 17 })]))
   return c

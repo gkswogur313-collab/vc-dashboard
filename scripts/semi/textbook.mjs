@@ -81,17 +81,8 @@ await writeFile(FILE, JSON.stringify(tb, null, 1))
 const FONT = '맑은 고딕'; const ACCENT = '1F3864'; const DIM = '667085'
 const R = new Map(tb.refs.map((r) => [r.n, r]))
 const t = (text, o = {}) => new TextRun({ text, font: FONT, ...o })
-function runs(text, o = {}) {
-  const out = []; let last = 0
-  for (const m of text.matchAll(/\s*\[(\d+)\]/g)) {
-    if (m.index > last) out.push(t(text.slice(last, m.index), o))
-    const r = R.get(+m[1]); const sup = t(`[${m[1]}]`, { superScript: true, color: ACCENT })
-    out.push(r ? new ExternalHyperlink({ link: r.링크, children: [sup] }) : sup)
-    last = m.index + m[0].length
-  }
-  if (last < text.length) out.push(t(text.slice(last), o))
-  return out
-}
+// 워드에는 출처를 넣지 않는다(종이 절약, 사용자 지정 2026-11) — [n] 번호와 출처 목록을 뺀다. 화면에는 그대로 나온다.
+function runs(text, o = {}) { return [t(String(text).replace(/\s*\[(\d+)\]/g, ''), o)] }
 const P = (text, o = {}) => new Paragraph({ children: runs(text, o.run), spacing: { after: 120, line: 320 }, ...o.para })
 const B = (text) => new Paragraph({ children: runs(text), numbering: { reference: 'dots', level: 0 }, spacing: { after: 60, line: 300 } })
 const H = (lvl, text, o = {}) => new Paragraph({ heading: lvl, children: [t(text)], ...o })
@@ -139,7 +130,8 @@ for (const ch of tb.장) {
       const im = await diagramPng(s.도식)
       if (im) { c.push(new Paragraph({ alignment: AlignmentType.CENTER, keepLines: true, spacing: { before: 80, after: 40 }, children: [new ImageRun({ type: 'png', data: im.png, transformation: { width: 600, height: Math.round(600 * im.height / im.width) } })] })); c.push(new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 140 }, children: [t(`그림 · ${s.도식.제목 || s.제목}`, { size: 16, color: DIM })] })) }
     }
-    if (s.표) { c.push(table(s.표.머리, s.표.행)); if (s.표.주) c.push(new Paragraph({ children: runs(s.표.주, { size: 16, color: DIM }), spacing: { before: 40, after: 120 } })); else c.push(new Paragraph({ children: [] })) }
+    // 표의 '출처' 열은 워드에서 뺀다(화면에는 그대로)
+    if (s.표) { const keep = s.표.머리.map((h, i) => (h === '출처' ? -1 : i)).filter((i) => i >= 0); c.push(table(keep.map((i) => s.표.머리[i]), s.표.행.map((r) => keep.map((i) => r[i])))); if (s.표.주) c.push(new Paragraph({ children: runs(s.표.주, { size: 16, color: DIM }), spacing: { before: 40, after: 120 } })); else c.push(new Paragraph({ children: [] })) }
     if (s.관전포인트?.length) { c.push(label('관전 포인트')); for (const x of s.관전포인트) c.push(B(x)) }
   }
   if (ch.핵심정리?.length) { c.push(label('핵심 정리')); for (const x of ch.핵심정리) c.push(B(x)) }
@@ -170,8 +162,6 @@ c.push(H(HeadingLevel.HEADING_1, '용어 색인'))
 c.push(new Paragraph({ children: [new PageBreak()] }))
 c.push(H(HeadingLevel.HEADING_1, '개정 이력'))
 c.push(table(['날짜', '버전', '내용'], tb.개정이력.map((x) => [x.날짜, x.버전 || '', x.내용]), [1500, 900, 6900]))
-c.push(H(HeadingLevel.HEADING_1, '출처'))
-for (const r of tb.refs) c.push(new Paragraph({ spacing: { after: 50 }, children: [t(`[${r.n}] ${r.매체 || ''} · ${r.날짜 || '-'} · `, { size: 17 }), new ExternalHyperlink({ link: r.링크, children: [t(r.제목, { style: 'Hyperlink', size: 17 })] })] }))
 
 const doc = new Document({
   creator: 'jh-vc-dashboard', title: `${tb.제목} v${tb.버전}`, features: { updateFields: true },

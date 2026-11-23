@@ -1,6 +1,6 @@
 // 주간 브리핑 JSON → 워드(.docx)
 // 사용: node scripts/brief/build-docx.mjs public/data/briefs/<id>.json   → public/briefs/<id>.docx
-// 본문의 [n]은 위첨자 번호로, 문서 끝 '출처' 목록에 기관·제목·발간일·원문 링크를 단다.
+// 워드에는 출처([n] 번호·출처 목록)를 넣지 않는다. 화면(대시보드)에는 그대로 표기한다.
 import { readFile, writeFile, mkdir } from 'node:fs/promises'
 import {
   Document, Packer, Paragraph, TextRun, HeadingLevel, ExternalHyperlink, AlignmentType,
@@ -16,19 +16,11 @@ const FONT = '맑은 고딕'
 const ACCENT = '1F3864'
 const DIM = '667085'
 
-// "문장 [1][2]" → TextRun 배열(번호는 위첨자 + 출처 링크)
+// 워드에는 출처를 넣지 않는다(종이 절약, 사용자 지정 2026-11). 화면에는 [n]과 출처가 그대로 나온다.
+// "문장 [1][2]" → 출처 번호를 지운 TextRun
+const stripRefs = (text) => String(text).replace(/\s*\[(?:\d+|[A-Z]\d+)\]/g, '')
 function runs(text, opt = {}) {
-  const out = []
-  let last = 0
-  for (const m of text.matchAll(/\s*\[(\d+)\]/g)) {
-    if (m.index > last) out.push(new TextRun({ text: text.slice(last, m.index), font: FONT, ...opt }))
-    const r = refs.get(+m[1])
-    const sup = new TextRun({ text: `[${m[1]}]`, superScript: true, color: ACCENT, font: FONT })
-    out.push(r ? new ExternalHyperlink({ link: r.링크, children: [sup] }) : sup)
-    last = m.index + m[0].length
-  }
-  if (last < text.length) out.push(new TextRun({ text: text.slice(last), font: FONT, ...opt }))
-  return out
+  return [new TextRun({ text: stripRefs(text), font: FONT, ...opt })]
 }
 const p = (text, opt = {}) => new Paragraph({ children: runs(text, opt.run), spacing: { after: 120, line: 300 }, ...opt.para })
 const bullet = (text, level = 0) => new Paragraph({ children: runs(text), numbering: { reference: 'dots', level }, spacing: { after: 60, line: 290 } })
@@ -51,7 +43,7 @@ b.기술스터디.forEach((s, i) => {
   if (s.왜지금) { children.push(label('왜 지금')); children.push(p(s.왜지금)) }
   if (s.핵심포인트?.length) { children.push(label('핵심 포인트')); for (const t of s.핵심포인트) children.push(bullet(t)) }
   if (s.밸류체인) { children.push(label('밸류체인·주요 플레이어')); children.push(p(s.밸류체인)) }
-  if (s.더읽을거리?.length) { children.push(label('더 읽을 리포트')); for (const n of s.더읽을거리) { const r = refs.get(n); if (r) children.push(bullet(`${r.기관} — ${r.제목} [${n}]`)) } }
+  if (s.더읽을거리?.length) { children.push(label('더 읽을 리포트')); for (const n of s.더읽을거리) { const r = refs.get(n); if (r) children.push(bullet(`${r.기관} — ${r.제목}`)) } }
 })
 
 children.push(h1('업계 동향'))
@@ -93,16 +85,7 @@ if (kwChart) {
   }))
 }
 
-children.push(h1('출처'))
-for (const r of b.refs) {
-  children.push(new Paragraph({
-    spacing: { after: 60 },
-    children: [new TextRun({ text: `[${r.n}] ${r.기관} · ${r.날짜 || '-'} · `, font: FONT, size: 18 }),
-      new ExternalHyperlink({ link: r.링크, children: [new TextRun({ text: r.제목, style: 'Hyperlink', font: FONT, size: 18 })] }),
-      ...(r.원문확인 === false ? [new TextRun({ text: ' (원문 확인 못함)', color: DIM, font: FONT, size: 18 })] : [])],
-  }))
-}
-if (b.메모) { children.push(new Paragraph({ spacing: { before: 200 }, children: [new TextRun({ text: b.메모, color: DIM, size: 18, font: FONT })] })) }
+if (b.메모) { children.push(new Paragraph({ spacing: { before: 200 }, children: [new TextRun({ text: stripRefs(b.메모), color: DIM, size: 18, font: FONT })] })) }
 
 const doc = new Document({
   creator: 'jh-vc-dashboard', title: `산업 트래킹 주간 브리핑 ${b.기간.from}`,

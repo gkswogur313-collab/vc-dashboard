@@ -15,17 +15,9 @@ const refs = new Map((w.refs || []).map((r) => [r.n, r]))
 const FONT = '맑은 고딕'; const ACCENT = '1F3864'; const DIM = '667085'
 const t = (text, o = {}) => new TextRun({ text: String(text ?? ''), font: FONT, ...o })
 const link = (text, url, o = {}) => new ExternalHyperlink({ link: url, children: [t(text, { style: 'Hyperlink', ...o })] })
-function cited(text, o = {}) {
-  const out = []; let last = 0; text = String(text || '')
-  for (const m of text.matchAll(/\s*\[(\d+)\]/g)) {
-    if (m.index > last) out.push(t(text.slice(last, m.index), o))
-    const r = refs.get(+m[1]); const sup = t(`[${m[1]}]`, { superScript: true, color: ACCENT })
-    out.push(r?.링크 ? new ExternalHyperlink({ link: r.링크, children: [sup] }) : sup)
-    last = m.index + m[0].length
-  }
-  if (last < text.length) out.push(t(text.slice(last), o))
-  return out
-}
+// 워드에는 출처를 넣지 않는다(종이 절약, 사용자 지정 2026-11) — [n] 번호를 지우고 출처 목록도 뺀다. 화면에는 그대로 나온다.
+const stripRefs = (text) => String(text || '').replace(/\s*\[(?:\d+|[A-Z]\d+)\]/g, '')
+function cited(text, o = {}) { return [t(stripRefs(text), o)] }
 const P = (children, o = {}) => new Paragraph({ children, spacing: { after: 100, line: 300 }, ...o })
 const B = (children, level = 0) => new Paragraph({ children, numbering: { reference: 'dots', level }, spacing: { after: 60, line: 290 } })
 const H1 = (s) => new Paragraph({ heading: HeadingLevel.HEADING_1, children: [t(s)] })
@@ -78,17 +70,7 @@ let br = null
 try { br = JSON.parse(await readFile(`public/data/briefs/${w.id}.json`, 'utf-8')) } catch { /* 없음 */ }
 if (br) {
   const bref = new Map((br.refs || []).map((r) => [r.n, r]))
-  const bc = (text, o = {}) => {
-    const out = []; let last = 0; text = String(text || '')
-    for (const m of text.matchAll(/\s*\[(\d+)\]/g)) {
-      if (m.index > last) out.push(t(text.slice(last, m.index), o))
-      const r = bref.get(+m[1]); const sup = t(`[B${m[1]}]`, { superScript: true, color: ACCENT })
-      out.push(r?.링크 ? new ExternalHyperlink({ link: r.링크, children: [sup] }) : sup)
-      last = m.index + m[0].length
-    }
-    if (last < text.length) out.push(t(text.slice(last), o))
-    return out
-  }
+  const bc = (text, o = {}) => [t(stripRefs(text), o)]
   const L = (s) => new Paragraph({ children: [t(s, { bold: true, color: ACCENT, size: 19 })], spacing: { before: 100, after: 30 } })
   c.push(P([dim(`${br.기간.from} ~ ${br.기간.to} · 리포트 ${br.리포트수}건 검토`)]))
   c.push(H2('이번 주 한눈에')); for (const s of br.한눈에 || []) c.push(B(bc(s)))
@@ -116,8 +98,6 @@ if (br) {
     if (ch) c.push(new Paragraph({ alignment: AlignmentType.CENTER, children: [new ImageRun({ type: 'png', data: ch.png, transformation: { width: 600, height: Math.round(600 * ch.height / ch.width) } })] }))
     else c.push(P([t(br.키워드.slice(0, 12).map((k) => `${k.tag} ${k.count}/${k.prev}`).join(' · '), { size: 18 })]))
   }
-  c.push(L('브리핑 출처'))
-  for (const r of br.refs || []) c.push(P([t(`[B${r.n}] `, { size: 15 }), link(r.제목, r.링크, { size: 15 }), dim(`  ${r.기관 || ''} ${r.날짜 || ''}`, 14)], { spacing: { after: 20 } }))
 } else c.push(P([dim('이 주의 주간 브리핑이 없습니다.')]))
 
 // ③ 반도체 주간 브리핑 — 같은 주 원본 그대로(요약하지 않음). 출처는 S1, S2…로 구분
@@ -164,11 +144,6 @@ if (F.주목?.length) {
 if (F.목록?.length) {
   c.push(H2('전체 목록'))
   c.push(table([['날짜', '기업', '분야', '금액', '단계', '투자사'], ...F.목록.map((x) => [x.날짜.slice(5), x.기업, x.분야, x.금액, x.단계, x.투자사])], [700, 1500, 2000, 1100, 1100, 2600]))
-}
-
-if (w.refs?.length) {
-  c.push(H1('출처'))
-  for (const r of w.refs) c.push(P([t(`[${r.n}] `, { size: 16 }), link(r.제목, r.링크, { size: 16 }), dim(`  ${r.매체 || ''} ${r.날짜 || ''}`, 15)], { spacing: { after: 30 } }))
 }
 
 const doc = new Document({
