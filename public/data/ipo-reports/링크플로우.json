@@ -1,0 +1,75 @@
+{
+ "회사명": "링크플로우",
+ "시장": "KQ",
+ "file": "링크플로우",
+ "단계": {
+  "청구": {
+   "기준일": "2026-11-25",
+   "generated_at": "2026-11-26T12:55:01+09:00",
+   "기사": [
+    {
+     "제목": "삼성전자 사내벤처서 출발한 링크플로우, 코스닥 기술특례상장 첫 관문 통과",
+     "매체": "이데일리",
+     "날짜": "2026-11-03",
+     "링크": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPem0zZnZobkxURjJ2Yjhia3dPbFl0OVNqaC1wa3pUWDV3bklKeFRfOGtBXzhnYWI0eXZ4TTM3VGg0R1lSVGR6UkxyQTRKQ0Q1UDdneU1mOEl5SG1yc29Pbjl6cE1udzdtbHVHMXlLdTJnLWg1S3lYWTVtMlZOeWtJZA?oc=5"
+    },
+    {
+     "제목": "링크플로우, 코스닥 기술특례상장 기술성평가 통과",
+     "매체": "와우테일",
+     "날짜": "2026-11-03",
+     "링크": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9UOG1xRTBzQU5oaGkyY0ZBcU1DYjFCR2JLN2QzR29tbi1DeUhKbmFnUG9HNVprWldmS2Z2SzB0Y08wM1lqZnhmT1A4T2Q4eTg?oc=5"
+    },
+    {
+     "제목": "링크플로우, 코스닥 기술특례상장 첫 관문 통과…온디바이스 AI 기술 인정",
+     "매체": "더테크",
+     "날짜": "2026-11-03",
+     "링크": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9WeVpRcXBRaEJITTVfbUt4Nl9qalE3NFV2UVVWTlAyTm05OTJTZXRKYmx3S04tejYyNFI3THFEcDFGREhWTFM0SFgwbkUtWVgwR3lLV3RvaVZhc053Q1VqdFc1TQ?oc=5"
+    },
+    {
+     "제목": "링크플로우, 기술성 평가 통과···내년 코스닥 상장 추진",
+     "매체": "한스경제",
+     "날짜": "2026-11-03",
+     "링크": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1RSE5zeXRmU3N5dEttZmZUYjFhdUE1WXpjN2ZRWTE4YVBTU2FtVDF1OFJfQXN6TFc1dWlrQzhqM3luck5qcVBXbzNzeGNKX2JDRzE4bi00WjdiQ18yYVpRcjZwdE5hTk1iZkZV0gFvQVVfeXFMTjRpUWhzMzhwMEJrVndnX3VUV3pLR2YxemFVYmNSekV0dG9ibFVUMW1mRE5HSjJwN19pZy1zYlRRR0pSUmlYSG9ldjN6NTk4UTZxVVBhUExEeFpiY19UZ3I4cU0wUXV1ZGZkWnNFZDdr?oc=5"
+    },
+    {
+     "제목": "삼성 사내벤처 출신 링크플로우, 코스닥 기술특례상장 기술성 평가 통과",
+     "매체": "위키트리",
+     "날짜": "2026-11-03",
+     "링크": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5JY2lEaVZ1di1lVExBeURVWW9wTWx3TU9wVmtnZENGR3l4cUVlQjBqSVJaSFRWWlhKRkUtTTlGVmVYZ29FS2taMlZpM2VvMEFMWXBLZGJB?oc=5"
+    }
+   ],
+   "요약필요": true,
+   "요약": null,
+   "메모": []
+  }
+ },
+ "회사정보": {
+  "정식명칭": "링크플로우주식회사",
+  "영문명": "LINKFLOW Co., Ltd.",
+  "대표자": "김용국",
+  "설립일": "2016-11-30",
+  "업종코드": "26519",
+  "결산월": "12월",
+  "주소": "서울특별시 마포구 성암로 330 (상암동, DMC첨단산업센터) 623호",
+  "홈페이지": "https://linkflow.co.kr",
+  "전화": "070-5178-2581"
+ },
+ "공모": {
+  "청구일": "2026-11-25",
+  "승인일": "",
+  "심사상태": "청구서 접수",
+  "신고서제출일": "",
+  "수요예측시작": "",
+  "수요예측종료": "",
+  "청약시작": "",
+  "청약종료": "",
+  "납입일": "",
+  "상장예정일": "",
+  "상장일": "",
+  "확정공모가": "",
+  "공모금액": "",
+  "주관사": "엔에이치투자증권(주)"
+ },
+ "현재단계": "청구",
+ "updated_at": "2026-11-26T12:55:01+09:00"
+}
